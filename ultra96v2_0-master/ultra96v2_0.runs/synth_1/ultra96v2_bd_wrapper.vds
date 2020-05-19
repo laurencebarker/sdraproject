@@ -1,0 +1,715 @@
+#-----------------------------------------------------------
+# Vivado v2019.2 (64-bit)
+# SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+# IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+# Start of session at: Sun May 17 19:56:03 2020
+# Process ID: 2844
+# Current directory: C:/xilinxdesigns/sdraproject/ultra96v2_0-master/ultra96v2_0.runs/synth_1
+# Command line: vivado.exe -log ultra96v2_bd_wrapper.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source ultra96v2_bd_wrapper.tcl
+# Log file: C:/xilinxdesigns/sdraproject/ultra96v2_0-master/ultra96v2_0.runs/synth_1/ultra96v2_bd_wrapper.vds
+# Journal file: C:/xilinxdesigns/sdraproject/ultra96v2_0-master/ultra96v2_0.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source ultra96v2_bd_wrapper.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2019.2/data/ip'.
+add_files: Time (s): cpu = 00:00:05 ; elapsed = 00:00:11 . Memory (MB): peak = 489.758 ; gain = 50.844
+Command: synth_design -top ultra96v2_bd_wrapper -part xczu3eg-sbva484-1-e
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xczu3eg'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xczu3eg'
+INFO: [Device 21-403] Loading part xczu3eg-sbva484-1-e
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 468 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 1466.363 ; gain = 53.828
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'ultra96v2_bd_wrapper' [C:/xilinxdesigns/sdraproject/ultra96v2_0-master/ultra96v2_0.srcs/sources_1/bd/ultra96v2_bd/hdl/ultra96v2_bd_wrapper.v:12]
+INFO: [Synth 8-6157] synthesizing module 'IOBUF' [C:/Xilinx/Vivado/2019.2/scripts/rt/data/unisim_comp.v:36196]
+	Parameter DRIVE bound to: 12 - type: integer 
+	Parameter IBUF_LOW_PWR bound to: TRUE - type: string 
+	Parameter IOSTANDARD bound to: DEFAULT - type: string 
+	Parameter SLEW bound to: SLOW - type: string 
+INFO: [Synth 8-6155] done synthesizing module 'IOBUF' (1#1) [C:/Xilinx/Vivado/2019.2/scripts/rt/data/unisim_comp.v:36196]
+INFO: [Synth 8-6157] synthesizing module 'ultra96v2_bd' [C:/xilinxdesigns/sdraproject/ultra96v2_0-master/ultra96v2_0.srcs/sources_1/bd/ultra96v2_bd/synth/ultra96v2_bd.v:2713]
+INFO: [Synth 8-6157] synthesizing module 'CPU_imp_1YU2FP7' [C:/xilinxdesigns/sdraproject/ultra96v2_0-master/ultra96v2_0.srcs/sources_1/bd/ultra96v2_bd/synth/ultra96v2_bd.v:12]
+INFO: [Synth 8-6157] synthesizing module 'ultra96v2_bd_axi_bram_ctrl_0_0' [C:/xilinxdesigns/sdraproject/ultra96v2_0-master/ultra96v2_0.runs/synth_1/.Xil/Vivado-2844-Loz-Inspiron/realtime/ultra96v2_bd_axi_bram_ctrl_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'ultra96v2_bd_axi_bram_ctrl_0_0' (2#1) [C:/xilinxdesigns/sdraproject/ultra96v2_0-master/ultra96v2_0.runs/synth_1/.Xil/Vivado-2844-Loz-Inspiron/realtime/ultra96v2_bd_axi_bram_ctrl_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'ultra96v2_bd_axi_uart16550_0_0' [C:/xilinxdesigns/sdraproject/ultra96v2_0-master/ultra96v2_0.runs/synth_1/.Xil/Vivado-2844-Loz-Inspiron/realtime/ultra96v2_bd_axi_uart16550_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'ultra96v2_bd_axi_uart16550_0_0' (3#1) [C:/xilinxdesigns/sdraproject/ultra96v2_0-master/ultra96v2_0.runs/synth_1/.Xil/Vivado-2844-Loz-Inspiron/realtime/ultra96v2_bd_axi_uart16550_0_0_stub.v:6]
+WARNING: [Synth 8-7023] instance 'axi_uart16550_0' of module 'ultra96v2_bd_axi_uart16550_0_0' has 35 connections declared, but only 26 given [C:/xilinxdesigns/sdraproject/ultra96v2_0-master/ultra96v2_0.srcs/sources_1/bd/ultra96v2_bd/synth/ultra96v2_bd.v:260]
+INFO: [Synth 8-6157] synthesizing module 'ultra96v2_bd_blk_mem_gen_0_0' [C:/xilinxdesigns/sdraproject/ultra96v2_0-master/ultra96v2_0.runs/synth_1/.Xil/Vivado-2844-Loz-Inspiron/realtime/ultra96v2_bd_blk_mem_gen_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'ultra96v2_bd_blk_mem_gen_0_0' (4#1) [C:/xilinxdesigns/sdraproject/ultra96v2_0-master/ultra96v2_0.runs/synth_1/.Xil/Vivado-2844-Loz-Inspiron/realtime/ultra96v2_bd_blk_mem_gen_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'ultra96v2_bd_clk_wiz_0_0' [C:/xilinxdesigns/sdraproject/ultra96v2_0-master/ultra96v2_0.runs/synth_1/.Xil/Vivado-2844-Loz-Inspiron/realtime/ultra96v2_bd_clk_wiz_0_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'ultra96v2_bd_clk_wiz_0_0' (5#1) [C:/xilinxdesigns/sdraproject/ultra96v2_0-master/ultra96v2_0.runs/synth_1/.Xil/Vivado-2844-Loz-Inspiron/realtime/ultra96v2_bd_clk_wiz_0_0_stub.v:5]
+WARNING: [Synth 8-7023] instance 'clk_wiz_0' of module 'ultra96v2_bd_clk_wiz_0_0' has 4 connections declared, but only 3 given [C:/xilinxdesigns/sdraproject/ultra96v2_0-master/ultra96v2_0.srcs/sources_1/bd/ultra96v2_bd/synth/ultra96v2_bd.v:295]
+INFO: [Synth 8-6157] synthesizing module 'ultra96v2_bd_axi_gpio_0_1' [C:/xilinxdesigns/sdraproject/ultra96v2_0-master/ultra96v2_0.runs/synth_1/.Xil/Vivado-2844-Loz-Inspiron/realtime/ultra96v2_bd_axi_gpio_0_1_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'ultra96v2_bd_axi_gpio_0_1' (6#1) [C:/xilinxdesigns/sdraproject/ultra96v2_0-master/ultra96v2_0.runs/synth_1/.Xil/Vivado-2844-Loz-Inspiron/realtime/ultra96v2_bd_axi_gpio_0_1_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'ultra96v2_bd_axi_gpio_0_0' [C:/xilinxdesigns/sdraproject/ultra96v2_0-master/ultra96v2_0.runs/synth_1/.Xil/Vivado-2844-Loz-Inspiron/realtime/ultra96v2_bd_axi_gpio_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'ultra96v2_bd_axi_gpio_0_0' (7#1) [C:/xilinxdesigns/sdraproject/ultra96v2_0-master/ultra96v2_0.runs/synth_1/.Xil/Vivado-2844-Loz-Inspiron/realtime/ultra96v2_bd_axi_gpio_0_0_stub.v:6]
+WARNING: [Synth 8-7023] instance 'hd_gpio' of module 'ultra96v2_bd_axi_gpio_0_0' has 22 connections declared, but only 21 given [C:/xilinxdesigns/sdraproject/ultra96v2_0-master/ultra96v2_0.srcs/sources_1/bd/ultra96v2_bd/synth/ultra96v2_bd.v:322]
+INFO: [Synth 8-6157] synthesizing module 'ultra96v2_bd_proc_sys_reset_0_0' [C:/xilinxdesigns/sdraproject/ultra96v2_0-master/ultra96v2_0.runs/synth_1/.Xil/Vivado-2844-Loz-Inspiron/realtime/ultra96v2_bd_proc_sys_reset_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'ultra96v2_bd_proc_sys_reset_0_0' (8#1) [C:/xilinxdesigns/sdraproject/ultra96v2_0-master/ultra96v2_0.runs/synth_1/.Xil/Vivado-2844-Loz-Inspiron/realtime/ultra96v2_bd_proc_sys_reset_0_0_stub.v:6]
+WARNING: [Synth 8-7023] instance 'proc_sys_reset_0' of module 'ultra96v2_bd_proc_sys_reset_0_0' has 10 connections declared, but only 6 given [C:/xilinxdesigns/sdraproject/ultra96v2_0-master/ultra96v2_0.srcs/sources_1/bd/ultra96v2_bd/synth/ultra96v2_bd.v:344]
+INFO: [Synth 8-6157] synthesizing module 'ultra96v2_bd_ps8_0_axi_periph_1' [C:/xilinxdesigns/sdraproject/ultra96v2_0-master/ultra96v2_0.srcs/sources_1/bd/ultra96v2_bd/synth/ultra96v2_bd.v:2890]
+INFO: [Synth 8-6157] synthesizing module 'm00_couplers_imp_1CQE762' [C:/xilinxdesigns/sdraproject/ultra96v2_0-master/ultra96v2_0.srcs/sources_1/bd/ultra96v2_bd/synth/ultra96v2_bd.v:626]
+INFO: [Synth 8-6157] synthesizing module 'ultra96v2_bd_auto_ds_0' [C:/xilinxdesigns/sdraproject/ultra96v2_0-master/ultra96v2_0.runs/synth_1/.Xil/Vivado-2844-Loz-Inspiron/realtime/ultra96v2_bd_auto_ds_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'ultra96v2_bd_auto_ds_0' (9#1) [C:/xilinxdesigns/sdraproject/ultra96v2_0-master/ultra96v2_0.runs/synth_1/.Xil/Vivado-2844-Loz-Inspiron/realtime/ultra96v2_bd_auto_ds_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'ultra96v2_bd_auto_pc_0' [C:/xilinxdesigns/sdraproject/ultra96v2_0-master/ultra96v2_0.runs/synth_1/.Xil/Vivado-2844-Loz-Inspiron/realtime/ultra96v2_bd_auto_pc_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'ultra96v2_bd_auto_pc_0' (10#1) [C:/xilinxdesigns/sdraproject/ultra96v2_0-master/ultra96v2_0.runs/synth_1/.Xil/Vivado-2844-Loz-Inspiron/realtime/ultra96v2_bd_auto_pc_0_stub.v:6]
+WARNING: [Synth 8-7023] instance 'auto_pc' of module 'ultra96v2_bd_auto_pc_0' has 56 connections declared, but only 54 given [C:/xilinxdesigns/sdraproject/ultra96v2_0-master/ultra96v2_0.srcs/sources_1/bd/ultra96v2_bd/synth/ultra96v2_bd.v:957]
+INFO: [Synth 8-6155] done synthesizing module 'm00_couplers_imp_1CQE762' (11#1) [C:/xilinxdesigns/sdraproject/ultra96v2_0-master/ultra96v2_0.srcs/sources_1/bd/ultra96v2_bd/synth/ultra96v2_bd.v:626]
+INFO: [Synth 8-6157] synthesizing module 'm01_couplers_imp_1F7CZD6' [C:/xilinxdesigns/sdraproject/ultra96v2_0-master/ultra96v2_0.srcs/sources_1/bd/ultra96v2_bd/synth/ultra96v2_bd.v:1014]
+INFO: [Synth 8-6157] synthesizing module 'ultra96v2_bd_auto_ds_1' [C:/xilinxdesigns/sdraproject/ultra96v2_0-master/ultra96v2_0.runs/synth_1/.Xil/Vivado-2844-Loz-Inspiron/realtime/ultra96v2_bd_auto_ds_1_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'ultra96v2_bd_auto_ds_1' (12#1) [C:/xilinxdesigns/sdraproject/ultra96v2_0-master/ultra96v2_0.runs/synth_1/.Xil/Vivado-2844-Loz-Inspiron/realtime/ultra96v2_bd_auto_ds_1_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'ultra96v2_bd_auto_pc_1' [C:/xilinxdesigns/sdraproject/ultra96v2_0-master/ultra96v2_0.runs/synth_1/.Xil/Vivado-2844-Loz-Inspiron/realtime/ultra96v2_bd_auto_pc_1_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'ultra96v2_bd_auto_pc_1' (13#1) [C:/xilinxdesigns/sdraproject/ultra96v2_0-master/ultra96v2_0.runs/synth_1/.Xil/Vivado-2844-Loz-Inspiron/realtime/ultra96v2_bd_auto_pc_1_stub.v:6]
+WARNING: [Synth 8-7023] instance 'auto_pc' of module 'ultra96v2_bd_auto_pc_1' has 56 connections declared, but only 54 given [C:/xilinxdesigns/sdraproject/ultra96v2_0-master/ultra96v2_0.srcs/sources_1/bd/ultra96v2_bd/synth/ultra96v2_bd.v:1345]
+INFO: [Synth 8-6155] done synthesizing module 'm01_couplers_imp_1F7CZD6' (14#1) [C:/xilinxdesigns/sdraproject/ultra96v2_0-master/ultra96v2_0.srcs/sources_1/bd/ultra96v2_bd/synth/ultra96v2_bd.v:1014]
+INFO: [Synth 8-6157] synthesizing module 'm02_couplers_imp_1022C7E' [C:/xilinxdesigns/sdraproject/ultra96v2_0-master/ultra96v2_0.srcs/sources_1/bd/ultra96v2_bd/synth/ultra96v2_bd.v:1402]
+INFO: [Synth 8-6157] synthesizing module 'ultra96v2_bd_auto_ds_2' [C:/xilinxdesigns/sdraproject/ultra96v2_0-master/ultra96v2_0.runs/synth_1/.Xil/Vivado-2844-Loz-Inspiron/realtime/ultra96v2_bd_auto_ds_2_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'ultra96v2_bd_auto_ds_2' (15#1) [C:/xilinxdesigns/sdraproject/ultra96v2_0-master/ultra96v2_0.runs/synth_1/.Xil/Vivado-2844-Loz-Inspiron/realtime/ultra96v2_bd_auto_ds_2_stub.v:6]
+WARNING: [Synth 8-7023] instance 'auto_ds' of module 'ultra96v2_bd_auto_ds_2' has 72 connections declared, but only 68 given [C:/xilinxdesigns/sdraproject/ultra96v2_0-master/ultra96v2_0.srcs/sources_1/bd/ultra96v2_bd/synth/ultra96v2_bd.v:1681]
+INFO: [Synth 8-6155] done synthesizing module 'm02_couplers_imp_1022C7E' (16#1) [C:/xilinxdesigns/sdraproject/ultra96v2_0-master/ultra96v2_0.srcs/sources_1/bd/ultra96v2_bd/synth/ultra96v2_bd.v:1402]
+INFO: [Synth 8-6157] synthesizing module 'm03_couplers_imp_15UVJWQ' [C:/xilinxdesigns/sdraproject/ultra96v2_0-master/ultra96v2_0.srcs/sources_1/bd/ultra96v2_bd/synth/ultra96v2_bd.v:1752]
+INFO: [Synth 8-6157] synthesizing module 'ultra96v2_bd_auto_ds_3' [C:/xilinxdesigns/sdraproject/ultra96v2_0-master/ultra96v2_0.runs/synth_1/.Xil/Vivado-2844-Loz-Inspiron/realtime/ultra96v2_bd_auto_ds_3_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'ultra96v2_bd_auto_ds_3' (17#1) [C:/xilinxdesigns/sdraproject/ultra96v2_0-master/ultra96v2_0.runs/synth_1/.Xil/Vivado-2844-Loz-Inspiron/realtime/ultra96v2_bd_auto_ds_3_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'ultra96v2_bd_auto_pc_2' [C:/xilinxdesigns/sdraproject/ultra96v2_0-master/ultra96v2_0.runs/synth_1/.Xil/Vivado-2844-Loz-Inspiron/realtime/ultra96v2_bd_auto_pc_2_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'ultra96v2_bd_auto_pc_2' (18#1) [C:/xilinxdesigns/sdraproject/ultra96v2_0-master/ultra96v2_0.runs/synth_1/.Xil/Vivado-2844-Loz-Inspiron/realtime/ultra96v2_bd_auto_pc_2_stub.v:6]
+WARNING: [Synth 8-7023] instance 'auto_pc' of module 'ultra96v2_bd_auto_pc_2' has 56 connections declared, but only 54 given [C:/xilinxdesigns/sdraproject/ultra96v2_0-master/ultra96v2_0.srcs/sources_1/bd/ultra96v2_bd/synth/ultra96v2_bd.v:2083]
+INFO: [Synth 8-6155] done synthesizing module 'm03_couplers_imp_15UVJWQ' (19#1) [C:/xilinxdesigns/sdraproject/ultra96v2_0-master/ultra96v2_0.srcs/sources_1/bd/ultra96v2_bd/synth/ultra96v2_bd.v:1752]
+INFO: [Synth 8-6157] synthesizing module 's00_couplers_imp_1DNOA3D' [C:/xilinxdesigns/sdraproject/ultra96v2_0-master/ultra96v2_0.srcs/sources_1/bd/ultra96v2_bd/synth/ultra96v2_bd.v:2140]
+INFO: [Synth 8-6155] done synthesizing module 's00_couplers_imp_1DNOA3D' (20#1) [C:/xilinxdesigns/sdraproject/ultra96v2_0-master/ultra96v2_0.srcs/sources_1/bd/ultra96v2_bd/synth/ultra96v2_bd.v:2140]
+INFO: [Synth 8-6157] synthesizing module 's01_couplers_imp_1A09J2X' [C:/xilinxdesigns/sdraproject/ultra96v2_0-master/ultra96v2_0.srcs/sources_1/bd/ultra96v2_bd/synth/ultra96v2_bd.v:2426]
+INFO: [Synth 8-6155] done synthesizing module 's01_couplers_imp_1A09J2X' (21#1) [C:/xilinxdesigns/sdraproject/ultra96v2_0-master/ultra96v2_0.srcs/sources_1/bd/ultra96v2_bd/synth/ultra96v2_bd.v:2426]
+INFO: [Synth 8-6157] synthesizing module 'ultra96v2_bd_xbar_0' [C:/xilinxdesigns/sdraproject/ultra96v2_0-master/ultra96v2_0.runs/synth_1/.Xil/Vivado-2844-Loz-Inspiron/realtime/ultra96v2_bd_xbar_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'ultra96v2_bd_xbar_0' (22#1) [C:/xilinxdesigns/sdraproject/ultra96v2_0-master/ultra96v2_0.runs/synth_1/.Xil/Vivado-2844-Loz-Inspiron/realtime/ultra96v2_bd_xbar_0_stub.v:6]
+WARNING: [Synth 8-7023] instance 'xbar' of module 'ultra96v2_bd_xbar_0' has 78 connections declared, but only 76 given [C:/xilinxdesigns/sdraproject/ultra96v2_0-master/ultra96v2_0.srcs/sources_1/bd/ultra96v2_bd/synth/ultra96v2_bd.v:4191]
+INFO: [Synth 8-6155] done synthesizing module 'ultra96v2_bd_ps8_0_axi_periph_1' (23#1) [C:/xilinxdesigns/sdraproject/ultra96v2_0-master/ultra96v2_0.srcs/sources_1/bd/ultra96v2_bd/synth/ultra96v2_bd.v:2890]
+INFO: [Synth 8-6157] synthesizing module 'ultra96v2_bd_rst_ps8_0_100M_1' [C:/xilinxdesigns/sdraproject/ultra96v2_0-master/ultra96v2_0.runs/synth_1/.Xil/Vivado-2844-Loz-Inspiron/realtime/ultra96v2_bd_rst_ps8_0_100M_1_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'ultra96v2_bd_rst_ps8_0_100M_1' (24#1) [C:/xilinxdesigns/sdraproject/ultra96v2_0-master/ultra96v2_0.runs/synth_1/.Xil/Vivado-2844-Loz-Inspiron/realtime/ultra96v2_bd_rst_ps8_0_100M_1_stub.v:6]
+WARNING: [Synth 8-7023] instance 'rst_ps8_0_100M' of module 'ultra96v2_bd_rst_ps8_0_100M_1' has 10 connections declared, but only 6 given [C:/xilinxdesigns/sdraproject/ultra96v2_0-master/ultra96v2_0.srcs/sources_1/bd/ultra96v2_bd/synth/ultra96v2_bd.v:526]
+INFO: [Synth 8-6157] synthesizing module 'ultra96v2_bd_xlconcat_0_0' [c:/xilinxdesigns/sdraproject/ultra96v2_0-master/ultra96v2_0.srcs/sources_1/bd/ultra96v2_bd/ip/ultra96v2_bd_xlconcat_0_0/synth/ultra96v2_bd_xlconcat_0_0.v:58]
+INFO: [Synth 8-6157] synthesizing module 'xlconcat_v2_1_3_xlconcat' [c:/xilinxdesigns/sdraproject/ultra96v2_0-master/ultra96v2_0.srcs/sources_1/bd/ultra96v2_bd/ipshared/442e/hdl/xlconcat_v2_1_vl_rfs.v:14]
+	Parameter IN0_WIDTH bound to: 1 - type: integer 
+	Parameter IN1_WIDTH bound to: 15 - type: integer 
+	Parameter IN2_WIDTH bound to: 1 - type: integer 
+	Parameter IN3_WIDTH bound to: 1 - type: integer 
+	Parameter IN4_WIDTH bound to: 1 - type: integer 
+	Parameter IN5_WIDTH bound to: 1 - type: integer 
+	Parameter IN6_WIDTH bound to: 1 - type: integer 
+	Parameter IN7_WIDTH bound to: 1 - type: integer 
+	Parameter IN8_WIDTH bound to: 1 - type: integer 
+	Parameter IN9_WIDTH bound to: 1 - type: integer 
+	Parameter IN10_WIDTH bound to: 1 - type: integer 
+	Parameter IN11_WIDTH bound to: 1 - type: integer 
+	Parameter IN12_WIDTH bound to: 1 - type: integer 
+	Parameter IN13_WIDTH bound to: 1 - type: integer 
+	Parameter IN14_WIDTH bound to: 1 - type: integer 
+	Parameter IN15_WIDTH bound to: 1 - type: integer 
+	Parameter IN16_WIDTH bound to: 1 - type: integer 
+	Parameter IN17_WIDTH bound to: 1 - type: integer 
+	Parameter IN18_WIDTH bound to: 1 - type: integer 
+	Parameter IN19_WIDTH bound to: 1 - type: integer 
+	Parameter IN20_WIDTH bound to: 1 - type: integer 
+	Parameter IN21_WIDTH bound to: 1 - type: integer 
+	Parameter IN22_WIDTH bound to: 1 - type: integer 
+	Parameter IN23_WIDTH bound to: 1 - type: integer 
+	Parameter IN24_WIDTH bound to: 1 - type: integer 
+	Parameter IN25_WIDTH bound to: 1 - type: integer 
+	Parameter IN26_WIDTH bound to: 1 - type: integer 
+	Parameter IN27_WIDTH bound to: 1 - type: integer 
+	Parameter IN28_WIDTH bound to: 1 - type: integer 
+	Parameter IN29_WIDTH bound to: 1 - type: integer 
+	Parameter IN30_WIDTH bound to: 1 - type: integer 
+	Parameter IN31_WIDTH bound to: 1 - type: integer 
+	Parameter dout_width bound to: 16 - type: integer 
+	Parameter NUM_PORTS bound to: 2 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'xlconcat_v2_1_3_xlconcat' (25#1) [c:/xilinxdesigns/sdraproject/ultra96v2_0-master/ultra96v2_0.srcs/sources_1/bd/ultra96v2_bd/ipshared/442e/hdl/xlconcat_v2_1_vl_rfs.v:14]
+INFO: [Synth 8-6155] done synthesizing module 'ultra96v2_bd_xlconcat_0_0' (26#1) [c:/xilinxdesigns/sdraproject/ultra96v2_0-master/ultra96v2_0.srcs/sources_1/bd/ultra96v2_bd/ip/ultra96v2_bd_xlconcat_0_0/synth/ultra96v2_bd_xlconcat_0_0.v:58]
+INFO: [Synth 8-6157] synthesizing module 'ultra96v2_bd_xlslice_0_0' [c:/xilinxdesigns/sdraproject/ultra96v2_0-master/ultra96v2_0.srcs/sources_1/bd/ultra96v2_bd/ip/ultra96v2_bd_xlslice_0_0/synth/ultra96v2_bd_xlslice_0_0.v:57]
+INFO: [Synth 8-6157] synthesizing module 'xlslice_v1_0_2_xlslice' [c:/xilinxdesigns/sdraproject/ultra96v2_0-master/ultra96v2_0.srcs/sources_1/bd/ultra96v2_bd/ipshared/11d0/hdl/xlslice_v1_0_vl_rfs.v:13]
+	Parameter DIN_WIDTH bound to: 16 - type: integer 
+	Parameter DIN_FROM bound to: 14 - type: integer 
+	Parameter DIN_TO bound to: 0 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'xlslice_v1_0_2_xlslice' (27#1) [c:/xilinxdesigns/sdraproject/ultra96v2_0-master/ultra96v2_0.srcs/sources_1/bd/ultra96v2_bd/ipshared/11d0/hdl/xlslice_v1_0_vl_rfs.v:13]
+INFO: [Synth 8-6155] done synthesizing module 'ultra96v2_bd_xlslice_0_0' (28#1) [c:/xilinxdesigns/sdraproject/ultra96v2_0-master/ultra96v2_0.srcs/sources_1/bd/ultra96v2_bd/ip/ultra96v2_bd_xlslice_0_0/synth/ultra96v2_bd_xlslice_0_0.v:57]
+INFO: [Synth 8-6157] synthesizing module 'ultra96v2_bd_zynq_ultra_ps_e_0_0' [C:/xilinxdesigns/sdraproject/ultra96v2_0-master/ultra96v2_0.runs/synth_1/.Xil/Vivado-2844-Loz-Inspiron/realtime/ultra96v2_bd_zynq_ultra_ps_e_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'ultra96v2_bd_zynq_ultra_ps_e_0_0' (29#1) [C:/xilinxdesigns/sdraproject/ultra96v2_0-master/ultra96v2_0.runs/synth_1/.Xil/Vivado-2844-Loz-Inspiron/realtime/ultra96v2_bd_zynq_ultra_ps_e_0_0_stub.v:6]
+WARNING: [Synth 8-7023] instance 'zynq_ultra_ps_e_0' of module 'ultra96v2_bd_zynq_ultra_ps_e_0_0' has 84 connections declared, but only 83 given [C:/xilinxdesigns/sdraproject/ultra96v2_0-master/ultra96v2_0.srcs/sources_1/bd/ultra96v2_bd/synth/ultra96v2_bd.v:540]
+INFO: [Synth 8-6155] done synthesizing module 'CPU_imp_1YU2FP7' (30#1) [C:/xilinxdesigns/sdraproject/ultra96v2_0-master/ultra96v2_0.srcs/sources_1/bd/ultra96v2_bd/synth/ultra96v2_bd.v:12]
+WARNING: [Synth 8-7023] instance 'CPU' of module 'CPU_imp_1YU2FP7' has 8 connections declared, but only 7 given [C:/xilinxdesigns/sdraproject/ultra96v2_0-master/ultra96v2_0.srcs/sources_1/bd/ultra96v2_bd/synth/ultra96v2_bd.v:2774]
+INFO: [Synth 8-6157] synthesizing module 'ultra96v2_bd_axis_broadcaster_0_0' [C:/xilinxdesigns/sdraproject/ultra96v2_0-master/ultra96v2_0.runs/synth_1/.Xil/Vivado-2844-Loz-Inspiron/realtime/ultra96v2_bd_axis_broadcaster_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'ultra96v2_bd_axis_broadcaster_0_0' (31#1) [C:/xilinxdesigns/sdraproject/ultra96v2_0-master/ultra96v2_0.runs/synth_1/.Xil/Vivado-2844-Loz-Inspiron/realtime/ultra96v2_bd_axis_broadcaster_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'ultra96v2_bd_axis_combiner_0_0' [C:/xilinxdesigns/sdraproject/ultra96v2_0-master/ultra96v2_0.runs/synth_1/.Xil/Vivado-2844-Loz-Inspiron/realtime/ultra96v2_bd_axis_combiner_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'ultra96v2_bd_axis_combiner_0_0' (32#1) [C:/xilinxdesigns/sdraproject/ultra96v2_0-master/ultra96v2_0.runs/synth_1/.Xil/Vivado-2844-Loz-Inspiron/realtime/ultra96v2_bd_axis_combiner_0_0_stub.v:6]
+WARNING: [Synth 8-7023] instance 'axis_combiner_0' of module 'ultra96v2_bd_axis_combiner_0_0' has 8 connections declared, but only 7 given [C:/xilinxdesigns/sdraproject/ultra96v2_0-master/ultra96v2_0.srcs/sources_1/bd/ultra96v2_bd/synth/ultra96v2_bd.v:2793]
+INFO: [Synth 8-6157] synthesizing module 'ultra96v2_bd_axis_dwidth_converter_0_0' [C:/xilinxdesigns/sdraproject/ultra96v2_0-master/ultra96v2_0.runs/synth_1/.Xil/Vivado-2844-Loz-Inspiron/realtime/ultra96v2_bd_axis_dwidth_converter_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'ultra96v2_bd_axis_dwidth_converter_0_0' (33#1) [C:/xilinxdesigns/sdraproject/ultra96v2_0-master/ultra96v2_0.runs/synth_1/.Xil/Vivado-2844-Loz-Inspiron/realtime/ultra96v2_bd_axis_dwidth_converter_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'ultra96v2_bd_axis_dwidth_converter_1_0' [C:/xilinxdesigns/sdraproject/ultra96v2_0-master/ultra96v2_0.runs/synth_1/.Xil/Vivado-2844-Loz-Inspiron/realtime/ultra96v2_bd_axis_dwidth_converter_1_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'ultra96v2_bd_axis_dwidth_converter_1_0' (34#1) [C:/xilinxdesigns/sdraproject/ultra96v2_0-master/ultra96v2_0.runs/synth_1/.Xil/Vivado-2844-Loz-Inspiron/realtime/ultra96v2_bd_axis_dwidth_converter_1_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'ultra96v2_bd_bus_to_axis_0_0' [C:/xilinxdesigns/sdraproject/ultra96v2_0-master/ultra96v2_0.runs/synth_1/.Xil/Vivado-2844-Loz-Inspiron/realtime/ultra96v2_bd_bus_to_axis_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'ultra96v2_bd_bus_to_axis_0_0' (35#1) [C:/xilinxdesigns/sdraproject/ultra96v2_0-master/ultra96v2_0.runs/synth_1/.Xil/Vivado-2844-Loz-Inspiron/realtime/ultra96v2_bd_bus_to_axis_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'ultra96v2_bd_cic_compiler_0_0' [C:/xilinxdesigns/sdraproject/ultra96v2_0-master/ultra96v2_0.runs/synth_1/.Xil/Vivado-2844-Loz-Inspiron/realtime/ultra96v2_bd_cic_compiler_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'ultra96v2_bd_cic_compiler_0_0' (36#1) [C:/xilinxdesigns/sdraproject/ultra96v2_0-master/ultra96v2_0.runs/synth_1/.Xil/Vivado-2844-Loz-Inspiron/realtime/ultra96v2_bd_cic_compiler_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'ultra96v2_bd_cic_compiler_0_1' [C:/xilinxdesigns/sdraproject/ultra96v2_0-master/ultra96v2_0.runs/synth_1/.Xil/Vivado-2844-Loz-Inspiron/realtime/ultra96v2_bd_cic_compiler_0_1_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'ultra96v2_bd_cic_compiler_0_1' (37#1) [C:/xilinxdesigns/sdraproject/ultra96v2_0-master/ultra96v2_0.runs/synth_1/.Xil/Vivado-2844-Loz-Inspiron/realtime/ultra96v2_bd_cic_compiler_0_1_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'ultra96v2_bd_cmpy_0_0' [C:/xilinxdesigns/sdraproject/ultra96v2_0-master/ultra96v2_0.runs/synth_1/.Xil/Vivado-2844-Loz-Inspiron/realtime/ultra96v2_bd_cmpy_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'ultra96v2_bd_cmpy_0_0' (38#1) [C:/xilinxdesigns/sdraproject/ultra96v2_0-master/ultra96v2_0.runs/synth_1/.Xil/Vivado-2844-Loz-Inspiron/realtime/ultra96v2_bd_cmpy_0_0_stub.v:6]
+WARNING: [Synth 8-7023] instance 'cmpy_0' of module 'ultra96v2_bd_cmpy_0_0' has 8 connections declared, but only 7 given [C:/xilinxdesigns/sdraproject/ultra96v2_0-master/ultra96v2_0.srcs/sources_1/bd/ultra96v2_bd/synth/ultra96v2_bd.v:2844]
+INFO: [Synth 8-6157] synthesizing module 'ultra96v2_bd_cvt_offset_binary_0_0' [C:/xilinxdesigns/sdraproject/ultra96v2_0-master/ultra96v2_0.runs/synth_1/.Xil/Vivado-2844-Loz-Inspiron/realtime/ultra96v2_bd_cvt_offset_binary_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'ultra96v2_bd_cvt_offset_binary_0_0' (39#1) [C:/xilinxdesigns/sdraproject/ultra96v2_0-master/ultra96v2_0.runs/synth_1/.Xil/Vivado-2844-Loz-Inspiron/realtime/ultra96v2_bd_cvt_offset_binary_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'ultra96v2_bd_dds_compiler_0_0' [C:/xilinxdesigns/sdraproject/ultra96v2_0-master/ultra96v2_0.runs/synth_1/.Xil/Vivado-2844-Loz-Inspiron/realtime/ultra96v2_bd_dds_compiler_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'ultra96v2_bd_dds_compiler_0_0' (40#1) [C:/xilinxdesigns/sdraproject/ultra96v2_0-master/ultra96v2_0.runs/synth_1/.Xil/Vivado-2844-Loz-Inspiron/realtime/ultra96v2_bd_dds_compiler_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'ultra96v2_bd_dds_compiler_1_0' [C:/xilinxdesigns/sdraproject/ultra96v2_0-master/ultra96v2_0.runs/synth_1/.Xil/Vivado-2844-Loz-Inspiron/realtime/ultra96v2_bd_dds_compiler_1_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'ultra96v2_bd_dds_compiler_1_0' (41#1) [C:/xilinxdesigns/sdraproject/ultra96v2_0-master/ultra96v2_0.runs/synth_1/.Xil/Vivado-2844-Loz-Inspiron/realtime/ultra96v2_bd_dds_compiler_1_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'ultra96v2_bd_fir_compiler_0_0' [C:/xilinxdesigns/sdraproject/ultra96v2_0-master/ultra96v2_0.runs/synth_1/.Xil/Vivado-2844-Loz-Inspiron/realtime/ultra96v2_bd_fir_compiler_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'ultra96v2_bd_fir_compiler_0_0' (42#1) [C:/xilinxdesigns/sdraproject/ultra96v2_0-master/ultra96v2_0.runs/synth_1/.Xil/Vivado-2844-Loz-Inspiron/realtime/ultra96v2_bd_fir_compiler_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'ultra96v2_bd_xlconstant_0_0' [c:/xilinxdesigns/sdraproject/ultra96v2_0-master/ultra96v2_0.srcs/sources_1/bd/ultra96v2_bd/ip/ultra96v2_bd_xlconstant_0_0/synth/ultra96v2_bd_xlconstant_0_0.v:57]
+INFO: [Synth 8-6157] synthesizing module 'xlconstant_v1_1_6_xlconstant' [c:/xilinxdesigns/sdraproject/ultra96v2_0-master/ultra96v2_0.srcs/sources_1/bd/ultra96v2_bd/ipshared/34f7/hdl/xlconstant_v1_1_vl_rfs.v:23]
+	Parameter CONST_VAL bound to: 4369066 - type: integer 
+	Parameter CONST_WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'xlconstant_v1_1_6_xlconstant' (43#1) [c:/xilinxdesigns/sdraproject/ultra96v2_0-master/ultra96v2_0.srcs/sources_1/bd/ultra96v2_bd/ipshared/34f7/hdl/xlconstant_v1_1_vl_rfs.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'ultra96v2_bd_xlconstant_0_0' (44#1) [c:/xilinxdesigns/sdraproject/ultra96v2_0-master/ultra96v2_0.srcs/sources_1/bd/ultra96v2_bd/ip/ultra96v2_bd_xlconstant_0_0/synth/ultra96v2_bd_xlconstant_0_0.v:57]
+INFO: [Synth 8-6157] synthesizing module 'ultra96v2_bd_xlslice_0_2' [c:/xilinxdesigns/sdraproject/ultra96v2_0-master/ultra96v2_0.srcs/sources_1/bd/ultra96v2_bd/ip/ultra96v2_bd_xlslice_0_2/synth/ultra96v2_bd_xlslice_0_2.v:57]
+INFO: [Synth 8-6157] synthesizing module 'xlslice_v1_0_2_xlslice__parameterized0' [c:/xilinxdesigns/sdraproject/ultra96v2_0-master/ultra96v2_0.srcs/sources_1/bd/ultra96v2_bd/ipshared/11d0/hdl/xlslice_v1_0_vl_rfs.v:13]
+	Parameter DIN_WIDTH bound to: 48 - type: integer 
+	Parameter DIN_FROM bound to: 23 - type: integer 
+	Parameter DIN_TO bound to: 0 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'xlslice_v1_0_2_xlslice__parameterized0' (44#1) [c:/xilinxdesigns/sdraproject/ultra96v2_0-master/ultra96v2_0.srcs/sources_1/bd/ultra96v2_bd/ipshared/11d0/hdl/xlslice_v1_0_vl_rfs.v:13]
+INFO: [Synth 8-6155] done synthesizing module 'ultra96v2_bd_xlslice_0_2' (45#1) [c:/xilinxdesigns/sdraproject/ultra96v2_0-master/ultra96v2_0.srcs/sources_1/bd/ultra96v2_bd/ip/ultra96v2_bd_xlslice_0_2/synth/ultra96v2_bd_xlslice_0_2.v:57]
+INFO: [Synth 8-6157] synthesizing module 'ultra96v2_bd_xlslice_3_0' [c:/xilinxdesigns/sdraproject/ultra96v2_0-master/ultra96v2_0.srcs/sources_1/bd/ultra96v2_bd/ip/ultra96v2_bd_xlslice_3_0/synth/ultra96v2_bd_xlslice_3_0.v:57]
+INFO: [Synth 8-6157] synthesizing module 'xlslice_v1_0_2_xlslice__parameterized1' [c:/xilinxdesigns/sdraproject/ultra96v2_0-master/ultra96v2_0.srcs/sources_1/bd/ultra96v2_bd/ipshared/11d0/hdl/xlslice_v1_0_vl_rfs.v:13]
+	Parameter DIN_WIDTH bound to: 24 - type: integer 
+	Parameter DIN_FROM bound to: 15 - type: integer 
+	Parameter DIN_TO bound to: 8 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'xlslice_v1_0_2_xlslice__parameterized1' (45#1) [c:/xilinxdesigns/sdraproject/ultra96v2_0-master/ultra96v2_0.srcs/sources_1/bd/ultra96v2_bd/ipshared/11d0/hdl/xlslice_v1_0_vl_rfs.v:13]
+INFO: [Synth 8-6155] done synthesizing module 'ultra96v2_bd_xlslice_3_0' (46#1) [c:/xilinxdesigns/sdraproject/ultra96v2_0-master/ultra96v2_0.srcs/sources_1/bd/ultra96v2_bd/ip/ultra96v2_bd_xlslice_3_0/synth/ultra96v2_bd_xlslice_3_0.v:57]
+INFO: [Synth 8-6155] done synthesizing module 'ultra96v2_bd' (47#1) [C:/xilinxdesigns/sdraproject/ultra96v2_0-master/ultra96v2_0.srcs/sources_1/bd/ultra96v2_bd/synth/ultra96v2_bd.v:2713]
+INFO: [Synth 8-6155] done synthesizing module 'ultra96v2_bd_wrapper' (48#1) [C:/xilinxdesigns/sdraproject/ultra96v2_0-master/ultra96v2_0.srcs/sources_1/bd/ultra96v2_bd/hdl/ultra96v2_bd_wrapper.v:12]
+WARNING: [Synth 8-3331] design xlslice_v1_0_2_xlslice__parameterized1 has unconnected port Din[23]
+WARNING: [Synth 8-3331] design xlslice_v1_0_2_xlslice__parameterized1 has unconnected port Din[22]
+WARNING: [Synth 8-3331] design xlslice_v1_0_2_xlslice__parameterized1 has unconnected port Din[21]
+WARNING: [Synth 8-3331] design xlslice_v1_0_2_xlslice__parameterized1 has unconnected port Din[20]
+WARNING: [Synth 8-3331] design xlslice_v1_0_2_xlslice__parameterized1 has unconnected port Din[19]
+WARNING: [Synth 8-3331] design xlslice_v1_0_2_xlslice__parameterized1 has unconnected port Din[18]
+WARNING: [Synth 8-3331] design xlslice_v1_0_2_xlslice__parameterized1 has unconnected port Din[17]
+WARNING: [Synth 8-3331] design xlslice_v1_0_2_xlslice__parameterized1 has unconnected port Din[16]
+WARNING: [Synth 8-3331] design xlslice_v1_0_2_xlslice__parameterized1 has unconnected port Din[7]
+WARNING: [Synth 8-3331] design xlslice_v1_0_2_xlslice__parameterized1 has unconnected port Din[6]
+WARNING: [Synth 8-3331] design xlslice_v1_0_2_xlslice__parameterized1 has unconnected port Din[5]
+WARNING: [Synth 8-3331] design xlslice_v1_0_2_xlslice__parameterized1 has unconnected port Din[4]
+WARNING: [Synth 8-3331] design xlslice_v1_0_2_xlslice__parameterized1 has unconnected port Din[3]
+WARNING: [Synth 8-3331] design xlslice_v1_0_2_xlslice__parameterized1 has unconnected port Din[2]
+WARNING: [Synth 8-3331] design xlslice_v1_0_2_xlslice__parameterized1 has unconnected port Din[1]
+WARNING: [Synth 8-3331] design xlslice_v1_0_2_xlslice__parameterized1 has unconnected port Din[0]
+WARNING: [Synth 8-3331] design xlslice_v1_0_2_xlslice__parameterized0 has unconnected port Din[47]
+WARNING: [Synth 8-3331] design xlslice_v1_0_2_xlslice__parameterized0 has unconnected port Din[46]
+WARNING: [Synth 8-3331] design xlslice_v1_0_2_xlslice__parameterized0 has unconnected port Din[45]
+WARNING: [Synth 8-3331] design xlslice_v1_0_2_xlslice__parameterized0 has unconnected port Din[44]
+WARNING: [Synth 8-3331] design xlslice_v1_0_2_xlslice__parameterized0 has unconnected port Din[43]
+WARNING: [Synth 8-3331] design xlslice_v1_0_2_xlslice__parameterized0 has unconnected port Din[42]
+WARNING: [Synth 8-3331] design xlslice_v1_0_2_xlslice__parameterized0 has unconnected port Din[41]
+WARNING: [Synth 8-3331] design xlslice_v1_0_2_xlslice__parameterized0 has unconnected port Din[40]
+WARNING: [Synth 8-3331] design xlslice_v1_0_2_xlslice__parameterized0 has unconnected port Din[39]
+WARNING: [Synth 8-3331] design xlslice_v1_0_2_xlslice__parameterized0 has unconnected port Din[38]
+WARNING: [Synth 8-3331] design xlslice_v1_0_2_xlslice__parameterized0 has unconnected port Din[37]
+WARNING: [Synth 8-3331] design xlslice_v1_0_2_xlslice__parameterized0 has unconnected port Din[36]
+WARNING: [Synth 8-3331] design xlslice_v1_0_2_xlslice__parameterized0 has unconnected port Din[35]
+WARNING: [Synth 8-3331] design xlslice_v1_0_2_xlslice__parameterized0 has unconnected port Din[34]
+WARNING: [Synth 8-3331] design xlslice_v1_0_2_xlslice__parameterized0 has unconnected port Din[33]
+WARNING: [Synth 8-3331] design xlslice_v1_0_2_xlslice__parameterized0 has unconnected port Din[32]
+WARNING: [Synth 8-3331] design xlslice_v1_0_2_xlslice__parameterized0 has unconnected port Din[31]
+WARNING: [Synth 8-3331] design xlslice_v1_0_2_xlslice__parameterized0 has unconnected port Din[30]
+WARNING: [Synth 8-3331] design xlslice_v1_0_2_xlslice__parameterized0 has unconnected port Din[29]
+WARNING: [Synth 8-3331] design xlslice_v1_0_2_xlslice__parameterized0 has unconnected port Din[28]
+WARNING: [Synth 8-3331] design xlslice_v1_0_2_xlslice__parameterized0 has unconnected port Din[27]
+WARNING: [Synth 8-3331] design xlslice_v1_0_2_xlslice__parameterized0 has unconnected port Din[26]
+WARNING: [Synth 8-3331] design xlslice_v1_0_2_xlslice__parameterized0 has unconnected port Din[25]
+WARNING: [Synth 8-3331] design xlslice_v1_0_2_xlslice__parameterized0 has unconnected port Din[24]
+WARNING: [Synth 8-3331] design xlslice_v1_0_2_xlslice has unconnected port Din[15]
+WARNING: [Synth 8-3331] design xlconcat_v2_1_3_xlconcat has unconnected port In2[0]
+WARNING: [Synth 8-3331] design xlconcat_v2_1_3_xlconcat has unconnected port In3[0]
+WARNING: [Synth 8-3331] design xlconcat_v2_1_3_xlconcat has unconnected port In4[0]
+WARNING: [Synth 8-3331] design xlconcat_v2_1_3_xlconcat has unconnected port In5[0]
+WARNING: [Synth 8-3331] design xlconcat_v2_1_3_xlconcat has unconnected port In6[0]
+WARNING: [Synth 8-3331] design xlconcat_v2_1_3_xlconcat has unconnected port In7[0]
+WARNING: [Synth 8-3331] design xlconcat_v2_1_3_xlconcat has unconnected port In8[0]
+WARNING: [Synth 8-3331] design xlconcat_v2_1_3_xlconcat has unconnected port In9[0]
+WARNING: [Synth 8-3331] design xlconcat_v2_1_3_xlconcat has unconnected port In10[0]
+WARNING: [Synth 8-3331] design xlconcat_v2_1_3_xlconcat has unconnected port In11[0]
+WARNING: [Synth 8-3331] design xlconcat_v2_1_3_xlconcat has unconnected port In12[0]
+WARNING: [Synth 8-3331] design xlconcat_v2_1_3_xlconcat has unconnected port In13[0]
+WARNING: [Synth 8-3331] design xlconcat_v2_1_3_xlconcat has unconnected port In14[0]
+WARNING: [Synth 8-3331] design xlconcat_v2_1_3_xlconcat has unconnected port In15[0]
+WARNING: [Synth 8-3331] design xlconcat_v2_1_3_xlconcat has unconnected port In16[0]
+WARNING: [Synth 8-3331] design xlconcat_v2_1_3_xlconcat has unconnected port In17[0]
+WARNING: [Synth 8-3331] design xlconcat_v2_1_3_xlconcat has unconnected port In18[0]
+WARNING: [Synth 8-3331] design xlconcat_v2_1_3_xlconcat has unconnected port In19[0]
+WARNING: [Synth 8-3331] design xlconcat_v2_1_3_xlconcat has unconnected port In20[0]
+WARNING: [Synth 8-3331] design xlconcat_v2_1_3_xlconcat has unconnected port In21[0]
+WARNING: [Synth 8-3331] design xlconcat_v2_1_3_xlconcat has unconnected port In22[0]
+WARNING: [Synth 8-3331] design xlconcat_v2_1_3_xlconcat has unconnected port In23[0]
+WARNING: [Synth 8-3331] design xlconcat_v2_1_3_xlconcat has unconnected port In24[0]
+WARNING: [Synth 8-3331] design xlconcat_v2_1_3_xlconcat has unconnected port In25[0]
+WARNING: [Synth 8-3331] design xlconcat_v2_1_3_xlconcat has unconnected port In26[0]
+WARNING: [Synth 8-3331] design xlconcat_v2_1_3_xlconcat has unconnected port In27[0]
+WARNING: [Synth 8-3331] design xlconcat_v2_1_3_xlconcat has unconnected port In28[0]
+WARNING: [Synth 8-3331] design xlconcat_v2_1_3_xlconcat has unconnected port In29[0]
+WARNING: [Synth 8-3331] design xlconcat_v2_1_3_xlconcat has unconnected port In30[0]
+WARNING: [Synth 8-3331] design xlconcat_v2_1_3_xlconcat has unconnected port In31[0]
+WARNING: [Synth 8-3331] design s01_couplers_imp_1A09J2X has unconnected port M_ACLK
+WARNING: [Synth 8-3331] design s01_couplers_imp_1A09J2X has unconnected port M_ARESETN
+WARNING: [Synth 8-3331] design s01_couplers_imp_1A09J2X has unconnected port S_ACLK
+WARNING: [Synth 8-3331] design s01_couplers_imp_1A09J2X has unconnected port S_ARESETN
+WARNING: [Synth 8-3331] design s00_couplers_imp_1DNOA3D has unconnected port M_ACLK
+WARNING: [Synth 8-3331] design s00_couplers_imp_1DNOA3D has unconnected port M_ARESETN
+WARNING: [Synth 8-3331] design s00_couplers_imp_1DNOA3D has unconnected port S_ACLK
+WARNING: [Synth 8-3331] design s00_couplers_imp_1DNOA3D has unconnected port S_ARESETN
+WARNING: [Synth 8-3331] design m03_couplers_imp_15UVJWQ has unconnected port M_ACLK
+WARNING: [Synth 8-3331] design m03_couplers_imp_15UVJWQ has unconnected port M_ARESETN
+WARNING: [Synth 8-3331] design m03_couplers_imp_15UVJWQ has unconnected port S_AXI_araddr[39]
+WARNING: [Synth 8-3331] design m03_couplers_imp_15UVJWQ has unconnected port S_AXI_araddr[38]
+WARNING: [Synth 8-3331] design m03_couplers_imp_15UVJWQ has unconnected port S_AXI_araddr[37]
+WARNING: [Synth 8-3331] design m03_couplers_imp_15UVJWQ has unconnected port S_AXI_araddr[36]
+WARNING: [Synth 8-3331] design m03_couplers_imp_15UVJWQ has unconnected port S_AXI_araddr[35]
+WARNING: [Synth 8-3331] design m03_couplers_imp_15UVJWQ has unconnected port S_AXI_araddr[34]
+WARNING: [Synth 8-3331] design m03_couplers_imp_15UVJWQ has unconnected port S_AXI_araddr[33]
+WARNING: [Synth 8-3331] design m03_couplers_imp_15UVJWQ has unconnected port S_AXI_araddr[32]
+WARNING: [Synth 8-3331] design m03_couplers_imp_15UVJWQ has unconnected port S_AXI_araddr[31]
+WARNING: [Synth 8-3331] design m03_couplers_imp_15UVJWQ has unconnected port S_AXI_araddr[30]
+WARNING: [Synth 8-3331] design m03_couplers_imp_15UVJWQ has unconnected port S_AXI_araddr[29]
+WARNING: [Synth 8-3331] design m03_couplers_imp_15UVJWQ has unconnected port S_AXI_araddr[28]
+WARNING: [Synth 8-3331] design m03_couplers_imp_15UVJWQ has unconnected port S_AXI_araddr[27]
+WARNING: [Synth 8-3331] design m03_couplers_imp_15UVJWQ has unconnected port S_AXI_araddr[26]
+WARNING: [Synth 8-3331] design m03_couplers_imp_15UVJWQ has unconnected port S_AXI_araddr[25]
+WARNING: [Synth 8-3331] design m03_couplers_imp_15UVJWQ has unconnected port S_AXI_araddr[24]
+WARNING: [Synth 8-3331] design m03_couplers_imp_15UVJWQ has unconnected port S_AXI_araddr[23]
+WARNING: [Synth 8-3331] design m03_couplers_imp_15UVJWQ has unconnected port S_AXI_araddr[22]
+WARNING: [Synth 8-3331] design m03_couplers_imp_15UVJWQ has unconnected port S_AXI_araddr[21]
+INFO: [Common 17-14] Message 'Synth 8-3331' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 1547.824 ; gain = 135.289
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 1553.379 ; gain = 140.844
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:07 ; elapsed = 00:00:08 . Memory (MB): peak = 1553.379 ; gain = 140.844
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.106 . Memory (MB): peak = 1565.426 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 1 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [c:/xilinxdesigns/sdraproject/ultra96v2_0-master/ultra96v2_0.srcs/sources_1/bd/ultra96v2_bd/ip/ultra96v2_bd_zynq_ultra_ps_e_0_0/ultra96v2_bd_zynq_ultra_ps_e_0_0/ultra96v2_bd_zynq_ultra_ps_e_0_0_in_context.xdc] for cell 'ultra96v2_bd_i/CPU/zynq_ultra_ps_e_0'
+Finished Parsing XDC File [c:/xilinxdesigns/sdraproject/ultra96v2_0-master/ultra96v2_0.srcs/sources_1/bd/ultra96v2_bd/ip/ultra96v2_bd_zynq_ultra_ps_e_0_0/ultra96v2_bd_zynq_ultra_ps_e_0_0/ultra96v2_bd_zynq_ultra_ps_e_0_0_in_context.xdc] for cell 'ultra96v2_bd_i/CPU/zynq_ultra_ps_e_0'
+Parsing XDC File [c:/xilinxdesigns/sdraproject/ultra96v2_0-master/ultra96v2_0.srcs/sources_1/bd/ultra96v2_bd/ip/ultra96v2_bd_axi_gpio_0_0/ultra96v2_bd_axi_gpio_0_0/ultra96v2_bd_axi_gpio_0_0_in_context.xdc] for cell 'ultra96v2_bd_i/CPU/hd_gpio'
+Finished Parsing XDC File [c:/xilinxdesigns/sdraproject/ultra96v2_0-master/ultra96v2_0.srcs/sources_1/bd/ultra96v2_bd/ip/ultra96v2_bd_axi_gpio_0_0/ultra96v2_bd_axi_gpio_0_0/ultra96v2_bd_axi_gpio_0_0_in_context.xdc] for cell 'ultra96v2_bd_i/CPU/hd_gpio'
+Parsing XDC File [c:/xilinxdesigns/sdraproject/ultra96v2_0-master/ultra96v2_0.srcs/sources_1/bd/ultra96v2_bd/ip/ultra96v2_bd_xbar_0/ultra96v2_bd_xbar_0/ultra96v2_bd_xbar_0_in_context.xdc] for cell 'ultra96v2_bd_i/CPU/ps8_0_axi_periph/xbar'
+Finished Parsing XDC File [c:/xilinxdesigns/sdraproject/ultra96v2_0-master/ultra96v2_0.srcs/sources_1/bd/ultra96v2_bd/ip/ultra96v2_bd_xbar_0/ultra96v2_bd_xbar_0/ultra96v2_bd_xbar_0_in_context.xdc] for cell 'ultra96v2_bd_i/CPU/ps8_0_axi_periph/xbar'
+Parsing XDC File [c:/xilinxdesigns/sdraproject/ultra96v2_0-master/ultra96v2_0.srcs/sources_1/bd/ultra96v2_bd/ip/ultra96v2_bd_rst_ps8_0_100M_1/ultra96v2_bd_rst_ps8_0_100M_1/ultra96v2_bd_rst_ps8_0_100M_1_in_context.xdc] for cell 'ultra96v2_bd_i/CPU/rst_ps8_0_100M'
+Finished Parsing XDC File [c:/xilinxdesigns/sdraproject/ultra96v2_0-master/ultra96v2_0.srcs/sources_1/bd/ultra96v2_bd/ip/ultra96v2_bd_rst_ps8_0_100M_1/ultra96v2_bd_rst_ps8_0_100M_1/ultra96v2_bd_rst_ps8_0_100M_1_in_context.xdc] for cell 'ultra96v2_bd_i/CPU/rst_ps8_0_100M'
+Parsing XDC File [c:/xilinxdesigns/sdraproject/ultra96v2_0-master/ultra96v2_0.srcs/sources_1/bd/ultra96v2_bd/ip/ultra96v2_bd_axi_gpio_0_1/ultra96v2_bd_axi_gpio_0_1/ultra96v2_bd_axi_gpio_0_1_in_context.xdc] for cell 'ultra96v2_bd_i/CPU/fan_pwm'
+Finished Parsing XDC File [c:/xilinxdesigns/sdraproject/ultra96v2_0-master/ultra96v2_0.srcs/sources_1/bd/ultra96v2_bd/ip/ultra96v2_bd_axi_gpio_0_1/ultra96v2_bd_axi_gpio_0_1/ultra96v2_bd_axi_gpio_0_1_in_context.xdc] for cell 'ultra96v2_bd_i/CPU/fan_pwm'
+Parsing XDC File [c:/xilinxdesigns/sdraproject/ultra96v2_0-master/ultra96v2_0.srcs/sources_1/bd/ultra96v2_bd/ip/ultra96v2_bd_axi_bram_ctrl_0_0/ultra96v2_bd_axi_bram_ctrl_0_0/ultra96v2_bd_axi_bram_ctrl_0_0_in_context.xdc] for cell 'ultra96v2_bd_i/CPU/axi_bram_ctrl_0'
+Finished Parsing XDC File [c:/xilinxdesigns/sdraproject/ultra96v2_0-master/ultra96v2_0.srcs/sources_1/bd/ultra96v2_bd/ip/ultra96v2_bd_axi_bram_ctrl_0_0/ultra96v2_bd_axi_bram_ctrl_0_0/ultra96v2_bd_axi_bram_ctrl_0_0_in_context.xdc] for cell 'ultra96v2_bd_i/CPU/axi_bram_ctrl_0'
+Parsing XDC File [c:/xilinxdesigns/sdraproject/ultra96v2_0-master/ultra96v2_0.srcs/sources_1/bd/ultra96v2_bd/ip/ultra96v2_bd_blk_mem_gen_0_0/ultra96v2_bd_blk_mem_gen_0_0/ultra96v2_bd_blk_mem_gen_0_0_in_context.xdc] for cell 'ultra96v2_bd_i/CPU/blk_mem_gen_0'
+Finished Parsing XDC File [c:/xilinxdesigns/sdraproject/ultra96v2_0-master/ultra96v2_0.srcs/sources_1/bd/ultra96v2_bd/ip/ultra96v2_bd_blk_mem_gen_0_0/ultra96v2_bd_blk_mem_gen_0_0/ultra96v2_bd_blk_mem_gen_0_0_in_context.xdc] for cell 'ultra96v2_bd_i/CPU/blk_mem_gen_0'
+Parsing XDC File [c:/xilinxdesigns/sdraproject/ultra96v2_0-master/ultra96v2_0.srcs/sources_1/bd/ultra96v2_bd/ip/ultra96v2_bd_axi_uart16550_0_0/ultra96v2_bd_axi_uart16550_0_0/ultra96v2_bd_axi_uart16550_0_0_in_context.xdc] for cell 'ultra96v2_bd_i/CPU/axi_uart16550_0'
+Finished Parsing XDC File [c:/xilinxdesigns/sdraproject/ultra96v2_0-master/ultra96v2_0.srcs/sources_1/bd/ultra96v2_bd/ip/ultra96v2_bd_axi_uart16550_0_0/ultra96v2_bd_axi_uart16550_0_0/ultra96v2_bd_axi_uart16550_0_0_in_context.xdc] for cell 'ultra96v2_bd_i/CPU/axi_uart16550_0'
+Parsing XDC File [c:/xilinxdesigns/sdraproject/ultra96v2_0-master/ultra96v2_0.srcs/sources_1/bd/ultra96v2_bd/ip/ultra96v2_bd_clk_wiz_0_0/ultra96v2_bd_clk_wiz_0_0/ultra96v2_bd_clk_wiz_0_0_in_context.xdc] for cell 'ultra96v2_bd_i/CPU/clk_wiz_0'
+Finished Parsing XDC File [c:/xilinxdesigns/sdraproject/ultra96v2_0-master/ultra96v2_0.srcs/sources_1/bd/ultra96v2_bd/ip/ultra96v2_bd_clk_wiz_0_0/ultra96v2_bd_clk_wiz_0_0/ultra96v2_bd_clk_wiz_0_0_in_context.xdc] for cell 'ultra96v2_bd_i/CPU/clk_wiz_0'
+Parsing XDC File [c:/xilinxdesigns/sdraproject/ultra96v2_0-master/ultra96v2_0.srcs/sources_1/bd/ultra96v2_bd/ip/ultra96v2_bd_axis_dwidth_converter_0_0/ultra96v2_bd_axis_dwidth_converter_0_0/ultra96v2_bd_axis_dwidth_converter_0_0_in_context.xdc] for cell 'ultra96v2_bd_i/axis_dwidth_converter_0'
+Finished Parsing XDC File [c:/xilinxdesigns/sdraproject/ultra96v2_0-master/ultra96v2_0.srcs/sources_1/bd/ultra96v2_bd/ip/ultra96v2_bd_axis_dwidth_converter_0_0/ultra96v2_bd_axis_dwidth_converter_0_0/ultra96v2_bd_axis_dwidth_converter_0_0_in_context.xdc] for cell 'ultra96v2_bd_i/axis_dwidth_converter_0'
+Parsing XDC File [c:/xilinxdesigns/sdraproject/ultra96v2_0-master/ultra96v2_0.srcs/sources_1/bd/ultra96v2_bd/ip/ultra96v2_bd_axis_dwidth_converter_1_0/ultra96v2_bd_axis_dwidth_converter_1_0/ultra96v2_bd_axis_dwidth_converter_1_0_in_context.xdc] for cell 'ultra96v2_bd_i/axis_dwidth_converter_1'
+Finished Parsing XDC File [c:/xilinxdesigns/sdraproject/ultra96v2_0-master/ultra96v2_0.srcs/sources_1/bd/ultra96v2_bd/ip/ultra96v2_bd_axis_dwidth_converter_1_0/ultra96v2_bd_axis_dwidth_converter_1_0/ultra96v2_bd_axis_dwidth_converter_1_0_in_context.xdc] for cell 'ultra96v2_bd_i/axis_dwidth_converter_1'
+Parsing XDC File [c:/xilinxdesigns/sdraproject/ultra96v2_0-master/ultra96v2_0.srcs/sources_1/bd/ultra96v2_bd/ip/ultra96v2_bd_fir_compiler_0_0/ultra96v2_bd_fir_compiler_0_0/ultra96v2_bd_fir_compiler_0_0_in_context.xdc] for cell 'ultra96v2_bd_i/fir_compiler_0'
+Finished Parsing XDC File [c:/xilinxdesigns/sdraproject/ultra96v2_0-master/ultra96v2_0.srcs/sources_1/bd/ultra96v2_bd/ip/ultra96v2_bd_fir_compiler_0_0/ultra96v2_bd_fir_compiler_0_0/ultra96v2_bd_fir_compiler_0_0_in_context.xdc] for cell 'ultra96v2_bd_i/fir_compiler_0'
+Parsing XDC File [c:/xilinxdesigns/sdraproject/ultra96v2_0-master/ultra96v2_0.srcs/sources_1/bd/ultra96v2_bd/ip/ultra96v2_bd_axis_broadcaster_0_0/ultra96v2_bd_axis_broadcaster_0_0/ultra96v2_bd_axis_broadcaster_0_0_in_context.xdc] for cell 'ultra96v2_bd_i/axis_broadcaster_0'
+Finished Parsing XDC File [c:/xilinxdesigns/sdraproject/ultra96v2_0-master/ultra96v2_0.srcs/sources_1/bd/ultra96v2_bd/ip/ultra96v2_bd_axis_broadcaster_0_0/ultra96v2_bd_axis_broadcaster_0_0/ultra96v2_bd_axis_broadcaster_0_0_in_context.xdc] for cell 'ultra96v2_bd_i/axis_broadcaster_0'
+Parsing XDC File [c:/xilinxdesigns/sdraproject/ultra96v2_0-master/ultra96v2_0.srcs/sources_1/bd/ultra96v2_bd/ip/ultra96v2_bd_cic_compiler_0_0/ultra96v2_bd_cic_compiler_0_0/ultra96v2_bd_cic_compiler_0_0_in_context.xdc] for cell 'ultra96v2_bd_i/cic_compiler_0'
+Finished Parsing XDC File [c:/xilinxdesigns/sdraproject/ultra96v2_0-master/ultra96v2_0.srcs/sources_1/bd/ultra96v2_bd/ip/ultra96v2_bd_cic_compiler_0_0/ultra96v2_bd_cic_compiler_0_0/ultra96v2_bd_cic_compiler_0_0_in_context.xdc] for cell 'ultra96v2_bd_i/cic_compiler_0'
+Parsing XDC File [c:/xilinxdesigns/sdraproject/ultra96v2_0-master/ultra96v2_0.srcs/sources_1/bd/ultra96v2_bd/ip/ultra96v2_bd_axis_combiner_0_0/ultra96v2_bd_axis_combiner_0_0/ultra96v2_bd_axis_combiner_0_0_in_context.xdc] for cell 'ultra96v2_bd_i/axis_combiner_0'
+Finished Parsing XDC File [c:/xilinxdesigns/sdraproject/ultra96v2_0-master/ultra96v2_0.srcs/sources_1/bd/ultra96v2_bd/ip/ultra96v2_bd_axis_combiner_0_0/ultra96v2_bd_axis_combiner_0_0/ultra96v2_bd_axis_combiner_0_0_in_context.xdc] for cell 'ultra96v2_bd_i/axis_combiner_0'
+Parsing XDC File [c:/xilinxdesigns/sdraproject/ultra96v2_0-master/ultra96v2_0.srcs/sources_1/bd/ultra96v2_bd/ip/ultra96v2_bd_cmpy_0_0/ultra96v2_bd_cmpy_0_0/ultra96v2_bd_cmpy_0_0_in_context.xdc] for cell 'ultra96v2_bd_i/cmpy_0'
+Finished Parsing XDC File [c:/xilinxdesigns/sdraproject/ultra96v2_0-master/ultra96v2_0.srcs/sources_1/bd/ultra96v2_bd/ip/ultra96v2_bd_cmpy_0_0/ultra96v2_bd_cmpy_0_0/ultra96v2_bd_cmpy_0_0_in_context.xdc] for cell 'ultra96v2_bd_i/cmpy_0'
+Parsing XDC File [c:/xilinxdesigns/sdraproject/ultra96v2_0-master/ultra96v2_0.srcs/sources_1/bd/ultra96v2_bd/ip/ultra96v2_bd_dds_compiler_0_0/ultra96v2_bd_dds_compiler_0_0/ultra96v2_bd_dds_compiler_0_0_in_context.xdc] for cell 'ultra96v2_bd_i/dds_compiler_0'
+Finished Parsing XDC File [c:/xilinxdesigns/sdraproject/ultra96v2_0-master/ultra96v2_0.srcs/sources_1/bd/ultra96v2_bd/ip/ultra96v2_bd_dds_compiler_0_0/ultra96v2_bd_dds_compiler_0_0/ultra96v2_bd_dds_compiler_0_0_in_context.xdc] for cell 'ultra96v2_bd_i/dds_compiler_0'
+Parsing XDC File [c:/xilinxdesigns/sdraproject/ultra96v2_0-master/ultra96v2_0.srcs/sources_1/bd/ultra96v2_bd/ip/ultra96v2_bd_cic_compiler_0_1/ultra96v2_bd_cic_compiler_0_1/ultra96v2_bd_cic_compiler_0_0_in_context.xdc] for cell 'ultra96v2_bd_i/cic_compiler_1'
+Finished Parsing XDC File [c:/xilinxdesigns/sdraproject/ultra96v2_0-master/ultra96v2_0.srcs/sources_1/bd/ultra96v2_bd/ip/ultra96v2_bd_cic_compiler_0_1/ultra96v2_bd_cic_compiler_0_1/ultra96v2_bd_cic_compiler_0_0_in_context.xdc] for cell 'ultra96v2_bd_i/cic_compiler_1'
+Parsing XDC File [c:/xilinxdesigns/sdraproject/ultra96v2_0-master/ultra96v2_0.srcs/sources_1/bd/ultra96v2_bd/ip/ultra96v2_bd_proc_sys_reset_0_0/ultra96v2_bd_proc_sys_reset_0_0/ultra96v2_bd_proc_sys_reset_0_0_in_context.xdc] for cell 'ultra96v2_bd_i/CPU/proc_sys_reset_0'
+Finished Parsing XDC File [c:/xilinxdesigns/sdraproject/ultra96v2_0-master/ultra96v2_0.srcs/sources_1/bd/ultra96v2_bd/ip/ultra96v2_bd_proc_sys_reset_0_0/ultra96v2_bd_proc_sys_reset_0_0/ultra96v2_bd_proc_sys_reset_0_0_in_context.xdc] for cell 'ultra96v2_bd_i/CPU/proc_sys_reset_0'
+Parsing XDC File [c:/xilinxdesigns/sdraproject/ultra96v2_0-master/ultra96v2_0.srcs/sources_1/bd/ultra96v2_bd/ip/ultra96v2_bd_bus_to_axis_0_0/ultra96v2_bd_bus_to_axis_0_0/ultra96v2_bd_bus_to_axis_0_0_in_context.xdc] for cell 'ultra96v2_bd_i/bus_to_axis_0'
+Finished Parsing XDC File [c:/xilinxdesigns/sdraproject/ultra96v2_0-master/ultra96v2_0.srcs/sources_1/bd/ultra96v2_bd/ip/ultra96v2_bd_bus_to_axis_0_0/ultra96v2_bd_bus_to_axis_0_0/ultra96v2_bd_bus_to_axis_0_0_in_context.xdc] for cell 'ultra96v2_bd_i/bus_to_axis_0'
+Parsing XDC File [c:/xilinxdesigns/sdraproject/ultra96v2_0-master/ultra96v2_0.srcs/sources_1/bd/ultra96v2_bd/ip/ultra96v2_bd_dds_compiler_1_0/ultra96v2_bd_dds_compiler_1_0/ultra96v2_bd_dds_compiler_1_0_in_context.xdc] for cell 'ultra96v2_bd_i/dds_compiler_1'
+Finished Parsing XDC File [c:/xilinxdesigns/sdraproject/ultra96v2_0-master/ultra96v2_0.srcs/sources_1/bd/ultra96v2_bd/ip/ultra96v2_bd_dds_compiler_1_0/ultra96v2_bd_dds_compiler_1_0/ultra96v2_bd_dds_compiler_1_0_in_context.xdc] for cell 'ultra96v2_bd_i/dds_compiler_1'
+Parsing XDC File [c:/xilinxdesigns/sdraproject/ultra96v2_0-master/ultra96v2_0.srcs/sources_1/bd/ultra96v2_bd/ip/ultra96v2_bd_cvt_offset_binary_0_0/ultra96v2_bd_cvt_offset_binary_0_0/ultra96v2_bd_cvt_offset_binary_0_0_in_context.xdc] for cell 'ultra96v2_bd_i/cvt_offset_binary_0'
+Finished Parsing XDC File [c:/xilinxdesigns/sdraproject/ultra96v2_0-master/ultra96v2_0.srcs/sources_1/bd/ultra96v2_bd/ip/ultra96v2_bd_cvt_offset_binary_0_0/ultra96v2_bd_cvt_offset_binary_0_0/ultra96v2_bd_cvt_offset_binary_0_0_in_context.xdc] for cell 'ultra96v2_bd_i/cvt_offset_binary_0'
+Parsing XDC File [c:/xilinxdesigns/sdraproject/ultra96v2_0-master/ultra96v2_0.srcs/sources_1/bd/ultra96v2_bd/ip/ultra96v2_bd_auto_ds_0/ultra96v2_bd_auto_ds_0/ultra96v2_bd_auto_ds_1_in_context.xdc] for cell 'ultra96v2_bd_i/CPU/ps8_0_axi_periph/m00_couplers/auto_ds'
+Finished Parsing XDC File [c:/xilinxdesigns/sdraproject/ultra96v2_0-master/ultra96v2_0.srcs/sources_1/bd/ultra96v2_bd/ip/ultra96v2_bd_auto_ds_0/ultra96v2_bd_auto_ds_0/ultra96v2_bd_auto_ds_1_in_context.xdc] for cell 'ultra96v2_bd_i/CPU/ps8_0_axi_periph/m00_couplers/auto_ds'
+Parsing XDC File [c:/xilinxdesigns/sdraproject/ultra96v2_0-master/ultra96v2_0.srcs/sources_1/bd/ultra96v2_bd/ip/ultra96v2_bd_auto_pc_0/ultra96v2_bd_auto_pc_0/ultra96v2_bd_auto_pc_1_in_context.xdc] for cell 'ultra96v2_bd_i/CPU/ps8_0_axi_periph/m00_couplers/auto_pc'
+Finished Parsing XDC File [c:/xilinxdesigns/sdraproject/ultra96v2_0-master/ultra96v2_0.srcs/sources_1/bd/ultra96v2_bd/ip/ultra96v2_bd_auto_pc_0/ultra96v2_bd_auto_pc_0/ultra96v2_bd_auto_pc_1_in_context.xdc] for cell 'ultra96v2_bd_i/CPU/ps8_0_axi_periph/m00_couplers/auto_pc'
+Parsing XDC File [c:/xilinxdesigns/sdraproject/ultra96v2_0-master/ultra96v2_0.srcs/sources_1/bd/ultra96v2_bd/ip/ultra96v2_bd_auto_ds_1/ultra96v2_bd_auto_ds_1/ultra96v2_bd_auto_ds_1_in_context.xdc] for cell 'ultra96v2_bd_i/CPU/ps8_0_axi_periph/m01_couplers/auto_ds'
+Finished Parsing XDC File [c:/xilinxdesigns/sdraproject/ultra96v2_0-master/ultra96v2_0.srcs/sources_1/bd/ultra96v2_bd/ip/ultra96v2_bd_auto_ds_1/ultra96v2_bd_auto_ds_1/ultra96v2_bd_auto_ds_1_in_context.xdc] for cell 'ultra96v2_bd_i/CPU/ps8_0_axi_periph/m01_couplers/auto_ds'
+Parsing XDC File [c:/xilinxdesigns/sdraproject/ultra96v2_0-master/ultra96v2_0.srcs/sources_1/bd/ultra96v2_bd/ip/ultra96v2_bd_auto_pc_1/ultra96v2_bd_auto_pc_1/ultra96v2_bd_auto_pc_1_in_context.xdc] for cell 'ultra96v2_bd_i/CPU/ps8_0_axi_periph/m01_couplers/auto_pc'
+Finished Parsing XDC File [c:/xilinxdesigns/sdraproject/ultra96v2_0-master/ultra96v2_0.srcs/sources_1/bd/ultra96v2_bd/ip/ultra96v2_bd_auto_pc_1/ultra96v2_bd_auto_pc_1/ultra96v2_bd_auto_pc_1_in_context.xdc] for cell 'ultra96v2_bd_i/CPU/ps8_0_axi_periph/m01_couplers/auto_pc'
+Parsing XDC File [c:/xilinxdesigns/sdraproject/ultra96v2_0-master/ultra96v2_0.srcs/sources_1/bd/ultra96v2_bd/ip/ultra96v2_bd_auto_ds_2/ultra96v2_bd_auto_ds_2/ultra96v2_bd_auto_ds_3_in_context.xdc] for cell 'ultra96v2_bd_i/CPU/ps8_0_axi_periph/m02_couplers/auto_ds'
+Finished Parsing XDC File [c:/xilinxdesigns/sdraproject/ultra96v2_0-master/ultra96v2_0.srcs/sources_1/bd/ultra96v2_bd/ip/ultra96v2_bd_auto_ds_2/ultra96v2_bd_auto_ds_2/ultra96v2_bd_auto_ds_3_in_context.xdc] for cell 'ultra96v2_bd_i/CPU/ps8_0_axi_periph/m02_couplers/auto_ds'
+Parsing XDC File [c:/xilinxdesigns/sdraproject/ultra96v2_0-master/ultra96v2_0.srcs/sources_1/bd/ultra96v2_bd/ip/ultra96v2_bd_auto_ds_3/ultra96v2_bd_auto_ds_3/ultra96v2_bd_auto_ds_3_in_context.xdc] for cell 'ultra96v2_bd_i/CPU/ps8_0_axi_periph/m03_couplers/auto_ds'
+Finished Parsing XDC File [c:/xilinxdesigns/sdraproject/ultra96v2_0-master/ultra96v2_0.srcs/sources_1/bd/ultra96v2_bd/ip/ultra96v2_bd_auto_ds_3/ultra96v2_bd_auto_ds_3/ultra96v2_bd_auto_ds_3_in_context.xdc] for cell 'ultra96v2_bd_i/CPU/ps8_0_axi_periph/m03_couplers/auto_ds'
+Parsing XDC File [c:/xilinxdesigns/sdraproject/ultra96v2_0-master/ultra96v2_0.srcs/sources_1/bd/ultra96v2_bd/ip/ultra96v2_bd_auto_pc_2/ultra96v2_bd_auto_pc_2/ultra96v2_bd_auto_pc_2_in_context.xdc] for cell 'ultra96v2_bd_i/CPU/ps8_0_axi_periph/m03_couplers/auto_pc'
+Finished Parsing XDC File [c:/xilinxdesigns/sdraproject/ultra96v2_0-master/ultra96v2_0.srcs/sources_1/bd/ultra96v2_bd/ip/ultra96v2_bd_auto_pc_2/ultra96v2_bd_auto_pc_2/ultra96v2_bd_auto_pc_2_in_context.xdc] for cell 'ultra96v2_bd_i/CPU/ps8_0_axi_periph/m03_couplers/auto_pc'
+Parsing XDC File [C:/xilinxdesigns/sdraproject/ultra96v2_0-master/ultra96v2_0.srcs/constrs_1/new/ultra96v2_0.xdc]
+WARNING: [Vivado 12-584] No ports matched 'FAN_PWM'. [C:/xilinxdesigns/sdraproject/ultra96v2_0-master/ultra96v2_0.srcs/constrs_1/new/ultra96v2_0.xdc:97]
+WARNING: [Vivado 12-584] No ports matched 'FAN_PWM'. [C:/xilinxdesigns/sdraproject/ultra96v2_0-master/ultra96v2_0.srcs/constrs_1/new/ultra96v2_0.xdc:98]
+WARNING: [Vivado 12-584] No ports matched 'HD_GPIO[8]'. [C:/xilinxdesigns/sdraproject/ultra96v2_0-master/ultra96v2_0.srcs/constrs_1/new/ultra96v2_0.xdc:112]
+WARNING: [Vivado 12-584] No ports matched 'HD_GPIO[9]'. [C:/xilinxdesigns/sdraproject/ultra96v2_0-master/ultra96v2_0.srcs/constrs_1/new/ultra96v2_0.xdc:113]
+WARNING: [Vivado 12-584] No ports matched 'HD_GPIO[10]'. [C:/xilinxdesigns/sdraproject/ultra96v2_0-master/ultra96v2_0.srcs/constrs_1/new/ultra96v2_0.xdc:114]
+WARNING: [Vivado 12-584] No ports matched 'HD_GPIO[11]'. [C:/xilinxdesigns/sdraproject/ultra96v2_0-master/ultra96v2_0.srcs/constrs_1/new/ultra96v2_0.xdc:115]
+WARNING: [Vivado 12-584] No ports matched 'HD_GPIO[12]'. [C:/xilinxdesigns/sdraproject/ultra96v2_0-master/ultra96v2_0.srcs/constrs_1/new/ultra96v2_0.xdc:116]
+WARNING: [Vivado 12-584] No ports matched 'HD_GPIO[13]'. [C:/xilinxdesigns/sdraproject/ultra96v2_0-master/ultra96v2_0.srcs/constrs_1/new/ultra96v2_0.xdc:117]
+WARNING: [Vivado 12-584] No ports matched 'HD_GPIO[14]'. [C:/xilinxdesigns/sdraproject/ultra96v2_0-master/ultra96v2_0.srcs/constrs_1/new/ultra96v2_0.xdc:118]
+WARNING: [Vivado 12-584] No ports matched 'HD_GPIO[15]'. [C:/xilinxdesigns/sdraproject/ultra96v2_0-master/ultra96v2_0.srcs/constrs_1/new/ultra96v2_0.xdc:119]
+WARNING: [Vivado 12-584] No ports matched '[get_ports -of_objects [get_iobanks 26]]'. [C:/xilinxdesigns/sdraproject/ultra96v2_0-master/ultra96v2_0.srcs/constrs_1/new/ultra96v2_0.xdc:135]
+WARNING: [Vivado 12-584] No ports matched '[get_ports -of_objects [get_iobanks 65]]'. [C:/xilinxdesigns/sdraproject/ultra96v2_0-master/ultra96v2_0.srcs/constrs_1/new/ultra96v2_0.xdc:138]
+Finished Parsing XDC File [C:/xilinxdesigns/sdraproject/ultra96v2_0-master/ultra96v2_0.srcs/constrs_1/new/ultra96v2_0.xdc]
+WARNING: [Project 1-498] One or more constraints failed evaluation while reading constraint file [C:/xilinxdesigns/sdraproject/ultra96v2_0-master/ultra96v2_0.srcs/constrs_1/new/ultra96v2_0.xdc] and the design contains unresolved black boxes. These constraints will be read post-synthesis (as long as their source constraint file is marked as used_in_implementation) and should be applied correctly then. You should review the constraints listed in the file [.Xil/ultra96v2_bd_wrapper_propImpl.xdc] and check the run log file to verify that these constraints were correctly applied.
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/xilinxdesigns/sdraproject/ultra96v2_0-master/ultra96v2_0.srcs/constrs_1/new/ultra96v2_0.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/ultra96v2_bd_wrapper_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/ultra96v2_bd_wrapper_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [C:/xilinxdesigns/sdraproject/ultra96v2_0-master/ultra96v2_0.runs/synth_1/dont_touch.xdc]
+Finished Parsing XDC File [C:/xilinxdesigns/sdraproject/ultra96v2_0-master/ultra96v2_0.runs/synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1629.641 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 1 instances were transformed.
+  IOBUF => IOBUF (IBUFCTRL, INBUF, OBUFT): 1 instance 
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.020 . Memory (MB): peak = 1629.641 ; gain = 0.000
+WARNING: [Timing 38-316] Clock period '100.000' specified during out-of-context synthesis of instance 'ultra96v2_bd_i/axis_broadcaster_0' at clock pin 'aclk' is different from the actual clock period '8.138', this can lead to different synthesis results.
+WARNING: [Timing 38-316] Clock period '20.000' specified during out-of-context synthesis of instance 'ultra96v2_bd_i/CPU/blk_mem_gen_0' at clock pin 'clka' is different from the actual clock period '10.000', this can lead to different synthesis results.
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:20 ; elapsed = 00:00:23 . Memory (MB): peak = 1630.637 ; gain = 218.102
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xczu3eg-sbva484-1-e
+INFO: [Synth 8-6742] Reading net delay rules and data
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:20 ; elapsed = 00:00:23 . Memory (MB): peak = 1630.637 ; gain = 218.102
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property DONT_TOUCH = true for ultra96v2_bd_i. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for ultra96v2_bd_i/CPU/zynq_ultra_ps_e_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for ultra96v2_bd_i/CPU/hd_gpio. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for ultra96v2_bd_i/CPU/ps8_0_axi_periph/xbar. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for ultra96v2_bd_i/CPU/ps8_0_axi_periph. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for ultra96v2_bd_i/CPU/rst_ps8_0_100M. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for ultra96v2_bd_i/CPU/fan_pwm. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for ultra96v2_bd_i/CPU/axi_bram_ctrl_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for ultra96v2_bd_i/CPU/blk_mem_gen_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for ultra96v2_bd_i/CPU/axi_uart16550_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for ultra96v2_bd_i/CPU/xlslice_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for ultra96v2_bd_i/CPU/xlconcat_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for ultra96v2_bd_i/CPU/clk_wiz_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for ultra96v2_bd_i/axis_dwidth_converter_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for ultra96v2_bd_i/axis_dwidth_converter_1. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for ultra96v2_bd_i/fir_compiler_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for ultra96v2_bd_i/axis_broadcaster_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for ultra96v2_bd_i/cic_compiler_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for ultra96v2_bd_i/axis_combiner_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for ultra96v2_bd_i/cmpy_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for ultra96v2_bd_i/dds_compiler_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for ultra96v2_bd_i/cic_compiler_1. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for ultra96v2_bd_i/CPU/proc_sys_reset_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for ultra96v2_bd_i/bus_to_axis_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for ultra96v2_bd_i/dds_compiler_1. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for ultra96v2_bd_i/xlslice_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for ultra96v2_bd_i/xlconstant_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for ultra96v2_bd_i/xlslice_3. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for ultra96v2_bd_i/cvt_offset_binary_0. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for ultra96v2_bd_i/CPU/ps8_0_axi_periph/m00_couplers/auto_ds. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for ultra96v2_bd_i/CPU/ps8_0_axi_periph/m00_couplers/auto_pc. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for ultra96v2_bd_i/CPU/ps8_0_axi_periph/m01_couplers/auto_ds. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for ultra96v2_bd_i/CPU/ps8_0_axi_periph/m01_couplers/auto_pc. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for ultra96v2_bd_i/CPU/ps8_0_axi_periph/m02_couplers/auto_ds. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for ultra96v2_bd_i/CPU/ps8_0_axi_periph/m03_couplers/auto_ds. (constraint file  auto generated constraint, line ).
+Applied set_property DONT_TOUCH = true for ultra96v2_bd_i/CPU/ps8_0_axi_periph/m03_couplers/auto_pc. (constraint file  auto generated constraint, line ).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:21 ; elapsed = 00:00:23 . Memory (MB): peak = 1630.637 ; gain = 218.102
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:21 ; elapsed = 00:00:24 . Memory (MB): peak = 1630.637 ; gain = 218.102
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 360 (col length:72)
+BRAMs: 432 (col length: RAMB18 72 RAMB36 36)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:23 ; elapsed = 00:00:26 . Memory (MB): peak = 1630.637 ; gain = 218.102
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:35 ; elapsed = 00:00:40 . Memory (MB): peak = 2237.574 ; gain = 825.039
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:35 ; elapsed = 00:00:40 . Memory (MB): peak = 2237.949 ; gain = 825.414
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:35 ; elapsed = 00:00:40 . Memory (MB): peak = 2249.289 ; gain = 836.754
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:41 ; elapsed = 00:00:46 . Memory (MB): peak = 2264.105 ; gain = 851.570
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:41 ; elapsed = 00:00:46 . Memory (MB): peak = 2264.105 ; gain = 851.570
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:41 ; elapsed = 00:00:46 . Memory (MB): peak = 2264.105 ; gain = 851.570
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:41 ; elapsed = 00:00:46 . Memory (MB): peak = 2264.105 ; gain = 851.570
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:41 ; elapsed = 00:00:46 . Memory (MB): peak = 2264.105 ; gain = 851.570
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:41 ; elapsed = 00:00:46 . Memory (MB): peak = 2264.105 ; gain = 851.570
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+---------------------------------------+----------+
+|      |BlackBox name                          |Instances |
++------+---------------------------------------+----------+
+|1     |ultra96v2_bd_axis_broadcaster_0_0      |         1|
+|2     |ultra96v2_bd_axis_combiner_0_0         |         1|
+|3     |ultra96v2_bd_axis_dwidth_converter_0_0 |         1|
+|4     |ultra96v2_bd_axis_dwidth_converter_1_0 |         1|
+|5     |ultra96v2_bd_bus_to_axis_0_0           |         1|
+|6     |ultra96v2_bd_cic_compiler_0_0          |         1|
+|7     |ultra96v2_bd_cic_compiler_0_1          |         1|
+|8     |ultra96v2_bd_cmpy_0_0                  |         1|
+|9     |ultra96v2_bd_cvt_offset_binary_0_0     |         1|
+|10    |ultra96v2_bd_dds_compiler_0_0          |         1|
+|11    |ultra96v2_bd_dds_compiler_1_0          |         1|
+|12    |ultra96v2_bd_fir_compiler_0_0          |         1|
+|13    |ultra96v2_bd_xbar_0                    |         1|
+|14    |ultra96v2_bd_auto_ds_0                 |         1|
+|15    |ultra96v2_bd_auto_pc_0                 |         1|
+|16    |ultra96v2_bd_auto_ds_1                 |         1|
+|17    |ultra96v2_bd_auto_pc_1                 |         1|
+|18    |ultra96v2_bd_auto_ds_2                 |         1|
+|19    |ultra96v2_bd_auto_ds_3                 |         1|
+|20    |ultra96v2_bd_auto_pc_2                 |         1|
+|21    |ultra96v2_bd_axi_bram_ctrl_0_0         |         1|
+|22    |ultra96v2_bd_axi_uart16550_0_0         |         1|
+|23    |ultra96v2_bd_blk_mem_gen_0_0           |         1|
+|24    |ultra96v2_bd_clk_wiz_0_0               |         1|
+|25    |ultra96v2_bd_axi_gpio_0_1              |         1|
+|26    |ultra96v2_bd_axi_gpio_0_0              |         1|
+|27    |ultra96v2_bd_proc_sys_reset_0_0        |         1|
+|28    |ultra96v2_bd_rst_ps8_0_100M_1          |         1|
+|29    |ultra96v2_bd_zynq_ultra_ps_e_0_0       |         1|
++------+---------------------------------------+----------+
+
+Report Cell Usage: 
++------+---------------------------------------+------+
+|      |Cell                                   |Count |
++------+---------------------------------------+------+
+|1     |ultra96v2_bd_auto_ds_0                 |     1|
+|2     |ultra96v2_bd_auto_ds_1                 |     1|
+|3     |ultra96v2_bd_auto_ds_2                 |     1|
+|4     |ultra96v2_bd_auto_ds_3                 |     1|
+|5     |ultra96v2_bd_auto_pc_0                 |     1|
+|6     |ultra96v2_bd_auto_pc_1                 |     1|
+|7     |ultra96v2_bd_auto_pc_2                 |     1|
+|8     |ultra96v2_bd_axi_bram_ctrl_0_0         |     1|
+|9     |ultra96v2_bd_axi_gpio_0_0              |     1|
+|10    |ultra96v2_bd_axi_gpio_0_1              |     1|
+|11    |ultra96v2_bd_axi_uart16550_0_0         |     1|
+|12    |ultra96v2_bd_axis_broadcaster_0_0      |     1|
+|13    |ultra96v2_bd_axis_combiner_0_0         |     1|
+|14    |ultra96v2_bd_axis_dwidth_converter_0_0 |     1|
+|15    |ultra96v2_bd_axis_dwidth_converter_1_0 |     1|
+|16    |ultra96v2_bd_blk_mem_gen_0_0           |     1|
+|17    |ultra96v2_bd_bus_to_axis_0_0           |     1|
+|18    |ultra96v2_bd_cic_compiler_0_0          |     1|
+|19    |ultra96v2_bd_cic_compiler_0_1          |     1|
+|20    |ultra96v2_bd_clk_wiz_0_0               |     1|
+|21    |ultra96v2_bd_cmpy_0_0                  |     1|
+|22    |ultra96v2_bd_cvt_offset_binary_0_0     |     1|
+|23    |ultra96v2_bd_dds_compiler_0_0          |     1|
+|24    |ultra96v2_bd_dds_compiler_1_0          |     1|
+|25    |ultra96v2_bd_fir_compiler_0_0          |     1|
+|26    |ultra96v2_bd_proc_sys_reset_0_0        |     1|
+|27    |ultra96v2_bd_rst_ps8_0_100M_1          |     1|
+|28    |ultra96v2_bd_xbar_0                    |     1|
+|29    |ultra96v2_bd_zynq_ultra_ps_e_0_0       |     1|
+|30    |IBUF                                   |     1|
+|31    |IOBUF                                  |     1|
+|32    |OBUF                                   |     9|
++------+---------------------------------------+------+
+
+Report Instance Areas: 
++------+-----------------------+--------------------------------+------+
+|      |Instance               |Module                          |Cells |
++------+-----------------------+--------------------------------+------+
+|1     |top                    |                                |  4652|
+|2     |  ultra96v2_bd_i       |ultra96v2_bd                    |  4641|
+|3     |    xlconstant_0       |ultra96v2_bd_xlconstant_0_0     |     0|
+|4     |    xlslice_0          |ultra96v2_bd_xlslice_0_2        |     0|
+|5     |    xlslice_3          |ultra96v2_bd_xlslice_3_0        |     0|
+|6     |    CPU                |CPU_imp_1YU2FP7                 |  4237|
+|7     |      ps8_0_axi_periph |ultra96v2_bd_ps8_0_axi_periph_1 |  3241|
+|8     |        m00_couplers   |m00_couplers_imp_1CQE762        |   487|
+|9     |        m01_couplers   |m01_couplers_imp_1F7CZD6        |   487|
+|10    |        m02_couplers   |m02_couplers_imp_1022C7E        |   264|
+|11    |        m03_couplers   |m03_couplers_imp_15UVJWQ        |   379|
+|12    |      xlconcat_0       |ultra96v2_bd_xlconcat_0_0       |     0|
+|13    |      xlslice_0        |ultra96v2_bd_xlslice_0_0        |     0|
++------+-----------------------+--------------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:41 ; elapsed = 00:00:46 . Memory (MB): peak = 2264.105 ; gain = 851.570
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 53 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:26 ; elapsed = 00:00:37 . Memory (MB): peak = 2264.105 ; gain = 774.313
+Synthesis Optimization Complete : Time (s): cpu = 00:00:41 ; elapsed = 00:00:46 . Memory (MB): peak = 2264.105 ; gain = 851.570
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.108 . Memory (MB): peak = 2272.152 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 2 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 2300.703 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 2 instances were transformed.
+  IBUF => IBUF (IBUFCTRL, INBUF): 1 instance 
+  IOBUF => IOBUF (IBUFCTRL, INBUF, OBUFT): 1 instance 
+
+INFO: [Common 17-83] Releasing license: Synthesis
+119 Infos, 129 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:51 ; elapsed = 00:01:00 . Memory (MB): peak = 2300.703 ; gain = 1810.945
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 2300.703 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'C:/xilinxdesigns/sdraproject/ultra96v2_0-master/ultra96v2_0.runs/synth_1/ultra96v2_bd_wrapper.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file ultra96v2_bd_wrapper_utilization_synth.rpt -pb ultra96v2_bd_wrapper_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Sun May 17 19:57:26 2020...

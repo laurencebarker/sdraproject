@@ -1,0 +1,17 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../ultra96v2_0.ip_user_files/bd/ultra96v2_bd/ip/ultra96v2_bd_axi_gpio_0_0/sim/ultra96v2_bd_axi_gpio_0_0.vhd" \
+"../../../../ultra96v2_0.ip_user_files/bd/ultra96v2_bd/ip/ultra96v2_bd_rst_ps8_0_100M_1/sim/ultra96v2_bd_rst_ps8_0_100M_1.vhd" \
+"../../../../ultra96v2_0.ip_user_files/bd/ultra96v2_bd/ip/ultra96v2_bd_axi_gpio_0_1/sim/ultra96v2_bd_axi_gpio_0_1.vhd" \
+"../../../../ultra96v2_0.ip_user_files/bd/ultra96v2_bd/ip/ultra96v2_bd_axi_bram_ctrl_0_0/sim/ultra96v2_bd_axi_bram_ctrl_0_0.vhd" \
+"../../../../ultra96v2_0.ip_user_files/bd/ultra96v2_bd/ip/ultra96v2_bd_axi_uart16550_0_0/sim/ultra96v2_bd_axi_uart16550_0_0.vhd" \
+"../../../../ultra96v2_0.ip_user_files/bd/ultra96v2_bd/ip/ultra96v2_bd_fir_compiler_0_0/sim/ultra96v2_bd_fir_compiler_0_0.vhd" \
+"../../../../ultra96v2_0.ip_user_files/bd/ultra96v2_bd/ip/ultra96v2_bd_cic_compiler_0_0/sim/ultra96v2_bd_cic_compiler_0_0.vhd" \
+"../../../../ultra96v2_0.ip_user_files/bd/ultra96v2_bd/ip/ultra96v2_bd_cmpy_0_0/sim/ultra96v2_bd_cmpy_0_0.vhd" \
+"../../../../ultra96v2_0.ip_user_files/bd/ultra96v2_bd/ip/ultra96v2_bd_dds_compiler_0_0/sim/ultra96v2_bd_dds_compiler_0_0.vhd" \
+"../../../../ultra96v2_0.ip_user_files/bd/ultra96v2_bd/ip/ultra96v2_bd_cic_compiler_0_1/sim/ultra96v2_bd_cic_compiler_0_1.vhd" \
+"../../../../ultra96v2_0.ip_user_files/bd/ultra96v2_bd/ip/ultra96v2_bd_proc_sys_reset_0_0/sim/ultra96v2_bd_proc_sys_reset_0_0.vhd" \
+"../../../../ultra96v2_0.ip_user_files/bd/ultra96v2_bd/ip/ultra96v2_bd_dds_compiler_1_0/sim/ultra96v2_bd_dds_compiler_1_0.vhd" \
+
+# Do not sort compile order
+nosort

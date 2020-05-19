@@ -1,0 +1,528 @@
+
+*** Running vivado
+    with args -log ultra96v2_bd_cic_compiler_0_0.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source ultra96v2_bd_cic_compiler_0_0.tcl
+
+
+****** Vivado v2019.2 (64-bit)
+  **** SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+  **** IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+source ultra96v2_bd_cic_compiler_0_0.tcl -notrace
+create_project: Time (s): cpu = 00:00:04 ; elapsed = 00:00:06 . Memory (MB): peak = 438.789 ; gain = 156.609
+Command: synth_design -top ultra96v2_bd_cic_compiler_0_0 -part xczu3eg-sbva484-1-e -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xczu3eg'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xczu3eg'
+INFO: [Device 21-403] Loading part xczu3eg-sbva484-1-e
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 12492 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 1435.719 ; gain = 55.137
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'ultra96v2_bd_cic_compiler_0_0' [c:/xilinxdesigns/sdraproject/ultra96v2_0-master/ultra96v2_0.srcs/sources_1/bd/ultra96v2_bd/ip/ultra96v2_bd_cic_compiler_0_0/synth/ultra96v2_bd_cic_compiler_0_0.vhd:71]
+	Parameter C_COMPONENT_NAME bound to: ultra96v2_bd_cic_compiler_0_0 - type: string 
+	Parameter C_FILTER_TYPE bound to: 0 - type: integer 
+	Parameter C_NUM_STAGES bound to: 6 - type: integer 
+	Parameter C_DIFF_DELAY bound to: 1 - type: integer 
+	Parameter C_RATE bound to: 320 - type: integer 
+	Parameter C_INPUT_WIDTH bound to: 20 - type: integer 
+	Parameter C_OUTPUT_WIDTH bound to: 23 - type: integer 
+	Parameter C_USE_DSP bound to: 1 - type: integer 
+	Parameter C_HAS_ROUNDING bound to: 0 - type: integer 
+	Parameter C_NUM_CHANNELS bound to: 1 - type: integer 
+	Parameter C_RATE_TYPE bound to: 0 - type: integer 
+	Parameter C_MIN_RATE bound to: 320 - type: integer 
+	Parameter C_MAX_RATE bound to: 320 - type: integer 
+	Parameter C_SAMPLE_FREQ bound to: 1 - type: integer 
+	Parameter C_CLK_FREQ bound to: 320 - type: integer 
+	Parameter C_USE_STREAMING_INTERFACE bound to: 1 - type: integer 
+	Parameter C_FAMILY bound to: zynquplus - type: string 
+	Parameter C_XDEVICEFAMILY bound to: zynquplus - type: string 
+	Parameter C_C1 bound to: 21 - type: integer 
+	Parameter C_C2 bound to: 22 - type: integer 
+	Parameter C_C3 bound to: 23 - type: integer 
+	Parameter C_C4 bound to: 24 - type: integer 
+	Parameter C_C5 bound to: 25 - type: integer 
+	Parameter C_C6 bound to: 25 - type: integer 
+	Parameter C_I1 bound to: 25 - type: integer 
+	Parameter C_I2 bound to: 33 - type: integer 
+	Parameter C_I3 bound to: 40 - type: integer 
+	Parameter C_I4 bound to: 47 - type: integer 
+	Parameter C_I5 bound to: 55 - type: integer 
+	Parameter C_I6 bound to: 62 - type: integer 
+	Parameter C_S_AXIS_CONFIG_TDATA_WIDTH bound to: 1 - type: integer 
+	Parameter C_S_AXIS_DATA_TDATA_WIDTH bound to: 24 - type: integer 
+	Parameter C_M_AXIS_DATA_TDATA_WIDTH bound to: 24 - type: integer 
+	Parameter C_M_AXIS_DATA_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_HAS_DOUT_TREADY bound to: 0 - type: integer 
+	Parameter C_HAS_ACLKEN bound to: 0 - type: integer 
+	Parameter C_HAS_ARESETN bound to: 1 - type: integer 
+INFO: [Synth 8-3491] module 'cic_compiler_v4_0_15' declared at 'c:/xilinxdesigns/sdraproject/ultra96v2_0-master/ultra96v2_0.srcs/sources_1/bd/ultra96v2_bd/ipshared/0aa2/hdl/cic_compiler_v4_0_vh_rfs.vhd:16133' bound to instance 'U0' of component 'cic_compiler_v4_0_15' [c:/xilinxdesigns/sdraproject/ultra96v2_0-master/ultra96v2_0.srcs/sources_1/bd/ultra96v2_bd/ip/ultra96v2_bd_cic_compiler_0_0/synth/ultra96v2_bd_cic_compiler_0_0.vhd:162]
+INFO: [Synth 8-256] done synthesizing module 'ultra96v2_bd_cic_compiler_0_0' (11#1) [c:/xilinxdesigns/sdraproject/ultra96v2_0-master/ultra96v2_0.srcs/sources_1/bd/ultra96v2_bd/ip/ultra96v2_bd_cic_compiler_0_0/synth/ultra96v2_bd_cic_compiler_0_0.vhd:71]
+WARNING: [Synth 8-3331] design delay__parameterized43 has unconnected port WE
+WARNING: [Synth 8-3331] design delay__parameterized43 has unconnected port CE
+WARNING: [Synth 8-3331] design delay__parameterized43 has unconnected port SCLR
+WARNING: [Synth 8-3331] design delay__parameterized43 has unconnected port CLK
+WARNING: [Synth 8-3331] design delay__parameterized9 has unconnected port WE
+WARNING: [Synth 8-3331] design delay__parameterized9 has unconnected port CE
+WARNING: [Synth 8-3331] design delay__parameterized9 has unconnected port SCLR
+WARNING: [Synth 8-3331] design delay__parameterized9 has unconnected port CLK
+WARNING: [Synth 8-3331] design delay__parameterized7 has unconnected port WE
+WARNING: [Synth 8-3331] design delay__parameterized7 has unconnected port CE
+WARNING: [Synth 8-3331] design delay__parameterized7 has unconnected port SCLR
+WARNING: [Synth 8-3331] design delay__parameterized7 has unconnected port CLK
+WARNING: [Synth 8-3331] design emb_calc__parameterized6 has unconnected port PRE_ADDSUB
+WARNING: [Synth 8-3331] design emb_calc__parameterized6 has unconnected port PRE_ADD_BYPASS
+WARNING: [Synth 8-3331] design emb_calc__parameterized6 has unconnected port CED
+WARNING: [Synth 8-3331] design delay__parameterized41 has unconnected port WE
+WARNING: [Synth 8-3331] design delay__parameterized41 has unconnected port CE
+WARNING: [Synth 8-3331] design delay__parameterized41 has unconnected port SCLR
+WARNING: [Synth 8-3331] design delay__parameterized41 has unconnected port CLK
+WARNING: [Synth 8-3331] design emb_calc__parameterized4 has unconnected port PRE_ADDSUB
+WARNING: [Synth 8-3331] design emb_calc__parameterized4 has unconnected port PRE_ADD_BYPASS
+WARNING: [Synth 8-3331] design emb_calc__parameterized4 has unconnected port CED
+WARNING: [Synth 8-3331] design delay__parameterized17 has unconnected port WE
+WARNING: [Synth 8-3331] design delay__parameterized17 has unconnected port CE
+WARNING: [Synth 8-3331] design delay__parameterized17 has unconnected port SCLR
+WARNING: [Synth 8-3331] design delay__parameterized17 has unconnected port CLK
+WARNING: [Synth 8-3331] design delay_bit has unconnected port WE
+WARNING: [Synth 8-3331] design delay_bit has unconnected port CE
+WARNING: [Synth 8-3331] design delay_bit has unconnected port SCLR
+WARNING: [Synth 8-3331] design delay_bit has unconnected port CLK
+WARNING: [Synth 8-3331] design delay__parameterized35 has unconnected port WE
+WARNING: [Synth 8-3331] design delay__parameterized35 has unconnected port CE
+WARNING: [Synth 8-3331] design delay__parameterized35 has unconnected port SCLR
+WARNING: [Synth 8-3331] design delay__parameterized35 has unconnected port CLK
+WARNING: [Synth 8-3331] design delay__parameterized33 has unconnected port WE
+WARNING: [Synth 8-3331] design delay__parameterized33 has unconnected port CE
+WARNING: [Synth 8-3331] design delay__parameterized33 has unconnected port SCLR
+WARNING: [Synth 8-3331] design delay__parameterized33 has unconnected port CLK
+WARNING: [Synth 8-3331] design delay_bit__parameterized5 has unconnected port WE
+WARNING: [Synth 8-3331] design delay_bit__parameterized5 has unconnected port CE
+WARNING: [Synth 8-3331] design delay_bit__parameterized5 has unconnected port SCLR
+WARNING: [Synth 8-3331] design delay_bit__parameterized5 has unconnected port CLK
+WARNING: [Synth 8-3331] design emb_calc__parameterized5 has unconnected port AC[29]
+WARNING: [Synth 8-3331] design emb_calc__parameterized5 has unconnected port AC[28]
+WARNING: [Synth 8-3331] design emb_calc__parameterized5 has unconnected port AC[27]
+WARNING: [Synth 8-3331] design emb_calc__parameterized5 has unconnected port AC[26]
+WARNING: [Synth 8-3331] design emb_calc__parameterized5 has unconnected port AC[25]
+WARNING: [Synth 8-3331] design emb_calc__parameterized5 has unconnected port AC[24]
+WARNING: [Synth 8-3331] design emb_calc__parameterized5 has unconnected port AC[23]
+WARNING: [Synth 8-3331] design emb_calc__parameterized5 has unconnected port AC[22]
+WARNING: [Synth 8-3331] design emb_calc__parameterized5 has unconnected port AC[21]
+WARNING: [Synth 8-3331] design emb_calc__parameterized5 has unconnected port AC[20]
+WARNING: [Synth 8-3331] design emb_calc__parameterized5 has unconnected port AC[19]
+WARNING: [Synth 8-3331] design emb_calc__parameterized5 has unconnected port AC[18]
+WARNING: [Synth 8-3331] design emb_calc__parameterized5 has unconnected port AC[17]
+WARNING: [Synth 8-3331] design emb_calc__parameterized5 has unconnected port AC[16]
+WARNING: [Synth 8-3331] design emb_calc__parameterized5 has unconnected port AC[15]
+WARNING: [Synth 8-3331] design emb_calc__parameterized5 has unconnected port AC[14]
+WARNING: [Synth 8-3331] design emb_calc__parameterized5 has unconnected port AC[13]
+WARNING: [Synth 8-3331] design emb_calc__parameterized5 has unconnected port AC[12]
+WARNING: [Synth 8-3331] design emb_calc__parameterized5 has unconnected port AC[11]
+WARNING: [Synth 8-3331] design emb_calc__parameterized5 has unconnected port AC[10]
+WARNING: [Synth 8-3331] design emb_calc__parameterized5 has unconnected port AC[9]
+WARNING: [Synth 8-3331] design emb_calc__parameterized5 has unconnected port AC[8]
+WARNING: [Synth 8-3331] design emb_calc__parameterized5 has unconnected port AC[7]
+WARNING: [Synth 8-3331] design emb_calc__parameterized5 has unconnected port AC[6]
+WARNING: [Synth 8-3331] design emb_calc__parameterized5 has unconnected port AC[5]
+WARNING: [Synth 8-3331] design emb_calc__parameterized5 has unconnected port AC[4]
+WARNING: [Synth 8-3331] design emb_calc__parameterized5 has unconnected port AC[3]
+WARNING: [Synth 8-3331] design emb_calc__parameterized5 has unconnected port AC[2]
+WARNING: [Synth 8-3331] design emb_calc__parameterized5 has unconnected port AC[1]
+WARNING: [Synth 8-3331] design emb_calc__parameterized5 has unconnected port AC[0]
+WARNING: [Synth 8-3331] design emb_calc__parameterized5 has unconnected port PAT_DET
+WARNING: [Synth 8-3331] design emb_calc__parameterized5 has unconnected port PAT_DET_B
+WARNING: [Synth 8-3331] design emb_calc__parameterized5 has unconnected port PCIN[6]
+WARNING: [Synth 8-3331] design emb_calc__parameterized5 has unconnected port PCIN[5]
+WARNING: [Synth 8-3331] design emb_calc__parameterized5 has unconnected port PCIN[4]
+WARNING: [Synth 8-3331] design emb_calc__parameterized5 has unconnected port PCIN[3]
+WARNING: [Synth 8-3331] design emb_calc__parameterized5 has unconnected port PCIN[2]
+WARNING: [Synth 8-3331] design emb_calc__parameterized5 has unconnected port PCIN[1]
+WARNING: [Synth 8-3331] design emb_calc__parameterized5 has unconnected port PCIN[0]
+WARNING: [Synth 8-3331] design emb_calc__parameterized5 has unconnected port PRE_ADDSUB
+WARNING: [Synth 8-3331] design emb_calc__parameterized5 has unconnected port PRE_ADD_BYPASS
+WARNING: [Synth 8-3331] design emb_calc__parameterized5 has unconnected port CIN_SEL[2]
+WARNING: [Synth 8-3331] design emb_calc__parameterized5 has unconnected port CIN_SEL[1]
+WARNING: [Synth 8-3331] design emb_calc__parameterized5 has unconnected port CARRYCASCIN
+WARNING: [Synth 8-3331] design delay__parameterized23 has unconnected port WE
+WARNING: [Synth 8-3331] design delay__parameterized23 has unconnected port CE
+WARNING: [Synth 8-3331] design delay__parameterized23 has unconnected port SCLR
+WARNING: [Synth 8-3331] design delay__parameterized23 has unconnected port CLK
+WARNING: [Synth 8-3331] design delay__parameterized21 has unconnected port SCLR
+WARNING: [Synth 8-3331] design delay__parameterized19 has unconnected port SCLR
+WARNING: [Synth 8-3331] design delay__parameterized15 has unconnected port WE
+WARNING: [Synth 8-3331] design delay__parameterized15 has unconnected port CE
+WARNING: [Synth 8-3331] design delay__parameterized15 has unconnected port SCLR
+WARNING: [Synth 8-3331] design delay__parameterized15 has unconnected port CLK
+WARNING: [Synth 8-3331] design emb_calc__parameterized3 has unconnected port PRE_ADDSUB
+WARNING: [Synth 8-3331] design emb_calc__parameterized3 has unconnected port PRE_ADD_BYPASS
+WARNING: [Synth 8-3331] design emb_calc__parameterized3 has unconnected port CED
+WARNING: [Synth 8-3331] design delay__parameterized13 has unconnected port WE
+INFO: [Common 17-14] Message 'Synth 8-3331' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 1538.129 ; gain = 157.547
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 1538.129 ; gain = 157.547
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 1538.129 ; gain = 157.547
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.104 . Memory (MB): peak = 1538.129 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 31 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [c:/xilinxdesigns/sdraproject/ultra96v2_0-master/ultra96v2_0.srcs/sources_1/bd/ultra96v2_bd/ip/ultra96v2_bd_cic_compiler_0_0/ultra96v2_bd_cic_compiler_0_0_ooc.xdc] for cell 'U0'
+create_clock: Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 1596.309 ; gain = 20.559
+Finished Parsing XDC File [c:/xilinxdesigns/sdraproject/ultra96v2_0-master/ultra96v2_0.srcs/sources_1/bd/ultra96v2_bd/ip/ultra96v2_bd_cic_compiler_0_0/ultra96v2_bd_cic_compiler_0_0_ooc.xdc] for cell 'U0'
+Parsing XDC File [C:/xilinxdesigns/sdraproject/ultra96v2_0-master/ultra96v2_0.runs/ultra96v2_bd_cic_compiler_0_0_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [C:/xilinxdesigns/sdraproject/ultra96v2_0-master/ultra96v2_0.runs/ultra96v2_bd_cic_compiler_0_0_synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1596.309 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 23 instances were transformed.
+  DSP48E1 => DSP48E2 (DSP_ALU, DSP_A_B_DATA, DSP_C_DATA, DSP_MULTIPLIER, DSP_M_DATA, DSP_OUTPUT, DSP_PREADD, DSP_PREADD_DATA): 8 instances
+  FDRSE => FDRSE (FDRE, LUT4, VCC): 8 instances
+  MUXCY_L => MUXCY: 7 instances
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.270 . Memory (MB): peak = 1597.301 ; gain = 0.992
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:37 ; elapsed = 00:00:39 . Memory (MB): peak = 1597.301 ; gain = 216.719
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xczu3eg-sbva484-1-e
+INFO: [Synth 8-6742] Reading net delay rules and data
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:37 ; elapsed = 00:00:39 . Memory (MB): peak = 1597.301 ; gain = 216.719
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property DONT_TOUCH = true for U0. (constraint file  C:/xilinxdesigns/sdraproject/ultra96v2_0-master/ultra96v2_0.runs/ultra96v2_bd_cic_compiler_0_0_synth_1/dont_touch.xdc, line 9).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:37 ; elapsed = 00:00:39 . Memory (MB): peak = 1597.301 ; gain = 216.719
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:38 ; elapsed = 00:00:41 . Memory (MB): peak = 1597.301 ; gain = 216.719
+---------------------------------------------------------------------------------
+INFO: [Synth 8-223] decloning instance 'U0/i_synth/interpolator.interpolation_filter/gen_int_nd_in_dly' (delay_bit) to 'U0/i_synth/interpolator.interpolation_filter/gen_int_en_in_dly'
+INFO: [Synth 8-223] decloning instance 'U0/i_synth/interpolator.interpolation_filter/comb/gen_stages[0].gen_folded.int_comb_stage/gen_split_accum[0].gen_comb_mem_src.gen_en_dly' (delay_bit__parameterized0) to 'U0/i_synth/interpolator.interpolation_filter/comb/gen_stages[0].gen_folded.int_comb_stage/gen_split_accum[0].gen_mem_we'
+INFO: [Synth 8-223] decloning instance 'U0/i_synth/interpolator.interpolation_filter/int/gen_stages[4].gen_unfolded.int_comb_stage/gen_split_accum[0].gen_mem_we' (delay_bit__parameterized0) to 'U0/i_synth/interpolator.interpolation_filter/int/gen_stages[4].gen_unfolded.int_comb_stage/gen_split_accum[1].gen_nd_src'
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 360 (col length:72)
+BRAMs: 432 (col length: RAMB18 72 RAMB36 36)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+INFO: [Synth 8-3886] merging instance 'U0/i_synth/interpolator.interpolation_filter/comb/gen_stages[0].gen_folded.int_comb_stage/gen_nd_out_dly/gen_rtl.gen_dly.gen_regs.delay_bus_reg[0]' (FDRE) to 'U0/i_synth/interpolator.interpolation_filter/comb/gen_stages[0].gen_folded.int_comb_stage/gen_split_accum[0].gen_comb_mem_src.gen_nd_dly/gen_rtl.gen_dly.gen_regs.delay_bus_reg[0]'
+INFO: [Synth 8-3886] merging instance 'U0/i_synth/interpolator.interpolation_filter/comb/gen_stages[0].gen_folded.int_comb_stage/gen_nd_out_dly/gen_rtl.gen_dly.gen_regs.delay_bus_reg[1]' (FDRE) to 'U0/i_synth/interpolator.interpolation_filter/comb/gen_stages[0].gen_folded.int_comb_stage/gen_split_accum[0].gen_comb_mem_src.gen_nd_dly/gen_rtl.gen_dly.gen_regs.delay_bus_reg[1]'
+INFO: [Synth 8-3886] merging instance 'U0/i_synth/interpolator.interpolation_filter/comb/gen_stages[0].gen_folded.int_comb_stage/gen_split_accum[0].gen_sum_struct.opcode_reg[2]' (FDR) to 'U0/i_synth/interpolator.interpolation_filter/int/gen_stages[5].gen_unfolded.int_comb_stage/gen_split_accum[1].gen_sum_struct.opcode_reg[6]'
+INFO: [Synth 8-3886] merging instance 'U0/i_synth/interpolator.interpolation_filter/comb/gen_stages[0].gen_folded.int_comb_stage/gen_split_accum[0].gen_sum_struct.opcode_reg[3]' (FDR) to 'U0/i_synth/interpolator.interpolation_filter/int/gen_stages[5].gen_unfolded.int_comb_stage/gen_split_accum[1].gen_sum_struct.opcode_reg[6]'
+INFO: [Synth 8-3886] merging instance 'U0/i_synth/interpolator.interpolation_filter/comb/gen_stages[0].gen_folded.int_comb_stage/gen_split_accum[0].gen_sum_struct.opcode_reg[6]' (FDR) to 'U0/i_synth/interpolator.interpolation_filter/int/gen_stages[5].gen_unfolded.int_comb_stage/gen_split_accum[1].gen_sum_struct.opcode_reg[6]'
+INFO: [Synth 8-3886] merging instance 'U0/i_synth/interpolator.interpolation_filter/int/gen_stages[0].gen_unfolded.int_comb_stage/gen_nd_out_dly/gen_rtl.gen_dly.gen_regs.delay_bus_reg[0]' (FDRE) to 'U0/i_synth/interpolator.interpolation_filter/int/gen_stages[0].gen_unfolded.int_comb_stage/gen_split_accum[0].gen_mem_we/gen_rtl.gen_dly.gen_regs.delay_bus_reg[0]'
+INFO: [Synth 8-3886] merging instance 'U0/i_synth/interpolator.interpolation_filter/int/gen_stages[1].gen_unfolded.int_comb_stage/gen_nd_out_dly/gen_rtl.gen_dly.gen_regs.delay_bus_reg[0]' (FDRE) to 'U0/i_synth/interpolator.interpolation_filter/int/gen_stages[1].gen_unfolded.int_comb_stage/gen_split_accum[0].gen_mem_we/gen_rtl.gen_dly.gen_regs.delay_bus_reg[0]'
+INFO: [Synth 8-3886] merging instance 'U0/i_synth/interpolator.interpolation_filter/int/gen_stages[0].gen_unfolded.int_comb_stage/gen_nd_out_dly/gen_rtl.gen_dly.gen_regs.delay_bus_reg[1]' (FDRE) to 'U0/i_synth/interpolator.interpolation_filter/int/gen_stages[0].gen_unfolded.int_comb_stage/gen_split_accum[0].gen_mem_we/gen_rtl.gen_dly.gen_regs.delay_bus_reg[1]'
+INFO: [Synth 8-3886] merging instance 'U0/i_synth/interpolator.interpolation_filter/int/gen_stages[0].gen_unfolded.int_comb_stage/gen_split_accum[0].gen_sum_struct.opcode_reg[0]' (FDR) to 'U0/i_synth/interpolator.interpolation_filter/int/gen_stages[5].gen_unfolded.int_comb_stage/gen_split_accum[1].gen_sum_struct.opcode_reg[6]'
+INFO: [Synth 8-3886] merging instance 'U0/i_synth/interpolator.interpolation_filter/int/gen_stages[0].gen_unfolded.int_comb_stage/gen_split_accum[0].gen_sum_struct.opcode_reg[2]' (FDR) to 'U0/i_synth/interpolator.interpolation_filter/int/gen_stages[0].gen_unfolded.int_comb_stage/gen_split_accum[0].gen_sum_struct.opcode_reg[3]'
+INFO: [Synth 8-3886] merging instance 'U0/i_synth/interpolator.interpolation_filter/int/gen_stages[0].gen_unfolded.int_comb_stage/gen_split_accum[0].gen_sum_struct.opcode_reg[6]' (FDR) to 'U0/i_synth/interpolator.interpolation_filter/int/gen_stages[5].gen_unfolded.int_comb_stage/gen_split_accum[1].gen_sum_struct.opcode_reg[6]'
+INFO: [Synth 8-3886] merging instance 'U0/i_synth/interpolator.interpolation_filter/int/gen_stages[0].gen_unfolded.int_comb_stage/gen_split_accum[0].gen_sum_struct.addsub_reg' (FDRE) to 'U0/i_synth/interpolator.interpolation_filter/int/gen_stages[3].gen_unfolded.int_comb_stage/gen_split_accum[0].gen_sum_struct.addsub_reg'
+INFO: [Synth 8-3886] merging instance 'U0/i_synth/interpolator.interpolation_filter/int/gen_stages[4].gen_unfolded.int_comb_stage/gen_split_accum[1].gen_clr_src/gen_rtl.gen_dly.gen_regs.delay_bus_reg[0]' (FDRE) to 'U0/i_synth/interpolator.interpolation_filter/int/gen_stages[4].gen_unfolded.int_comb_stage/gen_clr_out_dly/gen_rtl.gen_dly.gen_regs.delay_bus_reg[0]'
+INFO: [Synth 8-3886] merging instance 'U0/i_synth/interpolator.interpolation_filter/int/gen_stages[2].gen_unfolded.int_comb_stage/gen_nd_out_dly/gen_rtl.gen_dly.gen_regs.delay_bus_reg[0]' (FDRE) to 'U0/i_synth/interpolator.interpolation_filter/int/gen_stages[2].gen_unfolded.int_comb_stage/gen_split_accum[0].gen_mem_we/gen_rtl.gen_dly.gen_regs.delay_bus_reg[0]'
+INFO: [Synth 8-3886] merging instance 'U0/i_synth/interpolator.interpolation_filter/int/gen_stages[1].gen_unfolded.int_comb_stage/gen_nd_out_dly/gen_rtl.gen_dly.gen_regs.delay_bus_reg[1]' (FDRE) to 'U0/i_synth/interpolator.interpolation_filter/int/gen_stages[1].gen_unfolded.int_comb_stage/gen_split_accum[0].gen_mem_we/gen_rtl.gen_dly.gen_regs.delay_bus_reg[1]'
+INFO: [Synth 8-3886] merging instance 'U0/i_synth/interpolator.interpolation_filter/int/gen_stages[1].gen_unfolded.int_comb_stage/gen_split_accum[0].gen_sum_struct.opcode_reg[0]' (FDR) to 'U0/i_synth/interpolator.interpolation_filter/int/gen_stages[5].gen_unfolded.int_comb_stage/gen_split_accum[1].gen_sum_struct.opcode_reg[6]'
+INFO: [Synth 8-3886] merging instance 'U0/i_synth/interpolator.interpolation_filter/int/gen_stages[1].gen_unfolded.int_comb_stage/gen_split_accum[0].gen_sum_struct.opcode_reg[2]' (FDR) to 'U0/i_synth/interpolator.interpolation_filter/int/gen_stages[1].gen_unfolded.int_comb_stage/gen_split_accum[0].gen_sum_struct.opcode_reg[3]'
+INFO: [Synth 8-3886] merging instance 'U0/i_synth/interpolator.interpolation_filter/int/gen_stages[1].gen_unfolded.int_comb_stage/gen_split_accum[0].gen_sum_struct.opcode_reg[6]' (FDR) to 'U0/i_synth/interpolator.interpolation_filter/int/gen_stages[5].gen_unfolded.int_comb_stage/gen_split_accum[1].gen_sum_struct.opcode_reg[6]'
+INFO: [Synth 8-3886] merging instance 'U0/i_synth/interpolator.interpolation_filter/int/gen_stages[1].gen_unfolded.int_comb_stage/gen_split_accum[0].gen_sum_struct.addsub_reg' (FDRE) to 'U0/i_synth/interpolator.interpolation_filter/int/gen_stages[3].gen_unfolded.int_comb_stage/gen_split_accum[0].gen_sum_struct.addsub_reg'
+INFO: [Synth 8-3886] merging instance 'U0/i_synth/interpolator.interpolation_filter/int/gen_stages[4].gen_unfolded.int_comb_stage/gen_split_accum[1].gen_clr_src/gen_rtl.gen_dly.gen_regs.delay_bus_reg[1]' (FDRE) to 'U0/i_synth/interpolator.interpolation_filter/int/gen_stages[4].gen_unfolded.int_comb_stage/gen_clr_out_dly/gen_rtl.gen_dly.gen_regs.delay_bus_reg[1]'
+INFO: [Synth 8-3886] merging instance 'U0/i_synth/interpolator.interpolation_filter/int/gen_stages[3].gen_unfolded.int_comb_stage/gen_nd_out_dly/gen_rtl.gen_dly.gen_regs.delay_bus_reg[0]' (FDRE) to 'U0/i_synth/interpolator.interpolation_filter/int/gen_stages[3].gen_unfolded.int_comb_stage/gen_split_accum[0].gen_mem_we/gen_rtl.gen_dly.gen_regs.delay_bus_reg[0]'
+INFO: [Synth 8-3886] merging instance 'U0/i_synth/interpolator.interpolation_filter/int/gen_stages[2].gen_unfolded.int_comb_stage/gen_nd_out_dly/gen_rtl.gen_dly.gen_regs.delay_bus_reg[1]' (FDRE) to 'U0/i_synth/interpolator.interpolation_filter/int/gen_stages[2].gen_unfolded.int_comb_stage/gen_split_accum[0].gen_mem_we/gen_rtl.gen_dly.gen_regs.delay_bus_reg[1]'
+INFO: [Synth 8-3886] merging instance 'U0/i_synth/interpolator.interpolation_filter/int/gen_stages[2].gen_unfolded.int_comb_stage/gen_split_accum[0].gen_sum_struct.opcode_reg[0]' (FDR) to 'U0/i_synth/interpolator.interpolation_filter/int/gen_stages[5].gen_unfolded.int_comb_stage/gen_split_accum[1].gen_sum_struct.opcode_reg[6]'
+INFO: [Synth 8-3886] merging instance 'U0/i_synth/interpolator.interpolation_filter/int/gen_stages[2].gen_unfolded.int_comb_stage/gen_split_accum[0].gen_sum_struct.opcode_reg[2]' (FDR) to 'U0/i_synth/interpolator.interpolation_filter/int/gen_stages[2].gen_unfolded.int_comb_stage/gen_split_accum[0].gen_sum_struct.opcode_reg[3]'
+INFO: [Synth 8-3886] merging instance 'U0/i_synth/interpolator.interpolation_filter/int/gen_stages[2].gen_unfolded.int_comb_stage/gen_split_accum[0].gen_sum_struct.opcode_reg[6]' (FDR) to 'U0/i_synth/interpolator.interpolation_filter/int/gen_stages[5].gen_unfolded.int_comb_stage/gen_split_accum[1].gen_sum_struct.opcode_reg[6]'
+INFO: [Synth 8-3886] merging instance 'U0/i_synth/interpolator.interpolation_filter/int/gen_stages[2].gen_unfolded.int_comb_stage/gen_split_accum[0].gen_sum_struct.addsub_reg' (FDRE) to 'U0/i_synth/interpolator.interpolation_filter/int/gen_stages[3].gen_unfolded.int_comb_stage/gen_split_accum[0].gen_sum_struct.addsub_reg'
+INFO: [Synth 8-3886] merging instance 'U0/i_synth/interpolator.interpolation_filter/int/gen_stages[4].gen_unfolded.int_comb_stage/gen_split_accum[1].gen_sum_struct.opcode_reg[0]' (FDR) to 'U0/i_synth/interpolator.interpolation_filter/int/gen_stages[5].gen_unfolded.int_comb_stage/gen_split_accum[1].gen_sum_struct.opcode_reg[6]'
+INFO: [Synth 8-3886] merging instance 'U0/i_synth/interpolator.interpolation_filter/int/gen_stages[4].gen_unfolded.int_comb_stage/gen_split_accum[1].gen_sum_struct.opcode_reg[2]' (FDR) to 'U0/i_synth/interpolator.interpolation_filter/int/gen_stages[4].gen_unfolded.int_comb_stage/gen_split_accum[1].gen_sum_struct.opcode_reg[3]'
+INFO: [Synth 8-3886] merging instance 'U0/i_synth/interpolator.interpolation_filter/int/gen_stages[4].gen_unfolded.int_comb_stage/gen_nd_out_dly/gen_rtl.gen_dly.gen_regs.delay_bus_reg[0]' (FDRE) to 'U0/i_synth/interpolator.interpolation_filter/int/gen_stages[4].gen_unfolded.int_comb_stage/gen_split_accum[0].gen_mem_we/gen_rtl.gen_dly.gen_regs.delay_bus_reg[0]'
+INFO: [Synth 8-3886] merging instance 'U0/i_synth/interpolator.interpolation_filter/int/gen_stages[3].gen_unfolded.int_comb_stage/gen_nd_out_dly/gen_rtl.gen_dly.gen_regs.delay_bus_reg[1]' (FDRE) to 'U0/i_synth/interpolator.interpolation_filter/int/gen_stages[3].gen_unfolded.int_comb_stage/gen_split_accum[0].gen_mem_we/gen_rtl.gen_dly.gen_regs.delay_bus_reg[1]'
+INFO: [Synth 8-3886] merging instance 'U0/i_synth/interpolator.interpolation_filter/int/gen_stages[3].gen_unfolded.int_comb_stage/gen_split_accum[0].gen_sum_struct.opcode_reg[0]' (FDR) to 'U0/i_synth/interpolator.interpolation_filter/int/gen_stages[5].gen_unfolded.int_comb_stage/gen_split_accum[1].gen_sum_struct.opcode_reg[6]'
+INFO: [Synth 8-3886] merging instance 'U0/i_synth/interpolator.interpolation_filter/int/gen_stages[3].gen_unfolded.int_comb_stage/gen_split_accum[0].gen_sum_struct.opcode_reg[2]' (FDR) to 'U0/i_synth/interpolator.interpolation_filter/int/gen_stages[3].gen_unfolded.int_comb_stage/gen_split_accum[0].gen_sum_struct.opcode_reg[3]'
+INFO: [Synth 8-3886] merging instance 'U0/i_synth/interpolator.interpolation_filter/int/gen_stages[3].gen_unfolded.int_comb_stage/gen_split_accum[0].gen_sum_struct.opcode_reg[6]' (FDR) to 'U0/i_synth/interpolator.interpolation_filter/int/gen_stages[5].gen_unfolded.int_comb_stage/gen_split_accum[1].gen_sum_struct.opcode_reg[6]'
+INFO: [Synth 8-3886] merging instance 'U0/i_synth/interpolator.interpolation_filter/int/gen_stages[3].gen_unfolded.int_comb_stage/gen_split_accum[0].gen_sum_struct.addsub_reg' (FDRE) to 'U0/i_synth/interpolator.interpolation_filter/int/gen_stages[4].gen_unfolded.int_comb_stage/gen_split_accum[0].gen_sum_struct.addsub_reg'
+INFO: [Synth 8-3886] merging instance 'U0/i_synth/interpolator.interpolation_filter/int/gen_stages[4].gen_unfolded.int_comb_stage/gen_split_accum[1].gen_d_src/gen_dly.gen_shiftreg.gen_rtl_delay.delay_bus_reg[0][48]' (FDE) to 'U0/i_synth/interpolator.interpolation_filter/int/gen_stages[4].gen_unfolded.int_comb_stage/gen_split_accum[1].gen_d_src/gen_dly.gen_shiftreg.gen_rtl_delay.delay_bus_reg[0][54]'
+INFO: [Synth 8-3886] merging instance 'U0/i_synth/interpolator.interpolation_filter/int/gen_stages[4].gen_unfolded.int_comb_stage/gen_split_accum[1].gen_d_src/gen_dly.gen_shiftreg.gen_rtl_delay.delay_bus_reg[0][49]' (FDE) to 'U0/i_synth/interpolator.interpolation_filter/int/gen_stages[4].gen_unfolded.int_comb_stage/gen_split_accum[1].gen_d_src/gen_dly.gen_shiftreg.gen_rtl_delay.delay_bus_reg[0][54]'
+INFO: [Synth 8-3886] merging instance 'U0/i_synth/interpolator.interpolation_filter/int/gen_stages[4].gen_unfolded.int_comb_stage/gen_split_accum[1].gen_d_src/gen_dly.gen_shiftreg.gen_rtl_delay.delay_bus_reg[0][50]' (FDE) to 'U0/i_synth/interpolator.interpolation_filter/int/gen_stages[4].gen_unfolded.int_comb_stage/gen_split_accum[1].gen_d_src/gen_dly.gen_shiftreg.gen_rtl_delay.delay_bus_reg[0][54]'
+INFO: [Synth 8-3886] merging instance 'U0/i_synth/interpolator.interpolation_filter/int/gen_stages[4].gen_unfolded.int_comb_stage/gen_split_accum[1].gen_d_src/gen_dly.gen_shiftreg.gen_rtl_delay.delay_bus_reg[0][51]' (FDE) to 'U0/i_synth/interpolator.interpolation_filter/int/gen_stages[4].gen_unfolded.int_comb_stage/gen_split_accum[1].gen_d_src/gen_dly.gen_shiftreg.gen_rtl_delay.delay_bus_reg[0][54]'
+INFO: [Synth 8-3886] merging instance 'U0/i_synth/interpolator.interpolation_filter/int/gen_stages[4].gen_unfolded.int_comb_stage/gen_split_accum[1].gen_d_src/gen_dly.gen_shiftreg.gen_rtl_delay.delay_bus_reg[0][52]' (FDE) to 'U0/i_synth/interpolator.interpolation_filter/int/gen_stages[4].gen_unfolded.int_comb_stage/gen_split_accum[1].gen_d_src/gen_dly.gen_shiftreg.gen_rtl_delay.delay_bus_reg[0][54]'
+INFO: [Synth 8-3886] merging instance 'U0/i_synth/interpolator.interpolation_filter/int/gen_stages[4].gen_unfolded.int_comb_stage/gen_split_accum[1].gen_d_src/gen_dly.gen_shiftreg.gen_rtl_delay.delay_bus_reg[0][53]' (FDE) to 'U0/i_synth/interpolator.interpolation_filter/int/gen_stages[4].gen_unfolded.int_comb_stage/gen_split_accum[1].gen_d_src/gen_dly.gen_shiftreg.gen_rtl_delay.delay_bus_reg[0][54]'
+INFO: [Synth 8-3886] merging instance 'U0/i_synth/interpolator.interpolation_filter/int/gen_stages[4].gen_unfolded.int_comb_stage/gen_split_accum[1].gen_sum_struct.gen_sum/gen_structural.gen_no_dsp48.gen_opcode/gen_reg.d_reg_reg[2]' (FDRE) to 'U0/i_synth/interpolator.interpolation_filter/int/gen_stages[4].gen_unfolded.int_comb_stage/gen_split_accum[1].gen_sum_struct.gen_sum/gen_structural.gen_no_dsp48.gen_opcode/gen_reg.d_reg_reg[3]'
+INFO: [Synth 8-3886] merging instance 'U0/i_synth/interpolator.interpolation_filter/int/gen_stages[4].gen_unfolded.int_comb_stage/gen_nd_out_dly/gen_rtl.gen_dly.gen_regs.delay_bus_reg[1]' (FDRE) to 'U0/i_synth/interpolator.interpolation_filter/int/gen_stages[4].gen_unfolded.int_comb_stage/gen_split_accum[0].gen_mem_we/gen_rtl.gen_dly.gen_regs.delay_bus_reg[1]'
+INFO: [Synth 8-3886] merging instance 'U0/i_synth/interpolator.interpolation_filter/int/gen_stages[4].gen_unfolded.int_comb_stage/gen_split_accum[0].gen_sum_struct.opcode_reg[0]' (FDR) to 'U0/i_synth/interpolator.interpolation_filter/int/gen_stages[5].gen_unfolded.int_comb_stage/gen_split_accum[1].gen_sum_struct.opcode_reg[6]'
+INFO: [Synth 8-3886] merging instance 'U0/i_synth/interpolator.interpolation_filter/int/gen_stages[4].gen_unfolded.int_comb_stage/gen_split_accum[0].gen_sum_struct.opcode_reg[2]' (FDR) to 'U0/i_synth/interpolator.interpolation_filter/int/gen_stages[4].gen_unfolded.int_comb_stage/gen_split_accum[0].gen_sum_struct.opcode_reg[3]'
+INFO: [Synth 8-3886] merging instance 'U0/i_synth/interpolator.interpolation_filter/int/gen_stages[4].gen_unfolded.int_comb_stage/gen_split_accum[0].gen_sum_struct.opcode_reg[6]' (FDR) to 'U0/i_synth/interpolator.interpolation_filter/int/gen_stages[5].gen_unfolded.int_comb_stage/gen_split_accum[1].gen_sum_struct.opcode_reg[6]'
+INFO: [Synth 8-3886] merging instance 'U0/i_synth/interpolator.interpolation_filter/int/gen_stages[4].gen_unfolded.int_comb_stage/gen_split_accum[0].gen_sum_struct.addsub_reg' (FDRE) to 'U0/i_synth/interpolator.interpolation_filter/int/gen_stages[5].gen_unfolded.int_comb_stage/gen_split_accum[0].gen_sum_struct.addsub_reg'
+INFO: [Synth 8-3886] merging instance 'U0/i_synth/interpolator.interpolation_filter/int/gen_stages[4].gen_unfolded.int_comb_stage/gen_split_accum[1].gen_d_src/gen_dly.gen_shiftreg.gen_rtl_delay.delay_bus_reg[1][48]' (FDE) to 'U0/i_synth/interpolator.interpolation_filter/int/gen_stages[4].gen_unfolded.int_comb_stage/gen_split_accum[1].gen_d_src/gen_dly.gen_shiftreg.gen_rtl_delay.delay_bus_reg[1][53]'
+INFO: [Synth 8-3886] merging instance 'U0/i_synth/interpolator.interpolation_filter/int/gen_stages[4].gen_unfolded.int_comb_stage/gen_split_accum[1].gen_d_src/gen_dly.gen_shiftreg.gen_rtl_delay.delay_bus_reg[1][49]' (FDE) to 'U0/i_synth/interpolator.interpolation_filter/int/gen_stages[4].gen_unfolded.int_comb_stage/gen_split_accum[1].gen_d_src/gen_dly.gen_shiftreg.gen_rtl_delay.delay_bus_reg[1][53]'
+INFO: [Synth 8-3886] merging instance 'U0/i_synth/interpolator.interpolation_filter/int/gen_stages[4].gen_unfolded.int_comb_stage/gen_split_accum[1].gen_d_src/gen_dly.gen_shiftreg.gen_rtl_delay.delay_bus_reg[1][50]' (FDE) to 'U0/i_synth/interpolator.interpolation_filter/int/gen_stages[4].gen_unfolded.int_comb_stage/gen_split_accum[1].gen_d_src/gen_dly.gen_shiftreg.gen_rtl_delay.delay_bus_reg[1][53]'
+INFO: [Synth 8-3886] merging instance 'U0/i_synth/interpolator.interpolation_filter/int/gen_stages[4].gen_unfolded.int_comb_stage/gen_split_accum[1].gen_d_src/gen_dly.gen_shiftreg.gen_rtl_delay.delay_bus_reg[1][51]' (FDE) to 'U0/i_synth/interpolator.interpolation_filter/int/gen_stages[4].gen_unfolded.int_comb_stage/gen_split_accum[1].gen_d_src/gen_dly.gen_shiftreg.gen_rtl_delay.delay_bus_reg[1][53]'
+INFO: [Synth 8-3886] merging instance 'U0/i_synth/interpolator.interpolation_filter/int/gen_stages[4].gen_unfolded.int_comb_stage/gen_split_accum[1].gen_d_src/gen_dly.gen_shiftreg.gen_rtl_delay.delay_bus_reg[1][52]' (FDE) to 'U0/i_synth/interpolator.interpolation_filter/int/gen_stages[4].gen_unfolded.int_comb_stage/gen_split_accum[1].gen_d_src/gen_dly.gen_shiftreg.gen_rtl_delay.delay_bus_reg[1][53]'
+INFO: [Synth 8-3886] merging instance 'U0/i_synth/interpolator.interpolation_filter/int/gen_stages[4].gen_unfolded.int_comb_stage/gen_split_accum[1].gen_d_src/gen_dly.gen_shiftreg.gen_rtl_delay.delay_bus_reg[1][53]' (FDE) to 'U0/i_synth/interpolator.interpolation_filter/int/gen_stages[4].gen_unfolded.int_comb_stage/gen_split_accum[1].gen_d_src/gen_dly.gen_shiftreg.gen_rtl_delay.delay_bus_reg[1][54]'
+INFO: [Synth 8-3886] merging instance 'U0/i_synth/interpolator.interpolation_filter/int/gen_stages[4].gen_unfolded.int_comb_stage/gen_split_accum[1].gen_sum_struct.gen_sum/gen_structural.gen_no_dsp48.gen_cin/gen_reg.d_reg_reg[0]' (FDRE) to 'U0/i_synth/interpolator.interpolation_filter/int/gen_stages[4].gen_unfolded.int_comb_stage/gen_split_accum[1].gen_sum_struct.gen_sum/gen_structural.gen_no_dsp48.gen_cin/gen_reg.d_reg_reg[1]'
+INFO: [Synth 8-3886] merging instance 'U0/i_synth/interpolator.interpolation_filter/int/gen_stages[4].gen_unfolded.int_comb_stage/gen_split_accum[1].gen_sum_struct.gen_sum/gen_structural.gen_no_dsp48.gen_cin/gen_reg.d_reg_reg[1]' (FDRE) to 'U0/i_synth/interpolator.interpolation_filter/int/gen_stages[4].gen_unfolded.int_comb_stage/gen_split_accum[1].gen_sum_struct.gen_sum/gen_structural.gen_no_dsp48.gen_cin/gen_reg.d_reg_reg[2]'
+INFO: [Synth 8-3886] merging instance 'U0/i_synth/interpolator.interpolation_filter/int/gen_stages[4].gen_unfolded.int_comb_stage/gen_split_accum[1].gen_sum_struct.gen_sum/gen_structural.gen_no_dsp48.gen_cin/gen_reg.d_reg_reg[2]' (FDRE) to 'U0/i_synth/interpolator.interpolation_filter/int/gen_stages[4].gen_unfolded.int_comb_stage/gen_split_accum[1].gen_sum_struct.gen_sum/gen_structural.gen_no_dsp48.gen_cin/gen_reg.d_reg_reg[3]'
+INFO: [Synth 8-3886] merging instance 'U0/i_synth/interpolator.interpolation_filter/int/gen_stages[4].gen_unfolded.int_comb_stage/gen_split_accum[1].gen_sum_struct.gen_sum/gen_structural.gen_no_dsp48.gen_cin/gen_reg.d_reg_reg[3]' (FDRE) to 'U0/i_synth/interpolator.interpolation_filter/int/gen_stages[4].gen_unfolded.int_comb_stage/gen_split_accum[1].gen_sum_struct.gen_sum/gen_structural.gen_no_dsp48.gen_cin/gen_reg.d_reg_reg[4]'
+INFO: [Synth 8-3886] merging instance 'U0/i_synth/interpolator.interpolation_filter/int/gen_stages[4].gen_unfolded.int_comb_stage/gen_split_accum[1].gen_sum_struct.gen_sum/gen_structural.gen_no_dsp48.gen_cin/gen_reg.d_reg_reg[4]' (FDRE) to 'U0/i_synth/interpolator.interpolation_filter/int/gen_stages[4].gen_unfolded.int_comb_stage/gen_split_accum[1].gen_sum_struct.gen_sum/gen_structural.gen_no_dsp48.gen_cin/gen_reg.d_reg_reg[5]'
+INFO: [Synth 8-3886] merging instance 'U0/i_synth/interpolator.interpolation_filter/int/gen_stages[4].gen_unfolded.int_comb_stage/gen_split_accum[1].gen_sum_struct.gen_sum/gen_structural.gen_no_dsp48.gen_cin/gen_reg.d_reg_reg[5]' (FDRE) to 'U0/i_synth/interpolator.interpolation_filter/int/gen_stages[4].gen_unfolded.int_comb_stage/gen_split_accum[1].gen_sum_struct.gen_sum/gen_structural.gen_no_dsp48.gen_cin/gen_reg.d_reg_reg[6]'
+INFO: [Synth 8-3886] merging instance 'U0/i_synth/interpolator.interpolation_filter/int/gen_stages[5].gen_unfolded.int_comb_stage/gen_split_accum[0].gen_mem_we/gen_rtl.gen_dly.gen_regs.delay_bus_reg[0]' (FDRE) to 'U0/i_synth/interpolator.interpolation_filter/int/gen_stages[5].gen_unfolded.int_comb_stage/gen_nd_out_dly/gen_rtl.gen_dly.gen_regs.delay_bus_reg[0]'
+INFO: [Synth 8-3886] merging instance 'U0/i_synth/interpolator.interpolation_filter/int/gen_stages[5].gen_unfolded.int_comb_stage/gen_nd_out_dly/gen_rtl.gen_dly.gen_regs.delay_bus_reg[0]' (FDRE) to 'U0/i_synth/interpolator.interpolation_filter/int/gen_stages[5].gen_unfolded.int_comb_stage/gen_split_accum[1].gen_nd_src/gen_rtl.gen_reg.d_reg_reg'
+INFO: [Synth 8-3886] merging instance 'U0/i_synth/interpolator.interpolation_filter/int/gen_stages[5].gen_unfolded.int_comb_stage/gen_split_accum[1].gen_mem_we/gen_rtl.gen_dly.gen_regs.delay_bus_reg[0]' (FDRE) to 'U0/i_synth/interpolator.interpolation_filter/int/gen_stages[5].gen_unfolded.int_comb_stage/gen_nd_out_dly/gen_rtl.gen_dly.gen_regs.delay_bus_reg[1]'
+INFO: [Synth 8-3886] merging instance 'U0/i_synth/interpolator.interpolation_filter/int/gen_stages[5].gen_unfolded.int_comb_stage/gen_split_accum[0].gen_sum_struct.opcode_reg[0]' (FDR) to 'U0/i_synth/interpolator.interpolation_filter/int/gen_stages[5].gen_unfolded.int_comb_stage/gen_split_accum[1].gen_sum_struct.opcode_reg[6]'
+INFO: [Synth 8-3886] merging instance 'U0/i_synth/interpolator.interpolation_filter/int/gen_stages[5].gen_unfolded.int_comb_stage/gen_split_accum[0].gen_sum_struct.opcode_reg[2]' (FDR) to 'U0/i_synth/interpolator.interpolation_filter/int/gen_stages[5].gen_unfolded.int_comb_stage/gen_split_accum[0].gen_sum_struct.opcode_reg[3]'
+INFO: [Synth 8-3886] merging instance 'U0/i_synth/interpolator.interpolation_filter/int/gen_stages[5].gen_unfolded.int_comb_stage/gen_split_accum[0].gen_sum_struct.opcode_reg[6]' (FDR) to 'U0/i_synth/interpolator.interpolation_filter/int/gen_stages[5].gen_unfolded.int_comb_stage/gen_split_accum[1].gen_sum_struct.opcode_reg[6]'
+INFO: [Synth 8-3886] merging instance 'U0/i_synth/interpolator.interpolation_filter/int/gen_stages[5].gen_unfolded.int_comb_stage/gen_split_accum[0].gen_mem_we/gen_rtl.gen_dly.gen_regs.delay_bus_reg[1]' (FDRE) to 'U0/i_synth/interpolator.interpolation_filter/int/gen_stages[5].gen_unfolded.int_comb_stage/gen_nd_out_dly/gen_rtl.gen_dly.gen_regs.delay_bus_reg[1]'
+INFO: [Synth 8-3886] merging instance 'U0/i_synth/interpolator.interpolation_filter/int/gen_stages[5].gen_unfolded.int_comb_stage/gen_split_accum[1].gen_sum_struct.opcode_reg[0]' (FDR) to 'U0/i_synth/interpolator.interpolation_filter/int/gen_stages[5].gen_unfolded.int_comb_stage/gen_split_accum[1].gen_sum_struct.opcode_reg[6]'
+INFO: [Synth 8-3886] merging instance 'U0/i_synth/interpolator.interpolation_filter/int/gen_stages[5].gen_unfolded.int_comb_stage/gen_split_accum[1].gen_sum_struct.opcode_reg[2]' (FDR) to 'U0/i_synth/interpolator.interpolation_filter/int/gen_stages[5].gen_unfolded.int_comb_stage/gen_split_accum[1].gen_sum_struct.opcode_reg[3]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/i_synth/\interpolator.interpolation_filter/int/gen_stages[5].gen_unfolded.int_comb_stage/gen_split_accum[1].gen_sum_struct.opcode_reg[6] )
+INFO: [Synth 8-3886] merging instance 'U0/i_synth/interpolator.interpolation_filter/int/gen_stages[5].gen_unfolded.int_comb_stage/gen_split_accum[1].gen_d_src/gen_reg.d_reg_reg[6]' (FDRE) to 'U0/i_synth/interpolator.interpolation_filter/int/gen_stages[5].gen_unfolded.int_comb_stage/gen_split_accum[1].gen_d_src/gen_reg.d_reg_reg[7]'
+INFO: [Synth 8-3886] merging instance 'U0/i_synth/interpolator.interpolation_filter/int/gen_stages[5].gen_unfolded.int_comb_stage/gen_split_accum[1].gen_d_src/gen_reg.d_reg_reg[7]' (FDRE) to 'U0/i_synth/interpolator.interpolation_filter/int/gen_stages[5].gen_unfolded.int_comb_stage/gen_split_accum[1].gen_d_src/gen_reg.d_reg_reg[8]'
+INFO: [Synth 8-3886] merging instance 'U0/i_synth/interpolator.interpolation_filter/int/gen_stages[5].gen_unfolded.int_comb_stage/gen_split_accum[1].gen_d_src/gen_reg.d_reg_reg[8]' (FDRE) to 'U0/i_synth/interpolator.interpolation_filter/int/gen_stages[5].gen_unfolded.int_comb_stage/gen_split_accum[1].gen_d_src/gen_reg.d_reg_reg[9]'
+INFO: [Synth 8-3886] merging instance 'U0/i_synth/interpolator.interpolation_filter/int/gen_stages[5].gen_unfolded.int_comb_stage/gen_split_accum[1].gen_d_src/gen_reg.d_reg_reg[9]' (FDRE) to 'U0/i_synth/interpolator.interpolation_filter/int/gen_stages[5].gen_unfolded.int_comb_stage/gen_split_accum[1].gen_d_src/gen_reg.d_reg_reg[10]'
+INFO: [Synth 8-3886] merging instance 'U0/i_synth/interpolator.interpolation_filter/int/gen_stages[5].gen_unfolded.int_comb_stage/gen_split_accum[1].gen_d_src/gen_reg.d_reg_reg[10]' (FDRE) to 'U0/i_synth/interpolator.interpolation_filter/int/gen_stages[5].gen_unfolded.int_comb_stage/gen_split_accum[1].gen_d_src/gen_reg.d_reg_reg[11]'
+INFO: [Synth 8-3886] merging instance 'U0/i_synth/interpolator.interpolation_filter/int/gen_stages[5].gen_unfolded.int_comb_stage/gen_split_accum[1].gen_d_src/gen_reg.d_reg_reg[11]' (FDRE) to 'U0/i_synth/interpolator.interpolation_filter/int/gen_stages[5].gen_unfolded.int_comb_stage/gen_split_accum[1].gen_d_src/gen_reg.d_reg_reg[12]'
+INFO: [Synth 8-3886] merging instance 'U0/i_synth/interpolator.interpolation_filter/int/gen_stages[5].gen_unfolded.int_comb_stage/gen_split_accum[1].gen_d_src/gen_reg.d_reg_reg[12]' (FDRE) to 'U0/i_synth/interpolator.interpolation_filter/int/gen_stages[5].gen_unfolded.int_comb_stage/gen_split_accum[1].gen_d_src/gen_reg.d_reg_reg[13]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/i_synth/\interpolator.interpolation_filter/int/gen_stages[5].gen_unfolded.int_comb_stage/gen_split_accum[0].gen_sum_struct.addsub_reg )
+INFO: [Synth 8-3886] merging instance 'U0/i_synth/interpolator.interpolation_filter/int/gen_stages[5].gen_unfolded.int_comb_stage/gen_split_accum[1].gen_mem_we/gen_rtl.gen_dly.gen_regs.delay_bus_reg[1]' (FDRE) to 'U0/i_synth/interpolator.interpolation_filter/int/gen_stages[5].gen_unfolded.int_comb_stage/gen_nd_out_dly/gen_rtl.gen_dly.gen_regs.delay_bus_reg[2]'
+INFO: [Synth 8-3886] merging instance 'U0/i_synth/interpolator.interpolation_filter/int/gen_stages[4].gen_unfolded.int_comb_stage/gen_split_accum[1].gen_sum_struct.gen_sum/gen_structural.gen_no_dsp48.gen_opcode/gen_reg.d_reg_reg[0]' (FDRE) to 'U0/i_synth/interpolator.interpolation_filter/int/gen_stages[0].gen_unfolded.int_comb_stage/gen_clr_out_dly/gen_rtl.gen_dly.gen_regs.delay_bus_reg[0]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/i_synth/\interpolator.interpolation_filter/int/gen_stages[0].gen_unfolded.int_comb_stage/gen_clr_out_dly/gen_rtl.gen_dly.gen_regs.delay_bus_reg[0] )
+INFO: [Synth 8-3886] merging instance 'U0/i_synth/interpolator.interpolation_filter/int/gen_stages[0].gen_unfolded.int_comb_stage/gen_clr_out_dly/gen_rtl.gen_dly.gen_regs.delay_bus_reg[1]' (FDRE) to 'U0/i_synth/interpolator.interpolation_filter/int/gen_stages[0].gen_unfolded.int_comb_stage/gen_clr_out_dly/gen_rtl.gen_dly.gen_regs.delay_bus_reg[0]'
+INFO: [Synth 8-3886] merging instance 'U0/i_synth/interpolator.interpolation_filter/int/gen_stages[0].gen_unfolded.int_comb_stage/gen_split_accum[0].gen_sum_struct.opcode_reg[3]' (FDR) to 'U0/i_synth/interpolator.interpolation_filter/int/gen_stages[0].gen_unfolded.int_comb_stage/gen_split_accum[0].gen_sum_struct.opcode_reg[5]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/i_synth/\interpolator.interpolation_filter/int/gen_stages[0].gen_unfolded.int_comb_stage/gen_clr_out_dly/gen_rtl.gen_dly.gen_regs.delay_bus_reg[0] )
+INFO: [Synth 8-3886] merging instance 'U0/i_synth/interpolator.interpolation_filter/int/gen_stages[1].gen_unfolded.int_comb_stage/gen_clr_out_dly/gen_rtl.gen_dly.gen_regs.delay_bus_reg[0]' (FDRE) to 'U0/i_synth/interpolator.interpolation_filter/int/gen_stages[2].gen_unfolded.int_comb_stage/gen_clr_out_dly/gen_rtl.gen_dly.gen_regs.delay_bus_reg[0]'
+INFO: [Synth 8-3886] merging instance 'U0/i_synth/interpolator.interpolation_filter/int/gen_stages[1].gen_unfolded.int_comb_stage/gen_clr_out_dly/gen_rtl.gen_dly.gen_regs.delay_bus_reg[1]' (FDRE) to 'U0/i_synth/interpolator.interpolation_filter/int/gen_stages[2].gen_unfolded.int_comb_stage/gen_clr_out_dly/gen_rtl.gen_dly.gen_regs.delay_bus_reg[0]'
+INFO: [Synth 8-3886] merging instance 'U0/i_synth/interpolator.interpolation_filter/int/gen_stages[0].gen_unfolded.int_comb_stage/gen_clr_out_dly/gen_rtl.gen_dly.gen_regs.delay_bus_reg[0]' (FDRE) to 'U0/i_synth/interpolator.interpolation_filter/int/gen_stages[2].gen_unfolded.int_comb_stage/gen_clr_out_dly/gen_rtl.gen_dly.gen_regs.delay_bus_reg[0]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/i_synth/\interpolator.interpolation_filter/int/gen_stages[2].gen_unfolded.int_comb_stage/gen_clr_out_dly/gen_rtl.gen_dly.gen_regs.delay_bus_reg[0] )
+INFO: [Synth 8-3886] merging instance 'U0/i_synth/interpolator.interpolation_filter/int/gen_stages[1].gen_unfolded.int_comb_stage/gen_split_accum[0].gen_sum_struct.opcode_reg[3]' (FDR) to 'U0/i_synth/interpolator.interpolation_filter/int/gen_stages[1].gen_unfolded.int_comb_stage/gen_split_accum[0].gen_sum_struct.opcode_reg[5]'
+INFO: [Synth 8-3886] merging instance 'U0/i_synth/interpolator.interpolation_filter/int/gen_stages[2].gen_unfolded.int_comb_stage/gen_clr_out_dly/gen_rtl.gen_dly.gen_regs.delay_bus_reg[1]' (FDRE) to 'U0/i_synth/interpolator.interpolation_filter/int/gen_stages[2].gen_unfolded.int_comb_stage/gen_clr_out_dly/gen_rtl.gen_dly.gen_regs.delay_bus_reg[0]'
+INFO: [Synth 8-3886] merging instance 'U0/i_synth/interpolator.interpolation_filter/int/gen_stages[2].gen_unfolded.int_comb_stage/gen_split_accum[0].gen_sum_struct.opcode_reg[3]' (FDR) to 'U0/i_synth/interpolator.interpolation_filter/int/gen_stages[2].gen_unfolded.int_comb_stage/gen_split_accum[0].gen_sum_struct.opcode_reg[5]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/i_synth/\interpolator.interpolation_filter/int/gen_stages[2].gen_unfolded.int_comb_stage/gen_clr_out_dly/gen_rtl.gen_dly.gen_regs.delay_bus_reg[0] )
+INFO: [Synth 8-3886] merging instance 'U0/i_synth/interpolator.interpolation_filter/int/gen_stages[3].gen_unfolded.int_comb_stage/gen_clr_out_dly/gen_rtl.gen_dly.gen_regs.delay_bus_reg[0]' (FDRE) to 'U0/i_synth/interpolator.interpolation_filter/int/gen_stages[4].gen_unfolded.int_comb_stage/gen_clr_out_dly/gen_rtl.gen_dly.gen_regs.delay_bus_reg[0]'
+INFO: [Synth 8-3886] merging instance 'U0/i_synth/interpolator.interpolation_filter/int/gen_stages[3].gen_unfolded.int_comb_stage/gen_clr_out_dly/gen_rtl.gen_dly.gen_regs.delay_bus_reg[1]' (FDRE) to 'U0/i_synth/interpolator.interpolation_filter/int/gen_stages[4].gen_unfolded.int_comb_stage/gen_clr_out_dly/gen_rtl.gen_dly.gen_regs.delay_bus_reg[0]'
+INFO: [Synth 8-3886] merging instance 'U0/i_synth/interpolator.interpolation_filter/int/gen_stages[2].gen_unfolded.int_comb_stage/gen_clr_out_dly/gen_rtl.gen_dly.gen_regs.delay_bus_reg[0]' (FDRE) to 'U0/i_synth/interpolator.interpolation_filter/int/gen_stages[4].gen_unfolded.int_comb_stage/gen_clr_out_dly/gen_rtl.gen_dly.gen_regs.delay_bus_reg[0]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/i_synth/\interpolator.interpolation_filter/int/gen_stages[4].gen_unfolded.int_comb_stage/gen_clr_out_dly/gen_rtl.gen_dly.gen_regs.delay_bus_reg[0] )
+INFO: [Synth 8-3886] merging instance 'U0/i_synth/interpolator.interpolation_filter/int/gen_stages[3].gen_unfolded.int_comb_stage/gen_split_accum[0].gen_sum_struct.opcode_reg[3]' (FDR) to 'U0/i_synth/interpolator.interpolation_filter/int/gen_stages[3].gen_unfolded.int_comb_stage/gen_split_accum[0].gen_sum_struct.opcode_reg[5]'
+INFO: [Synth 8-3886] merging instance 'U0/i_synth/interpolator.interpolation_filter/int/gen_stages[4].gen_unfolded.int_comb_stage/gen_clr_out_dly/gen_rtl.gen_dly.gen_regs.delay_bus_reg[1]' (FDRE) to 'U0/i_synth/interpolator.interpolation_filter/int/gen_stages[4].gen_unfolded.int_comb_stage/gen_clr_out_dly/gen_rtl.gen_dly.gen_regs.delay_bus_reg[0]'
+INFO: [Synth 8-3886] merging instance 'U0/i_synth/interpolator.interpolation_filter/int/gen_stages[4].gen_unfolded.int_comb_stage/gen_split_accum[0].gen_sum_struct.opcode_reg[3]' (FDR) to 'U0/i_synth/interpolator.interpolation_filter/int/gen_stages[4].gen_unfolded.int_comb_stage/gen_split_accum[0].gen_sum_struct.opcode_reg[5]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/i_synth/\interpolator.interpolation_filter/int/gen_stages[4].gen_unfolded.int_comb_stage/gen_clr_out_dly/gen_rtl.gen_dly.gen_regs.delay_bus_reg[0] )
+INFO: [Synth 8-3886] merging instance 'U0/i_synth/interpolator.interpolation_filter/int/gen_stages[4].gen_unfolded.int_comb_stage/gen_clr_out_dly/gen_rtl.gen_dly.gen_regs.delay_bus_reg[2]' (FDRE) to 'U0/i_synth/interpolator.interpolation_filter/int/gen_stages[4].gen_unfolded.int_comb_stage/gen_clr_out_dly/gen_rtl.gen_dly.gen_regs.delay_bus_reg[0]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/i_synth/\interpolator.interpolation_filter/int/gen_stages[4].gen_unfolded.int_comb_stage/gen_clr_out_dly/gen_rtl.gen_dly.gen_regs.delay_bus_reg[0] )
+INFO: [Synth 8-3886] merging instance 'U0/i_synth/interpolator.interpolation_filter/int/gen_stages[4].gen_unfolded.int_comb_stage/gen_clr_out_dly/gen_rtl.gen_dly.gen_regs.delay_bus_reg[3]' (FDRE) to 'U0/i_synth/interpolator.interpolation_filter/int/gen_stages[4].gen_unfolded.int_comb_stage/gen_clr_out_dly/gen_rtl.gen_dly.gen_regs.delay_bus_reg[0]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/i_synth/\interpolator.interpolation_filter/int/gen_stages[4].gen_unfolded.int_comb_stage/gen_clr_out_dly/gen_rtl.gen_dly.gen_regs.delay_bus_reg[0] )
+INFO: [Synth 8-3886] merging instance 'U0/i_synth/interpolator.interpolation_filter/int/gen_stages[5].gen_unfolded.int_comb_stage/gen_split_accum[1].gen_clr_src/gen_rtl.gen_reg.d_reg_reg' (FDRE) to 'U0/i_synth/interpolator.interpolation_filter/int/gen_stages[4].gen_unfolded.int_comb_stage/gen_clr_out_dly/gen_rtl.gen_dly.gen_regs.delay_bus_reg[0]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/i_synth/\interpolator.interpolation_filter/int/gen_stages[4].gen_unfolded.int_comb_stage/gen_clr_out_dly/gen_rtl.gen_dly.gen_regs.delay_bus_reg[0] )
+INFO: [Synth 8-3886] merging instance 'U0/i_synth/interpolator.interpolation_filter/int/gen_stages[5].gen_unfolded.int_comb_stage/gen_split_accum[0].gen_sum_struct.opcode_reg[3]' (FDR) to 'U0/i_synth/interpolator.interpolation_filter/int/gen_stages[5].gen_unfolded.int_comb_stage/gen_split_accum[0].gen_sum_struct.opcode_reg[5]'
+INFO: [Synth 8-3886] merging instance 'U0/i_synth/interpolator.interpolation_filter/int/gen_stages[5].gen_unfolded.int_comb_stage/gen_split_accum[1].gen_sum_struct.opcode_reg[3]' (FDR) to 'U0/i_synth/interpolator.interpolation_filter/int/gen_stages[5].gen_unfolded.int_comb_stage/gen_split_accum[1].gen_sum_struct.opcode_reg[5]'
+INFO: [Synth 8-3886] merging instance 'U0/i_synth/interpolator.interpolation_filter/comb/gen_stages[0].gen_folded.int_comb_stage/gen_split_accum[0].gen_sum_struct.opcode_reg[0]' (FDR) to 'U0/i_synth/interpolator.interpolation_filter/comb/gen_stages[0].gen_folded.int_comb_stage/gen_split_accum[0].gen_sum_struct.addsub_reg'
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:42 ; elapsed = 00:00:44 . Memory (MB): peak = 1597.301 ; gain = 216.719
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:02 ; elapsed = 00:01:07 . Memory (MB): peak = 2220.395 ; gain = 839.813
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:01:02 ; elapsed = 00:01:08 . Memory (MB): peak = 2241.379 ; gain = 860.797
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:01:03 ; elapsed = 00:01:09 . Memory (MB): peak = 2243.523 ; gain = 862.941
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:01:13 ; elapsed = 00:01:19 . Memory (MB): peak = 2250.313 ; gain = 869.730
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:13 ; elapsed = 00:01:19 . Memory (MB): peak = 2250.313 ; gain = 869.730
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:13 ; elapsed = 00:01:19 . Memory (MB): peak = 2250.313 ; gain = 869.730
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:14 ; elapsed = 00:01:19 . Memory (MB): peak = 2250.313 ; gain = 869.730
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:14 ; elapsed = 00:01:20 . Memory (MB): peak = 2250.313 ; gain = 869.730
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:14 ; elapsed = 00:01:20 . Memory (MB): peak = 2250.313 ; gain = 869.730
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+--------+------+
+|      |Cell    |Count |
++------+--------+------+
+|1     |DSP48E1 |     8|
+|2     |LUT1    |    16|
+|3     |LUT2    |    10|
+|4     |LUT3    |    35|
+|5     |LUT4    |    11|
+|6     |LUT5    |     5|
+|7     |LUT6    |    15|
+|8     |MUXCY_L |     7|
+|9     |SRL16E  |    94|
+|10    |XORCY   |     7|
+|11    |FDRE    |   325|
+|12    |FDSE    |    13|
++------+--------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:14 ; elapsed = 00:01:20 . Memory (MB): peak = 2250.313 ; gain = 869.730
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 11 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:44 ; elapsed = 00:01:06 . Memory (MB): peak = 2250.313 ; gain = 810.559
+Synthesis Optimization Complete : Time (s): cpu = 00:01:14 ; elapsed = 00:01:20 . Memory (MB): peak = 2250.313 ; gain = 869.730
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.074 . Memory (MB): peak = 2250.313 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 22 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 1 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2282.676 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 9 instances were transformed.
+  (CARRY4) => CARRY8: 1 instance 
+  DSP48E1 => DSP48E2 (DSP_ALU, DSP_A_B_DATA, DSP_C_DATA, DSP_MULTIPLIER, DSP_M_DATA, DSP_OUTPUT, DSP_PREADD, DSP_PREADD_DATA): 8 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+128 Infos, 100 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:01:32 ; elapsed = 00:01:41 . Memory (MB): peak = 2282.676 ; gain = 1802.902
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 2282.676 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'C:/xilinxdesigns/sdraproject/ultra96v2_0-master/ultra96v2_0.runs/ultra96v2_bd_cic_compiler_0_0_synth_1/ultra96v2_bd_cic_compiler_0_0.dcp' has been generated.
+WARNING: [Common 17-576] 'use_project_ipc' is deprecated. This option is deprecated and no longer used.
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP ultra96v2_bd_cic_compiler_0_0, cache-ID = 968f99d366b8af12
+INFO: [Coretcl 2-1174] Renamed 44 cell refs.
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 2282.680 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'C:/xilinxdesigns/sdraproject/ultra96v2_0-master/ultra96v2_0.runs/ultra96v2_bd_cic_compiler_0_0_synth_1/ultra96v2_bd_cic_compiler_0_0.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file ultra96v2_bd_cic_compiler_0_0_utilization_synth.rpt -pb ultra96v2_bd_cic_compiler_0_0_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Sun May 17 19:15:05 2020...

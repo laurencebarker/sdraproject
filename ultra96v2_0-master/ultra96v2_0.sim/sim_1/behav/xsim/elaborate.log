@@ -1,0 +1,695 @@
+Vivado Simulator 2019.2
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.2/bin/unwrapped/win64.o/xelab.exe -wto 56c94a20645543cfba5dbf152c116b0c --incr --debug typical --relax --mt 2 -L xil_defaultlib -L axi_infrastructure_v1_1_0 -L axi_vip_v1_1_6 -L zynq_ultra_ps_e_vip_v1_0_6 -L axi_lite_ipif_v3_0_4 -L lib_cdc_v1_0_2 -L interrupt_control_v3_1_4 -L axi_gpio_v2_0_22 -L generic_baseblocks_v2_1_0 -L axi_register_slice_v2_1_20 -L fifo_generator_v13_2_5 -L axi_data_fifo_v2_1_19 -L axi_crossbar_v2_1_21 -L proc_sys_reset_v5_0_13 -L axi_bram_ctrl_v4_1_2 -L blk_mem_gen_v8_4_4 -L lib_pkg_v1_0_2 -L lib_srl_fifo_v1_0_2 -L axi_uart16550_v2_0_22 -L xlslice_v1_0_2 -L xlconcat_v2_1_3 -L axis_infrastructure_v1_1_0 -L axis_register_slice_v1_1_20 -L axis_dwidth_converter_v1_1_19 -L xbip_utils_v3_0_10 -L axi_utils_v2_0_6 -L fir_compiler_v7_2_13 -L axis_broadcaster_v1_1_19 -L cic_compiler_v4_0_15 -L axis_combiner_v1_1_18 -L xbip_pipe_v3_0_6 -L xbip_bram18k_v3_0_6 -L mult_gen_v12_0_16 -L cmpy_v6_0_18 -L xbip_dsp48_wrapper_v3_0_4 -L xbip_dsp48_addsub_v3_0_6 -L xbip_dsp48_multadd_v3_0_6 -L dds_compiler_v6_0_19 -L sim_clk_gen_v1_0_2 -L xlconstant_v1_1_6 -L axi_protocol_converter_v2_1_20 -L axi_clock_converter_v2_1_19 -L axi_dwidth_converter_v2_1_20 -L xilinx_vip -L unisims_ver -L unimacro_ver -L secureip -L xpm --snapshot ultra96v2_bd_wrapper_behav xil_defaultlib.ultra96v2_bd_wrapper xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-516] comparison between unequal length arrays always returns FALSE [/wrk/2019.2/continuous/2019_11_06_2708876/packages/customer/vivado/data/ip/xilinx/xbip_utils_v3_0/hdl/xbip_utils_v3_0_vh_rfs.vhd:2056]
+WARNING: [VRFC 10-516] comparison between unequal length arrays always returns FALSE [/wrk/2019.2/continuous/2019_11_06_2708876/packages/customer/vivado/data/ip/xilinx/xbip_utils_v3_0/hdl/xbip_utils_v3_0_vh_rfs.vhd:2058]
+WARNING: [VRFC 10-516] comparison between unequal length arrays always returns FALSE [/wrk/2019.2/continuous/2019_11_06_2708876/packages/customer/vivado/data/ip/xilinx/xbip_utils_v3_0/hdl/xbip_utils_v3_0_vh_rfs.vhd:2059]
+WARNING: [VRFC 10-516] comparison between unequal length arrays always returns FALSE [/wrk/2019.2/continuous/2019_11_06_2708876/packages/customer/vivado/data/ip/xilinx/xbip_utils_v3_0/hdl/xbip_utils_v3_0_vh_rfs.vhd:2060]
+WARNING: [VRFC 10-516] comparison between unequal length arrays always returns FALSE [/wrk/2019.2/continuous/2019_11_06_2708876/packages/customer/vivado/data/ip/xilinx/xbip_utils_v3_0/hdl/xbip_utils_v3_0_vh_rfs.vhd:2046]
+WARNING: [VRFC 10-516] comparison between unequal length arrays always returns FALSE [/wrk/2019.2/continuous/2019_11_06_2708876/packages/customer/vivado/data/ip/xilinx/xbip_utils_v3_0/hdl/xbip_utils_v3_0_vh_rfs.vhd:2047]
+WARNING: [VRFC 10-516] comparison between unequal length arrays always returns FALSE [/wrk/2019.2/continuous/2019_11_06_2708876/packages/customer/vivado/data/ip/xilinx/xbip_utils_v3_0/hdl/xbip_utils_v3_0_vh_rfs.vhd:2049]
+WARNING: [VRFC 10-516] comparison between unequal length arrays always returns FALSE [/wrk/2019.2/continuous/2019_11_06_2708876/packages/customer/vivado/data/ip/xilinx/xbip_utils_v3_0/hdl/xbip_utils_v3_0_vh_rfs.vhd:2050]
+WARNING: [VRFC 10-516] comparison between unequal length arrays always returns FALSE [/wrk/2019.2/continuous/2019_11_06_2708876/packages/customer/vivado/data/ip/xilinx/xbip_utils_v3_0/hdl/xbip_utils_v3_0_vh_rfs.vhd:2056]
+WARNING: [VRFC 10-516] comparison between unequal length arrays always returns FALSE [/wrk/2019.2/continuous/2019_11_06_2708876/packages/customer/vivado/data/ip/xilinx/xbip_utils_v3_0/hdl/xbip_utils_v3_0_vh_rfs.vhd:2058]
+WARNING: [VRFC 10-516] comparison between unequal length arrays always returns FALSE [/wrk/2019.2/continuous/2019_11_06_2708876/packages/customer/vivado/data/ip/xilinx/xbip_utils_v3_0/hdl/xbip_utils_v3_0_vh_rfs.vhd:2059]
+WARNING: [VRFC 10-516] comparison between unequal length arrays always returns FALSE [/wrk/2019.2/continuous/2019_11_06_2708876/packages/customer/vivado/data/ip/xilinx/xbip_utils_v3_0/hdl/xbip_utils_v3_0_vh_rfs.vhd:2060]
+WARNING: [VRFC 10-516] comparison between unequal length arrays always returns FALSE [/wrk/2019.2/continuous/2019_11_06_2708876/packages/customer/vivado/data/ip/xilinx/xbip_utils_v3_0/hdl/xbip_utils_v3_0_vh_rfs.vhd:2046]
+WARNING: [VRFC 10-516] comparison between unequal length arrays always returns FALSE [/wrk/2019.2/continuous/2019_11_06_2708876/packages/customer/vivado/data/ip/xilinx/xbip_utils_v3_0/hdl/xbip_utils_v3_0_vh_rfs.vhd:2047]
+WARNING: [VRFC 10-516] comparison between unequal length arrays always returns FALSE [/wrk/2019.2/continuous/2019_11_06_2708876/packages/customer/vivado/data/ip/xilinx/xbip_utils_v3_0/hdl/xbip_utils_v3_0_vh_rfs.vhd:2049]
+WARNING: [VRFC 10-516] comparison between unequal length arrays always returns FALSE [/wrk/2019.2/continuous/2019_11_06_2708876/packages/customer/vivado/data/ip/xilinx/xbip_utils_v3_0/hdl/xbip_utils_v3_0_vh_rfs.vhd:2050]
+WARNING: [VRFC 10-3091] actual bit length 12 differs from formal bit length 16 for port 'MAXIGP2BID' [C:/xilinxdesigns/sdraproject/ultra96v2_0-master/ultra96v2_0.ip_user_files/bd/ultra96v2_bd/ip/ultra96v2_bd_zynq_ultra_ps_e_0_0/sim/ultra96v2_bd_zynq_ultra_ps_e_0_0_vip_wrapper.v:411]
+WARNING: [VRFC 10-3091] actual bit length 12 differs from formal bit length 16 for port 'MAXIGP2RID' [C:/xilinxdesigns/sdraproject/ultra96v2_0-master/ultra96v2_0.ip_user_files/bd/ultra96v2_bd/ip/ultra96v2_bd_zynq_ultra_ps_e_0_0/sim/ultra96v2_bd_zynq_ultra_ps_e_0_0_vip_wrapper.v:412]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 128 for port 'MAXIGP2RDATA' [C:/xilinxdesigns/sdraproject/ultra96v2_0-master/ultra96v2_0.ip_user_files/bd/ultra96v2_bd/ip/ultra96v2_bd_zynq_ultra_ps_e_0_0/sim/ultra96v2_bd_zynq_ultra_ps_e_0_0_vip_wrapper.v:415]
+WARNING: [VRFC 10-3091] actual bit length 2 differs from formal bit length 1 for port 'SAXIGP0ARLOCK' [C:/xilinxdesigns/sdraproject/ultra96v2_0-master/ultra96v2_0.ip_user_files/bd/ultra96v2_bd/ip/ultra96v2_bd_zynq_ultra_ps_e_0_0/sim/ultra96v2_bd_zynq_ultra_ps_e_0_0_vip_wrapper.v:442]
+WARNING: [VRFC 10-3091] actual bit length 2 differs from formal bit length 1 for port 'SAXIGP0AWLOCK' [C:/xilinxdesigns/sdraproject/ultra96v2_0-master/ultra96v2_0.ip_user_files/bd/ultra96v2_bd/ip/ultra96v2_bd_zynq_ultra_ps_e_0_0/sim/ultra96v2_bd_zynq_ultra_ps_e_0_0_vip_wrapper.v:445]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 40 for port 'SAXIGP0ARADDR' [C:/xilinxdesigns/sdraproject/ultra96v2_0-master/ultra96v2_0.ip_user_files/bd/ultra96v2_bd/ip/ultra96v2_bd_zynq_ultra_ps_e_0_0/sim/ultra96v2_bd_zynq_ultra_ps_e_0_0_vip_wrapper.v:449]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 40 for port 'SAXIGP0AWADDR' [C:/xilinxdesigns/sdraproject/ultra96v2_0-master/ultra96v2_0.ip_user_files/bd/ultra96v2_bd/ip/ultra96v2_bd_zynq_ultra_ps_e_0_0/sim/ultra96v2_bd_zynq_ultra_ps_e_0_0_vip_wrapper.v:450]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 128 for port 'SAXIGP0WDATA' [C:/xilinxdesigns/sdraproject/ultra96v2_0-master/ultra96v2_0.ip_user_files/bd/ultra96v2_bd/ip/ultra96v2_bd_zynq_ultra_ps_e_0_0/sim/ultra96v2_bd_zynq_ultra_ps_e_0_0_vip_wrapper.v:451]
+WARNING: [VRFC 10-3091] actual bit length 4 differs from formal bit length 8 for port 'SAXIGP0ARLEN' [C:/xilinxdesigns/sdraproject/ultra96v2_0-master/ultra96v2_0.ip_user_files/bd/ultra96v2_bd/ip/ultra96v2_bd_zynq_ultra_ps_e_0_0/sim/ultra96v2_bd_zynq_ultra_ps_e_0_0_vip_wrapper.v:453]
+WARNING: [VRFC 10-3091] actual bit length 4 differs from formal bit length 8 for port 'SAXIGP0AWLEN' [C:/xilinxdesigns/sdraproject/ultra96v2_0-master/ultra96v2_0.ip_user_files/bd/ultra96v2_bd/ip/ultra96v2_bd_zynq_ultra_ps_e_0_0/sim/ultra96v2_bd_zynq_ultra_ps_e_0_0_vip_wrapper.v:456]
+WARNING: [VRFC 10-3091] actual bit length 4 differs from formal bit length 16 for port 'SAXIGP0WSTRB' [C:/xilinxdesigns/sdraproject/ultra96v2_0-master/ultra96v2_0.ip_user_files/bd/ultra96v2_bd/ip/ultra96v2_bd_zynq_ultra_ps_e_0_0/sim/ultra96v2_bd_zynq_ultra_ps_e_0_0_vip_wrapper.v:458]
+WARNING: [VRFC 10-3091] actual bit length 2 differs from formal bit length 1 for port 'SAXIGP1ARLOCK' [C:/xilinxdesigns/sdraproject/ultra96v2_0-master/ultra96v2_0.ip_user_files/bd/ultra96v2_bd/ip/ultra96v2_bd_zynq_ultra_ps_e_0_0/sim/ultra96v2_bd_zynq_ultra_ps_e_0_0_vip_wrapper.v:487]
+WARNING: [VRFC 10-3091] actual bit length 2 differs from formal bit length 1 for port 'SAXIGP1AWLOCK' [C:/xilinxdesigns/sdraproject/ultra96v2_0-master/ultra96v2_0.ip_user_files/bd/ultra96v2_bd/ip/ultra96v2_bd_zynq_ultra_ps_e_0_0/sim/ultra96v2_bd_zynq_ultra_ps_e_0_0_vip_wrapper.v:490]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 40 for port 'SAXIGP1ARADDR' [C:/xilinxdesigns/sdraproject/ultra96v2_0-master/ultra96v2_0.ip_user_files/bd/ultra96v2_bd/ip/ultra96v2_bd_zynq_ultra_ps_e_0_0/sim/ultra96v2_bd_zynq_ultra_ps_e_0_0_vip_wrapper.v:494]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 40 for port 'SAXIGP1AWADDR' [C:/xilinxdesigns/sdraproject/ultra96v2_0-master/ultra96v2_0.ip_user_files/bd/ultra96v2_bd/ip/ultra96v2_bd_zynq_ultra_ps_e_0_0/sim/ultra96v2_bd_zynq_ultra_ps_e_0_0_vip_wrapper.v:495]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 128 for port 'SAXIGP1WDATA' [C:/xilinxdesigns/sdraproject/ultra96v2_0-master/ultra96v2_0.ip_user_files/bd/ultra96v2_bd/ip/ultra96v2_bd_zynq_ultra_ps_e_0_0/sim/ultra96v2_bd_zynq_ultra_ps_e_0_0_vip_wrapper.v:496]
+WARNING: [VRFC 10-3091] actual bit length 4 differs from formal bit length 8 for port 'SAXIGP1ARLEN' [C:/xilinxdesigns/sdraproject/ultra96v2_0-master/ultra96v2_0.ip_user_files/bd/ultra96v2_bd/ip/ultra96v2_bd_zynq_ultra_ps_e_0_0/sim/ultra96v2_bd_zynq_ultra_ps_e_0_0_vip_wrapper.v:498]
+WARNING: [VRFC 10-3091] actual bit length 4 differs from formal bit length 8 for port 'SAXIGP1AWLEN' [C:/xilinxdesigns/sdraproject/ultra96v2_0-master/ultra96v2_0.ip_user_files/bd/ultra96v2_bd/ip/ultra96v2_bd_zynq_ultra_ps_e_0_0/sim/ultra96v2_bd_zynq_ultra_ps_e_0_0_vip_wrapper.v:501]
+WARNING: [VRFC 10-3091] actual bit length 4 differs from formal bit length 16 for port 'SAXIGP1WSTRB' [C:/xilinxdesigns/sdraproject/ultra96v2_0-master/ultra96v2_0.ip_user_files/bd/ultra96v2_bd/ip/ultra96v2_bd_zynq_ultra_ps_e_0_0/sim/ultra96v2_bd_zynq_ultra_ps_e_0_0_vip_wrapper.v:503]
+WARNING: [VRFC 10-3091] actual bit length 2 differs from formal bit length 1 for port 'SAXIGP2ARLOCK' [C:/xilinxdesigns/sdraproject/ultra96v2_0-master/ultra96v2_0.ip_user_files/bd/ultra96v2_bd/ip/ultra96v2_bd_zynq_ultra_ps_e_0_0/sim/ultra96v2_bd_zynq_ultra_ps_e_0_0_vip_wrapper.v:532]
+WARNING: [VRFC 10-3091] actual bit length 2 differs from formal bit length 1 for port 'SAXIGP2AWLOCK' [C:/xilinxdesigns/sdraproject/ultra96v2_0-master/ultra96v2_0.ip_user_files/bd/ultra96v2_bd/ip/ultra96v2_bd_zynq_ultra_ps_e_0_0/sim/ultra96v2_bd_zynq_ultra_ps_e_0_0_vip_wrapper.v:535]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 40 for port 'SAXIGP2ARADDR' [C:/xilinxdesigns/sdraproject/ultra96v2_0-master/ultra96v2_0.ip_user_files/bd/ultra96v2_bd/ip/ultra96v2_bd_zynq_ultra_ps_e_0_0/sim/ultra96v2_bd_zynq_ultra_ps_e_0_0_vip_wrapper.v:539]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 40 for port 'SAXIGP2AWADDR' [C:/xilinxdesigns/sdraproject/ultra96v2_0-master/ultra96v2_0.ip_user_files/bd/ultra96v2_bd/ip/ultra96v2_bd_zynq_ultra_ps_e_0_0/sim/ultra96v2_bd_zynq_ultra_ps_e_0_0_vip_wrapper.v:540]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 128 for port 'SAXIGP2WDATA' [C:/xilinxdesigns/sdraproject/ultra96v2_0-master/ultra96v2_0.ip_user_files/bd/ultra96v2_bd/ip/ultra96v2_bd_zynq_ultra_ps_e_0_0/sim/ultra96v2_bd_zynq_ultra_ps_e_0_0_vip_wrapper.v:541]
+WARNING: [VRFC 10-3091] actual bit length 4 differs from formal bit length 8 for port 'SAXIGP2ARLEN' [C:/xilinxdesigns/sdraproject/ultra96v2_0-master/ultra96v2_0.ip_user_files/bd/ultra96v2_bd/ip/ultra96v2_bd_zynq_ultra_ps_e_0_0/sim/ultra96v2_bd_zynq_ultra_ps_e_0_0_vip_wrapper.v:543]
+WARNING: [VRFC 10-3091] actual bit length 4 differs from formal bit length 8 for port 'SAXIGP2AWLEN' [C:/xilinxdesigns/sdraproject/ultra96v2_0-master/ultra96v2_0.ip_user_files/bd/ultra96v2_bd/ip/ultra96v2_bd_zynq_ultra_ps_e_0_0/sim/ultra96v2_bd_zynq_ultra_ps_e_0_0_vip_wrapper.v:546]
+WARNING: [VRFC 10-3091] actual bit length 4 differs from formal bit length 16 for port 'SAXIGP2WSTRB' [C:/xilinxdesigns/sdraproject/ultra96v2_0-master/ultra96v2_0.ip_user_files/bd/ultra96v2_bd/ip/ultra96v2_bd_zynq_ultra_ps_e_0_0/sim/ultra96v2_bd_zynq_ultra_ps_e_0_0_vip_wrapper.v:548]
+WARNING: [VRFC 10-3091] actual bit length 2 differs from formal bit length 1 for port 'SAXIGP3ARLOCK' [C:/xilinxdesigns/sdraproject/ultra96v2_0-master/ultra96v2_0.ip_user_files/bd/ultra96v2_bd/ip/ultra96v2_bd_zynq_ultra_ps_e_0_0/sim/ultra96v2_bd_zynq_ultra_ps_e_0_0_vip_wrapper.v:577]
+WARNING: [VRFC 10-3091] actual bit length 2 differs from formal bit length 1 for port 'SAXIGP3AWLOCK' [C:/xilinxdesigns/sdraproject/ultra96v2_0-master/ultra96v2_0.ip_user_files/bd/ultra96v2_bd/ip/ultra96v2_bd_zynq_ultra_ps_e_0_0/sim/ultra96v2_bd_zynq_ultra_ps_e_0_0_vip_wrapper.v:580]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 40 for port 'SAXIGP3ARADDR' [C:/xilinxdesigns/sdraproject/ultra96v2_0-master/ultra96v2_0.ip_user_files/bd/ultra96v2_bd/ip/ultra96v2_bd_zynq_ultra_ps_e_0_0/sim/ultra96v2_bd_zynq_ultra_ps_e_0_0_vip_wrapper.v:584]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 40 for port 'SAXIGP3AWADDR' [C:/xilinxdesigns/sdraproject/ultra96v2_0-master/ultra96v2_0.ip_user_files/bd/ultra96v2_bd/ip/ultra96v2_bd_zynq_ultra_ps_e_0_0/sim/ultra96v2_bd_zynq_ultra_ps_e_0_0_vip_wrapper.v:585]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 128 for port 'SAXIGP3WDATA' [C:/xilinxdesigns/sdraproject/ultra96v2_0-master/ultra96v2_0.ip_user_files/bd/ultra96v2_bd/ip/ultra96v2_bd_zynq_ultra_ps_e_0_0/sim/ultra96v2_bd_zynq_ultra_ps_e_0_0_vip_wrapper.v:586]
+WARNING: [VRFC 10-3091] actual bit length 4 differs from formal bit length 8 for port 'SAXIGP3ARLEN' [C:/xilinxdesigns/sdraproject/ultra96v2_0-master/ultra96v2_0.ip_user_files/bd/ultra96v2_bd/ip/ultra96v2_bd_zynq_ultra_ps_e_0_0/sim/ultra96v2_bd_zynq_ultra_ps_e_0_0_vip_wrapper.v:588]
+WARNING: [VRFC 10-3091] actual bit length 4 differs from formal bit length 8 for port 'SAXIGP3AWLEN' [C:/xilinxdesigns/sdraproject/ultra96v2_0-master/ultra96v2_0.ip_user_files/bd/ultra96v2_bd/ip/ultra96v2_bd_zynq_ultra_ps_e_0_0/sim/ultra96v2_bd_zynq_ultra_ps_e_0_0_vip_wrapper.v:591]
+WARNING: [VRFC 10-3091] actual bit length 4 differs from formal bit length 16 for port 'SAXIGP3WSTRB' [C:/xilinxdesigns/sdraproject/ultra96v2_0-master/ultra96v2_0.ip_user_files/bd/ultra96v2_bd/ip/ultra96v2_bd_zynq_ultra_ps_e_0_0/sim/ultra96v2_bd_zynq_ultra_ps_e_0_0_vip_wrapper.v:593]
+WARNING: [VRFC 10-3091] actual bit length 2 differs from formal bit length 1 for port 'SAXIGP4ARLOCK' [C:/xilinxdesigns/sdraproject/ultra96v2_0-master/ultra96v2_0.ip_user_files/bd/ultra96v2_bd/ip/ultra96v2_bd_zynq_ultra_ps_e_0_0/sim/ultra96v2_bd_zynq_ultra_ps_e_0_0_vip_wrapper.v:622]
+WARNING: [VRFC 10-3091] actual bit length 2 differs from formal bit length 1 for port 'SAXIGP4AWLOCK' [C:/xilinxdesigns/sdraproject/ultra96v2_0-master/ultra96v2_0.ip_user_files/bd/ultra96v2_bd/ip/ultra96v2_bd_zynq_ultra_ps_e_0_0/sim/ultra96v2_bd_zynq_ultra_ps_e_0_0_vip_wrapper.v:625]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 40 for port 'SAXIGP4ARADDR' [C:/xilinxdesigns/sdraproject/ultra96v2_0-master/ultra96v2_0.ip_user_files/bd/ultra96v2_bd/ip/ultra96v2_bd_zynq_ultra_ps_e_0_0/sim/ultra96v2_bd_zynq_ultra_ps_e_0_0_vip_wrapper.v:629]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 40 for port 'SAXIGP4AWADDR' [C:/xilinxdesigns/sdraproject/ultra96v2_0-master/ultra96v2_0.ip_user_files/bd/ultra96v2_bd/ip/ultra96v2_bd_zynq_ultra_ps_e_0_0/sim/ultra96v2_bd_zynq_ultra_ps_e_0_0_vip_wrapper.v:630]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 128 for port 'SAXIGP4WDATA' [C:/xilinxdesigns/sdraproject/ultra96v2_0-master/ultra96v2_0.ip_user_files/bd/ultra96v2_bd/ip/ultra96v2_bd_zynq_ultra_ps_e_0_0/sim/ultra96v2_bd_zynq_ultra_ps_e_0_0_vip_wrapper.v:631]
+WARNING: [VRFC 10-3091] actual bit length 4 differs from formal bit length 8 for port 'SAXIGP4ARLEN' [C:/xilinxdesigns/sdraproject/ultra96v2_0-master/ultra96v2_0.ip_user_files/bd/ultra96v2_bd/ip/ultra96v2_bd_zynq_ultra_ps_e_0_0/sim/ultra96v2_bd_zynq_ultra_ps_e_0_0_vip_wrapper.v:633]
+WARNING: [VRFC 10-3091] actual bit length 4 differs from formal bit length 8 for port 'SAXIGP4AWLEN' [C:/xilinxdesigns/sdraproject/ultra96v2_0-master/ultra96v2_0.ip_user_files/bd/ultra96v2_bd/ip/ultra96v2_bd_zynq_ultra_ps_e_0_0/sim/ultra96v2_bd_zynq_ultra_ps_e_0_0_vip_wrapper.v:636]
+WARNING: [VRFC 10-3091] actual bit length 4 differs from formal bit length 16 for port 'SAXIGP4WSTRB' [C:/xilinxdesigns/sdraproject/ultra96v2_0-master/ultra96v2_0.ip_user_files/bd/ultra96v2_bd/ip/ultra96v2_bd_zynq_ultra_ps_e_0_0/sim/ultra96v2_bd_zynq_ultra_ps_e_0_0_vip_wrapper.v:638]
+WARNING: [VRFC 10-3091] actual bit length 2 differs from formal bit length 1 for port 'SAXIGP5ARLOCK' [C:/xilinxdesigns/sdraproject/ultra96v2_0-master/ultra96v2_0.ip_user_files/bd/ultra96v2_bd/ip/ultra96v2_bd_zynq_ultra_ps_e_0_0/sim/ultra96v2_bd_zynq_ultra_ps_e_0_0_vip_wrapper.v:667]
+WARNING: [VRFC 10-3091] actual bit length 2 differs from formal bit length 1 for port 'SAXIGP5AWLOCK' [C:/xilinxdesigns/sdraproject/ultra96v2_0-master/ultra96v2_0.ip_user_files/bd/ultra96v2_bd/ip/ultra96v2_bd_zynq_ultra_ps_e_0_0/sim/ultra96v2_bd_zynq_ultra_ps_e_0_0_vip_wrapper.v:670]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 40 for port 'SAXIGP5ARADDR' [C:/xilinxdesigns/sdraproject/ultra96v2_0-master/ultra96v2_0.ip_user_files/bd/ultra96v2_bd/ip/ultra96v2_bd_zynq_ultra_ps_e_0_0/sim/ultra96v2_bd_zynq_ultra_ps_e_0_0_vip_wrapper.v:674]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 40 for port 'SAXIGP5AWADDR' [C:/xilinxdesigns/sdraproject/ultra96v2_0-master/ultra96v2_0.ip_user_files/bd/ultra96v2_bd/ip/ultra96v2_bd_zynq_ultra_ps_e_0_0/sim/ultra96v2_bd_zynq_ultra_ps_e_0_0_vip_wrapper.v:675]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 128 for port 'SAXIGP5WDATA' [C:/xilinxdesigns/sdraproject/ultra96v2_0-master/ultra96v2_0.ip_user_files/bd/ultra96v2_bd/ip/ultra96v2_bd_zynq_ultra_ps_e_0_0/sim/ultra96v2_bd_zynq_ultra_ps_e_0_0_vip_wrapper.v:676]
+WARNING: [VRFC 10-3091] actual bit length 4 differs from formal bit length 8 for port 'SAXIGP5ARLEN' [C:/xilinxdesigns/sdraproject/ultra96v2_0-master/ultra96v2_0.ip_user_files/bd/ultra96v2_bd/ip/ultra96v2_bd_zynq_ultra_ps_e_0_0/sim/ultra96v2_bd_zynq_ultra_ps_e_0_0_vip_wrapper.v:678]
+WARNING: [VRFC 10-3091] actual bit length 4 differs from formal bit length 8 for port 'SAXIGP5AWLEN' [C:/xilinxdesigns/sdraproject/ultra96v2_0-master/ultra96v2_0.ip_user_files/bd/ultra96v2_bd/ip/ultra96v2_bd_zynq_ultra_ps_e_0_0/sim/ultra96v2_bd_zynq_ultra_ps_e_0_0_vip_wrapper.v:681]
+WARNING: [VRFC 10-3091] actual bit length 4 differs from formal bit length 16 for port 'SAXIGP5WSTRB' [C:/xilinxdesigns/sdraproject/ultra96v2_0-master/ultra96v2_0.ip_user_files/bd/ultra96v2_bd/ip/ultra96v2_bd_zynq_ultra_ps_e_0_0/sim/ultra96v2_bd_zynq_ultra_ps_e_0_0_vip_wrapper.v:683]
+WARNING: [VRFC 10-3091] actual bit length 2 differs from formal bit length 1 for port 'SAXIGP6ARLOCK' [C:/xilinxdesigns/sdraproject/ultra96v2_0-master/ultra96v2_0.ip_user_files/bd/ultra96v2_bd/ip/ultra96v2_bd_zynq_ultra_ps_e_0_0/sim/ultra96v2_bd_zynq_ultra_ps_e_0_0_vip_wrapper.v:712]
+WARNING: [VRFC 10-3091] actual bit length 2 differs from formal bit length 1 for port 'SAXIGP6AWLOCK' [C:/xilinxdesigns/sdraproject/ultra96v2_0-master/ultra96v2_0.ip_user_files/bd/ultra96v2_bd/ip/ultra96v2_bd_zynq_ultra_ps_e_0_0/sim/ultra96v2_bd_zynq_ultra_ps_e_0_0_vip_wrapper.v:715]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 40 for port 'SAXIGP6ARADDR' [C:/xilinxdesigns/sdraproject/ultra96v2_0-master/ultra96v2_0.ip_user_files/bd/ultra96v2_bd/ip/ultra96v2_bd_zynq_ultra_ps_e_0_0/sim/ultra96v2_bd_zynq_ultra_ps_e_0_0_vip_wrapper.v:719]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 40 for port 'SAXIGP6AWADDR' [C:/xilinxdesigns/sdraproject/ultra96v2_0-master/ultra96v2_0.ip_user_files/bd/ultra96v2_bd/ip/ultra96v2_bd_zynq_ultra_ps_e_0_0/sim/ultra96v2_bd_zynq_ultra_ps_e_0_0_vip_wrapper.v:720]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 128 for port 'SAXIGP6WDATA' [C:/xilinxdesigns/sdraproject/ultra96v2_0-master/ultra96v2_0.ip_user_files/bd/ultra96v2_bd/ip/ultra96v2_bd_zynq_ultra_ps_e_0_0/sim/ultra96v2_bd_zynq_ultra_ps_e_0_0_vip_wrapper.v:721]
+WARNING: [VRFC 10-3091] actual bit length 4 differs from formal bit length 8 for port 'SAXIGP6ARLEN' [C:/xilinxdesigns/sdraproject/ultra96v2_0-master/ultra96v2_0.ip_user_files/bd/ultra96v2_bd/ip/ultra96v2_bd_zynq_ultra_ps_e_0_0/sim/ultra96v2_bd_zynq_ultra_ps_e_0_0_vip_wrapper.v:723]
+WARNING: [VRFC 10-3091] actual bit length 4 differs from formal bit length 8 for port 'SAXIGP6AWLEN' [C:/xilinxdesigns/sdraproject/ultra96v2_0-master/ultra96v2_0.ip_user_files/bd/ultra96v2_bd/ip/ultra96v2_bd_zynq_ultra_ps_e_0_0/sim/ultra96v2_bd_zynq_ultra_ps_e_0_0_vip_wrapper.v:726]
+WARNING: [VRFC 10-3091] actual bit length 4 differs from formal bit length 16 for port 'SAXIGP6WSTRB' [C:/xilinxdesigns/sdraproject/ultra96v2_0-master/ultra96v2_0.ip_user_files/bd/ultra96v2_bd/ip/ultra96v2_bd_zynq_ultra_ps_e_0_0/sim/ultra96v2_bd_zynq_ultra_ps_e_0_0_vip_wrapper.v:728]
+WARNING: [VRFC 10-3091] actual bit length 3 differs from formal bit length 5 for port 'SAXIACPARID' [C:/xilinxdesigns/sdraproject/ultra96v2_0-master/ultra96v2_0.ip_user_files/bd/ultra96v2_bd/ip/ultra96v2_bd_zynq_ultra_ps_e_0_0/sim/ultra96v2_bd_zynq_ultra_ps_e_0_0_vip_wrapper.v:749]
+WARNING: [VRFC 10-3091] actual bit length 3 differs from formal bit length 5 for port 'SAXIACPAWID' [C:/xilinxdesigns/sdraproject/ultra96v2_0-master/ultra96v2_0.ip_user_files/bd/ultra96v2_bd/ip/ultra96v2_bd_zynq_ultra_ps_e_0_0/sim/ultra96v2_bd_zynq_ultra_ps_e_0_0_vip_wrapper.v:751]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 40 for port 'SAXIACPARADDR' [C:/xilinxdesigns/sdraproject/ultra96v2_0-master/ultra96v2_0.ip_user_files/bd/ultra96v2_bd/ip/ultra96v2_bd_zynq_ultra_ps_e_0_0/sim/ultra96v2_bd_zynq_ultra_ps_e_0_0_vip_wrapper.v:753]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 40 for port 'SAXIACPAWADDR' [C:/xilinxdesigns/sdraproject/ultra96v2_0-master/ultra96v2_0.ip_user_files/bd/ultra96v2_bd/ip/ultra96v2_bd_zynq_ultra_ps_e_0_0/sim/ultra96v2_bd_zynq_ultra_ps_e_0_0_vip_wrapper.v:754]
+WARNING: [VRFC 10-3091] actual bit length 4 differs from formal bit length 8 for port 'SAXIACPARLEN' [C:/xilinxdesigns/sdraproject/ultra96v2_0-master/ultra96v2_0.ip_user_files/bd/ultra96v2_bd/ip/ultra96v2_bd_zynq_ultra_ps_e_0_0/sim/ultra96v2_bd_zynq_ultra_ps_e_0_0_vip_wrapper.v:756]
+WARNING: [VRFC 10-3091] actual bit length 4 differs from formal bit length 8 for port 'SAXIACPAWLEN' [C:/xilinxdesigns/sdraproject/ultra96v2_0-master/ultra96v2_0.ip_user_files/bd/ultra96v2_bd/ip/ultra96v2_bd_zynq_ultra_ps_e_0_0/sim/ultra96v2_bd_zynq_ultra_ps_e_0_0_vip_wrapper.v:759]
+WARNING: [VRFC 10-3091] actual bit length 2 differs from formal bit length 1 for port 'SAXIACPARLOCK' [C:/xilinxdesigns/sdraproject/ultra96v2_0-master/ultra96v2_0.ip_user_files/bd/ultra96v2_bd/ip/ultra96v2_bd_zynq_ultra_ps_e_0_0/sim/ultra96v2_bd_zynq_ultra_ps_e_0_0_vip_wrapper.v:762]
+WARNING: [VRFC 10-3091] actual bit length 2 differs from formal bit length 1 for port 'SAXIACPAWLOCK' [C:/xilinxdesigns/sdraproject/ultra96v2_0-master/ultra96v2_0.ip_user_files/bd/ultra96v2_bd/ip/ultra96v2_bd_zynq_ultra_ps_e_0_0/sim/ultra96v2_bd_zynq_ultra_ps_e_0_0_vip_wrapper.v:765]
+WARNING: [VRFC 10-3091] actual bit length 5 differs from formal bit length 2 for port 'SAXIACPARUSER' [C:/xilinxdesigns/sdraproject/ultra96v2_0-master/ultra96v2_0.ip_user_files/bd/ultra96v2_bd/ip/ultra96v2_bd_zynq_ultra_ps_e_0_0/sim/ultra96v2_bd_zynq_ultra_ps_e_0_0_vip_wrapper.v:767]
+WARNING: [VRFC 10-3091] actual bit length 5 differs from formal bit length 2 for port 'SAXIACPAWUSER' [C:/xilinxdesigns/sdraproject/ultra96v2_0-master/ultra96v2_0.ip_user_files/bd/ultra96v2_bd/ip/ultra96v2_bd_zynq_ultra_ps_e_0_0/sim/ultra96v2_bd_zynq_ultra_ps_e_0_0_vip_wrapper.v:768]
+WARNING: [VRFC 10-3091] actual bit length 64 differs from formal bit length 128 for port 'SAXIACPWDATA' [C:/xilinxdesigns/sdraproject/ultra96v2_0-master/ultra96v2_0.ip_user_files/bd/ultra96v2_bd/ip/ultra96v2_bd_zynq_ultra_ps_e_0_0/sim/ultra96v2_bd_zynq_ultra_ps_e_0_0_vip_wrapper.v:769]
+WARNING: [VRFC 10-3091] actual bit length 8 differs from formal bit length 16 for port 'SAXIACPWSTRB' [C:/xilinxdesigns/sdraproject/ultra96v2_0-master/ultra96v2_0.ip_user_files/bd/ultra96v2_bd/ip/ultra96v2_bd_zynq_ultra_ps_e_0_0/sim/ultra96v2_bd_zynq_ultra_ps_e_0_0_vip_wrapper.v:770]
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 8 for port 'PLPSIRQ0' [C:/xilinxdesigns/sdraproject/ultra96v2_0-master/ultra96v2_0.ip_user_files/bd/ultra96v2_bd/ip/ultra96v2_bd_zynq_ultra_ps_e_0_0/sim/ultra96v2_bd_zynq_ultra_ps_e_0_0_vip_wrapper.v:836]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 'S_AWREGION' [/proj/xbuilds/SWIP/2019.2_1106_2127/infra/XSIM/lin/.cxl.ip/incl/zynq_ultra_ps_e_vip_v1_0_6_axi_acp.sv:71]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 'S_ARREGION' [/proj/xbuilds/SWIP/2019.2_1106_2127/infra/XSIM/lin/.cxl.ip/incl/zynq_ultra_ps_e_vip_v1_0_6_axi_acp.sv:72]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 'S_WUSER' [/proj/xbuilds/SWIP/2019.2_1106_2127/infra/XSIM/lin/.cxl.ip/incl/zynq_ultra_ps_e_vip_v1_0_6_axi_acp.sv:74]
+WARNING: [VRFC 10-3091] actual bit length 2 differs from formal bit length 1 for port 's_axi_awuser' [/wrk/2019.2/continuous/2019_11_06_2708876/packages/customer/vivado/data/ip/xilinx/zynq_ultra_ps_e_vip_v1_0/hdl/zynq_ultra_ps_e_vip_v1_0_vl_rfs.sv:6300]
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 5 for port 's_axi_wid' [/wrk/2019.2/continuous/2019_11_06_2708876/packages/customer/vivado/data/ip/xilinx/zynq_ultra_ps_e_vip_v1_0/hdl/zynq_ultra_ps_e_vip_v1_0_vl_rfs.sv:6303]
+WARNING: [VRFC 10-3091] actual bit length 2 differs from formal bit length 1 for port 's_axi_aruser' [/wrk/2019.2/continuous/2019_11_06_2708876/packages/customer/vivado/data/ip/xilinx/zynq_ultra_ps_e_vip_v1_0/hdl/zynq_ultra_ps_e_vip_v1_0_vl_rfs.sv:6325]
+WARNING: [VRFC 10-3091] actual bit length 12 differs from formal bit length 5 for port 'm_axi_bid' [/wrk/2019.2/continuous/2019_11_06_2708876/packages/customer/vivado/data/ip/xilinx/zynq_ultra_ps_e_vip_v1_0/hdl/zynq_ultra_ps_e_vip_v1_0_vl_rfs.sv:6355]
+WARNING: [VRFC 10-3091] actual bit length 12 differs from formal bit length 5 for port 'm_axi_rid' [/wrk/2019.2/continuous/2019_11_06_2708876/packages/customer/vivado/data/ip/xilinx/zynq_ultra_ps_e_vip_v1_0/hdl/zynq_ultra_ps_e_vip_v1_0_vl_rfs.sv:6373]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 128 for port 'm_axi_rdata' [/wrk/2019.2/continuous/2019_11_06_2708876/packages/customer/vivado/data/ip/xilinx/zynq_ultra_ps_e_vip_v1_0/hdl/zynq_ultra_ps_e_vip_v1_0_vl_rfs.sv:6374]
+WARNING: [VRFC 10-3091] actual bit length 4 differs from formal bit length 2 for port 'S_RRESP' [/proj/xbuilds/SWIP/2019.2_1106_2127/infra/XSIM/lin/.cxl.ip/incl/zynq_ultra_ps_e_vip_v1_0_6_axi_ace.sv:64]
+WARNING: [VRFC 10-3091] actual bit length 16 differs from formal bit length 15 for port 'S_AWUSER' [/proj/xbuilds/SWIP/2019.2_1106_2127/infra/XSIM/lin/.cxl.ip/incl/zynq_ultra_ps_e_vip_v1_0_6_axi_ace.sv:73]
+WARNING: [VRFC 10-3091] actual bit length 16 differs from formal bit length 15 for port 'S_ARUSER' [/proj/xbuilds/SWIP/2019.2_1106_2127/infra/XSIM/lin/.cxl.ip/incl/zynq_ultra_ps_e_vip_v1_0_6_axi_ace.sv:76]
+WARNING: [VRFC 10-3091] actual bit length 15 differs from formal bit length 1 for port 's_axi_awuser' [/wrk/2019.2/continuous/2019_11_06_2708876/packages/customer/vivado/data/ip/xilinx/zynq_ultra_ps_e_vip_v1_0/hdl/zynq_ultra_ps_e_vip_v1_0_vl_rfs.sv:4835]
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 6 for port 's_axi_wid' [/wrk/2019.2/continuous/2019_11_06_2708876/packages/customer/vivado/data/ip/xilinx/zynq_ultra_ps_e_vip_v1_0/hdl/zynq_ultra_ps_e_vip_v1_0_vl_rfs.sv:4838]
+WARNING: [VRFC 10-3091] actual bit length 15 differs from formal bit length 1 for port 's_axi_aruser' [/wrk/2019.2/continuous/2019_11_06_2708876/packages/customer/vivado/data/ip/xilinx/zynq_ultra_ps_e_vip_v1_0/hdl/zynq_ultra_ps_e_vip_v1_0_vl_rfs.sv:4860]
+WARNING: [VRFC 10-3091] actual bit length 12 differs from formal bit length 6 for port 'm_axi_bid' [/wrk/2019.2/continuous/2019_11_06_2708876/packages/customer/vivado/data/ip/xilinx/zynq_ultra_ps_e_vip_v1_0/hdl/zynq_ultra_ps_e_vip_v1_0_vl_rfs.sv:4890]
+WARNING: [VRFC 10-3091] actual bit length 12 differs from formal bit length 6 for port 'm_axi_rid' [/wrk/2019.2/continuous/2019_11_06_2708876/packages/customer/vivado/data/ip/xilinx/zynq_ultra_ps_e_vip_v1_0/hdl/zynq_ultra_ps_e_vip_v1_0_vl_rfs.sv:4908]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 128 for port 'm_axi_rdata' [/wrk/2019.2/continuous/2019_11_06_2708876/packages/customer/vivado/data/ip/xilinx/zynq_ultra_ps_e_vip_v1_0/hdl/zynq_ultra_ps_e_vip_v1_0_vl_rfs.sv:4909]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 'S_AWREGION' [/proj/xbuilds/SWIP/2019.2_1106_2127/infra/XSIM/lin/.cxl.ip/incl/zynq_ultra_ps_e_vip_v1_0_6_axi_gp.sv:72]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 'S_ARREGION' [/proj/xbuilds/SWIP/2019.2_1106_2127/infra/XSIM/lin/.cxl.ip/incl/zynq_ultra_ps_e_vip_v1_0_6_axi_gp.sv:73]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 'S_WUSER' [/proj/xbuilds/SWIP/2019.2_1106_2127/infra/XSIM/lin/.cxl.ip/incl/zynq_ultra_ps_e_vip_v1_0_6_axi_gp.sv:75]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 'S_AWREGION' [/proj/xbuilds/SWIP/2019.2_1106_2127/infra/XSIM/lin/.cxl.ip/incl/zynq_ultra_ps_e_vip_v1_0_6_axi_gp.sv:166]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 'S_ARREGION' [/proj/xbuilds/SWIP/2019.2_1106_2127/infra/XSIM/lin/.cxl.ip/incl/zynq_ultra_ps_e_vip_v1_0_6_axi_gp.sv:167]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 'S_WUSER' [/proj/xbuilds/SWIP/2019.2_1106_2127/infra/XSIM/lin/.cxl.ip/incl/zynq_ultra_ps_e_vip_v1_0_6_axi_gp.sv:169]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 'S_AWREGION' [/proj/xbuilds/SWIP/2019.2_1106_2127/infra/XSIM/lin/.cxl.ip/incl/zynq_ultra_ps_e_vip_v1_0_6_axi_gp.sv:260]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 'S_ARREGION' [/proj/xbuilds/SWIP/2019.2_1106_2127/infra/XSIM/lin/.cxl.ip/incl/zynq_ultra_ps_e_vip_v1_0_6_axi_gp.sv:261]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 'S_WUSER' [/proj/xbuilds/SWIP/2019.2_1106_2127/infra/XSIM/lin/.cxl.ip/incl/zynq_ultra_ps_e_vip_v1_0_6_axi_gp.sv:263]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 'S_AWREGION' [/proj/xbuilds/SWIP/2019.2_1106_2127/infra/XSIM/lin/.cxl.ip/incl/zynq_ultra_ps_e_vip_v1_0_6_axi_gp.sv:354]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 'S_ARREGION' [/proj/xbuilds/SWIP/2019.2_1106_2127/infra/XSIM/lin/.cxl.ip/incl/zynq_ultra_ps_e_vip_v1_0_6_axi_gp.sv:355]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 'S_WUSER' [/proj/xbuilds/SWIP/2019.2_1106_2127/infra/XSIM/lin/.cxl.ip/incl/zynq_ultra_ps_e_vip_v1_0_6_axi_gp.sv:357]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 'S_AWREGION' [/proj/xbuilds/SWIP/2019.2_1106_2127/infra/XSIM/lin/.cxl.ip/incl/zynq_ultra_ps_e_vip_v1_0_6_axi_gp.sv:448]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 'S_ARREGION' [/proj/xbuilds/SWIP/2019.2_1106_2127/infra/XSIM/lin/.cxl.ip/incl/zynq_ultra_ps_e_vip_v1_0_6_axi_gp.sv:449]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 'S_WUSER' [/proj/xbuilds/SWIP/2019.2_1106_2127/infra/XSIM/lin/.cxl.ip/incl/zynq_ultra_ps_e_vip_v1_0_6_axi_gp.sv:451]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 'S_AWREGION' [/proj/xbuilds/SWIP/2019.2_1106_2127/infra/XSIM/lin/.cxl.ip/incl/zynq_ultra_ps_e_vip_v1_0_6_axi_gp.sv:542]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 'S_ARREGION' [/proj/xbuilds/SWIP/2019.2_1106_2127/infra/XSIM/lin/.cxl.ip/incl/zynq_ultra_ps_e_vip_v1_0_6_axi_gp.sv:543]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 'S_WUSER' [/proj/xbuilds/SWIP/2019.2_1106_2127/infra/XSIM/lin/.cxl.ip/incl/zynq_ultra_ps_e_vip_v1_0_6_axi_gp.sv:545]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 'S_AWREGION' [/proj/xbuilds/SWIP/2019.2_1106_2127/infra/XSIM/lin/.cxl.ip/incl/zynq_ultra_ps_e_vip_v1_0_6_axi_gp.sv:636]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 'S_ARREGION' [/proj/xbuilds/SWIP/2019.2_1106_2127/infra/XSIM/lin/.cxl.ip/incl/zynq_ultra_ps_e_vip_v1_0_6_axi_gp.sv:637]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 'S_WUSER' [/proj/xbuilds/SWIP/2019.2_1106_2127/infra/XSIM/lin/.cxl.ip/incl/zynq_ultra_ps_e_vip_v1_0_6_axi_gp.sv:639]
+WARNING: [VRFC 10-3091] actual bit length 16 differs from formal bit length 1 for port 'M_AWUSER' [/proj/xbuilds/SWIP/2019.2_1106_2127/infra/XSIM/lin/.cxl.ip/incl/zynq_ultra_ps_e_vip_v1_0_6_axi_gp.sv:733]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 'M_BUSER' [/proj/xbuilds/SWIP/2019.2_1106_2127/infra/XSIM/lin/.cxl.ip/incl/zynq_ultra_ps_e_vip_v1_0_6_axi_gp.sv:735]
+WARNING: [VRFC 10-3091] actual bit length 16 differs from formal bit length 1 for port 'M_ARUSER' [/proj/xbuilds/SWIP/2019.2_1106_2127/infra/XSIM/lin/.cxl.ip/incl/zynq_ultra_ps_e_vip_v1_0_6_axi_gp.sv:736]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 'M_RUSER' [/proj/xbuilds/SWIP/2019.2_1106_2127/infra/XSIM/lin/.cxl.ip/incl/zynq_ultra_ps_e_vip_v1_0_6_axi_gp.sv:737]
+WARNING: [VRFC 10-3091] actual bit length 12 differs from formal bit length 16 for port 's_axi_awid' [/wrk/2019.2/continuous/2019_11_06_2708876/packages/customer/vivado/data/ip/xilinx/zynq_ultra_ps_e_vip_v1_0/hdl/zynq_ultra_ps_e_vip_v1_0_vl_rfs.sv:7822]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 40 for port 's_axi_awaddr' [/wrk/2019.2/continuous/2019_11_06_2708876/packages/customer/vivado/data/ip/xilinx/zynq_ultra_ps_e_vip_v1_0/hdl/zynq_ultra_ps_e_vip_v1_0_vl_rfs.sv:7823]
+WARNING: [VRFC 10-3091] actual bit length 4 differs from formal bit length 8 for port 's_axi_awlen' [/wrk/2019.2/continuous/2019_11_06_2708876/packages/customer/vivado/data/ip/xilinx/zynq_ultra_ps_e_vip_v1_0/hdl/zynq_ultra_ps_e_vip_v1_0_vl_rfs.sv:7824]
+WARNING: [VRFC 10-3091] actual bit length 2 differs from formal bit length 1 for port 's_axi_awlock' [/wrk/2019.2/continuous/2019_11_06_2708876/packages/customer/vivado/data/ip/xilinx/zynq_ultra_ps_e_vip_v1_0/hdl/zynq_ultra_ps_e_vip_v1_0_vl_rfs.sv:7827]
+WARNING: [VRFC 10-3091] actual bit length 12 differs from formal bit length 16 for port 's_axi_wid' [/wrk/2019.2/continuous/2019_11_06_2708876/packages/customer/vivado/data/ip/xilinx/zynq_ultra_ps_e_vip_v1_0/hdl/zynq_ultra_ps_e_vip_v1_0_vl_rfs.sv:7835]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 128 for port 's_axi_wdata' [/wrk/2019.2/continuous/2019_11_06_2708876/packages/customer/vivado/data/ip/xilinx/zynq_ultra_ps_e_vip_v1_0/hdl/zynq_ultra_ps_e_vip_v1_0_vl_rfs.sv:7836]
+WARNING: [VRFC 10-3091] actual bit length 4 differs from formal bit length 16 for port 's_axi_wstrb' [/wrk/2019.2/continuous/2019_11_06_2708876/packages/customer/vivado/data/ip/xilinx/zynq_ultra_ps_e_vip_v1_0/hdl/zynq_ultra_ps_e_vip_v1_0_vl_rfs.sv:7837]
+WARNING: [VRFC 10-3091] actual bit length 12 differs from formal bit length 16 for port 's_axi_arid' [/wrk/2019.2/continuous/2019_11_06_2708876/packages/customer/vivado/data/ip/xilinx/zynq_ultra_ps_e_vip_v1_0/hdl/zynq_ultra_ps_e_vip_v1_0_vl_rfs.sv:7847]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 40 for port 's_axi_araddr' [/wrk/2019.2/continuous/2019_11_06_2708876/packages/customer/vivado/data/ip/xilinx/zynq_ultra_ps_e_vip_v1_0/hdl/zynq_ultra_ps_e_vip_v1_0_vl_rfs.sv:7848]
+WARNING: [VRFC 10-3091] actual bit length 4 differs from formal bit length 8 for port 's_axi_arlen' [/wrk/2019.2/continuous/2019_11_06_2708876/packages/customer/vivado/data/ip/xilinx/zynq_ultra_ps_e_vip_v1_0/hdl/zynq_ultra_ps_e_vip_v1_0_vl_rfs.sv:7849]
+WARNING: [VRFC 10-3091] actual bit length 2 differs from formal bit length 1 for port 's_axi_arlock' [/wrk/2019.2/continuous/2019_11_06_2708876/packages/customer/vivado/data/ip/xilinx/zynq_ultra_ps_e_vip_v1_0/hdl/zynq_ultra_ps_e_vip_v1_0_vl_rfs.sv:7852]
+WARNING: [VRFC 10-3091] actual bit length 16 differs from formal bit length 1 for port 'M_AWUSER' [/proj/xbuilds/SWIP/2019.2_1106_2127/infra/XSIM/lin/.cxl.ip/incl/zynq_ultra_ps_e_vip_v1_0_6_axi_gp.sv:804]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 'M_BUSER' [/proj/xbuilds/SWIP/2019.2_1106_2127/infra/XSIM/lin/.cxl.ip/incl/zynq_ultra_ps_e_vip_v1_0_6_axi_gp.sv:806]
+WARNING: [VRFC 10-3091] actual bit length 16 differs from formal bit length 1 for port 'M_ARUSER' [/proj/xbuilds/SWIP/2019.2_1106_2127/infra/XSIM/lin/.cxl.ip/incl/zynq_ultra_ps_e_vip_v1_0_6_axi_gp.sv:807]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 'M_RUSER' [/proj/xbuilds/SWIP/2019.2_1106_2127/infra/XSIM/lin/.cxl.ip/incl/zynq_ultra_ps_e_vip_v1_0_6_axi_gp.sv:808]
+WARNING: [VRFC 10-3091] actual bit length 128 differs from formal bit length 32 for port 'M_WDATA' [/proj/xbuilds/SWIP/2019.2_1106_2127/infra/XSIM/lin/.cxl.ip/incl/zynq_ultra_ps_e_vip_v1_0_6_axi_gp.sv:842]
+WARNING: [VRFC 10-3091] actual bit length 16 differs from formal bit length 4 for port 'M_WSTRB' [/proj/xbuilds/SWIP/2019.2_1106_2127/infra/XSIM/lin/.cxl.ip/incl/zynq_ultra_ps_e_vip_v1_0_6_axi_gp.sv:843]
+WARNING: [VRFC 10-3091] actual bit length 128 differs from formal bit length 32 for port 'M_RDATA' [/proj/xbuilds/SWIP/2019.2_1106_2127/infra/XSIM/lin/.cxl.ip/incl/zynq_ultra_ps_e_vip_v1_0_6_axi_gp.sv:865]
+WARNING: [VRFC 10-3091] actual bit length 16 differs from formal bit length 1 for port 'M_AWUSER' [/proj/xbuilds/SWIP/2019.2_1106_2127/infra/XSIM/lin/.cxl.ip/incl/zynq_ultra_ps_e_vip_v1_0_6_axi_gp.sv:875]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 'M_BUSER' [/proj/xbuilds/SWIP/2019.2_1106_2127/infra/XSIM/lin/.cxl.ip/incl/zynq_ultra_ps_e_vip_v1_0_6_axi_gp.sv:877]
+WARNING: [VRFC 10-3091] actual bit length 16 differs from formal bit length 1 for port 'M_ARUSER' [/proj/xbuilds/SWIP/2019.2_1106_2127/infra/XSIM/lin/.cxl.ip/incl/zynq_ultra_ps_e_vip_v1_0_6_axi_gp.sv:878]
+WARNING: [VRFC 10-3091] actual bit length 32 differs from formal bit length 1 for port 'M_RUSER' [/proj/xbuilds/SWIP/2019.2_1106_2127/infra/XSIM/lin/.cxl.ip/incl/zynq_ultra_ps_e_vip_v1_0_6_axi_gp.sv:879]
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 4 for port 'wr_qos' [/wrk/2019.2/continuous/2019_11_06_2708876/packages/customer/vivado/data/ip/xilinx/zynq_ultra_ps_e_vip_v1_0/hdl/zynq_ultra_ps_e_vip_v1_0_vl_rfs.sv:3798]
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 4 for port 'rd_qos' [/wrk/2019.2/continuous/2019_11_06_2708876/packages/customer/vivado/data/ip/xilinx/zynq_ultra_ps_e_vip_v1_0/hdl/zynq_ultra_ps_e_vip_v1_0_vl_rfs.sv:3805]
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 4 for port 'wr_qos_1' [/wrk/2019.2/continuous/2019_11_06_2708876/packages/customer/vivado/data/ip/xilinx/zynq_ultra_ps_e_vip_v1_0/hdl/zynq_ultra_ps_e_vip_v1_0_vl_rfs.sv:3818]
+WARNING: [VRFC 10-3091] actual bit length 1 differs from formal bit length 4 for port 'rd_qos_1' [/wrk/2019.2/continuous/2019_11_06_2708876/packages/customer/vivado/data/ip/xilinx/zynq_ultra_ps_e_vip_v1_0/hdl/zynq_ultra_ps_e_vip_v1_0_vl_rfs.sv:3825]
+WARNING: [VRFC 10-5021] port 'm_axis_dout_tvalid' is not connected on this instance [C:/xilinxdesigns/sdraproject/ultra96v2_0-master/ultra96v2_0.ip_user_files/bd/ultra96v2_bd/sim/ultra96v2_bd.v:2845]
+WARNING: [VRFC 10-5021] port 'ip2intc_irpt' is not connected on this instance [C:/xilinxdesigns/sdraproject/ultra96v2_0-master/ultra96v2_0.ip_user_files/bd/ultra96v2_bd/sim/ultra96v2_bd.v:260]
+WARNING: [VRFC 10-5021] port 'gpio_io_t' is not connected on this instance [C:/xilinxdesigns/sdraproject/ultra96v2_0-master/ultra96v2_0.ip_user_files/bd/ultra96v2_bd/sim/ultra96v2_bd.v:322]
+WARNING: [VRFC 10-5021] port 'mb_reset' is not connected on this instance [C:/xilinxdesigns/sdraproject/ultra96v2_0-master/ultra96v2_0.ip_user_files/bd/ultra96v2_bd/sim/ultra96v2_bd.v:344]
+WARNING: [VRFC 10-5021] port 'mb_reset' is not connected on this instance [C:/xilinxdesigns/sdraproject/ultra96v2_0-master/ultra96v2_0.ip_user_files/bd/ultra96v2_bd/sim/ultra96v2_bd.v:526]
+WARNING: [VRFC 10-5021] port 'aclk2x' is not connected on this instance [/wrk/2019.2/continuous/2019_11_06_2708876/packages/customer/vivado/data/ip/xilinx/axi_protocol_converter_v2_1/hdl/axi_protocol_converter_v2_1_vl_rfs.v:4376]
+WARNING: [VRFC 10-5021] port 'aclk2x' is not connected on this instance [/wrk/2019.2/continuous/2019_11_06_2708876/packages/customer/vivado/data/ip/xilinx/axi_protocol_converter_v2_1/hdl/axi_protocol_converter_v2_1_vl_rfs.v:4631]
+WARNING: [VRFC 10-5021] port 'PSS_ALTO_CORE_PAD_CLK' is not connected on this instance [C:/xilinxdesigns/sdraproject/ultra96v2_0-master/ultra96v2_0.ip_user_files/bd/ultra96v2_bd/ip/ultra96v2_bd_zynq_ultra_ps_e_0_0/sim/ultra96v2_bd_zynq_ultra_ps_e_0_0_vip_wrapper.v:267]
+WARNING: [VRFC 10-3705] select index 2 into 'g7s_cc_rst_nsckt.arst_sync_wr' is out of bounds [/wrk/2019.2/continuous/2019_11_06_2708876/packages/customer/vivado/data/ip/xilinx/fifo_generator_v13_2/simulation/fifo_generator_vlog_beh.v:4830]
+WARNING: [VRFC 10-3283] element index 4096 into 'wrp_strb' is out of bounds [/wrk/2019.2/continuous/2019_11_06_2708876/packages/customer/vivado/data/ip/xilinx/zynq_ultra_ps_e_vip_v1_0/hdl/zynq_ultra_ps_e_vip_v1_0_vl_rfs.sv:6968]
+WARNING: [VRFC 10-3705] select index 2 into 'wr_fifo_rd_ptr' is out of bounds [/wrk/2019.2/continuous/2019_11_06_2708876/packages/customer/vivado/data/ip/xilinx/zynq_ultra_ps_e_vip_v1_0/hdl/zynq_ultra_ps_e_vip_v1_0_vl_rfs.sv:7181]
+WARNING: [VRFC 10-3705] select index 3 into 'ar_cnt' is out of bounds [/wrk/2019.2/continuous/2019_11_06_2708876/packages/customer/vivado/data/ip/xilinx/zynq_ultra_ps_e_vip_v1_0/hdl/zynq_ultra_ps_e_vip_v1_0_vl_rfs.sv:7320]
+WARNING: [VRFC 10-3705] select index 3 into 'wr_rresp_cnt' is out of bounds [/wrk/2019.2/continuous/2019_11_06_2708876/packages/customer/vivado/data/ip/xilinx/zynq_ultra_ps_e_vip_v1_0/hdl/zynq_ultra_ps_e_vip_v1_0_vl_rfs.sv:7417]
+WARNING: [VRFC 10-3705] select index 3 into 'rd_fifo_wr_ptr' is out of bounds [/wrk/2019.2/continuous/2019_11_06_2708876/packages/customer/vivado/data/ip/xilinx/zynq_ultra_ps_e_vip_v1_0/hdl/zynq_ultra_ps_e_vip_v1_0_vl_rfs.sv:7436]
+WARNING: [VRFC 10-3705] select index 3 into 'rd_cnt' is out of bounds [/wrk/2019.2/continuous/2019_11_06_2708876/packages/customer/vivado/data/ip/xilinx/zynq_ultra_ps_e_vip_v1_0/hdl/zynq_ultra_ps_e_vip_v1_0_vl_rfs.sv:7577]
+WARNING: [VRFC 10-3705] select index 3 into 'rresp_time_cnt' is out of bounds [/wrk/2019.2/continuous/2019_11_06_2708876/packages/customer/vivado/data/ip/xilinx/zynq_ultra_ps_e_vip_v1_0/hdl/zynq_ultra_ps_e_vip_v1_0_vl_rfs.sv:7582]
+WARNING: [VRFC 10-3705] select index 3 into 'rd_fifo_rd_ptr' is out of bounds [/wrk/2019.2/continuous/2019_11_06_2708876/packages/customer/vivado/data/ip/xilinx/zynq_ultra_ps_e_vip_v1_0/hdl/zynq_ultra_ps_e_vip_v1_0_vl_rfs.sv:7587]
+WARNING: [VRFC 10-3283] element index 4096 into 'wrp_strb' is out of bounds [/wrk/2019.2/continuous/2019_11_06_2708876/packages/customer/vivado/data/ip/xilinx/zynq_ultra_ps_e_vip_v1_0/hdl/zynq_ultra_ps_e_vip_v1_0_vl_rfs.sv:5492]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package ieee.std_logic_arith
+Compiling package xpm.vcomponents
+Compiling package axi_bram_ctrl_v4_1_2.axi_bram_ctrl_funcs
+Compiling package ieee.vital_timing
+Compiling package ieee.vital_primitives
+Compiling package unisim.vpkg
+Compiling package unisim.vcomponents
+Compiling package ieee.std_logic_unsigned
+Compiling package axi_lite_ipif_v3_0_4.ipif_pkg
+Compiling package synopsys.attributes
+Compiling package ieee.std_logic_misc
+Compiling package lib_pkg_v1_0_2.lib_pkg
+Compiling package cic_compiler_v4_0_15.cic_compiler_v4_0_15_viv_comp
+Compiling package ieee.std_logic_signed
+Compiling package ieee.math_real
+Compiling package xbip_utils_v3_0_10.xbip_utils_v3_0_10_pkg
+Compiling package ieee.std_logic_textio
+Compiling package cic_compiler_v4_0_15.toolbox_pkg
+Compiling package cic_compiler_v4_0_15.cic_compiler_v4_0_15_pkg
+Compiling package cic_compiler_v4_0_15.cic_compiler_v4_0_15_hdl_comps
+Compiling package axi_utils_v2_0_6.global_util_pkg
+Compiling package cmpy_v6_0_18.cmpy_v6_0_18_viv_comp
+Compiling package axi_utils_v2_0_6.axi_utils_v2_0_6_pkg
+Compiling package mult_gen_v12_0_16.mult_gen_v12_0_16_pkg
+Compiling package cmpy_v6_0_18.cmpy_v6_0_18_pkg
+Compiling package mult_gen_v12_0_16.dsp_pkg
+Compiling package xbip_utils_v3_0_10.xcc_utils_v3_0
+Compiling package dds_compiler_v6_0_19.dds_compiler_v6_0_19_viv_comp
+Compiling package dds_compiler_v6_0_19.pkg_dds_compiler_v6_0_19
+Compiling package dds_compiler_v6_0_19.dds_compiler_v6_0_19_hdl_comps
+Compiling package xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv_comp
+Compiling package axi_utils_v2_0_6.axi_utils_comps
+Compiling package dds_compiler_v6_0_19.pkg_betas
+Compiling package dds_compiler_v6_0_19.pkg_alphas
+Compiling package fir_compiler_v7_2_13.fir_compiler_v7_2_13_viv_comp
+Compiling package fir_compiler_v7_2_13.globals_pkg
+Compiling package fir_compiler_v7_2_13.components
+Compiling package xilinx_vip.axi_vip_pkg
+Compiling package xilinx_vip.xil_common_vip_pkg
+Compiling package std.std
+Compiling module unisims_ver.IOBUF
+Compiling architecture implementation of entity axi_bram_ctrl_v4_1_2.sng_port_arb [\sng_port_arb(c_s_axi_addr_width...]
+Compiling architecture implementation of entity axi_bram_ctrl_v4_1_2.ua_narrow [\ua_narrow(c_bram_addr_adjust_fa...]
+Compiling architecture implementation of entity axi_bram_ctrl_v4_1_2.wrap_brst [\wrap_brst(c_axi_addr_width=13,c...]
+Compiling architecture muxcy_v of entity unisim.MUXCY [muxcy_default]
+Compiling architecture muxcy_l_v of entity unisim.MUXCY_L [muxcy_l_default]
+Compiling architecture xorcy_v of entity unisim.XORCY [xorcy_default]
+Compiling architecture srl16e_v of entity unisim.SRL16E [\SRL16E(0,15)\]
+Compiling architecture fdre_v of entity unisim.FDRE [fdre_default]
+Compiling architecture fdr_v of entity unisim.FDR [fdr_default]
+Compiling architecture imp of entity axi_bram_ctrl_v4_1_2.SRL_FIFO [\SRL_FIFO(c_data_bits=1,c_depth=...]
+Compiling architecture implementation of entity axi_bram_ctrl_v4_1_2.wr_chnl [\wr_chnl(c_axi_addr_width=13,c_a...]
+Compiling architecture implementation of entity axi_bram_ctrl_v4_1_2.rd_chnl [\rd_chnl(c_axi_addr_width=13,c_a...]
+Compiling architecture implementation of entity axi_bram_ctrl_v4_1_2.full_axi [\full_axi(c_s_axi_addr_width=13,...]
+Compiling architecture implementation of entity axi_bram_ctrl_v4_1_2.axi_bram_ctrl_top [\axi_bram_ctrl_top(c_bram_addr_w...]
+Compiling architecture implementation of entity axi_bram_ctrl_v4_1_2.axi_bram_ctrl [\axi_bram_ctrl(c_memory_depth=20...]
+Compiling architecture ultra96v2_bd_axi_bram_ctrl_0_0_arch of entity xil_defaultlib.ultra96v2_bd_axi_bram_ctrl_0_0 [ultra96v2_bd_axi_bram_ctrl_0_0_d...]
+Compiling architecture imp of entity axi_lite_ipif_v3_0_4.address_decoder [\address_decoder(c_bus_awidth=5,...]
+Compiling architecture imp of entity axi_lite_ipif_v3_0_4.slave_attachment [\slave_attachment(c_ard_addr_ran...]
+Compiling architecture imp of entity axi_lite_ipif_v3_0_4.axi_lite_ipif [\axi_lite_ipif(c_s_axi_addr_widt...]
+Compiling architecture oddre1_v of entity unisim.ODDRE1 [\ODDRE1(1,10)\]
+Compiling architecture imp of entity lib_srl_fifo_v1_0_2.cntr_incr_decr_addn_f [\cntr_incr_decr_addn_f(c_size=5,...]
+Compiling architecture behavioral of entity lib_srl_fifo_v1_0_2.dynshreg_f [\dynshreg_f(c_depth=16,c_dwidth=...]
+Compiling architecture imp of entity lib_srl_fifo_v1_0_2.srl_fifo_rbu_f [\srl_fifo_rbu_f(c_dwidth=8,c_fam...]
+Compiling architecture implementation of entity axi_uart16550_v2_0_22.tx_fifo_block [\tx_fifo_block(c_family="zynqupl...]
+Compiling architecture implementation of entity axi_uart16550_v2_0_22.rx_fifo_control [\rx_fifo_control(c_family="zynqu...]
+Compiling architecture behavioral of entity lib_srl_fifo_v1_0_2.dynshreg_f [\dynshreg_f(c_depth=16,c_dwidth=...]
+Compiling architecture imp of entity lib_srl_fifo_v1_0_2.srl_fifo_rbu_f [\srl_fifo_rbu_f(c_dwidth=11,c_fa...]
+Compiling architecture implementation of entity axi_uart16550_v2_0_22.rx_fifo_block [\rx_fifo_block(c_family="zynqupl...]
+Compiling architecture implementation of entity axi_uart16550_v2_0_22.xuart_tx_load_sm [xuart_tx_load_sm_default]
+Compiling architecture implementation of entity axi_uart16550_v2_0_22.rx16550 [rx16550_default]
+Compiling architecture implementation of entity axi_uart16550_v2_0_22.tx16550 [tx16550_default]
+Compiling architecture implementation of entity axi_uart16550_v2_0_22.uart16550 [\uart16550(c_is_a_16550=true,c_e...]
+Compiling architecture imp of entity axi_uart16550_v2_0_22.ipic_if [ipic_if_default]
+Compiling architecture imp of entity axi_uart16550_v2_0_22.xuart [\xuart(c_family="zynquplus",c_si...]
+Compiling architecture rtl of entity axi_uart16550_v2_0_22.axi_uart16550 [\axi_uart16550(c_family="zynqupl...]
+Compiling architecture ultra96v2_bd_axi_uart16550_0_0_arch of entity xil_defaultlib.ultra96v2_bd_axi_uart16550_0_0 [ultra96v2_bd_axi_uart16550_0_0_d...]
+Compiling module blk_mem_gen_v8_4_4.blk_mem_gen_v8_4_4_output_stage(...
+Compiling module blk_mem_gen_v8_4_4.blk_mem_gen_v8_4_4_output_stage(...
+Compiling module blk_mem_gen_v8_4_4.blk_mem_gen_v8_4_4_softecc_outpu...
+Compiling module blk_mem_gen_v8_4_4.blk_mem_gen_v8_4_4_mem_module(C_...
+Compiling module blk_mem_gen_v8_4_4.blk_mem_gen_v8_4_4(C_FAMILY="zyn...
+Compiling module xil_defaultlib.ultra96v2_bd_blk_mem_gen_0_0
+Compiling module unisims_ver.IBUF
+Compiling module unisims_ver.MMCME4_ADV(CLKFBOUT_MULT_F=92.37...
+Compiling module unisims_ver.BUFG
+Compiling module xil_defaultlib.ultra96v2_bd_clk_wiz_0_0_clk_wiz
+Compiling module xil_defaultlib.ultra96v2_bd_clk_wiz_0_0
+Compiling architecture imp of entity axi_lite_ipif_v3_0_4.pselect_f [\pselect_f(c_ab=2,c_aw=2,c_bar="...]
+Compiling architecture imp of entity axi_lite_ipif_v3_0_4.pselect_f [\pselect_f(c_ab=2,c_aw=2,c_bar="...]
+Compiling architecture imp of entity axi_lite_ipif_v3_0_4.pselect_f [\pselect_f(c_ab=2,c_aw=2,c_bar="...]
+Compiling architecture imp of entity axi_lite_ipif_v3_0_4.pselect_f [\pselect_f(c_ab=2,c_aw=2,c_bar="...]
+Compiling architecture imp of entity axi_lite_ipif_v3_0_4.address_decoder [\address_decoder(c_bus_awidth=9,...]
+Compiling architecture imp of entity axi_lite_ipif_v3_0_4.slave_attachment [\slave_attachment(c_ard_addr_ran...]
+Compiling architecture imp of entity axi_lite_ipif_v3_0_4.axi_lite_ipif [\axi_lite_ipif(c_s_axi_addr_widt...]
+Compiling architecture implementation of entity lib_cdc_v1_0_2.cdc_sync [\cdc_sync(c_single_bit=0,c_vecto...]
+Compiling architecture imp of entity axi_gpio_v2_0_22.GPIO_Core [\GPIO_Core(c_aw=9,c_gpio_width=1...]
+Compiling architecture imp of entity axi_gpio_v2_0_22.axi_gpio [\axi_gpio(c_family="zynquplus",c...]
+Compiling architecture ultra96v2_bd_axi_gpio_0_1_arch of entity xil_defaultlib.ultra96v2_bd_axi_gpio_0_1 [ultra96v2_bd_axi_gpio_0_1_defaul...]
+Compiling architecture implementation of entity lib_cdc_v1_0_2.cdc_sync [\cdc_sync(c_single_bit=0,c_vecto...]
+Compiling architecture imp of entity axi_gpio_v2_0_22.GPIO_Core [\GPIO_Core(c_aw=9,c_gpio_width=1...]
+Compiling architecture imp of entity axi_gpio_v2_0_22.axi_gpio [\axi_gpio(c_family="zynquplus",c...]
+Compiling architecture ultra96v2_bd_axi_gpio_0_0_arch of entity xil_defaultlib.ultra96v2_bd_axi_gpio_0_0 [ultra96v2_bd_axi_gpio_0_0_defaul...]
+Compiling architecture fdre_v of entity unisim.FDRE [\FDRE(init='1')\]
+Compiling architecture implementation of entity lib_cdc_v1_0_2.cdc_sync [\cdc_sync(c_vector_width=2,c_mtb...]
+Compiling architecture srl16e_v of entity unisim.SRL16E [\SRL16E(init="1111111111111111")...]
+Compiling architecture srl16_v of entity unisim.SRL16 [\SRL16(init="1111111111111111")(...]
+Compiling architecture imp of entity proc_sys_reset_v5_0_13.lpf [\lpf(c_ext_rst_width=4,c_aux_rst...]
+Compiling architecture imp of entity proc_sys_reset_v5_0_13.upcnt_n [\upcnt_n(c_size=6)\]
+Compiling architecture imp of entity proc_sys_reset_v5_0_13.sequence_psr [sequence_psr_default]
+Compiling architecture imp of entity proc_sys_reset_v5_0_13.proc_sys_reset [\proc_sys_reset(c_family="zynqup...]
+Compiling architecture ultra96v2_bd_proc_sys_reset_0_0_arch of entity xil_defaultlib.ultra96v2_bd_proc_sys_reset_0_0 [ultra96v2_bd_proc_sys_reset_0_0_...]
+Compiling module fifo_generator_v13_2_5.fifo_generator_v13_2_5_bhv_ver_s...
+Compiling module fifo_generator_v13_2_5.fifo_generator_v13_2_5_bhv_ver_p...
+Compiling module fifo_generator_v13_2_5.fifo_generator_v13_2_5_CONV_VER(...
+Compiling module fifo_generator_v13_2_5.fifo_generator_vlog_beh(C_COMMON...
+Compiling module axi_data_fifo_v2_1_19.axi_data_fifo_v2_1_19_fifo_gen(C...
+Compiling module axi_data_fifo_v2_1_19.axi_data_fifo_v2_1_19_axic_fifo(...
+Compiling module fifo_generator_v13_2_5.fifo_generator_v13_2_5_bhv_ver_s...
+Compiling module fifo_generator_v13_2_5.fifo_generator_v13_2_5_bhv_ver_p...
+Compiling module fifo_generator_v13_2_5.fifo_generator_v13_2_5_CONV_VER(...
+Compiling module fifo_generator_v13_2_5.fifo_generator_vlog_beh(C_COMMON...
+Compiling module axi_data_fifo_v2_1_19.axi_data_fifo_v2_1_19_fifo_gen(C...
+Compiling module axi_data_fifo_v2_1_19.axi_data_fifo_v2_1_19_axic_fifo(...
+Compiling module axi_dwidth_converter_v2_1_20.axi_dwidth_converter_v2_1_20_a_d...
+Compiling module axi_dwidth_converter_v2_1_20.axi_dwidth_converter_v2_1_20_w_d...
+Compiling module axi_dwidth_converter_v2_1_20.axi_dwidth_converter_v2_1_20_b_d...
+Compiling module axi_dwidth_converter_v2_1_20.axi_dwidth_converter_v2_1_20_a_d...
+Compiling module axi_dwidth_converter_v2_1_20.axi_dwidth_converter_v2_1_20_r_d...
+Compiling module axi_dwidth_converter_v2_1_20.axi_dwidth_converter_v2_1_20_axi...
+Compiling module axi_dwidth_converter_v2_1_20.axi_dwidth_converter_v2_1_20_top...
+Compiling module xil_defaultlib.ultra96v2_bd_auto_ds_0
+Compiling module axi_infrastructure_v1_1_0.axi_infrastructure_v1_1_0_axi2ve...
+Compiling module axi_infrastructure_v1_1_0.axi_infrastructure_v1_1_0_vector...
+Compiling module axi_register_slice_v2_1_20.axi_register_slice_v2_1_20_axic_...
+Compiling module axi_register_slice_v2_1_20.axi_register_slice_v2_1_20_axic_...
+Compiling module axi_register_slice_v2_1_20.axi_register_slice_v2_1_20_axic_...
+Compiling module axi_register_slice_v2_1_20.axi_register_slice_v2_1_20_axic_...
+Compiling module axi_register_slice_v2_1_20.axi_register_slice_v2_1_20_axi_r...
+Compiling module axi_protocol_converter_v2_1_20.axi_protocol_converter_v2_1_20_b...
+Compiling module axi_protocol_converter_v2_1_20.axi_protocol_converter_v2_1_20_b...
+Compiling module axi_protocol_converter_v2_1_20.axi_protocol_converter_v2_1_20_b...
+Compiling module axi_protocol_converter_v2_1_20.axi_protocol_converter_v2_1_20_b...
+Compiling module axi_protocol_converter_v2_1_20.axi_protocol_converter_v2_1_20_b...
+Compiling module axi_protocol_converter_v2_1_20.axi_protocol_converter_v2_1_20_b...
+Compiling module axi_protocol_converter_v2_1_20.axi_protocol_converter_v2_1_20_b...
+Compiling module axi_protocol_converter_v2_1_20.axi_protocol_converter_v2_1_20_b...
+Compiling module axi_protocol_converter_v2_1_20.axi_protocol_converter_v2_1_20_b...
+Compiling module axi_protocol_converter_v2_1_20.axi_protocol_converter_v2_1_20_b...
+Compiling module axi_protocol_converter_v2_1_20.axi_protocol_converter_v2_1_20_b...
+Compiling module axi_protocol_converter_v2_1_20.axi_protocol_converter_v2_1_20_b...
+Compiling module axi_protocol_converter_v2_1_20.axi_protocol_converter_v2_1_20_b...
+Compiling module axi_infrastructure_v1_1_0.axi_infrastructure_v1_1_0_axi2ve...
+Compiling module axi_infrastructure_v1_1_0.axi_infrastructure_v1_1_0_vector...
+Compiling module axi_register_slice_v2_1_20.axi_register_slice_v2_1_20_axic_...
+Compiling module axi_register_slice_v2_1_20.axi_register_slice_v2_1_20_axic_...
+Compiling module axi_register_slice_v2_1_20.axi_register_slice_v2_1_20_axic_...
+Compiling module axi_register_slice_v2_1_20.axi_register_slice_v2_1_20_axic_...
+Compiling module axi_register_slice_v2_1_20.axi_register_slice_v2_1_20_axi_r...
+Compiling module axi_protocol_converter_v2_1_20.axi_protocol_converter_v2_1_20_b...
+Compiling module axi_protocol_converter_v2_1_20.axi_protocol_converter_v2_1_20_a...
+Compiling module xil_defaultlib.ultra96v2_bd_auto_pc_0
+Compiling module xil_defaultlib.m00_couplers_imp_1CQE762
+Compiling module xil_defaultlib.ultra96v2_bd_auto_ds_1
+Compiling module xil_defaultlib.ultra96v2_bd_auto_pc_1
+Compiling module xil_defaultlib.m01_couplers_imp_1F7CZD6
+Compiling module axi_dwidth_converter_v2_1_20.axi_dwidth_converter_v2_1_20_a_d...
+Compiling module axi_dwidth_converter_v2_1_20.axi_dwidth_converter_v2_1_20_a_d...
+Compiling module axi_dwidth_converter_v2_1_20.axi_dwidth_converter_v2_1_20_axi...
+Compiling module axi_dwidth_converter_v2_1_20.axi_dwidth_converter_v2_1_20_top...
+Compiling module xil_defaultlib.ultra96v2_bd_auto_ds_2
+Compiling module xil_defaultlib.m02_couplers_imp_1022C7E
+Compiling module xil_defaultlib.ultra96v2_bd_auto_ds_3
+Compiling module axi_infrastructure_v1_1_0.axi_infrastructure_v1_1_0_axi2ve...
+Compiling module axi_infrastructure_v1_1_0.axi_infrastructure_v1_1_0_vector...
+Compiling module axi_register_slice_v2_1_20.axi_register_slice_v2_1_20_axic_...
+Compiling module axi_register_slice_v2_1_20.axi_register_slice_v2_1_20_axi_r...
+Compiling module axi_protocol_converter_v2_1_20.axi_protocol_converter_v2_1_20_b...
+Compiling module axi_protocol_converter_v2_1_20.axi_protocol_converter_v2_1_20_b...
+Compiling module axi_protocol_converter_v2_1_20.axi_protocol_converter_v2_1_20_b...
+Compiling module axi_protocol_converter_v2_1_20.axi_protocol_converter_v2_1_20_b...
+Compiling module axi_protocol_converter_v2_1_20.axi_protocol_converter_v2_1_20_b...
+Compiling module axi_infrastructure_v1_1_0.axi_infrastructure_v1_1_0_axi2ve...
+Compiling module axi_infrastructure_v1_1_0.axi_infrastructure_v1_1_0_vector...
+Compiling module axi_register_slice_v2_1_20.axi_register_slice_v2_1_20_axic_...
+Compiling module axi_register_slice_v2_1_20.axi_register_slice_v2_1_20_axi_r...
+Compiling module axi_protocol_converter_v2_1_20.axi_protocol_converter_v2_1_20_b...
+Compiling module axi_protocol_converter_v2_1_20.axi_protocol_converter_v2_1_20_a...
+Compiling module xil_defaultlib.ultra96v2_bd_auto_pc_2
+Compiling module xil_defaultlib.m03_couplers_imp_15UVJWQ
+Compiling module xil_defaultlib.s00_couplers_imp_1DNOA3D
+Compiling module xil_defaultlib.s01_couplers_imp_1A09J2X
+Compiling module generic_baseblocks_v2_1_0.generic_baseblocks_v2_1_0_mux_en...
+Compiling module axi_crossbar_v2_1_21.axi_crossbar_v2_1_21_addr_arbite...
+Compiling module generic_baseblocks_v2_1_0.generic_baseblocks_v2_1_0_carry_...
+Compiling module generic_baseblocks_v2_1_0.generic_baseblocks_v2_1_0_compar...
+Compiling module generic_baseblocks_v2_1_0.generic_baseblocks_v2_1_0_compar...
+Compiling module generic_baseblocks_v2_1_0.generic_baseblocks_v2_1_0_compar...
+Compiling module generic_baseblocks_v2_1_0.generic_baseblocks_v2_1_0_compar...
+Compiling module axi_crossbar_v2_1_21.axi_crossbar_v2_1_21_addr_decode...
+Compiling module axi_crossbar_v2_1_21.axi_crossbar_v2_1_21_splitter(C_...
+Compiling module axi_crossbar_v2_1_21.axi_crossbar_v2_1_21_splitter
+Compiling module generic_baseblocks_v2_1_0.generic_baseblocks_v2_1_0_mux_en...
+Compiling module generic_baseblocks_v2_1_0.generic_baseblocks_v2_1_0_mux_en...
+Compiling module generic_baseblocks_v2_1_0.generic_baseblocks_v2_1_0_mux_en...
+Compiling module generic_baseblocks_v2_1_0.generic_baseblocks_v2_1_0_mux_en...
+Compiling module axi_register_slice_v2_1_20.axi_register_slice_v2_1_20_axic_...
+Compiling module generic_baseblocks_v2_1_0.generic_baseblocks_v2_1_0_mux_en...
+Compiling module axi_crossbar_v2_1_21.axi_crossbar_v2_1_21_decerr_slav...
+Compiling module axi_crossbar_v2_1_21.axi_crossbar_v2_1_21_crossbar_sa...
+Compiling module axi_crossbar_v2_1_21.axi_crossbar_v2_1_21_axi_crossba...
+Compiling module xil_defaultlib.ultra96v2_bd_xbar_0
+Compiling module xil_defaultlib.ultra96v2_bd_ps8_0_axi_periph_1
+Compiling architecture ultra96v2_bd_rst_ps8_0_100m_1_arch of entity xil_defaultlib.ultra96v2_bd_rst_ps8_0_100M_1 [ultra96v2_bd_rst_ps8_0_100m_1_de...]
+Compiling module xlconcat_v2_1_3.xlconcat_v2_1_3_xlconcat(IN1_WID...
+Compiling module xil_defaultlib.ultra96v2_bd_xlconcat_0_0
+Compiling module xlslice_v1_0_2.xlslice_v1_0_2_xlslice(DIN_WIDTH...
+Compiling module xil_defaultlib.ultra96v2_bd_xlslice_0_0
+Compiling module zynq_ultra_ps_e_vip_v1_0_6.zynq_ultra_ps_e_vip_v1_0_6_gen_r...
+Compiling module zynq_ultra_ps_e_vip_v1_0_6.zynq_ultra_ps_e_vip_v1_0_6_gen_c...
+Compiling module zynq_ultra_ps_e_vip_v1_0_6.zynq_ultra_ps_e_vip_v1_0_6_arb_w...
+Compiling module zynq_ultra_ps_e_vip_v1_0_6.zynq_ultra_ps_e_vip_v1_0_6_arb_r...
+Compiling module zynq_ultra_ps_e_vip_v1_0_6.zynq_ultra_ps_e_vip_v1_0_6_spars...
+Compiling module zynq_ultra_ps_e_vip_v1_0_6.zynq_ultra_ps_e_vip_v1_0_6_ddrc_...
+Compiling module zynq_ultra_ps_e_vip_v1_0_6.zynq_ultra_ps_e_vip_v1_0_6_ocm_m...
+Compiling module zynq_ultra_ps_e_vip_v1_0_6.zynq_ultra_ps_e_vip_v1_0_6_ocmc_...
+Compiling module zynq_ultra_ps_e_vip_v1_0_6.zynq_ultra_ps_e_vip_v1_0_6_reg_m...
+Compiling module zynq_ultra_ps_e_vip_v1_0_6.zynq_ultra_ps_e_vip_v1_0_6_regc_...
+Compiling module xilinx_vip.axi_vip_axi4pc(WADDR_WIDTH=40,RA...
+Compiling module xilinx_vip.cb
+Compiling module xilinx_vip.axi_vip_if(C_AXI_ADDR_WIDTH=40,C...
+Compiling module axi_vip_v1_1_6.axi_vip_v1_1_6_top(C_AXI_INTERFA...
+Compiling module zynq_ultra_ps_e_vip_v1_0_6.zynq_ultra_ps_e_vip_v1_0_6_axi_s...
+Compiling module xilinx_vip.axi_vip_axi4pc(WADDR_WIDTH=40,RA...
+Compiling module xilinx_vip.cb
+Compiling module xilinx_vip.axi_vip_if(C_AXI_ADDR_WIDTH=40,C...
+Compiling module axi_vip_v1_1_6.axi_vip_v1_1_6_top(C_AXI_INTERFA...
+Compiling module zynq_ultra_ps_e_vip_v1_0_6.zynq_ultra_ps_e_vip_v1_0_6_axi_s...
+Compiling module zynq_ultra_ps_e_vip_v1_0_6.zynq_ultra_ps_e_vip_v1_0_6_axi_s...
+Compiling module zynq_ultra_ps_e_vip_v1_0_6.zynq_ultra_ps_e_vip_v1_0_6_axi_s...
+Compiling module zynq_ultra_ps_e_vip_v1_0_6.zynq_ultra_ps_e_vip_v1_0_6_axi_s...
+Compiling module zynq_ultra_ps_e_vip_v1_0_6.zynq_ultra_ps_e_vip_v1_0_6_axi_s...
+Compiling module zynq_ultra_ps_e_vip_v1_0_6.zynq_ultra_ps_e_vip_v1_0_6_axi_s...
+Compiling module zynq_ultra_ps_e_vip_v1_0_6.zynq_ultra_ps_e_vip_v1_0_6_axi_s...
+Compiling module zynq_ultra_ps_e_vip_v1_0_6.zynq_ultra_ps_e_vip_v1_0_6_axi_s...
+Compiling module xilinx_vip.axi_vip_axi4pc(WADDR_WIDTH=40,RA...
+Compiling module xilinx_vip.cb
+Compiling module xilinx_vip.axi_vip_if(C_AXI_ADDR_WIDTH=40,C...
+Compiling module axi_vip_v1_1_6.axi_vip_v1_1_6_top(C_AXI_INTERFA...
+Compiling module zynq_ultra_ps_e_vip_v1_0_6.zynq_ultra_ps_e_vip_v1_0_6_axi_m...
+Compiling module zynq_ultra_ps_e_vip_v1_0_6.zynq_ultra_ps_e_vip_v1_0_6_axi_m...
+Compiling module xilinx_vip.axi_vip_axi4pc(WADDR_WIDTH=40,RA...
+Compiling module xilinx_vip.cb
+Compiling module xilinx_vip.axi_vip_if(C_AXI_ADDR_WIDTH=40,C...
+Compiling module axi_vip_v1_1_6.axi_vip_v1_1_6_top(C_AXI_INTERFA...
+Compiling module zynq_ultra_ps_e_vip_v1_0_6.zynq_ultra_ps_e_vip_v1_0_6_axi_m...
+Compiling module zynq_ultra_ps_e_vip_v1_0_6.zynq_ultra_ps_e_vip_v1_0_6_arb_w...
+Compiling module zynq_ultra_ps_e_vip_v1_0_6.zynq_ultra_ps_e_vip_v1_0_6_arb_r...
+Compiling module zynq_ultra_ps_e_vip_v1_0_6.zynq_ultra_ps_e_vip_v1_0_6_arb_r...
+Compiling module zynq_ultra_ps_e_vip_v1_0_6.zynq_ultra_ps_e_vip_v1_0_6_ddr_i...
+Compiling module zynq_ultra_ps_e_vip_v1_0_6.zynq_ultra_ps_e_vip_v1_0_6_inter...
+Compiling module zynq_ultra_ps_e_vip_v1_0_6.zynq_ultra_ps_e_vip_v1_0_6(C_FCL...
+Compiling module xil_defaultlib.ultra96v2_bd_zynq_ultra_ps_e_0_0
+Compiling module xil_defaultlib.CPU_imp_1YU2FP7
+Compiling module axis_infrastructure_v1_1_0.axis_infrastructure_v1_1_0_util_...
+Compiling module axis_infrastructure_v1_1_0.axis_infrastructure_v1_1_0_util_...
+Compiling module axis_broadcaster_v1_1_19.axis_broadcaster_v1_1_19_core(C_...
+Compiling module xil_defaultlib.tdata_ultra96v2_bd_axis_broadcas...
+Compiling module xil_defaultlib.tuser_ultra96v2_bd_axis_broadcas...
+Compiling module xil_defaultlib.top_ultra96v2_bd_axis_broadcaste...
+Compiling module xil_defaultlib.ultra96v2_bd_axis_broadcaster_0_...
+Compiling module axis_infrastructure_v1_1_0.axis_infrastructure_v1_1_0_util_...
+Compiling module axis_infrastructure_v1_1_0.axis_infrastructure_v1_1_0_util_...
+Compiling module axis_combiner_v1_1_18.axis_combiner_v1_1_18_top(C_FAMI...
+Compiling module xil_defaultlib.ultra96v2_bd_axis_combiner_0_0
+Compiling module axis_infrastructure_v1_1_0.axis_infrastructure_v1_1_0_util_...
+Compiling module axis_register_slice_v1_1_20.axis_register_slice_v1_1_20_axis...
+Compiling module axis_infrastructure_v1_1_0.axis_infrastructure_v1_1_0_util_...
+Compiling module axis_register_slice_v1_1_20.axis_register_slice_v1_1_20_axis...
+Compiling module axis_dwidth_converter_v1_1_19.axis_dwidth_converter_v1_1_19_ax...
+Compiling module axis_infrastructure_v1_1_0.axis_infrastructure_v1_1_0_util_...
+Compiling module axis_register_slice_v1_1_20.axis_register_slice_v1_1_20_axis...
+Compiling module axis_infrastructure_v1_1_0.axis_infrastructure_v1_1_0_util_...
+Compiling module axis_register_slice_v1_1_20.axis_register_slice_v1_1_20_axis...
+Compiling module axis_dwidth_converter_v1_1_19.axis_dwidth_converter_v1_1_19_ax...
+Compiling module xil_defaultlib.ultra96v2_bd_axis_dwidth_convert...
+Compiling module axis_infrastructure_v1_1_0.axis_infrastructure_v1_1_0_util_...
+Compiling module axis_register_slice_v1_1_20.axis_register_slice_v1_1_20_axis...
+Compiling module axis_infrastructure_v1_1_0.axis_infrastructure_v1_1_0_util_...
+Compiling module axis_register_slice_v1_1_20.axis_register_slice_v1_1_20_axis...
+Compiling module axis_dwidth_converter_v1_1_19.axis_dwidth_converter_v1_1_19_ax...
+Compiling module axis_infrastructure_v1_1_0.axis_infrastructure_v1_1_0_util_...
+Compiling module axis_register_slice_v1_1_20.axis_register_slice_v1_1_20_axis...
+Compiling module axis_infrastructure_v1_1_0.axis_infrastructure_v1_1_0_util_...
+Compiling module axis_register_slice_v1_1_20.axis_register_slice_v1_1_20_axis...
+Compiling module axis_dwidth_converter_v1_1_19.axis_dwidth_converter_v1_1_19_ax...
+Compiling module xil_defaultlib.ultra96v2_bd_axis_dwidth_convert...
+Compiling module xil_defaultlib.bus_to_axis(DIN_WIDTH=32)
+Compiling module xil_defaultlib.ultra96v2_bd_bus_to_axis_0_0
+Compiling architecture struct_all of entity cic_compiler_v4_0_15.delay [\delay(delay_len=2,family=(p_dsp...]
+Compiling architecture struct_all of entity cic_compiler_v4_0_15.delay_bit [\delay_bit(delay_len=0,family=(p...]
+Compiling architecture struct_all of entity cic_compiler_v4_0_15.delay_bit [\delay_bit(delay_len=2,family=(p...]
+Compiling architecture struct_all of entity cic_compiler_v4_0_15.delay [\delay(delay_len=1,family=(p_dsp...]
+Compiling architecture dsp48e1_v of entity unisim.DSP48E1 [\DSP48E1(adreg=0,dreg=0,inmodere...]
+Compiling architecture struct_all of entity cic_compiler_v4_0_15.delay [\delay(delay_len=0,family=(p_dsp...]
+Compiling architecture struct_all of entity cic_compiler_v4_0_15.delay [\delay(delay_len=0,family=(p_dsp...]
+Compiling architecture struct_all of entity cic_compiler_v4_0_15.emb_calc [\emb_calc(param=((p_dsp48e1,fals...]
+Compiling architecture struct_all of entity cic_compiler_v4_0_15.delay [\delay(delay_len=0,family=(p_dsp...]
+Compiling architecture struct_all of entity cic_compiler_v4_0_15.delay [\delay(delay_len=4,family=(p_dsp...]
+Compiling architecture struct_all of entity cic_compiler_v4_0_15.delay_bit [\delay_bit(delay_len=8,family=(p...]
+Compiling architecture synth of entity cic_compiler_v4_0_15.int_comb_stage_folded [\int_comb_stage_folded(c_int_or_...]
+Compiling architecture synth of entity cic_compiler_v4_0_15.int_comb_section [\int_comb_section(c_int_or_comb=...]
+Compiling architecture struct_all of entity cic_compiler_v4_0_15.emb_calc [\emb_calc(param=((p_dsp48e1,fals...]
+Compiling architecture synth of entity cic_compiler_v4_0_15.int_comb_stage_unfolded [\int_comb_stage_unfolded(c_int_o...]
+Compiling architecture struct_all of entity cic_compiler_v4_0_15.emb_calc [\emb_calc(param=((p_dsp48e1,fals...]
+Compiling architecture struct_all of entity cic_compiler_v4_0_15.delay [\delay(delay_len=0,family=(p_dsp...]
+Compiling architecture synth of entity cic_compiler_v4_0_15.int_comb_stage_unfolded [\int_comb_stage_unfolded(c_int_o...]
+Compiling architecture struct_all of entity cic_compiler_v4_0_15.emb_calc [\emb_calc(param=((p_dsp48e1,fals...]
+Compiling architecture struct_all of entity cic_compiler_v4_0_15.delay [\delay(delay_len=0,family=(p_dsp...]
+Compiling architecture synth of entity cic_compiler_v4_0_15.int_comb_stage_unfolded [\int_comb_stage_unfolded(c_int_o...]
+Compiling architecture struct_all of entity cic_compiler_v4_0_15.emb_calc [\emb_calc(param=((p_dsp48e1,fals...]
+Compiling architecture struct_all of entity cic_compiler_v4_0_15.delay [\delay(delay_len=0,family=(p_dsp...]
+Compiling architecture synth of entity cic_compiler_v4_0_15.int_comb_stage_unfolded [\int_comb_stage_unfolded(c_int_o...]
+Compiling architecture struct_all of entity cic_compiler_v4_0_15.emb_calc [\emb_calc(param=((p_dsp48e1,fals...]
+Compiling architecture struct_all of entity cic_compiler_v4_0_15.delay [\delay(delay_len=2,family=(p_dsp...]
+Compiling architecture struct_all of entity cic_compiler_v4_0_15.delay [\delay(delay_len=0,family=(p_dsp...]
+Compiling architecture struct_all of entity cic_compiler_v4_0_15.delay_bit [\delay_bit(delay_len=0,family=(p...]
+Compiling architecture struct_all of entity cic_compiler_v4_0_15.delay [\delay(delay_len=0,family=(p_mul...]
+Compiling architecture lut4_v of entity unisim.LUT4 [\LUT4(init="1111111111001010")(0...]
+Compiling architecture fdrse_v of entity unisim.FDRSE [fdrse_default]
+Compiling architecture structural of entity cic_compiler_v4_0_15.add_sub [\add_sub(family=(p_mult18s,true,...]
+Compiling architecture struct_all of entity cic_compiler_v4_0_15.delay [\delay(delay_len=1,family=(p_mul...]
+Compiling architecture struct_all of entity cic_compiler_v4_0_15.delay [\delay(delay_len=1,family=(p_mul...]
+Compiling architecture struct_all of entity cic_compiler_v4_0_15.delay [\delay(delay_len=1,family=(p_mul...]
+Compiling architecture struct_all of entity cic_compiler_v4_0_15.delay [\delay(delay_len=1,family=(p_mul...]
+Compiling architecture struct_all of entity cic_compiler_v4_0_15.delay_bit [\delay_bit(delay_len=1,family=(p...]
+Compiling architecture struct_all of entity cic_compiler_v4_0_15.delay_bit [\delay_bit(delay_len=1,family=(p...]
+Compiling architecture struct_all of entity cic_compiler_v4_0_15.emb_calc [\emb_calc(param=((p_mult18s,true...]
+Compiling architecture struct_all of entity cic_compiler_v4_0_15.delay [\delay(delay_len=0,family=(p_dsp...]
+Compiling architecture struct_all of entity cic_compiler_v4_0_15.delay [\delay(delay_len=2,family=(p_dsp...]
+Compiling architecture struct_all of entity cic_compiler_v4_0_15.delay [\delay(delay_len=0,family=(p_dsp...]
+Compiling architecture struct_all of entity cic_compiler_v4_0_15.delay_bit [\delay_bit(delay_len=4,family=(p...]
+Compiling architecture synth of entity cic_compiler_v4_0_15.int_comb_stage_unfolded [\int_comb_stage_unfolded(c_int_o...]
+Compiling architecture struct_all of entity cic_compiler_v4_0_15.delay [\delay(delay_len=1,family=(p_dsp...]
+Compiling architecture struct_all of entity cic_compiler_v4_0_15.emb_calc [\emb_calc(param=((p_dsp48e1,fals...]
+Compiling architecture struct_all of entity cic_compiler_v4_0_15.delay [\delay(delay_len=0,family=(p_dsp...]
+Compiling architecture struct_all of entity cic_compiler_v4_0_15.delay_bit [\delay_bit(delay_len=1,family=(p...]
+Compiling architecture struct_all of entity cic_compiler_v4_0_15.delay [\delay(delay_len=1,family=(p_dsp...]
+Compiling architecture struct_all of entity cic_compiler_v4_0_15.delay [\delay(delay_len=0,family=(p_dsp...]
+Compiling architecture synth of entity cic_compiler_v4_0_15.int_comb_stage_unfolded [\int_comb_stage_unfolded(c_int_o...]
+Compiling architecture synth of entity cic_compiler_v4_0_15.int_comb_section [\int_comb_section(c_int_or_comb=...]
+Compiling architecture synth of entity cic_compiler_v4_0_15.interpolate [\interpolate(c_num_stages=6,c_ra...]
+Compiling architecture synth of entity cic_compiler_v4_0_15.cic_compiler_v4_0_15_viv [\cic_compiler_v4_0_15_viv(c_comp...]
+Compiling architecture xilinx of entity cic_compiler_v4_0_15.cic_compiler_v4_0_15 [\cic_compiler_v4_0_15(c_componen...]
+Compiling architecture ultra96v2_bd_cic_compiler_0_0_arch of entity xil_defaultlib.ultra96v2_bd_cic_compiler_0_0 [ultra96v2_bd_cic_compiler_0_0_de...]
+Compiling architecture synth of entity cic_compiler_v4_0_15.cic_compiler_v4_0_15_viv [\cic_compiler_v4_0_15_viv(c_comp...]
+Compiling architecture xilinx of entity cic_compiler_v4_0_15.cic_compiler_v4_0_15 [\cic_compiler_v4_0_15(c_componen...]
+Compiling architecture ultra96v2_bd_cic_compiler_0_1_arch of entity xil_defaultlib.ultra96v2_bd_cic_compiler_0_1 [ultra96v2_bd_cic_compiler_0_1_de...]
+Compiling architecture xilinx of entity cmpy_v6_0_18.delay_line [\delay_line(c_xdevicefamily="zyn...]
+Compiling architecture xilinx of entity cmpy_v6_0_18.delay_line [\delay_line(c_xdevicefamily="zyn...]
+Compiling architecture xilinx of entity cmpy_v6_0_18.delay_line [\delay_line(c_xdevicefamily="zyn...]
+Compiling architecture xilinx of entity cmpy_v6_0_18.delay_line [\delay_line(c_xdevicefamily="zyn...]
+Compiling architecture xilinx of entity cmpy_v6_0_18.delay_line [\delay_line(c_xdevicefamily="zyn...]
+Compiling architecture xilinx of entity mult_gen_v12_0_16.delay_line [\delay_line(c_xdevicefamily="zyn...]
+Compiling architecture xilinx of entity mult_gen_v12_0_16.delay_line [\delay_line(c_xdevicefamily="zyn...]
+Compiling architecture dsp48e2_v of entity unisim.DSP48E2 [\DSP48E2(acascreg=2,alumodereg=0...]
+Compiling architecture xilinx of entity mult_gen_v12_0_16.delay_line [\delay_line(c_xdevicefamily="zyn...]
+Compiling architecture xilinx of entity mult_gen_v12_0_16.op_resize [\op_resize(ai_width=24,ao_width=...]
+Compiling architecture xilinx of entity mult_gen_v12_0_16.dsp [\dsp(c_xdevicefamily="zynquplus"...]
+Compiling architecture xilinx of entity cmpy_v6_0_18.cmpy_3_dsp48_mult [\cmpy_3_dsp48_mult(c_xdevicefami...]
+Compiling architecture xilinx of entity cmpy_v6_0_18.delay_line [\delay_line(c_xdevicefamily="zyn...]
+Compiling architecture xilinx of entity mult_gen_v12_0_16.delay_line [\delay_line(c_xdevicefamily="zyn...]
+Compiling architecture xilinx of entity mult_gen_v12_0_16.delay_line [\delay_line(c_xdevicefamily="zyn...]
+Compiling architecture dsp48e2_v of entity unisim.DSP48E2 [\DSP48E2(acascreg=2,alumodereg=0...]
+Compiling architecture xilinx of entity mult_gen_v12_0_16.op_resize [\op_resize(ai_width=23,bi_width=...]
+Compiling architecture xilinx of entity mult_gen_v12_0_16.dsp [\dsp(c_xdevicefamily="zynquplus"...]
+Compiling architecture xilinx of entity cmpy_v6_0_18.cmpy_3_dsp48_mult [\cmpy_3_dsp48_mult(c_xdevicefami...]
+Compiling architecture xilinx of entity mult_gen_v12_0_16.dsp [\dsp(c_xdevicefamily="zynquplus"...]
+Compiling architecture xilinx of entity cmpy_v6_0_18.cmpy_3_dsp48_mult [\cmpy_3_dsp48_mult(c_xdevicefami...]
+Compiling architecture xilinx of entity cmpy_v6_0_18.input_negation [\input_negation(c_xdevicefamily=...]
+Compiling architecture xilinx of entity cmpy_v6_0_18.delay_line [\delay_line(c_xdevicefamily="zyn...]
+Compiling architecture xilinx of entity cmpy_v6_0_18.delay_line [\delay_line(c_xdevicefamily="zyn...]
+Compiling architecture xilinx of entity cmpy_v6_0_18.cmpy_3_dsp48 [\cmpy_3_dsp48(c_xdevicefamily="z...]
+Compiling architecture xilinx of entity cmpy_v6_0_18.cmpy_v6_0_18_synth [\cmpy_v6_0_18_synth(c_xdevicefam...]
+Compiling architecture xilinx of entity cmpy_v6_0_18.cmpy_v6_0_18_viv [\cmpy_v6_0_18_viv(c_xdevicefamil...]
+Compiling architecture xilinx of entity cmpy_v6_0_18.cmpy_v6_0_18 [\cmpy_v6_0_18(c_xdevicefamily="z...]
+Compiling architecture ultra96v2_bd_cmpy_0_0_arch of entity xil_defaultlib.ultra96v2_bd_cmpy_0_0 [ultra96v2_bd_cmpy_0_0_default]
+Compiling module xil_defaultlib.cvt_offset_binary(DATA_WIDTH=8)
+Compiling module xil_defaultlib.ultra96v2_bd_cvt_offset_binary_0...
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_latency=...]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_latency=...]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_latency=...]
+Compiling architecture synth of entity dds_compiler_v6_0_19.dds_compiler_v6_0_19_rdy [\dds_compiler_v6_0_19_rdy(c_has_...]
+Compiling architecture synth of entity dds_compiler_v6_0_19.dither_wrap [\dither_wrap(ci_phase_err_width=...]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_has_ce=1...]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_latency=...]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_has_ce=1...]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_has_ce=1...]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_latency=...]
+Compiling architecture synth of entity dds_compiler_v6_0_19.pipe_add [\pipe_add(c_width=29,c_seg_width...]
+Compiling architecture synth of entity dds_compiler_v6_0_19.accum [\accum(c_xdevicefamily="zynquplu...]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_latency=...]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_latency=...]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_latency=...]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_latency=...]
+Compiling architecture synth of entity dds_compiler_v6_0_19.sin_cos [\sin_cos(c_xdevicefamily="zynqup...]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_has_ce=1...]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_has_ce=1...]
+Compiling architecture synth of entity dds_compiler_v6_0_19.dds_compiler_v6_0_19_core [\dds_compiler_v6_0_19_core(c_xde...]
+Compiling architecture synth of entity dds_compiler_v6_0_19.dds_compiler_v6_0_19_viv [\dds_compiler_v6_0_19_viv(c_xdev...]
+Compiling architecture xilinx of entity dds_compiler_v6_0_19.dds_compiler_v6_0_19 [\dds_compiler_v6_0_19(c_xdevicef...]
+Compiling architecture ultra96v2_bd_dds_compiler_0_0_arch of entity xil_defaultlib.ultra96v2_bd_dds_compiler_0_0 [ultra96v2_bd_dds_compiler_0_0_de...]
+Compiling architecture xilinx of entity axi_utils_v2_0_6.glb_srl_fifo [\glb_srl_fifo(has_uvprot=true,ha...]
+Compiling architecture xilinx of entity axi_utils_v2_0_6.glb_ifx_master [\glb_ifx_master(afull_thresh1=2,...]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_latency=...]
+Compiling architecture synth of entity dds_compiler_v6_0_19.dds_compiler_v6_0_19_rdy [\dds_compiler_v6_0_19_rdy(c_has_...]
+Compiling architecture synth of entity dds_compiler_v6_0_19.dither_wrap [\dither_wrap(ci_phase_err_width=...]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_has_ce=1...]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_has_ce=1...]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_has_ce=1...]
+Compiling architecture synth of entity xbip_pipe_v3_0_6.xbip_pipe_v3_0_6_viv [\xbip_pipe_v3_0_6_viv(c_latency=...]
+Compiling architecture synth of entity dds_compiler_v6_0_19.pipe_add [\pipe_add(c_width=17,c_seg_width...]
+Compiling architecture synth of entity dds_compiler_v6_0_19.accum [\accum(c_xdevicefamily="zynquplu...]
+Compiling architecture synth of entity dds_compiler_v6_0_19.dds_compiler_v6_0_19_core [\dds_compiler_v6_0_19_core(c_xde...]
+Compiling architecture synth of entity dds_compiler_v6_0_19.dds_compiler_v6_0_19_viv [\dds_compiler_v6_0_19_viv(c_xdev...]
+Compiling architecture xilinx of entity dds_compiler_v6_0_19.dds_compiler_v6_0_19 [\dds_compiler_v6_0_19(c_xdevicef...]
+Compiling architecture ultra96v2_bd_dds_compiler_1_0_arch of entity xil_defaultlib.ultra96v2_bd_dds_compiler_1_0 [ultra96v2_bd_dds_compiler_1_0_de...]
+Compiling architecture xilinx of entity axi_utils_v2_0_6.glb_srl_fifo [\glb_srl_fifo(width=16,has_ifx=t...]
+Compiling architecture xilinx of entity axi_utils_v2_0_6.glb_ifx_slave [\glb_ifx_slave(width=16,has_ifx=...]
+Compiling architecture synth of entity fir_compiler_v7_2_13.delay [\delay(c_delay_len=1,c_xdevicefa...]
+Compiling architecture synth of entity fir_compiler_v7_2_13.delay [\delay(c_delay_len=2,c_xdevicefa...]
+Compiling architecture synth of entity fir_compiler_v7_2_13.delay [\delay(c_delay_len=3,c_xdevicefa...]
+Compiling architecture synth of entity fir_compiler_v7_2_13.delay [\delay(c_delay_len=5,c_xdevicefa...]
+Compiling architecture synth of entity fir_compiler_v7_2_13.dpt_mem [\dpt_mem(c_xdevicefamily="zynqup...]
+Compiling architecture synth of entity fir_compiler_v7_2_13.filt_mem [\filt_mem(c_xdevicefamily="zynqu...]
+Compiling architecture synth of entity fir_compiler_v7_2_13.sp_mem [\sp_mem(c_xdevicefamily="zynqupl...]
+Compiling architecture synth of entity fir_compiler_v7_2_13.filt_mem [\filt_mem(c_xdevicefamily="zynqu...]
+Compiling architecture synth of entity fir_compiler_v7_2_13.cntrl_delay [\cntrl_delay(c_delay_len=0,c_mem...]
+Compiling architecture synth of entity fir_compiler_v7_2_13.cntrl_delay [\cntrl_delay(c_delay_len=0,c_mem...]
+Compiling architecture synth of entity fir_compiler_v7_2_13.delay [\delay(c_delay_len=2,c_xdevicefa...]
+Compiling architecture synth of entity fir_compiler_v7_2_13.buff [\buff(c_xdevicefamily="zynquplus...]
+Compiling architecture synth of entity fir_compiler_v7_2_13.delay [\delay(c_delay_len=0,c_xdevicefa...]
+Compiling architecture synth of entity fir_compiler_v7_2_13.delay [\delay(c_delay_len=0,c_xdevicefa...]
+Compiling architecture synth of entity fir_compiler_v7_2_13.delay [\delay(c_delay_len=0,c_xdevicefa...]
+Compiling architecture synth of entity fir_compiler_v7_2_13.delay [\delay(c_delay_len=0,c_xdevicefa...]
+Compiling architecture synth of entity fir_compiler_v7_2_13.delay [\delay(c_delay_len=0,c_xdevicefa...]
+Compiling architecture synth of entity fir_compiler_v7_2_13.delay [\delay(c_delay_len=0,c_xdevicefa...]
+Compiling architecture dsp48e2_v of entity unisim.DSP48E2 [\DSP48E2(bmultsel="AD",mask="111...]
+Compiling architecture synth of entity fir_compiler_v7_2_13.calc [\calc(c_xdevicefamily="zynquplus...]
+WARNING: [VRFC 10-516] comparison between unequal length arrays always returns FALSE [/wrk/2019.2/continuous/2019_11_06_2708876/packages/customer/vivado/data/ip/xilinx/xbip_utils_v3_0/hdl/xbip_utils_v3_0_vh_rfs.vhd:2056]
+WARNING: [VRFC 10-516] comparison between unequal length arrays always returns FALSE [/wrk/2019.2/continuous/2019_11_06_2708876/packages/customer/vivado/data/ip/xilinx/xbip_utils_v3_0/hdl/xbip_utils_v3_0_vh_rfs.vhd:2058]
+WARNING: [VRFC 10-516] comparison between unequal length arrays always returns FALSE [/wrk/2019.2/continuous/2019_11_06_2708876/packages/customer/vivado/data/ip/xilinx/xbip_utils_v3_0/hdl/xbip_utils_v3_0_vh_rfs.vhd:2059]
+WARNING: [VRFC 10-516] comparison between unequal length arrays always returns FALSE [/wrk/2019.2/continuous/2019_11_06_2708876/packages/customer/vivado/data/ip/xilinx/xbip_utils_v3_0/hdl/xbip_utils_v3_0_vh_rfs.vhd:2060]
+WARNING: [VRFC 10-516] comparison between unequal length arrays always returns FALSE [/wrk/2019.2/continuous/2019_11_06_2708876/packages/customer/vivado/data/ip/xilinx/xbip_utils_v3_0/hdl/xbip_utils_v3_0_vh_rfs.vhd:2046]
+WARNING: [VRFC 10-516] comparison between unequal length arrays always returns FALSE [/wrk/2019.2/continuous/2019_11_06_2708876/packages/customer/vivado/data/ip/xilinx/xbip_utils_v3_0/hdl/xbip_utils_v3_0_vh_rfs.vhd:2047]
+WARNING: [VRFC 10-516] comparison between unequal length arrays always returns FALSE [/wrk/2019.2/continuous/2019_11_06_2708876/packages/customer/vivado/data/ip/xilinx/xbip_utils_v3_0/hdl/xbip_utils_v3_0_vh_rfs.vhd:2049]
+WARNING: [VRFC 10-516] comparison between unequal length arrays always returns FALSE [/wrk/2019.2/continuous/2019_11_06_2708876/packages/customer/vivado/data/ip/xilinx/xbip_utils_v3_0/hdl/xbip_utils_v3_0_vh_rfs.vhd:2050]
+Compiling architecture synth of entity fir_compiler_v7_2_13.addsub_mult_add [\addsub_mult_add(c_xdevicefamily...]
+WARNING: [VRFC 10-516] comparison between unequal length arrays always returns FALSE [/wrk/2019.2/continuous/2019_11_06_2708876/packages/customer/vivado/data/ip/xilinx/xbip_utils_v3_0/hdl/xbip_utils_v3_0_vh_rfs.vhd:2056]
+WARNING: [VRFC 10-516] comparison between unequal length arrays always returns FALSE [/wrk/2019.2/continuous/2019_11_06_2708876/packages/customer/vivado/data/ip/xilinx/xbip_utils_v3_0/hdl/xbip_utils_v3_0_vh_rfs.vhd:2058]
+WARNING: [VRFC 10-516] comparison between unequal length arrays always returns FALSE [/wrk/2019.2/continuous/2019_11_06_2708876/packages/customer/vivado/data/ip/xilinx/xbip_utils_v3_0/hdl/xbip_utils_v3_0_vh_rfs.vhd:2059]
+WARNING: [VRFC 10-516] comparison between unequal length arrays always returns FALSE [/wrk/2019.2/continuous/2019_11_06_2708876/packages/customer/vivado/data/ip/xilinx/xbip_utils_v3_0/hdl/xbip_utils_v3_0_vh_rfs.vhd:2060]
+WARNING: [VRFC 10-516] comparison between unequal length arrays always returns FALSE [/wrk/2019.2/continuous/2019_11_06_2708876/packages/customer/vivado/data/ip/xilinx/xbip_utils_v3_0/hdl/xbip_utils_v3_0_vh_rfs.vhd:2046]
+WARNING: [VRFC 10-516] comparison between unequal length arrays always returns FALSE [/wrk/2019.2/continuous/2019_11_06_2708876/packages/customer/vivado/data/ip/xilinx/xbip_utils_v3_0/hdl/xbip_utils_v3_0_vh_rfs.vhd:2047]
+WARNING: [VRFC 10-516] comparison between unequal length arrays always returns FALSE [/wrk/2019.2/continuous/2019_11_06_2708876/packages/customer/vivado/data/ip/xilinx/xbip_utils_v3_0/hdl/xbip_utils_v3_0_vh_rfs.vhd:2049]
+WARNING: [VRFC 10-516] comparison between unequal length arrays always returns FALSE [/wrk/2019.2/continuous/2019_11_06_2708876/packages/customer/vivado/data/ip/xilinx/xbip_utils_v3_0/hdl/xbip_utils_v3_0_vh_rfs.vhd:2050]
+Compiling architecture synth of entity fir_compiler_v7_2_13.delay [\delay(c_delay_len=0,c_xdevicefa...]
+Compiling architecture synth of entity fir_compiler_v7_2_13.delay [\delay(c_delay_len=0,c_xdevicefa...]
+Compiling architecture dsp48e2_v of entity unisim.DSP48E2 [\DSP48E2(inmodereg=0,mask="11111...]
+Compiling architecture synth of entity fir_compiler_v7_2_13.delay [\delay(c_delay_len=0,c_xdevicefa...]
+Compiling architecture synth of entity fir_compiler_v7_2_13.delay [\delay(c_delay_len=0,c_xdevicefa...]
+Compiling architecture synth of entity fir_compiler_v7_2_13.calc [\calc(c_xdevicefamily="zynquplus...]
+Compiling architecture synth of entity fir_compiler_v7_2_13.add_accum [\add_accum(c_xdevicefamily="zynq...]
+Compiling architecture dsp48e2_v of entity unisim.DSP48E2 [\DSP48E2(inmodereg=0,mask="11111...]
+Compiling architecture synth of entity fir_compiler_v7_2_13.calc [\calc(c_xdevicefamily="zynquplus...]
+Compiling architecture synth of entity fir_compiler_v7_2_13.rounder [\rounder(c_xdevicefamily="zynqup...]
+Compiling architecture synth of entity fir_compiler_v7_2_13.delay [\delay(c_delay_len=9,c_xdevicefa...]
+Compiling architecture synth of entity fir_compiler_v7_2_13.delay [\delay(c_delay_len=1,c_xdevicefa...]
+Compiling architecture synth of entity fir_compiler_v7_2_13.delay [\delay(c_delay_len=3,c_xdevicefa...]
+Compiling architecture synth of entity fir_compiler_v7_2_13.delay [\delay(c_delay_len=1,c_xdevicefa...]
+Compiling architecture synth of entity fir_compiler_v7_2_13.delay [\delay(c_delay_len=1,c_xdevicefa...]
+Compiling architecture synth of entity fir_compiler_v7_2_13.delay [\delay(c_delay_len=2,c_xdevicefa...]
+Compiling architecture synth of entity fir_compiler_v7_2_13.delay [\delay(c_delay_len=0,c_xdevicefa...]
+Compiling architecture synth of entity fir_compiler_v7_2_13.delay [\delay(c_delay_len=2,c_xdevicefa...]
+Compiling architecture synth of entity fir_compiler_v7_2_13.delay [\delay(c_delay_len=7,c_xdevicefa...]
+Compiling architecture synth of entity fir_compiler_v7_2_13.delay [\delay(c_delay_len=7,c_xdevicefa...]
+Compiling architecture synth of entity fir_compiler_v7_2_13.delay [\delay(c_delay_len=6,c_xdevicefa...]
+Compiling architecture synth of entity fir_compiler_v7_2_13.dpr_mem [\dpr_mem(c_xdevicefamily="zynqup...]
+Compiling architecture xilinx of entity axi_utils_v2_0_6.glb_srl_fifo [\glb_srl_fifo(width=20,has_uvpro...]
+Compiling architecture xilinx of entity axi_utils_v2_0_6.glb_ifx_master [\glb_ifx_master(width=20)\]
+Compiling architecture synth of entity fir_compiler_v7_2_13.polyphase_interpolation [\polyphase_interpolation(c_xdevi...]
+Compiling architecture synth of entity fir_compiler_v7_2_13.fir_compiler_v7_2_13_viv [\fir_compiler_v7_2_13_viv(c_xdev...]
+Compiling architecture xilinx of entity fir_compiler_v7_2_13.fir_compiler_v7_2_13 [\fir_compiler_v7_2_13(c_xdevicef...]
+Compiling architecture ultra96v2_bd_fir_compiler_0_0_arch of entity xil_defaultlib.ultra96v2_bd_fir_compiler_0_0 [ultra96v2_bd_fir_compiler_0_0_de...]
+Compiling module sim_clk_gen_v1_0_2.sim_clk_gen(CLOCK_PERIOD=8.13802...
+Compiling module xil_defaultlib.ultra96v2_bd_sim_clk_gen_0_0
+Compiling module xlconstant_v1_1_6.xlconstant_v1_1_6_xlconstant(CON...
+Compiling module xil_defaultlib.ultra96v2_bd_xlconstant_0_0
+Compiling module xlslice_v1_0_2.xlslice_v1_0_2_xlslice(DIN_WIDTH...
+Compiling module xil_defaultlib.ultra96v2_bd_xlslice_0_2
+Compiling module xlslice_v1_0_2.xlslice_v1_0_2_xlslice(DIN_WIDTH...
+Compiling module xil_defaultlib.ultra96v2_bd_xlslice_3_0
+Compiling module xil_defaultlib.ultra96v2_bd
+Compiling module xil_defaultlib.ultra96v2_bd_wrapper
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot ultra96v2_bd_wrapper_behav

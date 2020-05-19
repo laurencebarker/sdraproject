@@ -1,0 +1,15 @@
+timestamp=[2019-12-07 20:50:52], mode=WORKBENCH_START, duration=0:00:02.640, duration_ms=2640, data={}
+timestamp=[2019-12-07 20:50:55], mode=WORKBENCH_UI_INIT, duration=0:00:03.023, duration_ms=3023, data={editors_count=0, platform_editors_count=0, projects_count=0, platform_projects_count=0, active_platform_editor=false, projects=}
+timestamp=[2019-12-07 20:52:50], mode=PLATFORM_CREATION, duration=0:00:10.359, duration_ms=10359, data={platform_source=dsa, os=standalone, processor=psu_cortexa53, platform=null}
+timestamp=[2019-12-07 20:54:18], mode=PLATFORM_GENERATION, duration=0:00:51.159, duration_ms=51159, data={name=ultra96v2_0}
+timestamp=[2019-12-07 20:55:10], mode=APP_CREATION, duration=0:00:01.674, duration_ms=1674, data={name=hello_ultra96v2, project_type=sdk, os=standalone, processor=cortex-a53, runtime=C/C++, platform=ultra96v2_0, application_type=application}
+timestamp=[2019-12-07 20:55:40], mode=MISC, duration=0:00:01.819, duration_ms=1819, data={name=hello_ultra96v2_system, type=bif_creation}
+timestamp=[2019-12-08 09:44:57], mode=WORKBENCH_START, duration=0:00:08.186, duration_ms=8186, data={}
+timestamp=[2019-12-08 09:44:58], mode=WORKBENCH_UI_INIT, duration=0:00:01.186, duration_ms=1186, data={editors_count=3, platform_editors_count=1, projects_count=4, platform_projects_count=1, active_platform_editor=false, projects=RemoteSystemsTempFiles,hello_ultra96v2,hello_ultra96v2_system,ultra96v2_0}
+timestamp=[2019-12-08 12:34:40], mode=PLATFORM_GENERATION, duration=0:00:18.686, duration_ms=18686, data={name=ultra96v2_0}
+timestamp=[2019-12-08 12:58:01], mode=PLATFORM_GENERATION, duration=0:00:40.651, duration_ms=40651, data={name=ultra96v2_0}
+timestamp=[2019-12-08 13:50:50], mode=WORKBENCH_START, duration=0:00:09.075, duration_ms=9075, data={}
+timestamp=[2019-12-08 13:50:51], mode=WORKBENCH_UI_INIT, duration=0:00:01.042, duration_ms=1042, data={editors_count=3, platform_editors_count=1, projects_count=4, platform_projects_count=1, active_platform_editor=false, projects=RemoteSystemsTempFiles,hello_ultra96v2,hello_ultra96v2_system,ultra96v2_0}
+timestamp=[2019-12-08 13:57:41], mode=PLATFORM_GENERATION, duration=0:00:18.122, duration_ms=18122, data={name=ultra96v2_0}
+timestamp=[2019-12-08 14:24:08], mode=WORKBENCH_START, duration=0:00:07.646, duration_ms=7646, data={}
+timestamp=[2019-12-08 14:24:09], mode=WORKBENCH_UI_INIT, duration=0:00:00.959, duration_ms=959, data={editors_count=3, platform_editors_count=1, projects_count=4, platform_projects_count=1, active_platform_editor=false, projects=RemoteSystemsTempFiles,hello_ultra96v2,hello_ultra96v2_system,ultra96v2_0}

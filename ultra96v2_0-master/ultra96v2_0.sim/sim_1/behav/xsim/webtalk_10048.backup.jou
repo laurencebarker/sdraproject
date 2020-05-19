@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Webtalk v2019.2 (64-bit)
+# SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+# IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+# Start of session at: Sat May 16 16:34:30 2020
+# Process ID: 10048
+# Current directory: C:/xilinxdesigns/sdraproject/ultra96v2_0-master/ultra96v2_0.sim/sim_1/behav/xsim
+# Command line: wbtcv.exe -mode batch -source C:/xilinxdesigns/sdraproject/ultra96v2_0-master/ultra96v2_0.sim/sim_1/behav/xsim/xsim.dir/ultra96v2_bd_wrapper_behav/webtalk/xsim_webtalk.tcl -notrace
+# Log file: C:/xilinxdesigns/sdraproject/ultra96v2_0-master/ultra96v2_0.sim/sim_1/behav/xsim/webtalk.log
+# Journal file: C:/xilinxdesigns/sdraproject/ultra96v2_0-master/ultra96v2_0.sim/sim_1/behav/xsim\webtalk.jou
+#-----------------------------------------------------------
+source C:/xilinxdesigns/sdraproject/ultra96v2_0-master/ultra96v2_0.sim/sim_1/behav/xsim/xsim.dir/ultra96v2_bd_wrapper_behav/webtalk/xsim_webtalk.tcl -notrace

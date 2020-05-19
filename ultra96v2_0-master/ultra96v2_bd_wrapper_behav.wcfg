@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="ultra96v2_bd_wrapper_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="axi_bram_ctrl_funcs" />
+            <top_module name="axi_vip_pkg" />
+            <top_module name="glbl" />
+            <top_module name="ipif_pkg" />
+            <top_module name="lib_pkg" />
+            <top_module name="std" />
+            <top_module name="ultra96v2_bd_wrapper" />
+            <top_module name="vcomponents" />
+            <top_module name="xil_common_vip_pkg" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="1691639000fs"></ZoomStartTime>
+      <ZoomEndTime time="1692931001fs"></ZoomEndTime>
+      <Cursor1Time time="1691902407fs"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="123"></NameColumnWidth>
+      <ValueColumnWidth column_width="72"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="2" />
+   <wave_markers>
+      <marker time="1649112803" label="" />
+   </wave_markers>
+   <wvobject fp_name="/ultra96v2_bd_wrapper/DAC_out" type="array">
+      <obj_property name="ElementShortName">DAC_out[23:0]</obj_property>
+      <obj_property name="ObjectShortName">DAC_out[23:0]</obj_property>
+      <obj_property name="Radix">SIGNEDDECRADIX</obj_property>
+      <obj_property name="WaveformStyle">STYLE_ANALOG</obj_property>
+      <obj_property name="CellHeight">100</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ultra96v2_bd_wrapper/HD_GPIO" type="array">
+      <obj_property name="ElementShortName">HD_GPIO[7:0]</obj_property>
+      <obj_property name="ObjectShortName">HD_GPIO[7:0]</obj_property>
+      <obj_property name="WaveformStyle">STYLE_ANALOG</obj_property>
+      <obj_property name="CellHeight">100</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+</wave_config>

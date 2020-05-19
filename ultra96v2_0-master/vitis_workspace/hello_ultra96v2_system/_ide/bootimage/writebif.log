@@ -1,0 +1,14 @@
+TRACE::2019-12-07.23:55:38::SCWBifWriter::Found the complete platform /home/parallels/ultra96v2_0/vitis_workspace/ultra96v2_0/export/ultra96v2_0/ultra96v2_0.xpfm
+TRACE::2019-12-07.23:55:38::SCWBifWriter::hardware databse : ultra96v2_top_2
+TRACE::2019-12-07.23:55:38::SCWBifWriter::bitstream found in the design
+TRACE::2019-12-07.23:55:38::SCWBifWriter::Found a baremetal domain, proc: psu_cortexa53_0
+TRACE::2019-12-07.23:55:38::SCWBifWriter::proc type : 
+TRACE::2019-12-07.23:55:38::SCWBifWriter::proc[0] : psu_cortexa53_0
+TRACE::2019-12-07.23:55:38::SCWBifWriter::Device type is : zynqMP
+TRACE::2019-12-07.23:55:38::SCWBifWriter::Writing BIF to file : /home/parallels/ultra96v2_0/vitis_workspace/hello_ultra96v2_system/_ide/bootimage/template_hello_ultra96v2_system.bif
+TRACE::2019-12-07.23:55:38::SCWBifWriter::Writing the ZynqMP baremetal bif 
+TRACE::2019-12-07.23:55:38::SCWBifWriter::System Command Ran  /tools/Xilinx/Vitis/2019.2/gnu/aarch64/lin/aarch64-none/bin/aarch64-none-elf-readelf -A  /home/parallels/ultra96v2_0/vitis_workspace/ultra96v2_0/export/ultra96v2_0/sw/ultra96v2_0/boot/fsbl.elf
+TRACE::2019-12-07.23:55:38::SCWBifWriter:: Command result  
+TRACE::2019-12-07.23:55:38::SCWBifWriter::FSBL processor, command ran /tools/Xilinx/Vitis/2019.2/gnu/aarch64/lin/aarch64-none/bin/aarch64-none-elf-readelf -A  /home/parallels/ultra96v2_0/vitis_workspace/ultra96v2_0/export/ultra96v2_0/sw/ultra96v2_0/boot/fsbl.elf
+TRACE::2019-12-07.23:55:38::SCWBifWriter::FSBL target processor is a53-0
+TRACE::2019-12-07.23:55:38::SCWBifWriter::Boot processor is :a53-0

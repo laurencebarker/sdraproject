@@ -1,0 +1,41 @@
+Vivado Simulator 2019.2
+Time resolution is 1 ps
+Block Memory Generator module ultra96v2_bd_wrapper.ultra96v2_bd_i.CPU.blk_mem_gen_0.inst.native_mem_mapped_module.blk_mem_gen_v8_4_4_inst is using a behavioral model for simulation which will not precisely model memory collision behavior.
+XilinxAXIVIP: Found at Path: ultra96v2_bd_wrapper.ultra96v2_bd_i.CPU.zynq_ultra_ps_e_0.inst.S_AXI_ACP.slave
+[0] : *ZYNQ_MPSoC_BFM_INFO : S_AXI_ACP : Port is DISABLED.
+XilinxAXIVIP: Found at Path: ultra96v2_bd_wrapper.ultra96v2_bd_i.CPU.zynq_ultra_ps_e_0.inst.S_AXI_ACE.slave
+[0] : *ZYNQ_MPSoC_BFM_INFO : S_AXI_ACE : Port is DISABLED.
+XilinxAXIVIP: Found at Path: ultra96v2_bd_wrapper.ultra96v2_bd_i.CPU.zynq_ultra_ps_e_0.inst.S_AXI_HPC0_FPD.slave
+[0] : *ZYNQ_MPSoC_BFM_INFO : S_AXI_GP0 : Port is DISABLED.
+XilinxAXIVIP: Found at Path: ultra96v2_bd_wrapper.ultra96v2_bd_i.CPU.zynq_ultra_ps_e_0.inst.S_AXI_HPC1_FPD.slave
+[0] : *ZYNQ_MPSoC_BFM_INFO : S_AXI_GP1 : Port is DISABLED.
+XilinxAXIVIP: Found at Path: ultra96v2_bd_wrapper.ultra96v2_bd_i.CPU.zynq_ultra_ps_e_0.inst.S_AXI_HP0_FPD.slave
+[0] : *ZYNQ_MPSoC_BFM_INFO : S_AXI_GP2 : Port is DISABLED.
+XilinxAXIVIP: Found at Path: ultra96v2_bd_wrapper.ultra96v2_bd_i.CPU.zynq_ultra_ps_e_0.inst.S_AXI_HP1_FPD.slave
+[0] : *ZYNQ_MPSoC_BFM_INFO : S_AXI_GP3 : Port is DISABLED.
+XilinxAXIVIP: Found at Path: ultra96v2_bd_wrapper.ultra96v2_bd_i.CPU.zynq_ultra_ps_e_0.inst.S_AXI_HP2_FPD.slave
+[0] : *ZYNQ_MPSoC_BFM_INFO : S_AXI_GP4 : Port is DISABLED.
+XilinxAXIVIP: Found at Path: ultra96v2_bd_wrapper.ultra96v2_bd_i.CPU.zynq_ultra_ps_e_0.inst.S_AXI_HP3_FPD.slave
+[0] : *ZYNQ_MPSoC_BFM_INFO : S_AXI_GP5 : Port is DISABLED.
+XilinxAXIVIP: Found at Path: ultra96v2_bd_wrapper.ultra96v2_bd_i.CPU.zynq_ultra_ps_e_0.inst.S_AXI_HPM0_LPD.slave
+[0] : *ZYNQ_MPSoC_BFM_INFO : S_AXI_GP6 : Port is DISABLED.
+XilinxAXIVIP: Found at Path: ultra96v2_bd_wrapper.ultra96v2_bd_i.CPU.zynq_ultra_ps_e_0.inst.M_AXI_HPM0_FPD.master
+[0] : *ZYNQ_MPSoC_BFM_INFO : M_AXI_GP0 : Port is ENABLED.
+XilinxAXIVIP: Found at Path: ultra96v2_bd_wrapper.ultra96v2_bd_i.CPU.zynq_ultra_ps_e_0.inst.M_AXI_HPM1_FPD.master
+[0] : *ZYNQ_MPSoC_BFM_INFO : M_AXI_GP1 : Port is ENABLED.
+XilinxAXIVIP: Found at Path: ultra96v2_bd_wrapper.ultra96v2_bd_i.CPU.zynq_ultra_ps_e_0.inst.M_AXI_HPM0_LPD.master
+[0] : *ZYNQ_MPSoC_BFM_INFO : M_AXI_GP2 : Port is DISABLED.
+WARNING: 5 ns ultra96v2_bd_wrapper.ultra96v2_bd_i.CPU.zynq_ultra_ps_e_0.inst.M_AXI_HPM0_FPD.master.IF : ARESET_N can't be X/Z after 1 cycle of clock. To downgrade, use <hierarchy_path to VIP>.IF.set_enable_xchecks_to_warn(), or filter using clr_enable_xchecks.
+WARNING: 5 ns ultra96v2_bd_wrapper.ultra96v2_bd_i.CPU.zynq_ultra_ps_e_0.inst.M_AXI_HPM1_FPD.master.IF : ARESET_N can't be X/Z after 1 cycle of clock. To downgrade, use <hierarchy_path to VIP>.IF.set_enable_xchecks_to_warn(), or filter using clr_enable_xchecks.
+Executing Axi4 End Of Simulation checks
+Executing Axi4 End Of Simulation checks
+Executing Axi4 End Of Simulation checks
+Executing Axi4 End Of Simulation checks
+Executing Axi4 End Of Simulation checks
+Executing Axi4 End Of Simulation checks
+Executing Axi4 End Of Simulation checks
+Executing Axi4 End Of Simulation checks
+Executing Axi4 End Of Simulation checks
+Executing Axi4 End Of Simulation checks
+Executing Axi4 End Of Simulation checks
+Executing Axi4 End Of Simulation checks

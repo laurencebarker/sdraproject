@@ -1,0 +1,533 @@
+
+*** Running vivado
+    with args -log ultra96v2_bd_fir_compiler_0_0.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source ultra96v2_bd_fir_compiler_0_0.tcl
+
+
+****** Vivado v2019.2 (64-bit)
+  **** SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+  **** IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+source ultra96v2_bd_fir_compiler_0_0.tcl -notrace
+Command: synth_design -top ultra96v2_bd_fir_compiler_0_0 -part xczu3eg-sbva484-1-e -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xczu3eg'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xczu3eg'
+INFO: [Device 21-403] Loading part xczu3eg-sbva484-1-e
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 15984 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 1434.070 ; gain = 54.184
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'ultra96v2_bd_fir_compiler_0_0' [c:/xilinxdesigns/sdraproject/ultra96v2_0-master/ultra96v2_0.srcs/sources_1/bd/ultra96v2_bd/ip/ultra96v2_bd_fir_compiler_0_0/synth/ultra96v2_bd_fir_compiler_0_0.vhd:72]
+	Parameter C_XDEVICEFAMILY bound to: zynquplus - type: string 
+	Parameter C_ELABORATION_DIR bound to: ./ - type: string 
+	Parameter C_COMPONENT_NAME bound to: ultra96v2_bd_fir_compiler_0_0 - type: string 
+	Parameter C_COEF_FILE bound to: ultra96v2_bd_fir_compiler_0_0.mif - type: string 
+	Parameter C_COEF_FILE_LINES bound to: 488 - type: integer 
+	Parameter C_FILTER_TYPE bound to: 2 - type: integer 
+	Parameter C_INTERP_RATE bound to: 8 - type: integer 
+	Parameter C_DECIM_RATE bound to: 1 - type: integer 
+	Parameter C_ZERO_PACKING_FACTOR bound to: 1 - type: integer 
+	Parameter C_SYMMETRY bound to: 1 - type: integer 
+	Parameter C_NUM_FILTS bound to: 1 - type: integer 
+	Parameter C_NUM_TAPS bound to: 971 - type: integer 
+	Parameter C_NUM_CHANNELS bound to: 2 - type: integer 
+	Parameter C_CHANNEL_PATTERN bound to: fixed - type: string 
+	Parameter C_ROUND_MODE bound to: 2 - type: integer 
+	Parameter C_COEF_RELOAD bound to: 0 - type: integer 
+	Parameter C_NUM_RELOAD_SLOTS bound to: 1 - type: integer 
+	Parameter C_COL_MODE bound to: 1 - type: integer 
+	Parameter C_COL_PIPE_LEN bound to: 4 - type: integer 
+	Parameter C_COL_CONFIG bound to: 1 - type: string 
+	Parameter C_OPTIMIZATION bound to: 0 - type: integer 
+	Parameter C_DATA_PATH_WIDTHS bound to: 16 - type: string 
+	Parameter C_DATA_IP_PATH_WIDTHS bound to: 16 - type: string 
+	Parameter C_DATA_PX_PATH_WIDTHS bound to: 16 - type: string 
+	Parameter C_DATA_WIDTH bound to: 16 - type: integer 
+	Parameter C_COEF_PATH_WIDTHS bound to: 23 - type: string 
+	Parameter C_COEF_WIDTH bound to: 22 - type: integer 
+	Parameter C_DATA_PATH_SRC bound to: 0 - type: string 
+	Parameter C_COEF_PATH_SRC bound to: 0 - type: string 
+	Parameter C_PX_PATH_SRC bound to: 0 - type: string 
+	Parameter C_DATA_PATH_SIGN bound to: 0 - type: string 
+	Parameter C_COEF_PATH_SIGN bound to: 0 - type: string 
+	Parameter C_ACCUM_PATH_WIDTHS bound to: 41 - type: string 
+	Parameter C_OUTPUT_WIDTH bound to: 20 - type: integer 
+	Parameter C_OUTPUT_PATH_WIDTHS bound to: 20 - type: string 
+	Parameter C_ACCUM_OP_PATH_WIDTHS bound to: 40 - type: string 
+	Parameter C_EXT_MULT_CNFG bound to: none - type: string 
+	Parameter C_DATA_PATH_PSAMP_SRC bound to: 0 - type: string 
+	Parameter C_OP_PATH_PSAMP_SRC bound to: 0 - type: string 
+	Parameter C_NUM_MADDS bound to: 1 - type: integer 
+	Parameter C_OPT_MADDS bound to: none - type: string 
+	Parameter C_OVERSAMPLING_RATE bound to: 61 - type: integer 
+	Parameter C_INPUT_RATE bound to: 1280 - type: integer 
+	Parameter C_OUTPUT_RATE bound to: 160 - type: integer 
+	Parameter C_DATA_MEMTYPE bound to: 1 - type: integer 
+	Parameter C_COEF_MEMTYPE bound to: 1 - type: integer 
+	Parameter C_IPBUFF_MEMTYPE bound to: 0 - type: integer 
+	Parameter C_OPBUFF_MEMTYPE bound to: 2 - type: integer 
+	Parameter C_DATAPATH_MEMTYPE bound to: 0 - type: integer 
+	Parameter C_MEM_ARRANGEMENT bound to: 1 - type: integer 
+	Parameter C_DATA_MEM_PACKING bound to: 1 - type: integer 
+	Parameter C_COEF_MEM_PACKING bound to: 0 - type: integer 
+	Parameter C_FILTS_PACKED bound to: 0 - type: integer 
+	Parameter C_LATENCY bound to: 74 - type: integer 
+	Parameter C_HAS_ARESETn bound to: 1 - type: integer 
+	Parameter C_HAS_ACLKEN bound to: 0 - type: integer 
+	Parameter C_DATA_HAS_TLAST bound to: 0 - type: integer 
+	Parameter C_S_DATA_HAS_FIFO bound to: 1 - type: integer 
+	Parameter C_S_DATA_HAS_TUSER bound to: 0 - type: integer 
+	Parameter C_S_DATA_TDATA_WIDTH bound to: 16 - type: integer 
+	Parameter C_S_DATA_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_M_DATA_HAS_TREADY bound to: 1 - type: integer 
+	Parameter C_M_DATA_HAS_TUSER bound to: 0 - type: integer 
+	Parameter C_M_DATA_TDATA_WIDTH bound to: 24 - type: integer 
+	Parameter C_M_DATA_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_HAS_CONFIG_CHANNEL bound to: 0 - type: integer 
+	Parameter C_CONFIG_SYNC_MODE bound to: 0 - type: integer 
+	Parameter C_CONFIG_PACKET_SIZE bound to: 0 - type: integer 
+	Parameter C_CONFIG_TDATA_WIDTH bound to: 1 - type: integer 
+	Parameter C_RELOAD_TDATA_WIDTH bound to: 1 - type: integer 
+INFO: [Synth 8-3491] module 'fir_compiler_v7_2_13' declared at 'c:/xilinxdesigns/sdraproject/ultra96v2_0-master/ultra96v2_0.srcs/sources_1/bd/ultra96v2_bd/ipshared/352e/hdl/fir_compiler_v7_2_vh_rfs.vhd:61347' bound to instance 'U0' of component 'fir_compiler_v7_2_13' [c:/xilinxdesigns/sdraproject/ultra96v2_0-master/ultra96v2_0.srcs/sources_1/bd/ultra96v2_bd/ip/ultra96v2_bd_fir_compiler_0_0/synth/ultra96v2_bd_fir_compiler_0_0.vhd:211]
+WARNING: [Synth 8-5858] RAM p_path_out_reg from Abstract Data Type (record/struct) for this pattern/configuration is not supported. This will most likely be implemented in registers
+INFO: [Synth 8-256] done synthesizing module 'ultra96v2_bd_fir_compiler_0_0' (18#1) [c:/xilinxdesigns/sdraproject/ultra96v2_0-master/ultra96v2_0.srcs/sources_1/bd/ultra96v2_bd/ip/ultra96v2_bd_fir_compiler_0_0/synth/ultra96v2_bd_fir_compiler_0_0.vhd:72]
+WARNING: [Synth 8-3331] design delay__parameterized4 has unconnected port SCLR_ALT
+WARNING: [Synth 8-3331] design dpr_mem has unconnected port CE_B
+WARNING: [Synth 8-3331] design dpr_mem has unconnected port SCLR_A
+WARNING: [Synth 8-3331] design dpr_mem has unconnected port SCLR_B
+WARNING: [Synth 8-3331] design delay__parameterized25 has unconnected port SCLR_ALT
+WARNING: [Synth 8-3331] design delay__parameterized24 has unconnected port SCLR_ALT
+WARNING: [Synth 8-3331] design delay__parameterized23 has unconnected port SCLR_ALT
+WARNING: [Synth 8-3331] design delay__parameterized22 has unconnected port SCLR_ALT
+WARNING: [Synth 8-3331] design delay__parameterized21 has unconnected port SCLR_ALT
+WARNING: [Synth 8-3331] design delay__parameterized20 has unconnected port SCLR_ALT
+WARNING: [Synth 8-3331] design delay__parameterized19 has unconnected port SCLR_ALT
+WARNING: [Synth 8-3331] design delay__parameterized18 has unconnected port WE
+WARNING: [Synth 8-3331] design delay__parameterized18 has unconnected port CE
+WARNING: [Synth 8-3331] design delay__parameterized18 has unconnected port SCLR
+WARNING: [Synth 8-3331] design delay__parameterized18 has unconnected port SCLR_ALT
+WARNING: [Synth 8-3331] design delay__parameterized18 has unconnected port CLK
+WARNING: [Synth 8-3331] design delay__parameterized17 has unconnected port WE
+WARNING: [Synth 8-3331] design delay__parameterized17 has unconnected port CE
+WARNING: [Synth 8-3331] design delay__parameterized17 has unconnected port SCLR
+WARNING: [Synth 8-3331] design delay__parameterized17 has unconnected port SCLR_ALT
+WARNING: [Synth 8-3331] design delay__parameterized17 has unconnected port CLK
+WARNING: [Synth 8-3331] design calc__parameterized1 has unconnected port PRE_ADDSUB
+WARNING: [Synth 8-3331] design calc__parameterized1 has unconnected port PRE_ADD_BYPASS
+WARNING: [Synth 8-3331] design calc__parameterized1 has unconnected port CED
+WARNING: [Synth 8-3331] design rounder has unconnected port POUT[fab][57]
+WARNING: [Synth 8-3331] design rounder has unconnected port POUT[fab][56]
+WARNING: [Synth 8-3331] design rounder has unconnected port POUT[fab][55]
+WARNING: [Synth 8-3331] design rounder has unconnected port POUT[fab][54]
+WARNING: [Synth 8-3331] design rounder has unconnected port POUT[fab][53]
+WARNING: [Synth 8-3331] design rounder has unconnected port POUT[fab][52]
+WARNING: [Synth 8-3331] design rounder has unconnected port POUT[fab][51]
+WARNING: [Synth 8-3331] design rounder has unconnected port POUT[fab][50]
+WARNING: [Synth 8-3331] design rounder has unconnected port POUT[fab][49]
+WARNING: [Synth 8-3331] design rounder has unconnected port POUT[fab][48]
+WARNING: [Synth 8-3331] design rounder has unconnected port POUT[casc][62]
+WARNING: [Synth 8-3331] design rounder has unconnected port POUT[casc][61]
+WARNING: [Synth 8-3331] design rounder has unconnected port POUT[casc][60]
+WARNING: [Synth 8-3331] design rounder has unconnected port POUT[casc][59]
+WARNING: [Synth 8-3331] design rounder has unconnected port POUT[casc][58]
+WARNING: [Synth 8-3331] design rounder has unconnected port POUT[casc][57]
+WARNING: [Synth 8-3331] design rounder has unconnected port POUT[casc][56]
+WARNING: [Synth 8-3331] design rounder has unconnected port POUT[casc][55]
+WARNING: [Synth 8-3331] design rounder has unconnected port POUT[casc][54]
+WARNING: [Synth 8-3331] design rounder has unconnected port POUT[casc][53]
+WARNING: [Synth 8-3331] design rounder has unconnected port POUT[casc][52]
+WARNING: [Synth 8-3331] design rounder has unconnected port POUT[casc][51]
+WARNING: [Synth 8-3331] design rounder has unconnected port POUT[casc][50]
+WARNING: [Synth 8-3331] design rounder has unconnected port POUT[casc][49]
+WARNING: [Synth 8-3331] design rounder has unconnected port POUT[casc][48]
+WARNING: [Synth 8-3331] design rounder has unconnected port PIN[fab][57]
+WARNING: [Synth 8-3331] design rounder has unconnected port PIN[fab][56]
+WARNING: [Synth 8-3331] design rounder has unconnected port PIN[fab][55]
+WARNING: [Synth 8-3331] design rounder has unconnected port PIN[fab][54]
+WARNING: [Synth 8-3331] design rounder has unconnected port PIN[fab][53]
+WARNING: [Synth 8-3331] design rounder has unconnected port PIN[fab][52]
+WARNING: [Synth 8-3331] design rounder has unconnected port PIN[fab][51]
+WARNING: [Synth 8-3331] design rounder has unconnected port PIN[fab][50]
+WARNING: [Synth 8-3331] design rounder has unconnected port PIN[fab][49]
+WARNING: [Synth 8-3331] design rounder has unconnected port PIN[fab][48]
+WARNING: [Synth 8-3331] design rounder has unconnected port PIN[fab][47]
+WARNING: [Synth 8-3331] design rounder has unconnected port PIN[fab][46]
+WARNING: [Synth 8-3331] design rounder has unconnected port PIN[fab][45]
+WARNING: [Synth 8-3331] design rounder has unconnected port PIN[fab][44]
+WARNING: [Synth 8-3331] design rounder has unconnected port PIN[fab][43]
+WARNING: [Synth 8-3331] design rounder has unconnected port PIN[fab][42]
+WARNING: [Synth 8-3331] design rounder has unconnected port PIN[fab][41]
+WARNING: [Synth 8-3331] design rounder has unconnected port PIN[fab][40]
+WARNING: [Synth 8-3331] design rounder has unconnected port PIN[fab][39]
+WARNING: [Synth 8-3331] design rounder has unconnected port PIN[fab][38]
+WARNING: [Synth 8-3331] design rounder has unconnected port PIN[fab][37]
+WARNING: [Synth 8-3331] design rounder has unconnected port PIN[fab][36]
+WARNING: [Synth 8-3331] design rounder has unconnected port PIN[fab][35]
+WARNING: [Synth 8-3331] design rounder has unconnected port PIN[fab][34]
+WARNING: [Synth 8-3331] design rounder has unconnected port PIN[fab][33]
+WARNING: [Synth 8-3331] design rounder has unconnected port PIN[fab][32]
+WARNING: [Synth 8-3331] design rounder has unconnected port PIN[fab][31]
+WARNING: [Synth 8-3331] design rounder has unconnected port PIN[fab][30]
+WARNING: [Synth 8-3331] design rounder has unconnected port PIN[fab][29]
+WARNING: [Synth 8-3331] design rounder has unconnected port PIN[fab][28]
+WARNING: [Synth 8-3331] design rounder has unconnected port PIN[fab][27]
+WARNING: [Synth 8-3331] design rounder has unconnected port PIN[fab][26]
+WARNING: [Synth 8-3331] design rounder has unconnected port PIN[fab][25]
+WARNING: [Synth 8-3331] design rounder has unconnected port PIN[fab][24]
+WARNING: [Synth 8-3331] design rounder has unconnected port PIN[fab][23]
+WARNING: [Synth 8-3331] design rounder has unconnected port PIN[fab][22]
+WARNING: [Synth 8-3331] design rounder has unconnected port PIN[fab][21]
+WARNING: [Synth 8-3331] design rounder has unconnected port PIN[fab][20]
+WARNING: [Synth 8-3331] design rounder has unconnected port PIN[fab][19]
+WARNING: [Synth 8-3331] design rounder has unconnected port PIN[fab][18]
+WARNING: [Synth 8-3331] design rounder has unconnected port PIN[fab][17]
+WARNING: [Synth 8-3331] design rounder has unconnected port PIN[fab][16]
+WARNING: [Synth 8-3331] design rounder has unconnected port PIN[fab][15]
+WARNING: [Synth 8-3331] design rounder has unconnected port PIN[fab][14]
+WARNING: [Synth 8-3331] design rounder has unconnected port PIN[fab][13]
+WARNING: [Synth 8-3331] design rounder has unconnected port PIN[fab][12]
+WARNING: [Synth 8-3331] design rounder has unconnected port PIN[fab][11]
+WARNING: [Synth 8-3331] design rounder has unconnected port PIN[fab][10]
+WARNING: [Synth 8-3331] design rounder has unconnected port PIN[fab][9]
+WARNING: [Synth 8-3331] design rounder has unconnected port PIN[fab][8]
+WARNING: [Synth 8-3331] design rounder has unconnected port PIN[fab][7]
+INFO: [Common 17-14] Message 'Synth 8-3331' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 1648.297 ; gain = 268.410
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 1650.301 ; gain = 270.414
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 1650.301 ; gain = 270.414
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.086 . Memory (MB): peak = 1662.344 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 3 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [c:/xilinxdesigns/sdraproject/ultra96v2_0-master/ultra96v2_0.srcs/sources_1/bd/ultra96v2_bd/ip/ultra96v2_bd_fir_compiler_0_0/ultra96v2_bd_fir_compiler_0_0_ooc.xdc] for cell 'U0'
+create_clock: Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 1726.559 ; gain = 0.012
+Finished Parsing XDC File [c:/xilinxdesigns/sdraproject/ultra96v2_0-master/ultra96v2_0.srcs/sources_1/bd/ultra96v2_bd/ip/ultra96v2_bd_fir_compiler_0_0/ultra96v2_bd_fir_compiler_0_0_ooc.xdc] for cell 'U0'
+Parsing XDC File [c:/xilinxdesigns/sdraproject/ultra96v2_0-master/ultra96v2_0.srcs/sources_1/bd/ultra96v2_bd/ip/ultra96v2_bd_fir_compiler_0_0/constraints/fir_compiler_v7_2.xdc] for cell 'U0'
+Finished Parsing XDC File [c:/xilinxdesigns/sdraproject/ultra96v2_0-master/ultra96v2_0.srcs/sources_1/bd/ultra96v2_bd/ip/ultra96v2_bd_fir_compiler_0_0/constraints/fir_compiler_v7_2.xdc] for cell 'U0'
+Parsing XDC File [C:/xilinxdesigns/sdraproject/ultra96v2_0-master/ultra96v2_0.runs/ultra96v2_bd_fir_compiler_0_0_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [C:/xilinxdesigns/sdraproject/ultra96v2_0-master/ultra96v2_0.runs/ultra96v2_bd_fir_compiler_0_0_synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.002 . Memory (MB): peak = 1726.559 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 3 instances were transformed.
+  DSP48E2 => DSP48E2 (DSP_ALU, DSP_A_B_DATA, DSP_C_DATA, DSP_MULTIPLIER, DSP_M_DATA, DSP_OUTPUT, DSP_PREADD, DSP_PREADD_DATA): 3 instances
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.100 . Memory (MB): peak = 1726.559 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:45 ; elapsed = 00:00:48 . Memory (MB): peak = 1726.559 ; gain = 346.672
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xczu3eg-sbva484-1-e
+INFO: [Synth 8-6742] Reading net delay rules and data
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:45 ; elapsed = 00:00:48 . Memory (MB): peak = 1726.559 ; gain = 346.672
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property DONT_TOUCH = true for U0. (constraint file  C:/xilinxdesigns/sdraproject/ultra96v2_0-master/ultra96v2_0.runs/ultra96v2_bd_fir_compiler_0_0_synth_1/dont_touch.xdc, line 9).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:45 ; elapsed = 00:00:48 . Memory (MB): peak = 1726.559 ; gain = 346.672
+---------------------------------------------------------------------------------
+INFO: [Synth 8-7031] Trying to map ROM "rom" into Block RAM due to explicit "ram_style" or "rom_style" specification
+INFO: [Synth 8-5779] Default cascade height of 1 will be used for BRAM '"dpt_mem:/gen_bram.gen_write_first.gen_double_reg.ram_reg"'.
+INFO: [Synth 8-7030] Implemented Non-Cascaded Block Ram (cascade_height = 1) of width 16 for RAM "dpt_mem:/gen_bram.gen_write_first.gen_double_reg.ram_reg"
+INFO: [Synth 8-3971] The signal "dpt_mem:/gen_bram.gen_write_first.gen_double_reg.ram_reg" was recognized as a true dual port RAM template.
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:47 ; elapsed = 00:00:50 . Memory (MB): peak = 1726.559 ; gain = 346.672
+---------------------------------------------------------------------------------
+INFO: [Synth 8-223] decloning instance 'U0/i_synth/g_polyphase_interpolation.i_polyphase_interpolation/g_semi_parallel_and_smac.g_cntrl_signals[0].g_others.i_delay_cntrl_data' (delay__parameterized4) to 'U0/i_synth/g_polyphase_interpolation.i_polyphase_interpolation/g_semi_parallel_and_smac.g_cntrl_signals[0].g_others.i_delay_cntrl_data_sym'
+INFO: [Synth 8-223] decloning instance 'U0/i_synth/g_polyphase_interpolation.i_polyphase_interpolation/g_semi_parallel_and_smac.g_cntrl_signals[1].g_others.i_delay_cntrl_data' (delay__parameterized4) to 'U0/i_synth/g_polyphase_interpolation.i_polyphase_interpolation/g_semi_parallel_and_smac.g_cntrl_signals[1].g_others.i_delay_cntrl_data_sym'
+INFO: [Synth 8-223] decloning instance 'U0/i_synth/g_polyphase_interpolation.i_polyphase_interpolation/g_semi_parallel_and_smac.g_cntrl_signals[2].g_others.i_delay_cntrl_data' (delay__parameterized5) to 'U0/i_synth/g_polyphase_interpolation.i_polyphase_interpolation/g_semi_parallel_and_smac.g_cntrl_signals[2].g_others.i_delay_cntrl_data_sym'
+INFO: [Synth 8-223] decloning instance 'U0/i_synth/g_polyphase_interpolation.i_polyphase_interpolation/g_semi_parallel_and_smac.g_cntrl_signals[3].g_others.i_delay_cntrl_data' (delay__parameterized5) to 'U0/i_synth/g_polyphase_interpolation.i_polyphase_interpolation/g_semi_parallel_and_smac.g_cntrl_signals[3].g_others.i_delay_cntrl_data_sym'
+INFO: [Synth 8-223] decloning instance 'U0/i_synth/g_polyphase_interpolation.i_polyphase_interpolation/g_semi_parallel_and_smac.g_cntrl_signals[7].g_others.i_delay_cntrl_data' (delay__parameterized5) to 'U0/i_synth/g_polyphase_interpolation.i_polyphase_interpolation/g_semi_parallel_and_smac.g_cntrl_signals[7].g_others.i_delay_cntrl_data_sym'
+INFO: [Synth 8-223] decloning instance 'U0/i_synth/g_polyphase_interpolation.i_polyphase_interpolation/g_semi_parallel_and_smac.g_cntrl_signals[4].g_others.i_delay_cntrl_data' (delay__parameterized6) to 'U0/i_synth/g_polyphase_interpolation.i_polyphase_interpolation/g_semi_parallel_and_smac.g_cntrl_signals[4].g_others.i_delay_cntrl_data_sym'
+INFO: [Synth 8-223] decloning instance 'U0/i_synth/g_polyphase_interpolation.i_polyphase_interpolation/g_semi_parallel_and_smac.g_cntrl_signals[4].g_others.i_delay_cntrl_data' (delay__parameterized6) to 'U0/i_synth/g_polyphase_interpolation.i_polyphase_interpolation/g_semi_parallel_and_smac.g_cntrl_signals[5].g_others.i_delay_cntrl_data'
+INFO: [Synth 8-223] decloning instance 'U0/i_synth/g_polyphase_interpolation.i_polyphase_interpolation/g_semi_parallel_and_smac.g_cntrl_signals[4].g_others.i_delay_cntrl_data' (delay__parameterized6) to 'U0/i_synth/g_polyphase_interpolation.i_polyphase_interpolation/g_semi_parallel_and_smac.g_cntrl_signals[5].g_others.i_delay_cntrl_data_sym'
+INFO: [Synth 8-223] decloning instance 'U0/i_synth/g_polyphase_interpolation.i_polyphase_interpolation/g_semi_parallel_and_smac.g_cntrl_signals[8].g_others.i_delay_cntrl_data' (delay__parameterized6) to 'U0/i_synth/g_polyphase_interpolation.i_polyphase_interpolation/g_semi_parallel_and_smac.g_cntrl_signals[8].g_others.i_delay_cntrl_data_sym'
+INFO: [Synth 8-223] decloning instance 'U0/i_synth/g_polyphase_interpolation.i_polyphase_interpolation/g_semi_parallel_and_smac.g_cntrl_signals[6].g_others.i_delay_cntrl_data' (delay__parameterized7) to 'U0/i_synth/g_polyphase_interpolation.i_polyphase_interpolation/g_semi_parallel_and_smac.g_cntrl_signals[6].g_others.i_delay_cntrl_data_sym'
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 360 (col length:72)
+BRAMs: 432 (col length: RAMB18 72 RAMB36 36)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+INFO: [Synth 8-5779] Default cascade height of 1 will be used for BRAM '"U0/i_synth/\g_polyphase_interpolation.i_polyphase_interpolation/g_semi_parallel_and_smac.g_paths[0].g_mem_array[0].i_mem/g_packed.g_true_dual_port.i_mem /gen_bram.gen_write_first.gen_double_reg.ram_reg"'.
+INFO: [Synth 8-7030] Implemented Non-Cascaded Block Ram (cascade_height = 1) of width 16 for RAM "U0/i_synth/\g_polyphase_interpolation.i_polyphase_interpolation/g_semi_parallel_and_smac.g_paths[0].g_mem_array[0].i_mem/g_packed.g_true_dual_port.i_mem /gen_bram.gen_write_first.gen_double_reg.ram_reg"
+INFO: [Synth 8-3971] The signal "U0/i_synth/\g_polyphase_interpolation.i_polyphase_interpolation/g_semi_parallel_and_smac.g_paths[0].g_mem_array[0].i_mem/g_packed.g_true_dual_port.i_mem /gen_bram.gen_write_first.gen_double_reg.ram_reg" was recognized as a true dual port RAM template.
+INFO: [Synth 8-3886] merging instance 'U0/i_synth/g_polyphase_interpolation.i_polyphase_interpolation/g_semi_parallel_and_smac.g_latch_op_sym_pair.i_store_result/gen_dly.gen_shiftreg.gen_rtl_delay.delay_bus_reg[0][0]' (FDE) to 'U0/i_synth/g_polyphase_interpolation.i_polyphase_interpolation/g_semi_parallel_and_smac.i_accumulate_last/gen_dly.gen_shiftreg.gen_rtl_delay.delay_bus_reg[0][0]'
+INFO: [Synth 8-3886] merging instance 'U0/i_synth/g_polyphase_interpolation.i_polyphase_interpolation/g_semi_parallel_and_smac.g_latch_op_sym_pair.i_store_result/gen_dly.gen_shiftreg.gen_rtl_delay.delay_bus_reg[1][0]' (FDE) to 'U0/i_synth/g_polyphase_interpolation.i_polyphase_interpolation/g_semi_parallel_and_smac.i_accumulate_last/gen_dly.gen_shiftreg.gen_rtl_delay.delay_bus_reg[1][0]'
+INFO: [Synth 8-3886] merging instance 'U0/i_synth/g_polyphase_interpolation.i_polyphase_interpolation/g_semi_parallel_and_smac.g_latch_op_sym_pair.i_store_result/gen_dly.gen_shiftreg.gen_rtl_delay.delay_bus_reg[2][0]' (FDE) to 'U0/i_synth/g_polyphase_interpolation.i_polyphase_interpolation/g_semi_parallel_and_smac.i_accumulate_last/gen_dly.gen_shiftreg.gen_rtl_delay.delay_bus_reg[2][0]'
+INFO: [Synth 8-3886] merging instance 'U0/i_synth/g_polyphase_interpolation.i_polyphase_interpolation/g_semi_parallel_and_smac.g_latch_op_sym_pair.i_store_result/gen_dly.gen_shiftreg.gen_rtl_delay.delay_bus_reg[3][0]' (FDE) to 'U0/i_synth/g_polyphase_interpolation.i_polyphase_interpolation/g_semi_parallel_and_smac.i_accumulate_last/gen_dly.gen_shiftreg.gen_rtl_delay.delay_bus_reg[3][0]'
+INFO: [Synth 8-3886] merging instance 'U0/i_synth/g_polyphase_interpolation.i_polyphase_interpolation/g_semi_parallel_and_smac.g_latch_op_sym_pair.i_store_result/gen_dly.gen_shiftreg.gen_rtl_delay.delay_bus_reg[4][0]' (FDE) to 'U0/i_synth/g_polyphase_interpolation.i_polyphase_interpolation/g_semi_parallel_and_smac.i_accumulate_last/gen_dly.gen_shiftreg.gen_rtl_delay.delay_bus_reg[4][0]'
+INFO: [Synth 8-3886] merging instance 'U0/i_synth/g_polyphase_interpolation.i_polyphase_interpolation/g_semi_parallel_and_smac.g_accum_cntrl_sympair.accum_opcode_reg[5]' (FDE) to 'U0/i_synth/g_polyphase_interpolation.i_polyphase_interpolation/g_semi_parallel_and_smac.g_accum_cntrl_sympair.accum_opcode_reg[6]'
+INFO: [Synth 8-3886] merging instance 'U0/i_synth/g_polyphase_interpolation.i_polyphase_interpolation/g_semi_parallel_and_smac.g_accum_cntrl_sympair.accum_opcode_reg[9]' (FDE) to 'U0/i_synth/g_polyphase_interpolation.i_polyphase_interpolation/g_semi_parallel_and_smac.g_accum_cntrl_sympair.accum_opcode_reg[0]'
+INFO: [Synth 8-3886] merging instance 'U0/i_synth/g_polyphase_interpolation.i_polyphase_interpolation/g_semi_parallel_and_smac.g_accum_cntrl_sympair.accum_opcode_reg[10]' (FDE) to 'U0/i_synth/g_polyphase_interpolation.i_polyphase_interpolation/g_semi_parallel_and_smac.g_accum_cntrl_sympair.accum_opcode_reg[0]'
+INFO: [Synth 8-3886] merging instance 'U0/i_synth/g_polyphase_interpolation.i_polyphase_interpolation/g_semi_parallel_and_smac.g_accum_cntrl_sympair.accum_opcode_reg[11]' (FDE) to 'U0/i_synth/g_polyphase_interpolation.i_polyphase_interpolation/g_semi_parallel_and_smac.g_accum_cntrl_sympair.accum_opcode_reg[0]'
+INFO: [Synth 8-3886] merging instance 'U0/i_synth/g_polyphase_interpolation.i_polyphase_interpolation/g_semi_parallel_and_smac.g_accum_cntrl_sympair.accum_opcode_reg[0]' (FDE) to 'U0/i_synth/g_polyphase_interpolation.i_polyphase_interpolation/g_semi_parallel_and_smac.g_accum_cntrl_sympair.accum_opcode_reg[1]'
+INFO: [Synth 8-3886] merging instance 'U0/i_synth/g_polyphase_interpolation.i_polyphase_interpolation/g_semi_parallel_and_smac.g_accum_cntrl_sympair.accum_opcode_reg[1]' (FDE) to 'U0/i_synth/g_polyphase_interpolation.i_polyphase_interpolation/g_semi_parallel_and_smac.g_accum_cntrl_sympair.accum_opcode_reg[2]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/i_synth/\g_polyphase_interpolation.i_polyphase_interpolation/g_semi_parallel_and_smac.g_accum_cntrl_sympair.accum_opcode_reg[2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/i_synth/\g_polyphase_interpolation.i_polyphase_interpolation/g_opbuff.opbuff_addr_step_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/i_synth/\g_polyphase_interpolation.i_polyphase_interpolation/g_events_if.event_s_data_tlast_missing_reg )
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:54 ; elapsed = 00:00:57 . Memory (MB): peak = 1726.559 ; gain = 346.672
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:01:18 ; elapsed = 00:01:25 . Memory (MB): peak = 2262.137 ; gain = 882.250
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:01:19 ; elapsed = 00:01:26 . Memory (MB): peak = 2288.848 ; gain = 908.961
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-5591] srl_style attribute value srl_reg on U0/i_synth/g_polyphase_interpolation.i_polyphase_interpolation/g_semi_parallel_and_smac.g_paths[0].g_data_array.g_madd[0].g_wrap_buff.i_data_wrap_buff/g_buff.i_buff/gen_dly.gen_shiftreg.gen_rtl_delay.delay_bus_reg[0][15] cannot be supported because of smaller than expected depth of fanout-free flop chain.
+WARNING: [Synth 8-5591] srl_style attribute value srl_reg on U0/i_synth/g_polyphase_interpolation.i_polyphase_interpolation/g_semi_parallel_and_smac.g_paths[0].g_data_array.g_madd[0].g_wrap_buff.i_data_wrap_buff/g_buff.i_buff/gen_dly.gen_shiftreg.gen_rtl_delay.delay_bus_reg[0][14] cannot be supported because of smaller than expected depth of fanout-free flop chain.
+WARNING: [Synth 8-5591] srl_style attribute value srl_reg on U0/i_synth/g_polyphase_interpolation.i_polyphase_interpolation/g_semi_parallel_and_smac.g_paths[0].g_data_array.g_madd[0].g_wrap_buff.i_data_wrap_buff/g_buff.i_buff/gen_dly.gen_shiftreg.gen_rtl_delay.delay_bus_reg[0][13] cannot be supported because of smaller than expected depth of fanout-free flop chain.
+WARNING: [Synth 8-5591] srl_style attribute value srl_reg on U0/i_synth/g_polyphase_interpolation.i_polyphase_interpolation/g_semi_parallel_and_smac.g_paths[0].g_data_array.g_madd[0].g_wrap_buff.i_data_wrap_buff/g_buff.i_buff/gen_dly.gen_shiftreg.gen_rtl_delay.delay_bus_reg[0][12] cannot be supported because of smaller than expected depth of fanout-free flop chain.
+WARNING: [Synth 8-5591] srl_style attribute value srl_reg on U0/i_synth/g_polyphase_interpolation.i_polyphase_interpolation/g_semi_parallel_and_smac.g_paths[0].g_data_array.g_madd[0].g_wrap_buff.i_data_wrap_buff/g_buff.i_buff/gen_dly.gen_shiftreg.gen_rtl_delay.delay_bus_reg[0][11] cannot be supported because of smaller than expected depth of fanout-free flop chain.
+WARNING: [Synth 8-5591] srl_style attribute value srl_reg on U0/i_synth/g_polyphase_interpolation.i_polyphase_interpolation/g_semi_parallel_and_smac.g_paths[0].g_data_array.g_madd[0].g_wrap_buff.i_data_wrap_buff/g_buff.i_buff/gen_dly.gen_shiftreg.gen_rtl_delay.delay_bus_reg[0][10] cannot be supported because of smaller than expected depth of fanout-free flop chain.
+WARNING: [Synth 8-5591] srl_style attribute value srl_reg on U0/i_synth/g_polyphase_interpolation.i_polyphase_interpolation/g_semi_parallel_and_smac.g_paths[0].g_data_array.g_madd[0].g_wrap_buff.i_data_wrap_buff/g_buff.i_buff/gen_dly.gen_shiftreg.gen_rtl_delay.delay_bus_reg[0][9] cannot be supported because of smaller than expected depth of fanout-free flop chain.
+WARNING: [Synth 8-5591] srl_style attribute value srl_reg on U0/i_synth/g_polyphase_interpolation.i_polyphase_interpolation/g_semi_parallel_and_smac.g_paths[0].g_data_array.g_madd[0].g_wrap_buff.i_data_wrap_buff/g_buff.i_buff/gen_dly.gen_shiftreg.gen_rtl_delay.delay_bus_reg[0][8] cannot be supported because of smaller than expected depth of fanout-free flop chain.
+WARNING: [Synth 8-5591] srl_style attribute value srl_reg on U0/i_synth/g_polyphase_interpolation.i_polyphase_interpolation/g_semi_parallel_and_smac.g_paths[0].g_data_array.g_madd[0].g_wrap_buff.i_data_wrap_buff/g_buff.i_buff/gen_dly.gen_shiftreg.gen_rtl_delay.delay_bus_reg[0][7] cannot be supported because of smaller than expected depth of fanout-free flop chain.
+WARNING: [Synth 8-5591] srl_style attribute value srl_reg on U0/i_synth/g_polyphase_interpolation.i_polyphase_interpolation/g_semi_parallel_and_smac.g_paths[0].g_data_array.g_madd[0].g_wrap_buff.i_data_wrap_buff/g_buff.i_buff/gen_dly.gen_shiftreg.gen_rtl_delay.delay_bus_reg[0][6] cannot be supported because of smaller than expected depth of fanout-free flop chain.
+WARNING: [Synth 8-5591] srl_style attribute value srl_reg on U0/i_synth/g_polyphase_interpolation.i_polyphase_interpolation/g_semi_parallel_and_smac.g_paths[0].g_data_array.g_madd[0].g_wrap_buff.i_data_wrap_buff/g_buff.i_buff/gen_dly.gen_shiftreg.gen_rtl_delay.delay_bus_reg[0][5] cannot be supported because of smaller than expected depth of fanout-free flop chain.
+WARNING: [Synth 8-5591] srl_style attribute value srl_reg on U0/i_synth/g_polyphase_interpolation.i_polyphase_interpolation/g_semi_parallel_and_smac.g_paths[0].g_data_array.g_madd[0].g_wrap_buff.i_data_wrap_buff/g_buff.i_buff/gen_dly.gen_shiftreg.gen_rtl_delay.delay_bus_reg[0][4] cannot be supported because of smaller than expected depth of fanout-free flop chain.
+WARNING: [Synth 8-5591] srl_style attribute value srl_reg on U0/i_synth/g_polyphase_interpolation.i_polyphase_interpolation/g_semi_parallel_and_smac.g_paths[0].g_data_array.g_madd[0].g_wrap_buff.i_data_wrap_buff/g_buff.i_buff/gen_dly.gen_shiftreg.gen_rtl_delay.delay_bus_reg[0][3] cannot be supported because of smaller than expected depth of fanout-free flop chain.
+WARNING: [Synth 8-5591] srl_style attribute value srl_reg on U0/i_synth/g_polyphase_interpolation.i_polyphase_interpolation/g_semi_parallel_and_smac.g_paths[0].g_data_array.g_madd[0].g_wrap_buff.i_data_wrap_buff/g_buff.i_buff/gen_dly.gen_shiftreg.gen_rtl_delay.delay_bus_reg[0][2] cannot be supported because of smaller than expected depth of fanout-free flop chain.
+WARNING: [Synth 8-5591] srl_style attribute value srl_reg on U0/i_synth/g_polyphase_interpolation.i_polyphase_interpolation/g_semi_parallel_and_smac.g_paths[0].g_data_array.g_madd[0].g_wrap_buff.i_data_wrap_buff/g_buff.i_buff/gen_dly.gen_shiftreg.gen_rtl_delay.delay_bus_reg[0][1] cannot be supported because of smaller than expected depth of fanout-free flop chain.
+WARNING: [Synth 8-5591] srl_style attribute value srl_reg on U0/i_synth/g_polyphase_interpolation.i_polyphase_interpolation/g_semi_parallel_and_smac.g_paths[0].g_data_array.g_madd[0].g_wrap_buff.i_data_wrap_buff/g_buff.i_buff/gen_dly.gen_shiftreg.gen_rtl_delay.delay_bus_reg[0][0] cannot be supported because of smaller than expected depth of fanout-free flop chain.
+WARNING: [Synth 8-5591] srl_style attribute value srl_reg on U0/i_synth/g_polyphase_interpolation.i_polyphase_interpolation/g_semi_parallel_and_smac.g_latch_op_sym_pair.i_latch_op/gen_dly.gen_shiftreg.gen_rtl_delay.delay_bus_reg[0][0] cannot be supported because of smaller than expected depth of fanout-free flop chain.
+INFO: [Synth 8-3886] merging instance 'U0/i_synth/g_polyphase_interpolation.i_polyphase_interpolation/g_semi_parallel_and_smac.base_max_cntrl_reg' (FDRE) to 'U0/i_synth/g_polyphase_interpolation.i_polyphase_interpolation/g_semi_parallel_and_smac.base_max_reg'
+WARNING: [Synth 8-5591] srl_style attribute value srl_reg on U0/i_synth/g_polyphase_interpolation.i_polyphase_interpolation/g_semi_parallel_and_smac.g_paths[0].g_data_array.g_madd[0].g_wrap_buff.i_data_wrap_buff/g_buff.i_buff/gen_dly.gen_shiftreg.gen_rtl_delay.delay_bus_reg[0][15] cannot be supported because of smaller than expected depth of fanout-free flop chain.
+WARNING: [Synth 8-5591] srl_style attribute value srl_reg on U0/i_synth/g_polyphase_interpolation.i_polyphase_interpolation/g_semi_parallel_and_smac.g_paths[0].g_data_array.g_madd[0].g_wrap_buff.i_data_wrap_buff/g_buff.i_buff/gen_dly.gen_shiftreg.gen_rtl_delay.delay_bus_reg[0][14] cannot be supported because of smaller than expected depth of fanout-free flop chain.
+WARNING: [Synth 8-5591] srl_style attribute value srl_reg on U0/i_synth/g_polyphase_interpolation.i_polyphase_interpolation/g_semi_parallel_and_smac.g_paths[0].g_data_array.g_madd[0].g_wrap_buff.i_data_wrap_buff/g_buff.i_buff/gen_dly.gen_shiftreg.gen_rtl_delay.delay_bus_reg[0][13] cannot be supported because of smaller than expected depth of fanout-free flop chain.
+WARNING: [Synth 8-5591] srl_style attribute value srl_reg on U0/i_synth/g_polyphase_interpolation.i_polyphase_interpolation/g_semi_parallel_and_smac.g_paths[0].g_data_array.g_madd[0].g_wrap_buff.i_data_wrap_buff/g_buff.i_buff/gen_dly.gen_shiftreg.gen_rtl_delay.delay_bus_reg[0][12] cannot be supported because of smaller than expected depth of fanout-free flop chain.
+WARNING: [Synth 8-5591] srl_style attribute value srl_reg on U0/i_synth/g_polyphase_interpolation.i_polyphase_interpolation/g_semi_parallel_and_smac.g_paths[0].g_data_array.g_madd[0].g_wrap_buff.i_data_wrap_buff/g_buff.i_buff/gen_dly.gen_shiftreg.gen_rtl_delay.delay_bus_reg[0][11] cannot be supported because of smaller than expected depth of fanout-free flop chain.
+WARNING: [Synth 8-5591] srl_style attribute value srl_reg on U0/i_synth/g_polyphase_interpolation.i_polyphase_interpolation/g_semi_parallel_and_smac.g_paths[0].g_data_array.g_madd[0].g_wrap_buff.i_data_wrap_buff/g_buff.i_buff/gen_dly.gen_shiftreg.gen_rtl_delay.delay_bus_reg[0][10] cannot be supported because of smaller than expected depth of fanout-free flop chain.
+WARNING: [Synth 8-5591] srl_style attribute value srl_reg on U0/i_synth/g_polyphase_interpolation.i_polyphase_interpolation/g_semi_parallel_and_smac.g_paths[0].g_data_array.g_madd[0].g_wrap_buff.i_data_wrap_buff/g_buff.i_buff/gen_dly.gen_shiftreg.gen_rtl_delay.delay_bus_reg[0][9] cannot be supported because of smaller than expected depth of fanout-free flop chain.
+WARNING: [Synth 8-5591] srl_style attribute value srl_reg on U0/i_synth/g_polyphase_interpolation.i_polyphase_interpolation/g_semi_parallel_and_smac.g_paths[0].g_data_array.g_madd[0].g_wrap_buff.i_data_wrap_buff/g_buff.i_buff/gen_dly.gen_shiftreg.gen_rtl_delay.delay_bus_reg[0][8] cannot be supported because of smaller than expected depth of fanout-free flop chain.
+WARNING: [Synth 8-5591] srl_style attribute value srl_reg on U0/i_synth/g_polyphase_interpolation.i_polyphase_interpolation/g_semi_parallel_and_smac.g_paths[0].g_data_array.g_madd[0].g_wrap_buff.i_data_wrap_buff/g_buff.i_buff/gen_dly.gen_shiftreg.gen_rtl_delay.delay_bus_reg[0][7] cannot be supported because of smaller than expected depth of fanout-free flop chain.
+WARNING: [Synth 8-5591] srl_style attribute value srl_reg on U0/i_synth/g_polyphase_interpolation.i_polyphase_interpolation/g_semi_parallel_and_smac.g_paths[0].g_data_array.g_madd[0].g_wrap_buff.i_data_wrap_buff/g_buff.i_buff/gen_dly.gen_shiftreg.gen_rtl_delay.delay_bus_reg[0][6] cannot be supported because of smaller than expected depth of fanout-free flop chain.
+WARNING: [Synth 8-5591] srl_style attribute value srl_reg on U0/i_synth/g_polyphase_interpolation.i_polyphase_interpolation/g_semi_parallel_and_smac.g_paths[0].g_data_array.g_madd[0].g_wrap_buff.i_data_wrap_buff/g_buff.i_buff/gen_dly.gen_shiftreg.gen_rtl_delay.delay_bus_reg[0][5] cannot be supported because of smaller than expected depth of fanout-free flop chain.
+WARNING: [Synth 8-5591] srl_style attribute value srl_reg on U0/i_synth/g_polyphase_interpolation.i_polyphase_interpolation/g_semi_parallel_and_smac.g_paths[0].g_data_array.g_madd[0].g_wrap_buff.i_data_wrap_buff/g_buff.i_buff/gen_dly.gen_shiftreg.gen_rtl_delay.delay_bus_reg[0][4] cannot be supported because of smaller than expected depth of fanout-free flop chain.
+WARNING: [Synth 8-5591] srl_style attribute value srl_reg on U0/i_synth/g_polyphase_interpolation.i_polyphase_interpolation/g_semi_parallel_and_smac.g_paths[0].g_data_array.g_madd[0].g_wrap_buff.i_data_wrap_buff/g_buff.i_buff/gen_dly.gen_shiftreg.gen_rtl_delay.delay_bus_reg[0][3] cannot be supported because of smaller than expected depth of fanout-free flop chain.
+WARNING: [Synth 8-5591] srl_style attribute value srl_reg on U0/i_synth/g_polyphase_interpolation.i_polyphase_interpolation/g_semi_parallel_and_smac.g_paths[0].g_data_array.g_madd[0].g_wrap_buff.i_data_wrap_buff/g_buff.i_buff/gen_dly.gen_shiftreg.gen_rtl_delay.delay_bus_reg[0][2] cannot be supported because of smaller than expected depth of fanout-free flop chain.
+WARNING: [Synth 8-5591] srl_style attribute value srl_reg on U0/i_synth/g_polyphase_interpolation.i_polyphase_interpolation/g_semi_parallel_and_smac.g_paths[0].g_data_array.g_madd[0].g_wrap_buff.i_data_wrap_buff/g_buff.i_buff/gen_dly.gen_shiftreg.gen_rtl_delay.delay_bus_reg[0][1] cannot be supported because of smaller than expected depth of fanout-free flop chain.
+WARNING: [Synth 8-5591] srl_style attribute value srl_reg on U0/i_synth/g_polyphase_interpolation.i_polyphase_interpolation/g_semi_parallel_and_smac.g_paths[0].g_data_array.g_madd[0].g_wrap_buff.i_data_wrap_buff/g_buff.i_buff/gen_dly.gen_shiftreg.gen_rtl_delay.delay_bus_reg[0][0] cannot be supported because of smaller than expected depth of fanout-free flop chain.
+WARNING: [Synth 8-5591] srl_style attribute value srl_reg on U0/i_synth/g_polyphase_interpolation.i_polyphase_interpolation/g_semi_parallel_and_smac.g_latch_op_sym_pair.i_latch_op/gen_dly.gen_shiftreg.gen_rtl_delay.delay_bus_reg[0][0] cannot be supported because of smaller than expected depth of fanout-free flop chain.
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:01:20 ; elapsed = 00:01:27 . Memory (MB): peak = 2292.113 ; gain = 912.227
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:01:28 ; elapsed = 00:01:35 . Memory (MB): peak = 2297.906 ; gain = 918.020
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:28 ; elapsed = 00:01:35 . Memory (MB): peak = 2297.906 ; gain = 918.020
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:28 ; elapsed = 00:01:35 . Memory (MB): peak = 2297.906 ; gain = 918.020
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:28 ; elapsed = 00:01:35 . Memory (MB): peak = 2297.906 ; gain = 918.020
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:28 ; elapsed = 00:01:36 . Memory (MB): peak = 2297.906 ; gain = 918.020
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:28 ; elapsed = 00:01:36 . Memory (MB): peak = 2297.906 ; gain = 918.020
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+------------------+------+
+|      |Cell              |Count |
++------+------------------+------+
+|1     |CARRY8            |     2|
+|2     |DSP_ALU           |     2|
+|3     |DSP_ALU_1         |     1|
+|4     |DSP_A_B_DATA      |     3|
+|5     |DSP_C_DATA        |     3|
+|6     |DSP_MULTIPLIER    |     1|
+|7     |DSP_MULTIPLIER_1  |     1|
+|8     |DSP_MULTIPLIER_2  |     1|
+|9     |DSP_M_DATA        |     2|
+|10    |DSP_M_DATA_1      |     1|
+|11    |DSP_OUTPUT        |     3|
+|12    |DSP_PREADD        |     3|
+|13    |DSP_PREADD_DATA   |     1|
+|14    |DSP_PREADD_DATA_1 |     1|
+|15    |DSP_PREADD_DATA_2 |     1|
+|16    |LUT1              |    11|
+|17    |LUT2              |    51|
+|18    |LUT3              |    29|
+|19    |LUT4              |    35|
+|20    |LUT5              |    25|
+|21    |LUT6              |    42|
+|22    |RAM32X1D          |    20|
+|23    |RAMB18E2_2        |     1|
+|24    |RAMB18E2_3        |     1|
+|25    |SRL16E            |    64|
+|26    |FDRE              |   276|
+|27    |FDSE              |    47|
++------+------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:28 ; elapsed = 00:01:36 . Memory (MB): peak = 2297.906 ; gain = 918.020
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 89 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:52 ; elapsed = 00:01:23 . Memory (MB): peak = 2297.906 ; gain = 841.762
+Synthesis Optimization Complete : Time (s): cpu = 00:01:29 ; elapsed = 00:01:36 . Memory (MB): peak = 2297.906 ; gain = 918.020
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.038 . Memory (MB): peak = 2305.941 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 25 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell U0/i_synth/g_polyphase_interpolation.i_polyphase_interpolation/g_semi_parallel_and_smac.g_paths[0].g_mem_array[1].i_mem/g_individual.i_mem_a/gen_bram.gen_rom.gen_double_reg.do_reg has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 2322.102 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 23 instances were transformed.
+  DSP48E2 => DSP48E2 (DSP_ALU, DSP_A_B_DATA, DSP_C_DATA, DSP_MULTIPLIER, DSP_M_DATA, DSP_OUTPUT, DSP_PREADD, DSP_PREADD_DATA): 3 instances
+  RAM32X1D => RAM32X1D (RAMD32(x2)): 20 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+51 Infos, 135 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:01:49 ; elapsed = 00:01:59 . Memory (MB): peak = 2322.102 ; gain = 1842.137
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 2322.102 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'C:/xilinxdesigns/sdraproject/ultra96v2_0-master/ultra96v2_0.runs/ultra96v2_bd_fir_compiler_0_0_synth_1/ultra96v2_bd_fir_compiler_0_0.dcp' has been generated.
+WARNING: [Common 17-576] 'use_project_ipc' is deprecated. This option is deprecated and no longer used.
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP ultra96v2_bd_fir_compiler_0_0, cache-ID = 1e8636f34f903b45
+INFO: [Coretcl 2-1174] Renamed 42 cell refs.
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 2322.117 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'C:/xilinxdesigns/sdraproject/ultra96v2_0-master/ultra96v2_0.runs/ultra96v2_bd_fir_compiler_0_0_synth_1/ultra96v2_bd_fir_compiler_0_0.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file ultra96v2_bd_fir_compiler_0_0_utilization_synth.rpt -pb ultra96v2_bd_fir_compiler_0_0_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Sun May 17 19:15:38 2020...

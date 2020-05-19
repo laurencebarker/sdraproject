@@ -1,0 +1,392 @@
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
+| Date         : Sun May 17 20:02:00 2020
+| Host         : Loz-Inspiron running 64-bit major release  (build 9200)
+| Command      : report_drc -file ultra96v2_bd_wrapper_drc_routed.rpt -pb ultra96v2_bd_wrapper_drc_routed.pb -rpx ultra96v2_bd_wrapper_drc_routed.rpx
+| Design       : ultra96v2_bd_wrapper
+| Device       : xczu3eg-sbva484-1-e
+| Speed File   : -1
+| Design State : Fully Routed
+------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Report DRC
+
+Table of Contents
+-----------------
+1. REPORT SUMMARY
+2. REPORT DETAILS
+
+1. REPORT SUMMARY
+-----------------
+            Netlist: netlist
+          Floorplan: design_1
+      Design limits: <entire design considered>
+           Ruledeck: default
+             Max violations: <unlimited>
+             Violations found: 70
++-----------+----------+---------------------------------------------------------------------+------------+
+| Rule      | Severity | Description                                                         | Violations |
++-----------+----------+---------------------------------------------------------------------+------------+
+| REQP-1774 | Warning  | RAMB36E2_WRITE_WIDTH_A_18_doesnt_use_WEA32                          | 2          |
+| RTSTAT-10 | Warning  | No routable loads                                                   | 1          |
+| AVAL-155  | Advisory | enum_AMULTSEL_BMULTSEL_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND | 16         |
+| AVAL-156  | Advisory | enum_USE_MULT_NONE__enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND    | 16         |
+| REQP-1677 | Advisory | enum_USE_MULT_NONE_connects_CEM_GND                                 | 17         |
+| REQP-1679 | Advisory | enum_MREG_0_connects_CEM_GND                                        | 17         |
+| REQP-1681 | Advisory | with_OPMODE_USE_MULT_NONE                                           | 1          |
++-----------+----------+---------------------------------------------------------------------+------------+
+
+2. REPORT DETAILS
+-----------------
+REQP-1774#1 Warning
+RAMB36E2_WRITE_WIDTH_A_18_doesnt_use_WEA32  
+The RAMB36E2 cell ultra96v2_bd_i/CPU/blk_mem_gen_0/U0/inst_blk_mem_gen/gnbram.gnative_mem_map_bmg.native_mem_map_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_8SERIES.WITH_BMM_INFO.SP.SIMPLE_PRIM36.SERIES8_SP_NO_ECC_ATTR.ram has WRITE_WIDTH_A set to 18. The WEA[3:2] pins should not be connected to active signal.
+Related violations: <none>
+
+REQP-1774#2 Warning
+RAMB36E2_WRITE_WIDTH_A_18_doesnt_use_WEA32  
+The RAMB36E2 cell ultra96v2_bd_i/CPU/blk_mem_gen_0/U0/inst_blk_mem_gen/gnbram.gnative_mem_map_bmg.native_mem_map_blk_mem_gen/valid.cstr/ramloop[1].ram.r/prim_noinit.ram/DEVICE_8SERIES.WITH_BMM_INFO.SP.SIMPLE_PRIM36.SERIES8_SP_NO_ECC_ATTR.ram has WRITE_WIDTH_A set to 18. The WEA[3:2] pins should not be connected to active signal.
+Related violations: <none>
+
+RTSTAT-10#1 Warning
+No routable loads  
+132 net(s) have no routable loads. The problem bus(es) and/or net(s) are ultra96v2_bd_i/CPU/ps8_0_axi_periph/m00_couplers/auto_ds/inst/gen_downsizer.gen_simple_downsizer.axi_downsizer_inst/USE_READ.read_addr_inst/cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/aempty_fwft_i, ultra96v2_bd_i/CPU/ps8_0_axi_periph/m03_couplers/auto_ds/inst/gen_downsizer.gen_simple_downsizer.axi_downsizer_inst/USE_READ.read_addr_inst/cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/aempty_fwft_i, ultra96v2_bd_i/CPU/ps8_0_axi_periph/m01_couplers/auto_ds/inst/gen_downsizer.gen_simple_downsizer.axi_downsizer_inst/USE_READ.read_addr_inst/cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/aempty_fwft_i, ultra96v2_bd_i/CPU/ps8_0_axi_periph/m01_couplers/auto_ds/inst/gen_downsizer.gen_simple_downsizer.axi_downsizer_inst/USE_WRITE.write_addr_inst/cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/aempty_fwft_i, ultra96v2_bd_i/CPU/ps8_0_axi_periph/m02_couplers/auto_ds/inst/gen_downsizer.gen_simple_downsizer.axi_downsizer_inst/USE_WRITE.write_addr_inst/USE_B_CHANNEL.cmd_b_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/aempty_fwft_i, ultra96v2_bd_i/CPU/ps8_0_axi_periph/m00_couplers/auto_ds/inst/gen_downsizer.gen_simple_downsizer.axi_downsizer_inst/USE_WRITE.write_addr_inst/USE_B_CHANNEL.cmd_b_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/aempty_fwft_i, ultra96v2_bd_i/CPU/ps8_0_axi_periph/m03_couplers/auto_ds/inst/gen_downsizer.gen_simple_downsizer.axi_downsizer_inst/USE_WRITE.write_addr_inst/cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/aempty_fwft_i, ultra96v2_bd_i/CPU/ps8_0_axi_periph/m00_couplers/auto_ds/inst/gen_downsizer.gen_simple_downsizer.axi_downsizer_inst/USE_WRITE.write_addr_inst/cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/aempty_fwft_i, ultra96v2_bd_i/CPU/ps8_0_axi_periph/m02_couplers/auto_ds/inst/gen_downsizer.gen_simple_downsizer.axi_downsizer_inst/USE_WRITE.write_addr_inst/cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/aempty_fwft_i, ultra96v2_bd_i/CPU/ps8_0_axi_periph/m03_couplers/auto_ds/inst/gen_downsizer.gen_simple_downsizer.axi_downsizer_inst/USE_WRITE.write_addr_inst/USE_B_CHANNEL.cmd_b_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/aempty_fwft_i, ultra96v2_bd_i/CPU/ps8_0_axi_periph/m02_couplers/auto_ds/inst/gen_downsizer.gen_simple_downsizer.axi_downsizer_inst/USE_READ.read_addr_inst/cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/aempty_fwft_i, ultra96v2_bd_i/CPU/ps8_0_axi_periph/m01_couplers/auto_ds/inst/gen_downsizer.gen_simple_downsizer.axi_downsizer_inst/USE_WRITE.write_addr_inst/USE_B_CHANNEL.cmd_b_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/aempty_fwft_i, ultra96v2_bd_i/CPU/ps8_0_axi_periph/m00_couplers/auto_ds/inst/gen_downsizer.gen_simple_downsizer.axi_downsizer_inst/USE_WRITE.write_addr_inst/USE_B_CHANNEL.cmd_b_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_afull_fb, ultra96v2_bd_i/CPU/ps8_0_axi_periph/m01_couplers/auto_ds/inst/gen_downsizer.gen_simple_downsizer.axi_downsizer_inst/USE_WRITE.write_addr_inst/cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_afull_fb, ultra96v2_bd_i/CPU/ps8_0_axi_periph/m03_couplers/auto_ds/inst/gen_downsizer.gen_simple_downsizer.axi_downsizer_inst/USE_WRITE.write_addr_inst/cmd_queue/inst/fifo_gen_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwss.wsts/ram_afull_fb (the first 15 of 84 listed).
+Related violations: <none>
+
+AVAL-155#1 Advisory
+enum_AMULTSEL_BMULTSEL_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND  
+ultra96v2_bd_i/cic_compiler_0/U0/i_synth/interpolator.interpolation_filter/comb/gen_stages[0].gen_folded.int_comb_stage/gen_split_accum[0].gen_sum_struct.gen_sum/gen_structural.gen_virtex.gen_dsp48e.gen_dsp48e1_v6.dsp48e1_v6: DSP48E2 is not using the D port (AMULTSEL = A and BMULTSEL = B). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+Related violations: <none>
+
+AVAL-155#2 Advisory
+enum_AMULTSEL_BMULTSEL_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND  
+ultra96v2_bd_i/cic_compiler_0/U0/i_synth/interpolator.interpolation_filter/int/gen_stages[0].gen_unfolded.int_comb_stage/gen_split_accum[0].gen_sum_struct.gen_sum/gen_structural.gen_virtex.gen_dsp48e.gen_dsp48e1_v6.dsp48e1_v6: DSP48E2 is not using the D port (AMULTSEL = A and BMULTSEL = B). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+Related violations: <none>
+
+AVAL-155#3 Advisory
+enum_AMULTSEL_BMULTSEL_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND  
+ultra96v2_bd_i/cic_compiler_0/U0/i_synth/interpolator.interpolation_filter/int/gen_stages[1].gen_unfolded.int_comb_stage/gen_split_accum[0].gen_sum_struct.gen_sum/gen_structural.gen_virtex.gen_dsp48e.gen_dsp48e1_v6.dsp48e1_v6: DSP48E2 is not using the D port (AMULTSEL = A and BMULTSEL = B). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+Related violations: <none>
+
+AVAL-155#4 Advisory
+enum_AMULTSEL_BMULTSEL_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND  
+ultra96v2_bd_i/cic_compiler_0/U0/i_synth/interpolator.interpolation_filter/int/gen_stages[2].gen_unfolded.int_comb_stage/gen_split_accum[0].gen_sum_struct.gen_sum/gen_structural.gen_virtex.gen_dsp48e.gen_dsp48e1_v6.dsp48e1_v6: DSP48E2 is not using the D port (AMULTSEL = A and BMULTSEL = B). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+Related violations: <none>
+
+AVAL-155#5 Advisory
+enum_AMULTSEL_BMULTSEL_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND  
+ultra96v2_bd_i/cic_compiler_0/U0/i_synth/interpolator.interpolation_filter/int/gen_stages[3].gen_unfolded.int_comb_stage/gen_split_accum[0].gen_sum_struct.gen_sum/gen_structural.gen_virtex.gen_dsp48e.gen_dsp48e1_v6.dsp48e1_v6: DSP48E2 is not using the D port (AMULTSEL = A and BMULTSEL = B). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+Related violations: <none>
+
+AVAL-155#6 Advisory
+enum_AMULTSEL_BMULTSEL_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND  
+ultra96v2_bd_i/cic_compiler_0/U0/i_synth/interpolator.interpolation_filter/int/gen_stages[4].gen_unfolded.int_comb_stage/gen_split_accum[0].gen_sum_struct.gen_sum/gen_structural.gen_virtex.gen_dsp48e.gen_dsp48e1_v6.dsp48e1_v6: DSP48E2 is not using the D port (AMULTSEL = A and BMULTSEL = B). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+Related violations: <none>
+
+AVAL-155#7 Advisory
+enum_AMULTSEL_BMULTSEL_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND  
+ultra96v2_bd_i/cic_compiler_0/U0/i_synth/interpolator.interpolation_filter/int/gen_stages[5].gen_unfolded.int_comb_stage/gen_split_accum[0].gen_sum_struct.gen_sum/gen_structural.gen_virtex.gen_dsp48e.gen_dsp48e1_v6.dsp48e1_v6: DSP48E2 is not using the D port (AMULTSEL = A and BMULTSEL = B). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+Related violations: <none>
+
+AVAL-155#8 Advisory
+enum_AMULTSEL_BMULTSEL_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND  
+ultra96v2_bd_i/cic_compiler_0/U0/i_synth/interpolator.interpolation_filter/int/gen_stages[5].gen_unfolded.int_comb_stage/gen_split_accum[1].gen_sum_struct.gen_sum/gen_structural.gen_virtex.gen_dsp48e.gen_dsp48e1_v6.dsp48e1_v6: DSP48E2 is not using the D port (AMULTSEL = A and BMULTSEL = B). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+Related violations: <none>
+
+AVAL-155#9 Advisory
+enum_AMULTSEL_BMULTSEL_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND  
+ultra96v2_bd_i/cic_compiler_1/U0/i_synth/interpolator.interpolation_filter/comb/gen_stages[0].gen_folded.int_comb_stage/gen_split_accum[0].gen_sum_struct.gen_sum/gen_structural.gen_virtex.gen_dsp48e.gen_dsp48e1_v6.dsp48e1_v6: DSP48E2 is not using the D port (AMULTSEL = A and BMULTSEL = B). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+Related violations: <none>
+
+AVAL-155#10 Advisory
+enum_AMULTSEL_BMULTSEL_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND  
+ultra96v2_bd_i/cic_compiler_1/U0/i_synth/interpolator.interpolation_filter/int/gen_stages[0].gen_unfolded.int_comb_stage/gen_split_accum[0].gen_sum_struct.gen_sum/gen_structural.gen_virtex.gen_dsp48e.gen_dsp48e1_v6.dsp48e1_v6: DSP48E2 is not using the D port (AMULTSEL = A and BMULTSEL = B). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+Related violations: <none>
+
+AVAL-155#11 Advisory
+enum_AMULTSEL_BMULTSEL_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND  
+ultra96v2_bd_i/cic_compiler_1/U0/i_synth/interpolator.interpolation_filter/int/gen_stages[1].gen_unfolded.int_comb_stage/gen_split_accum[0].gen_sum_struct.gen_sum/gen_structural.gen_virtex.gen_dsp48e.gen_dsp48e1_v6.dsp48e1_v6: DSP48E2 is not using the D port (AMULTSEL = A and BMULTSEL = B). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+Related violations: <none>
+
+AVAL-155#12 Advisory
+enum_AMULTSEL_BMULTSEL_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND  
+ultra96v2_bd_i/cic_compiler_1/U0/i_synth/interpolator.interpolation_filter/int/gen_stages[2].gen_unfolded.int_comb_stage/gen_split_accum[0].gen_sum_struct.gen_sum/gen_structural.gen_virtex.gen_dsp48e.gen_dsp48e1_v6.dsp48e1_v6: DSP48E2 is not using the D port (AMULTSEL = A and BMULTSEL = B). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+Related violations: <none>
+
+AVAL-155#13 Advisory
+enum_AMULTSEL_BMULTSEL_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND  
+ultra96v2_bd_i/cic_compiler_1/U0/i_synth/interpolator.interpolation_filter/int/gen_stages[3].gen_unfolded.int_comb_stage/gen_split_accum[0].gen_sum_struct.gen_sum/gen_structural.gen_virtex.gen_dsp48e.gen_dsp48e1_v6.dsp48e1_v6: DSP48E2 is not using the D port (AMULTSEL = A and BMULTSEL = B). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+Related violations: <none>
+
+AVAL-155#14 Advisory
+enum_AMULTSEL_BMULTSEL_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND  
+ultra96v2_bd_i/cic_compiler_1/U0/i_synth/interpolator.interpolation_filter/int/gen_stages[4].gen_unfolded.int_comb_stage/gen_split_accum[0].gen_sum_struct.gen_sum/gen_structural.gen_virtex.gen_dsp48e.gen_dsp48e1_v6.dsp48e1_v6: DSP48E2 is not using the D port (AMULTSEL = A and BMULTSEL = B). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+Related violations: <none>
+
+AVAL-155#15 Advisory
+enum_AMULTSEL_BMULTSEL_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND  
+ultra96v2_bd_i/cic_compiler_1/U0/i_synth/interpolator.interpolation_filter/int/gen_stages[5].gen_unfolded.int_comb_stage/gen_split_accum[0].gen_sum_struct.gen_sum/gen_structural.gen_virtex.gen_dsp48e.gen_dsp48e1_v6.dsp48e1_v6: DSP48E2 is not using the D port (AMULTSEL = A and BMULTSEL = B). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+Related violations: <none>
+
+AVAL-155#16 Advisory
+enum_AMULTSEL_BMULTSEL_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND  
+ultra96v2_bd_i/cic_compiler_1/U0/i_synth/interpolator.interpolation_filter/int/gen_stages[5].gen_unfolded.int_comb_stage/gen_split_accum[1].gen_sum_struct.gen_sum/gen_structural.gen_virtex.gen_dsp48e.gen_dsp48e1_v6.dsp48e1_v6: DSP48E2 is not using the D port (AMULTSEL = A and BMULTSEL = B). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+Related violations: <none>
+
+AVAL-156#1 Advisory
+enum_USE_MULT_NONE__enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND  
+ultra96v2_bd_i/cic_compiler_0/U0/i_synth/interpolator.interpolation_filter/comb/gen_stages[0].gen_folded.int_comb_stage/gen_split_accum[0].gen_sum_struct.gen_sum/gen_structural.gen_virtex.gen_dsp48e.gen_dsp48e1_v6.dsp48e1_v6: DSP48E2 is not using the Multiplier (USE_MULT = NONE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+Related violations: <none>
+
+AVAL-156#2 Advisory
+enum_USE_MULT_NONE__enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND  
+ultra96v2_bd_i/cic_compiler_0/U0/i_synth/interpolator.interpolation_filter/int/gen_stages[0].gen_unfolded.int_comb_stage/gen_split_accum[0].gen_sum_struct.gen_sum/gen_structural.gen_virtex.gen_dsp48e.gen_dsp48e1_v6.dsp48e1_v6: DSP48E2 is not using the Multiplier (USE_MULT = NONE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+Related violations: <none>
+
+AVAL-156#3 Advisory
+enum_USE_MULT_NONE__enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND  
+ultra96v2_bd_i/cic_compiler_0/U0/i_synth/interpolator.interpolation_filter/int/gen_stages[1].gen_unfolded.int_comb_stage/gen_split_accum[0].gen_sum_struct.gen_sum/gen_structural.gen_virtex.gen_dsp48e.gen_dsp48e1_v6.dsp48e1_v6: DSP48E2 is not using the Multiplier (USE_MULT = NONE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+Related violations: <none>
+
+AVAL-156#4 Advisory
+enum_USE_MULT_NONE__enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND  
+ultra96v2_bd_i/cic_compiler_0/U0/i_synth/interpolator.interpolation_filter/int/gen_stages[2].gen_unfolded.int_comb_stage/gen_split_accum[0].gen_sum_struct.gen_sum/gen_structural.gen_virtex.gen_dsp48e.gen_dsp48e1_v6.dsp48e1_v6: DSP48E2 is not using the Multiplier (USE_MULT = NONE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+Related violations: <none>
+
+AVAL-156#5 Advisory
+enum_USE_MULT_NONE__enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND  
+ultra96v2_bd_i/cic_compiler_0/U0/i_synth/interpolator.interpolation_filter/int/gen_stages[3].gen_unfolded.int_comb_stage/gen_split_accum[0].gen_sum_struct.gen_sum/gen_structural.gen_virtex.gen_dsp48e.gen_dsp48e1_v6.dsp48e1_v6: DSP48E2 is not using the Multiplier (USE_MULT = NONE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+Related violations: <none>
+
+AVAL-156#6 Advisory
+enum_USE_MULT_NONE__enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND  
+ultra96v2_bd_i/cic_compiler_0/U0/i_synth/interpolator.interpolation_filter/int/gen_stages[4].gen_unfolded.int_comb_stage/gen_split_accum[0].gen_sum_struct.gen_sum/gen_structural.gen_virtex.gen_dsp48e.gen_dsp48e1_v6.dsp48e1_v6: DSP48E2 is not using the Multiplier (USE_MULT = NONE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+Related violations: <none>
+
+AVAL-156#7 Advisory
+enum_USE_MULT_NONE__enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND  
+ultra96v2_bd_i/cic_compiler_0/U0/i_synth/interpolator.interpolation_filter/int/gen_stages[5].gen_unfolded.int_comb_stage/gen_split_accum[0].gen_sum_struct.gen_sum/gen_structural.gen_virtex.gen_dsp48e.gen_dsp48e1_v6.dsp48e1_v6: DSP48E2 is not using the Multiplier (USE_MULT = NONE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+Related violations: <none>
+
+AVAL-156#8 Advisory
+enum_USE_MULT_NONE__enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND  
+ultra96v2_bd_i/cic_compiler_0/U0/i_synth/interpolator.interpolation_filter/int/gen_stages[5].gen_unfolded.int_comb_stage/gen_split_accum[1].gen_sum_struct.gen_sum/gen_structural.gen_virtex.gen_dsp48e.gen_dsp48e1_v6.dsp48e1_v6: DSP48E2 is not using the Multiplier (USE_MULT = NONE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+Related violations: <none>
+
+AVAL-156#9 Advisory
+enum_USE_MULT_NONE__enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND  
+ultra96v2_bd_i/cic_compiler_1/U0/i_synth/interpolator.interpolation_filter/comb/gen_stages[0].gen_folded.int_comb_stage/gen_split_accum[0].gen_sum_struct.gen_sum/gen_structural.gen_virtex.gen_dsp48e.gen_dsp48e1_v6.dsp48e1_v6: DSP48E2 is not using the Multiplier (USE_MULT = NONE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+Related violations: <none>
+
+AVAL-156#10 Advisory
+enum_USE_MULT_NONE__enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND  
+ultra96v2_bd_i/cic_compiler_1/U0/i_synth/interpolator.interpolation_filter/int/gen_stages[0].gen_unfolded.int_comb_stage/gen_split_accum[0].gen_sum_struct.gen_sum/gen_structural.gen_virtex.gen_dsp48e.gen_dsp48e1_v6.dsp48e1_v6: DSP48E2 is not using the Multiplier (USE_MULT = NONE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+Related violations: <none>
+
+AVAL-156#11 Advisory
+enum_USE_MULT_NONE__enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND  
+ultra96v2_bd_i/cic_compiler_1/U0/i_synth/interpolator.interpolation_filter/int/gen_stages[1].gen_unfolded.int_comb_stage/gen_split_accum[0].gen_sum_struct.gen_sum/gen_structural.gen_virtex.gen_dsp48e.gen_dsp48e1_v6.dsp48e1_v6: DSP48E2 is not using the Multiplier (USE_MULT = NONE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+Related violations: <none>
+
+AVAL-156#12 Advisory
+enum_USE_MULT_NONE__enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND  
+ultra96v2_bd_i/cic_compiler_1/U0/i_synth/interpolator.interpolation_filter/int/gen_stages[2].gen_unfolded.int_comb_stage/gen_split_accum[0].gen_sum_struct.gen_sum/gen_structural.gen_virtex.gen_dsp48e.gen_dsp48e1_v6.dsp48e1_v6: DSP48E2 is not using the Multiplier (USE_MULT = NONE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+Related violations: <none>
+
+AVAL-156#13 Advisory
+enum_USE_MULT_NONE__enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND  
+ultra96v2_bd_i/cic_compiler_1/U0/i_synth/interpolator.interpolation_filter/int/gen_stages[3].gen_unfolded.int_comb_stage/gen_split_accum[0].gen_sum_struct.gen_sum/gen_structural.gen_virtex.gen_dsp48e.gen_dsp48e1_v6.dsp48e1_v6: DSP48E2 is not using the Multiplier (USE_MULT = NONE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+Related violations: <none>
+
+AVAL-156#14 Advisory
+enum_USE_MULT_NONE__enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND  
+ultra96v2_bd_i/cic_compiler_1/U0/i_synth/interpolator.interpolation_filter/int/gen_stages[4].gen_unfolded.int_comb_stage/gen_split_accum[0].gen_sum_struct.gen_sum/gen_structural.gen_virtex.gen_dsp48e.gen_dsp48e1_v6.dsp48e1_v6: DSP48E2 is not using the Multiplier (USE_MULT = NONE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+Related violations: <none>
+
+AVAL-156#15 Advisory
+enum_USE_MULT_NONE__enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND  
+ultra96v2_bd_i/cic_compiler_1/U0/i_synth/interpolator.interpolation_filter/int/gen_stages[5].gen_unfolded.int_comb_stage/gen_split_accum[0].gen_sum_struct.gen_sum/gen_structural.gen_virtex.gen_dsp48e.gen_dsp48e1_v6.dsp48e1_v6: DSP48E2 is not using the Multiplier (USE_MULT = NONE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+Related violations: <none>
+
+AVAL-156#16 Advisory
+enum_USE_MULT_NONE__enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND  
+ultra96v2_bd_i/cic_compiler_1/U0/i_synth/interpolator.interpolation_filter/int/gen_stages[5].gen_unfolded.int_comb_stage/gen_split_accum[1].gen_sum_struct.gen_sum/gen_structural.gen_virtex.gen_dsp48e.gen_dsp48e1_v6.dsp48e1_v6: DSP48E2 is not using the Multiplier (USE_MULT = NONE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+Related violations: <none>
+
+REQP-1677#1 Advisory
+enum_USE_MULT_NONE_connects_CEM_GND  
+ultra96v2_bd_i/cic_compiler_0/U0/i_synth/interpolator.interpolation_filter/comb/gen_stages[0].gen_folded.int_comb_stage/gen_split_accum[0].gen_sum_struct.gen_sum/gen_structural.gen_virtex.gen_dsp48e.gen_dsp48e1_v6.dsp48e1_v6: When the DSP48E2 USE_MULT attribute is set to NONE, the CEM input pin should be tied to GND to save power.
+Related violations: <none>
+
+REQP-1677#2 Advisory
+enum_USE_MULT_NONE_connects_CEM_GND  
+ultra96v2_bd_i/cic_compiler_0/U0/i_synth/interpolator.interpolation_filter/int/gen_stages[0].gen_unfolded.int_comb_stage/gen_split_accum[0].gen_sum_struct.gen_sum/gen_structural.gen_virtex.gen_dsp48e.gen_dsp48e1_v6.dsp48e1_v6: When the DSP48E2 USE_MULT attribute is set to NONE, the CEM input pin should be tied to GND to save power.
+Related violations: <none>
+
+REQP-1677#3 Advisory
+enum_USE_MULT_NONE_connects_CEM_GND  
+ultra96v2_bd_i/cic_compiler_0/U0/i_synth/interpolator.interpolation_filter/int/gen_stages[1].gen_unfolded.int_comb_stage/gen_split_accum[0].gen_sum_struct.gen_sum/gen_structural.gen_virtex.gen_dsp48e.gen_dsp48e1_v6.dsp48e1_v6: When the DSP48E2 USE_MULT attribute is set to NONE, the CEM input pin should be tied to GND to save power.
+Related violations: <none>
+
+REQP-1677#4 Advisory
+enum_USE_MULT_NONE_connects_CEM_GND  
+ultra96v2_bd_i/cic_compiler_0/U0/i_synth/interpolator.interpolation_filter/int/gen_stages[2].gen_unfolded.int_comb_stage/gen_split_accum[0].gen_sum_struct.gen_sum/gen_structural.gen_virtex.gen_dsp48e.gen_dsp48e1_v6.dsp48e1_v6: When the DSP48E2 USE_MULT attribute is set to NONE, the CEM input pin should be tied to GND to save power.
+Related violations: <none>
+
+REQP-1677#5 Advisory
+enum_USE_MULT_NONE_connects_CEM_GND  
+ultra96v2_bd_i/cic_compiler_0/U0/i_synth/interpolator.interpolation_filter/int/gen_stages[3].gen_unfolded.int_comb_stage/gen_split_accum[0].gen_sum_struct.gen_sum/gen_structural.gen_virtex.gen_dsp48e.gen_dsp48e1_v6.dsp48e1_v6: When the DSP48E2 USE_MULT attribute is set to NONE, the CEM input pin should be tied to GND to save power.
+Related violations: <none>
+
+REQP-1677#6 Advisory
+enum_USE_MULT_NONE_connects_CEM_GND  
+ultra96v2_bd_i/cic_compiler_0/U0/i_synth/interpolator.interpolation_filter/int/gen_stages[4].gen_unfolded.int_comb_stage/gen_split_accum[0].gen_sum_struct.gen_sum/gen_structural.gen_virtex.gen_dsp48e.gen_dsp48e1_v6.dsp48e1_v6: When the DSP48E2 USE_MULT attribute is set to NONE, the CEM input pin should be tied to GND to save power.
+Related violations: <none>
+
+REQP-1677#7 Advisory
+enum_USE_MULT_NONE_connects_CEM_GND  
+ultra96v2_bd_i/cic_compiler_0/U0/i_synth/interpolator.interpolation_filter/int/gen_stages[5].gen_unfolded.int_comb_stage/gen_split_accum[0].gen_sum_struct.gen_sum/gen_structural.gen_virtex.gen_dsp48e.gen_dsp48e1_v6.dsp48e1_v6: When the DSP48E2 USE_MULT attribute is set to NONE, the CEM input pin should be tied to GND to save power.
+Related violations: <none>
+
+REQP-1677#8 Advisory
+enum_USE_MULT_NONE_connects_CEM_GND  
+ultra96v2_bd_i/cic_compiler_0/U0/i_synth/interpolator.interpolation_filter/int/gen_stages[5].gen_unfolded.int_comb_stage/gen_split_accum[1].gen_sum_struct.gen_sum/gen_structural.gen_virtex.gen_dsp48e.gen_dsp48e1_v6.dsp48e1_v6: When the DSP48E2 USE_MULT attribute is set to NONE, the CEM input pin should be tied to GND to save power.
+Related violations: <none>
+
+REQP-1677#9 Advisory
+enum_USE_MULT_NONE_connects_CEM_GND  
+ultra96v2_bd_i/cic_compiler_1/U0/i_synth/interpolator.interpolation_filter/comb/gen_stages[0].gen_folded.int_comb_stage/gen_split_accum[0].gen_sum_struct.gen_sum/gen_structural.gen_virtex.gen_dsp48e.gen_dsp48e1_v6.dsp48e1_v6: When the DSP48E2 USE_MULT attribute is set to NONE, the CEM input pin should be tied to GND to save power.
+Related violations: <none>
+
+REQP-1677#10 Advisory
+enum_USE_MULT_NONE_connects_CEM_GND  
+ultra96v2_bd_i/cic_compiler_1/U0/i_synth/interpolator.interpolation_filter/int/gen_stages[0].gen_unfolded.int_comb_stage/gen_split_accum[0].gen_sum_struct.gen_sum/gen_structural.gen_virtex.gen_dsp48e.gen_dsp48e1_v6.dsp48e1_v6: When the DSP48E2 USE_MULT attribute is set to NONE, the CEM input pin should be tied to GND to save power.
+Related violations: <none>
+
+REQP-1677#11 Advisory
+enum_USE_MULT_NONE_connects_CEM_GND  
+ultra96v2_bd_i/cic_compiler_1/U0/i_synth/interpolator.interpolation_filter/int/gen_stages[1].gen_unfolded.int_comb_stage/gen_split_accum[0].gen_sum_struct.gen_sum/gen_structural.gen_virtex.gen_dsp48e.gen_dsp48e1_v6.dsp48e1_v6: When the DSP48E2 USE_MULT attribute is set to NONE, the CEM input pin should be tied to GND to save power.
+Related violations: <none>
+
+REQP-1677#12 Advisory
+enum_USE_MULT_NONE_connects_CEM_GND  
+ultra96v2_bd_i/cic_compiler_1/U0/i_synth/interpolator.interpolation_filter/int/gen_stages[2].gen_unfolded.int_comb_stage/gen_split_accum[0].gen_sum_struct.gen_sum/gen_structural.gen_virtex.gen_dsp48e.gen_dsp48e1_v6.dsp48e1_v6: When the DSP48E2 USE_MULT attribute is set to NONE, the CEM input pin should be tied to GND to save power.
+Related violations: <none>
+
+REQP-1677#13 Advisory
+enum_USE_MULT_NONE_connects_CEM_GND  
+ultra96v2_bd_i/cic_compiler_1/U0/i_synth/interpolator.interpolation_filter/int/gen_stages[3].gen_unfolded.int_comb_stage/gen_split_accum[0].gen_sum_struct.gen_sum/gen_structural.gen_virtex.gen_dsp48e.gen_dsp48e1_v6.dsp48e1_v6: When the DSP48E2 USE_MULT attribute is set to NONE, the CEM input pin should be tied to GND to save power.
+Related violations: <none>
+
+REQP-1677#14 Advisory
+enum_USE_MULT_NONE_connects_CEM_GND  
+ultra96v2_bd_i/cic_compiler_1/U0/i_synth/interpolator.interpolation_filter/int/gen_stages[4].gen_unfolded.int_comb_stage/gen_split_accum[0].gen_sum_struct.gen_sum/gen_structural.gen_virtex.gen_dsp48e.gen_dsp48e1_v6.dsp48e1_v6: When the DSP48E2 USE_MULT attribute is set to NONE, the CEM input pin should be tied to GND to save power.
+Related violations: <none>
+
+REQP-1677#15 Advisory
+enum_USE_MULT_NONE_connects_CEM_GND  
+ultra96v2_bd_i/cic_compiler_1/U0/i_synth/interpolator.interpolation_filter/int/gen_stages[5].gen_unfolded.int_comb_stage/gen_split_accum[0].gen_sum_struct.gen_sum/gen_structural.gen_virtex.gen_dsp48e.gen_dsp48e1_v6.dsp48e1_v6: When the DSP48E2 USE_MULT attribute is set to NONE, the CEM input pin should be tied to GND to save power.
+Related violations: <none>
+
+REQP-1677#16 Advisory
+enum_USE_MULT_NONE_connects_CEM_GND  
+ultra96v2_bd_i/cic_compiler_1/U0/i_synth/interpolator.interpolation_filter/int/gen_stages[5].gen_unfolded.int_comb_stage/gen_split_accum[1].gen_sum_struct.gen_sum/gen_structural.gen_virtex.gen_dsp48e.gen_dsp48e1_v6.dsp48e1_v6: When the DSP48E2 USE_MULT attribute is set to NONE, the CEM input pin should be tied to GND to save power.
+Related violations: <none>
+
+REQP-1677#17 Advisory
+enum_USE_MULT_NONE_connects_CEM_GND  
+ultra96v2_bd_i/fir_compiler_0/U0/i_synth/g_polyphase_interpolation.i_polyphase_interpolation/g_semi_parallel_and_smac.g_paths[0].g_madd_array_and_accum.g_accum.i_accum/i_add_accum/g_dsp48.g_dsp48e2.i_dsp48e2: When the DSP48E2 USE_MULT attribute is set to NONE, the CEM input pin should be tied to GND to save power.
+Related violations: <none>
+
+REQP-1679#1 Advisory
+enum_MREG_0_connects_CEM_GND  
+ultra96v2_bd_i/cic_compiler_0/U0/i_synth/interpolator.interpolation_filter/comb/gen_stages[0].gen_folded.int_comb_stage/gen_split_accum[0].gen_sum_struct.gen_sum/gen_structural.gen_virtex.gen_dsp48e.gen_dsp48e1_v6.dsp48e1_v6: When the DSP48E2 MREG attribute is set to 0, the CEM input pin should be tied to GND to save power.
+Related violations: <none>
+
+REQP-1679#2 Advisory
+enum_MREG_0_connects_CEM_GND  
+ultra96v2_bd_i/cic_compiler_0/U0/i_synth/interpolator.interpolation_filter/int/gen_stages[0].gen_unfolded.int_comb_stage/gen_split_accum[0].gen_sum_struct.gen_sum/gen_structural.gen_virtex.gen_dsp48e.gen_dsp48e1_v6.dsp48e1_v6: When the DSP48E2 MREG attribute is set to 0, the CEM input pin should be tied to GND to save power.
+Related violations: <none>
+
+REQP-1679#3 Advisory
+enum_MREG_0_connects_CEM_GND  
+ultra96v2_bd_i/cic_compiler_0/U0/i_synth/interpolator.interpolation_filter/int/gen_stages[1].gen_unfolded.int_comb_stage/gen_split_accum[0].gen_sum_struct.gen_sum/gen_structural.gen_virtex.gen_dsp48e.gen_dsp48e1_v6.dsp48e1_v6: When the DSP48E2 MREG attribute is set to 0, the CEM input pin should be tied to GND to save power.
+Related violations: <none>
+
+REQP-1679#4 Advisory
+enum_MREG_0_connects_CEM_GND  
+ultra96v2_bd_i/cic_compiler_0/U0/i_synth/interpolator.interpolation_filter/int/gen_stages[2].gen_unfolded.int_comb_stage/gen_split_accum[0].gen_sum_struct.gen_sum/gen_structural.gen_virtex.gen_dsp48e.gen_dsp48e1_v6.dsp48e1_v6: When the DSP48E2 MREG attribute is set to 0, the CEM input pin should be tied to GND to save power.
+Related violations: <none>
+
+REQP-1679#5 Advisory
+enum_MREG_0_connects_CEM_GND  
+ultra96v2_bd_i/cic_compiler_0/U0/i_synth/interpolator.interpolation_filter/int/gen_stages[3].gen_unfolded.int_comb_stage/gen_split_accum[0].gen_sum_struct.gen_sum/gen_structural.gen_virtex.gen_dsp48e.gen_dsp48e1_v6.dsp48e1_v6: When the DSP48E2 MREG attribute is set to 0, the CEM input pin should be tied to GND to save power.
+Related violations: <none>
+
+REQP-1679#6 Advisory
+enum_MREG_0_connects_CEM_GND  
+ultra96v2_bd_i/cic_compiler_0/U0/i_synth/interpolator.interpolation_filter/int/gen_stages[4].gen_unfolded.int_comb_stage/gen_split_accum[0].gen_sum_struct.gen_sum/gen_structural.gen_virtex.gen_dsp48e.gen_dsp48e1_v6.dsp48e1_v6: When the DSP48E2 MREG attribute is set to 0, the CEM input pin should be tied to GND to save power.
+Related violations: <none>
+
+REQP-1679#7 Advisory
+enum_MREG_0_connects_CEM_GND  
+ultra96v2_bd_i/cic_compiler_0/U0/i_synth/interpolator.interpolation_filter/int/gen_stages[5].gen_unfolded.int_comb_stage/gen_split_accum[0].gen_sum_struct.gen_sum/gen_structural.gen_virtex.gen_dsp48e.gen_dsp48e1_v6.dsp48e1_v6: When the DSP48E2 MREG attribute is set to 0, the CEM input pin should be tied to GND to save power.
+Related violations: <none>
+
+REQP-1679#8 Advisory
+enum_MREG_0_connects_CEM_GND  
+ultra96v2_bd_i/cic_compiler_0/U0/i_synth/interpolator.interpolation_filter/int/gen_stages[5].gen_unfolded.int_comb_stage/gen_split_accum[1].gen_sum_struct.gen_sum/gen_structural.gen_virtex.gen_dsp48e.gen_dsp48e1_v6.dsp48e1_v6: When the DSP48E2 MREG attribute is set to 0, the CEM input pin should be tied to GND to save power.
+Related violations: <none>
+
+REQP-1679#9 Advisory
+enum_MREG_0_connects_CEM_GND  
+ultra96v2_bd_i/cic_compiler_1/U0/i_synth/interpolator.interpolation_filter/comb/gen_stages[0].gen_folded.int_comb_stage/gen_split_accum[0].gen_sum_struct.gen_sum/gen_structural.gen_virtex.gen_dsp48e.gen_dsp48e1_v6.dsp48e1_v6: When the DSP48E2 MREG attribute is set to 0, the CEM input pin should be tied to GND to save power.
+Related violations: <none>
+
+REQP-1679#10 Advisory
+enum_MREG_0_connects_CEM_GND  
+ultra96v2_bd_i/cic_compiler_1/U0/i_synth/interpolator.interpolation_filter/int/gen_stages[0].gen_unfolded.int_comb_stage/gen_split_accum[0].gen_sum_struct.gen_sum/gen_structural.gen_virtex.gen_dsp48e.gen_dsp48e1_v6.dsp48e1_v6: When the DSP48E2 MREG attribute is set to 0, the CEM input pin should be tied to GND to save power.
+Related violations: <none>
+
+REQP-1679#11 Advisory
+enum_MREG_0_connects_CEM_GND  
+ultra96v2_bd_i/cic_compiler_1/U0/i_synth/interpolator.interpolation_filter/int/gen_stages[1].gen_unfolded.int_comb_stage/gen_split_accum[0].gen_sum_struct.gen_sum/gen_structural.gen_virtex.gen_dsp48e.gen_dsp48e1_v6.dsp48e1_v6: When the DSP48E2 MREG attribute is set to 0, the CEM input pin should be tied to GND to save power.
+Related violations: <none>
+
+REQP-1679#12 Advisory
+enum_MREG_0_connects_CEM_GND  
+ultra96v2_bd_i/cic_compiler_1/U0/i_synth/interpolator.interpolation_filter/int/gen_stages[2].gen_unfolded.int_comb_stage/gen_split_accum[0].gen_sum_struct.gen_sum/gen_structural.gen_virtex.gen_dsp48e.gen_dsp48e1_v6.dsp48e1_v6: When the DSP48E2 MREG attribute is set to 0, the CEM input pin should be tied to GND to save power.
+Related violations: <none>
+
+REQP-1679#13 Advisory
+enum_MREG_0_connects_CEM_GND  
+ultra96v2_bd_i/cic_compiler_1/U0/i_synth/interpolator.interpolation_filter/int/gen_stages[3].gen_unfolded.int_comb_stage/gen_split_accum[0].gen_sum_struct.gen_sum/gen_structural.gen_virtex.gen_dsp48e.gen_dsp48e1_v6.dsp48e1_v6: When the DSP48E2 MREG attribute is set to 0, the CEM input pin should be tied to GND to save power.
+Related violations: <none>
+
+REQP-1679#14 Advisory
+enum_MREG_0_connects_CEM_GND  
+ultra96v2_bd_i/cic_compiler_1/U0/i_synth/interpolator.interpolation_filter/int/gen_stages[4].gen_unfolded.int_comb_stage/gen_split_accum[0].gen_sum_struct.gen_sum/gen_structural.gen_virtex.gen_dsp48e.gen_dsp48e1_v6.dsp48e1_v6: When the DSP48E2 MREG attribute is set to 0, the CEM input pin should be tied to GND to save power.
+Related violations: <none>
+
+REQP-1679#15 Advisory
+enum_MREG_0_connects_CEM_GND  
+ultra96v2_bd_i/cic_compiler_1/U0/i_synth/interpolator.interpolation_filter/int/gen_stages[5].gen_unfolded.int_comb_stage/gen_split_accum[0].gen_sum_struct.gen_sum/gen_structural.gen_virtex.gen_dsp48e.gen_dsp48e1_v6.dsp48e1_v6: When the DSP48E2 MREG attribute is set to 0, the CEM input pin should be tied to GND to save power.
+Related violations: <none>
+
+REQP-1679#16 Advisory
+enum_MREG_0_connects_CEM_GND  
+ultra96v2_bd_i/cic_compiler_1/U0/i_synth/interpolator.interpolation_filter/int/gen_stages[5].gen_unfolded.int_comb_stage/gen_split_accum[1].gen_sum_struct.gen_sum/gen_structural.gen_virtex.gen_dsp48e.gen_dsp48e1_v6.dsp48e1_v6: When the DSP48E2 MREG attribute is set to 0, the CEM input pin should be tied to GND to save power.
+Related violations: <none>
+
+REQP-1679#17 Advisory
+enum_MREG_0_connects_CEM_GND  
+ultra96v2_bd_i/fir_compiler_0/U0/i_synth/g_polyphase_interpolation.i_polyphase_interpolation/g_semi_parallel_and_smac.g_paths[0].g_madd_array_and_accum.g_accum.i_accum/i_add_accum/g_dsp48.g_dsp48e2.i_dsp48e2: When the DSP48E2 MREG attribute is set to 0, the CEM input pin should be tied to GND to save power.
+Related violations: <none>
+
+REQP-1681#1 Advisory
+with_OPMODE_USE_MULT_NONE  
+ultra96v2_bd_i/fir_compiler_0/U0/i_synth/g_polyphase_interpolation.i_polyphase_interpolation/g_semi_parallel_and_smac.g_paths[0].g_rounder.i_rounder/i_rounder/g_dsp48.g_dsp48e2.i_dsp48e2: To save power with this DSP48E2 OPMODE input pin programming the USE_MULT attribute should be set to NONE.
+Related violations: <none>
+
+

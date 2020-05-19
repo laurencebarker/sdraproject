@@ -1,0 +1,125 @@
+{
+   "ActiveEmotionalView":"Default View",
+   "Default View_ScaleFactor":"1.0",
+   "Default View_TopLeft":"96,78",
+   "ExpandedHierarchyInLayout":"",
+   "comment_0":"simulates the I/Q modulation",
+   "comment_1":"VFO Oscillator",
+   "comment_2":"Mixer",
+   "comment_3":"I/Q filter",
+   "comment_4":"split to separate I, Q streams",
+   "comment_5":"separate I, Q CIC filters",
+   "comment_6":"merge to one I/Q stream",
+   "commentid":"comment_0|comment_1|comment_2|comment_3|comment_4|comment_5|comment_6|",
+   "fillcolor_comment_0":"",
+   "fillcolor_comment_1":"",
+   "fillcolor_comment_2":"",
+   "fillcolor_comment_3":"",
+   "fillcolor_comment_4":"",
+   "fillcolor_comment_5":"",
+   "fillcolor_comment_6":"",
+   "font_comment_0":"20",
+   "font_comment_1":"20",
+   "font_comment_2":"20",
+   "font_comment_3":"21",
+   "font_comment_4":"21",
+   "font_comment_5":"21",
+   "font_comment_6":"21",
+   "guistr":"# # String gsaved with Nlview 7.0.21  2019-05-29 bk=1.5064 VDI=41 GEI=36 GUI=JA:9.0 non-TLS
+#  -string -flagsOSRD
+preplace port FAN_PWM -pg 1 -lvl 10 -x 2910 -y -260 -defaultsOSRD
+preplace port BT_HCI_CTS -pg 1 -lvl 0 -x 0 -y 110 -defaultsOSRD
+preplace port BT_HCI_RTS -pg 1 -lvl 10 -x 2910 -y -210 -defaultsOSRD
+preplace portBus HD_GPIO -pg 1 -lvl 10 -x 2910 -y 430 -defaultsOSRD
+preplace inst axis_dwidth_converter_0 -pg 1 -lvl 2 -x 560 -y 390 -defaultsOSRD
+preplace inst axis_dwidth_converter_1 -pg 1 -lvl 4 -x 1060 -y 430 -defaultsOSRD
+preplace inst fir_compiler_0 -pg 1 -lvl 3 -x 810 -y 410 -defaultsOSRD
+preplace inst axis_broadcaster_0 -pg 1 -lvl 5 -x 1320 -y 450 -defaultsOSRD
+preplace inst cic_compiler_0 -pg 1 -lvl 6 -x 1670 -y 320 -defaultsOSRD
+preplace inst axis_combiner_0 -pg 1 -lvl 7 -x 2040 -y 350 -defaultsOSRD
+preplace inst cmpy_0 -pg 1 -lvl 8 -x 2400 -y 230 -defaultsOSRD
+preplace inst dds_compiler_0 -pg 1 -lvl 7 -x 2040 -y 160 -defaultsOSRD
+preplace inst cic_compiler_1 -pg 1 -lvl 6 -x 1670 -y 480 -defaultsOSRD -resize 255 122
+preplace inst CPU -pg 1 -lvl 8 -x 2400 -y -210 -defaultsOSRD
+preplace inst dds_compiler_1 -pg 1 -lvl 1 -x 340 -y 370 -defaultsOSRD
+preplace inst bus_to_axis_0 -pg 1 -lvl 6 -x 1670 -y 140 -defaultsOSRD
+preplace inst xlslice_0 -pg 1 -lvl 9 -x 2740 -y 240 -defaultsOSRD
+preplace inst xlconstant_0 -pg 1 -lvl 5 -x 1320 -y 120 -defaultsOSRD
+preplace inst xlslice_3 -pg 1 -lvl 8 -x 2400 -y 440 -defaultsOSRD
+preplace inst cvt_offset_binary_0 -pg 1 -lvl 9 -x 2740 -y 430 -defaultsOSRD
+preplace netloc ctsn_0_1 1 0 8 20J -210 NJ -210 NJ -210 NJ -210 NJ -210 NJ -210 NJ -210 NJ
+preplace netloc axi_uart16550_0_rtsn 1 8 2 N -210 NJ
+preplace netloc aclk_1 1 0 9 20 310 440 310 660 490 950 510 1160 530 1470 220 1860 260 2220 320 2570J
+preplace netloc aresetn_1 1 1 8 450 300 670 330 940 520 1170 540 1490 230 1840 60 2230 0 2560
+preplace netloc bus_to_axis_0_m_axis_tvalid 1 6 1 N 160
+preplace netloc bus_to_axis_0_m_axis_tdata 1 6 1 N 140
+preplace netloc cmpy_0_m_axis_dout_tdata 1 8 1 NJ 240
+preplace netloc xlslice_0_Dout 1 7 3 2220 500 NJ 500 2860
+preplace netloc xlconstant_0_dout 1 5 1 NJ 120
+preplace netloc xlslice_3_Dout 1 8 1 NJ 440
+preplace netloc cvt_offset_binary_0_dout 1 9 1 NJ 430
+preplace netloc cic_compiler_1_M_AXIS_DATA 1 6 1 1850 340n
+preplace netloc axis_broadcaster_0_M01_AXIS 1 5 1 N 460
+preplace netloc axis_broadcaster_0_M00_AXIS 1 5 1 1480 300n
+preplace netloc cic_compiler_0_M_AXIS_DATA 1 6 1 N 320
+preplace netloc axis_dwidth_converter_1_M_AXIS 1 4 1 N 430
+preplace netloc axis_dwidth_converter_0_M_AXIS 1 2 1 N 390
+preplace netloc fir_compiler_0_M_AXIS_DATA 1 3 1 N 410
+preplace netloc dds_compiler_1_M_AXIS_DATA 1 1 1 NJ 370
+preplace netloc dds_compiler_0_M_AXIS_DATA 1 7 1 2220 160n
+preplace netloc fan_pwm_GPIO 1 8 2 2560 -260 NJ
+preplace netloc axis_combiner_0_M_AXIS 1 7 1 2210 200n
+preplace cgraphic comment_3 place top -35 -64 textcolor 4 linecolor 3 linewidth 2
+preplace cgraphic comment_2 place bot -117 22 textcolor 4 linecolor 3 linewidth 2
+preplace cgraphic comment_1 place top -81 -54 textcolor 4 linecolor 3 linewidth 2
+preplace cgraphic comment_0 place top -220 -83 textcolor 4 linecolor 3 linewidth 2
+preplace cgraphic comment_6 place top -119 -62 textcolor 4 linecolor 3 linewidth 2
+preplace cgraphic comment_5 place top -149 -57 textcolor 4 linecolor 3 linewidth 2
+preplace cgraphic comment_4 place top -181 -70 textcolor 4 linecolor 3 linewidth 2
+levelinfo -pg 1 0 340 560 810 1060 1320 1670 2040 2400 2740 2910
+pagesize -pg 1 -db -bbox -sgen -120 -310 3050 1160
+",
+   "linecolor_comment_0":"",
+   "linecolor_comment_1":"",
+   "linecolor_comment_2":"",
+   "linecolor_comment_3":"",
+   "linecolor_comment_4":"",
+   "linecolor_comment_5":"",
+   "linecolor_comment_6":"",
+   "linktoobj_comment_0":"/dds_compiler_1",
+   "linktoobj_comment_1":"/dds_compiler_0",
+   "linktoobj_comment_2":"/cmpy_0",
+   "linktoobj_comment_3":"/fir_compiler_0",
+   "linktoobj_comment_4":"/axis_broadcaster_0",
+   "linktoobj_comment_5":"/cic_compiler_0",
+   "linktoobj_comment_6":"/axis_combiner_0",
+   "linktotype_comment_0":"bd_cell",
+   "linktotype_comment_1":"bd_cell",
+   "linktotype_comment_2":"bd_cell",
+   "linktotype_comment_3":"bd_cell",
+   "linktotype_comment_4":"bd_cell",
+   "linktotype_comment_5":"bd_cell",
+   "linktotype_comment_6":"bd_cell",
+   "textcolor_comment_0":"",
+   "textcolor_comment_1":"",
+   "textcolor_comment_2":"",
+   "textcolor_comment_3":"",
+   "textcolor_comment_4":"",
+   "textcolor_comment_5":"",
+   "textcolor_comment_6":""
+}
+{
+   """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""da_axi4_cnt""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""":"6",
+   """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""da_board_cnt""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""":"3",
+   """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""da_bram_cntlr_cnt""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""":"1",
+   """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""da_zynq_ultra_ps_e_cnt""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""":"1"
+}
+{
+   "/axis_broadcaster_0/comment_4":"comment_4",
+   "/axis_combiner_0/comment_6":"comment_6",
+   "/cic_compiler_0/comment_5":"comment_5",
+   "/cmpy_0/comment_2":"comment_2",
+   "/dds_compiler_0/comment_1":"comment_1",
+   "/dds_compiler_1/comment_0":"comment_0",
+   "/fir_compiler_0/comment_3":"comment_3"
+}

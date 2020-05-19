@@ -1,0 +1,675 @@
+
+*** Running vivado
+    with args -log ultra96v2_bd_axis_dwidth_converter_1_0.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source ultra96v2_bd_axis_dwidth_converter_1_0.tcl
+
+
+****** Vivado v2019.2 (64-bit)
+  **** SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+  **** IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+source ultra96v2_bd_axis_dwidth_converter_1_0.tcl -notrace
+create_project: Time (s): cpu = 00:00:04 ; elapsed = 00:00:06 . Memory (MB): peak = 437.180 ; gain = 155.137
+Command: synth_design -top ultra96v2_bd_axis_dwidth_converter_1_0 -part xczu3eg-sbva484-1-e -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xczu3eg'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xczu3eg'
+INFO: [Device 21-403] Loading part xczu3eg-sbva484-1-e
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 264 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 1435.398 ; gain = 55.855
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'ultra96v2_bd_axis_dwidth_converter_1_0' [c:/xilinxdesigns/sdraproject/ultra96v2_0-master/ultra96v2_0.srcs/sources_1/bd/ultra96v2_bd/ip/ultra96v2_bd_axis_dwidth_converter_1_0/synth/ultra96v2_bd_axis_dwidth_converter_1_0.v:57]
+INFO: [Synth 8-6157] synthesizing module 'axis_dwidth_converter_v1_1_19_axis_dwidth_converter' [c:/xilinxdesigns/sdraproject/ultra96v2_0-master/ultra96v2_0.srcs/sources_1/bd/ultra96v2_bd/ipshared/f22d/hdl/axis_dwidth_converter_v1_1_vl_rfs.v:810]
+	Parameter C_FAMILY bound to: zynquplus - type: string 
+	Parameter C_S_AXIS_TDATA_WIDTH bound to: 24 - type: integer 
+	Parameter C_M_AXIS_TDATA_WIDTH bound to: 48 - type: integer 
+	Parameter C_AXIS_TID_WIDTH bound to: 1 - type: integer 
+	Parameter C_AXIS_TDEST_WIDTH bound to: 1 - type: integer 
+	Parameter C_S_AXIS_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_M_AXIS_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_AXIS_SIGNAL_SET bound to: 32'b00000000000000000000000000000011 
+	Parameter G_INDX_SS_TREADY bound to: 0 - type: integer 
+	Parameter G_INDX_SS_TDATA bound to: 1 - type: integer 
+	Parameter G_INDX_SS_TSTRB bound to: 2 - type: integer 
+	Parameter G_INDX_SS_TKEEP bound to: 3 - type: integer 
+	Parameter G_INDX_SS_TLAST bound to: 4 - type: integer 
+	Parameter G_INDX_SS_TID bound to: 5 - type: integer 
+	Parameter G_INDX_SS_TDEST bound to: 6 - type: integer 
+	Parameter G_INDX_SS_TUSER bound to: 7 - type: integer 
+	Parameter G_MASK_SS_TREADY bound to: 1 - type: integer 
+	Parameter G_MASK_SS_TDATA bound to: 2 - type: integer 
+	Parameter G_MASK_SS_TSTRB bound to: 4 - type: integer 
+	Parameter G_MASK_SS_TKEEP bound to: 8 - type: integer 
+	Parameter G_MASK_SS_TLAST bound to: 16 - type: integer 
+	Parameter G_MASK_SS_TID bound to: 32 - type: integer 
+	Parameter G_MASK_SS_TDEST bound to: 64 - type: integer 
+	Parameter G_MASK_SS_TUSER bound to: 128 - type: integer 
+	Parameter G_TASK_SEVERITY_ERR bound to: 2 - type: integer 
+	Parameter G_TASK_SEVERITY_WARNING bound to: 1 - type: integer 
+	Parameter G_TASK_SEVERITY_INFO bound to: 0 - type: integer 
+	Parameter P_SS_TKEEP_REQUIRED bound to: 0 - type: integer 
+	Parameter P_AXIS_SIGNAL_SET bound to: 32'b00000000000000000000000000000011 
+	Parameter P_S_RATIO bound to: 2 - type: integer 
+	Parameter P_M_RATIO bound to: 1 - type: integer 
+	Parameter P_D2_TDATA_WIDTH bound to: 48 - type: integer 
+	Parameter P_D1_TUSER_WIDTH bound to: 3 - type: integer 
+	Parameter P_D2_TUSER_WIDTH bound to: 6 - type: integer 
+	Parameter P_D3_TUSER_WIDTH bound to: 6 - type: integer 
+	Parameter P_D1_REG_CONFIG bound to: 0 - type: integer 
+	Parameter P_D3_REG_CONFIG bound to: 0 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'axis_dwidth_converter_v1_1_19_axisc_upsizer' [c:/xilinxdesigns/sdraproject/ultra96v2_0-master/ultra96v2_0.srcs/sources_1/bd/ultra96v2_bd/ipshared/f22d/hdl/axis_dwidth_converter_v1_1_vl_rfs.v:437]
+	Parameter C_FAMILY bound to: zynquplus - type: string 
+	Parameter C_S_AXIS_TDATA_WIDTH bound to: 24 - type: integer 
+	Parameter C_M_AXIS_TDATA_WIDTH bound to: 48 - type: integer 
+	Parameter C_AXIS_TID_WIDTH bound to: 1 - type: integer 
+	Parameter C_AXIS_TDEST_WIDTH bound to: 1 - type: integer 
+	Parameter C_S_AXIS_TUSER_WIDTH bound to: 3 - type: integer 
+	Parameter C_M_AXIS_TUSER_WIDTH bound to: 6 - type: integer 
+	Parameter C_AXIS_SIGNAL_SET bound to: 32'b00000000000000000000000000000011 
+	Parameter C_RATIO bound to: 2 - type: integer 
+	Parameter G_INDX_SS_TREADY bound to: 0 - type: integer 
+	Parameter G_INDX_SS_TDATA bound to: 1 - type: integer 
+	Parameter G_INDX_SS_TSTRB bound to: 2 - type: integer 
+	Parameter G_INDX_SS_TKEEP bound to: 3 - type: integer 
+	Parameter G_INDX_SS_TLAST bound to: 4 - type: integer 
+	Parameter G_INDX_SS_TID bound to: 5 - type: integer 
+	Parameter G_INDX_SS_TDEST bound to: 6 - type: integer 
+	Parameter G_INDX_SS_TUSER bound to: 7 - type: integer 
+	Parameter G_MASK_SS_TREADY bound to: 1 - type: integer 
+	Parameter G_MASK_SS_TDATA bound to: 2 - type: integer 
+	Parameter G_MASK_SS_TSTRB bound to: 4 - type: integer 
+	Parameter G_MASK_SS_TKEEP bound to: 8 - type: integer 
+	Parameter G_MASK_SS_TLAST bound to: 16 - type: integer 
+	Parameter G_MASK_SS_TID bound to: 32 - type: integer 
+	Parameter G_MASK_SS_TDEST bound to: 64 - type: integer 
+	Parameter G_MASK_SS_TUSER bound to: 128 - type: integer 
+	Parameter G_TASK_SEVERITY_ERR bound to: 2 - type: integer 
+	Parameter G_TASK_SEVERITY_WARNING bound to: 1 - type: integer 
+	Parameter G_TASK_SEVERITY_INFO bound to: 0 - type: integer 
+	Parameter P_READY_EXIST bound to: 1'b1 
+	Parameter P_DATA_EXIST bound to: 1'b1 
+	Parameter P_STRB_EXIST bound to: 1'b0 
+	Parameter P_KEEP_EXIST bound to: 1'b0 
+	Parameter P_LAST_EXIST bound to: 1'b0 
+	Parameter P_ID_EXIST bound to: 1'b0 
+	Parameter P_DEST_EXIST bound to: 1'b0 
+	Parameter P_USER_EXIST bound to: 1'b0 
+	Parameter P_S_AXIS_TSTRB_WIDTH bound to: 3 - type: integer 
+	Parameter P_M_AXIS_TSTRB_WIDTH bound to: 6 - type: integer 
+	Parameter SM_RESET bound to: 3'b000 
+	Parameter SM_IDLE bound to: 3'b001 
+	Parameter SM_ACTIVE bound to: 3'b101 
+	Parameter SM_END bound to: 3'b011 
+	Parameter SM_END_TO_ACTIVE bound to: 3'b010 
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [c:/xilinxdesigns/sdraproject/ultra96v2_0-master/ultra96v2_0.srcs/sources_1/bd/ultra96v2_bd/ipshared/f22d/hdl/axis_dwidth_converter_v1_1_vl_rfs.v:525]
+INFO: [Synth 8-6155] done synthesizing module 'axis_dwidth_converter_v1_1_19_axisc_upsizer' (1#1) [c:/xilinxdesigns/sdraproject/ultra96v2_0-master/ultra96v2_0.srcs/sources_1/bd/ultra96v2_bd/ipshared/f22d/hdl/axis_dwidth_converter_v1_1_vl_rfs.v:437]
+INFO: [Synth 8-6157] synthesizing module 'axis_register_slice_v1_1_20_axis_register_slice' [c:/xilinxdesigns/sdraproject/ultra96v2_0-master/ultra96v2_0.srcs/sources_1/bd/ultra96v2_bd/ipshared/00d6/hdl/axis_register_slice_v1_1_vl_rfs.v:2844]
+	Parameter C_FAMILY bound to: zynquplus - type: string 
+	Parameter C_AXIS_TDATA_WIDTH bound to: 24 - type: integer 
+	Parameter C_AXIS_TID_WIDTH bound to: 1 - type: integer 
+	Parameter C_AXIS_TDEST_WIDTH bound to: 1 - type: integer 
+	Parameter C_AXIS_TUSER_WIDTH bound to: 3 - type: integer 
+	Parameter C_AXIS_SIGNAL_SET bound to: 32'b00000000000000000000000000000011 
+	Parameter C_REG_CONFIG bound to: 0 - type: integer 
+	Parameter C_NUM_SLR_CROSSINGS bound to: 0 - type: integer 
+	Parameter C_PIPELINES_MASTER bound to: 0 - type: integer 
+	Parameter C_PIPELINES_SLAVE bound to: 0 - type: integer 
+	Parameter C_PIPELINES_MIDDLE bound to: 0 - type: integer 
+	Parameter G_INDX_SS_TREADY bound to: 0 - type: integer 
+	Parameter G_INDX_SS_TDATA bound to: 1 - type: integer 
+	Parameter G_INDX_SS_TSTRB bound to: 2 - type: integer 
+	Parameter G_INDX_SS_TKEEP bound to: 3 - type: integer 
+	Parameter G_INDX_SS_TLAST bound to: 4 - type: integer 
+	Parameter G_INDX_SS_TID bound to: 5 - type: integer 
+	Parameter G_INDX_SS_TDEST bound to: 6 - type: integer 
+	Parameter G_INDX_SS_TUSER bound to: 7 - type: integer 
+	Parameter G_MASK_SS_TREADY bound to: 1 - type: integer 
+	Parameter G_MASK_SS_TDATA bound to: 2 - type: integer 
+	Parameter G_MASK_SS_TSTRB bound to: 4 - type: integer 
+	Parameter G_MASK_SS_TKEEP bound to: 8 - type: integer 
+	Parameter G_MASK_SS_TLAST bound to: 16 - type: integer 
+	Parameter G_MASK_SS_TID bound to: 32 - type: integer 
+	Parameter G_MASK_SS_TDEST bound to: 64 - type: integer 
+	Parameter G_MASK_SS_TUSER bound to: 128 - type: integer 
+	Parameter G_TASK_SEVERITY_ERR bound to: 2 - type: integer 
+	Parameter G_TASK_SEVERITY_WARNING bound to: 1 - type: integer 
+	Parameter G_TASK_SEVERITY_INFO bound to: 0 - type: integer 
+	Parameter P_TPAYLOAD_WIDTH bound to: 24 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'axis_infrastructure_v1_1_0_util_axis2vector' [c:/xilinxdesigns/sdraproject/ultra96v2_0-master/ultra96v2_0.srcs/sources_1/bd/ultra96v2_bd/ipshared/8713/hdl/axis_infrastructure_v1_1_vl_rfs.v:810]
+	Parameter C_TDATA_WIDTH bound to: 24 - type: integer 
+	Parameter C_TID_WIDTH bound to: 1 - type: integer 
+	Parameter C_TDEST_WIDTH bound to: 1 - type: integer 
+	Parameter C_TUSER_WIDTH bound to: 3 - type: integer 
+	Parameter C_TPAYLOAD_WIDTH bound to: 24 - type: integer 
+	Parameter C_SIGNAL_SET bound to: 32'b00000000000000000000000000000011 
+	Parameter G_INDX_SS_TREADY bound to: 0 - type: integer 
+	Parameter G_INDX_SS_TDATA bound to: 1 - type: integer 
+	Parameter G_INDX_SS_TSTRB bound to: 2 - type: integer 
+	Parameter G_INDX_SS_TKEEP bound to: 3 - type: integer 
+	Parameter G_INDX_SS_TLAST bound to: 4 - type: integer 
+	Parameter G_INDX_SS_TID bound to: 5 - type: integer 
+	Parameter G_INDX_SS_TDEST bound to: 6 - type: integer 
+	Parameter G_INDX_SS_TUSER bound to: 7 - type: integer 
+	Parameter G_MASK_SS_TREADY bound to: 1 - type: integer 
+	Parameter G_MASK_SS_TDATA bound to: 2 - type: integer 
+	Parameter G_MASK_SS_TSTRB bound to: 4 - type: integer 
+	Parameter G_MASK_SS_TKEEP bound to: 8 - type: integer 
+	Parameter G_MASK_SS_TLAST bound to: 16 - type: integer 
+	Parameter G_MASK_SS_TID bound to: 32 - type: integer 
+	Parameter G_MASK_SS_TDEST bound to: 64 - type: integer 
+	Parameter G_MASK_SS_TUSER bound to: 128 - type: integer 
+	Parameter G_TASK_SEVERITY_ERR bound to: 2 - type: integer 
+	Parameter G_TASK_SEVERITY_WARNING bound to: 1 - type: integer 
+	Parameter G_TASK_SEVERITY_INFO bound to: 0 - type: integer 
+	Parameter P_TDATA_INDX bound to: 0 - type: integer 
+	Parameter P_TSTRB_INDX bound to: 24 - type: integer 
+	Parameter P_TKEEP_INDX bound to: 24 - type: integer 
+	Parameter P_TLAST_INDX bound to: 24 - type: integer 
+	Parameter P_TID_INDX bound to: 24 - type: integer 
+	Parameter P_TDEST_INDX bound to: 24 - type: integer 
+	Parameter P_TUSER_INDX bound to: 24 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'axis_infrastructure_v1_1_0_util_axis2vector' (2#1) [c:/xilinxdesigns/sdraproject/ultra96v2_0-master/ultra96v2_0.srcs/sources_1/bd/ultra96v2_bd/ipshared/8713/hdl/axis_infrastructure_v1_1_vl_rfs.v:810]
+INFO: [Synth 8-6157] synthesizing module 'axis_register_slice_v1_1_20_axisc_register_slice' [c:/xilinxdesigns/sdraproject/ultra96v2_0-master/ultra96v2_0.srcs/sources_1/bd/ultra96v2_bd/ipshared/00d6/hdl/axis_register_slice_v1_1_vl_rfs.v:1942]
+	Parameter C_FAMILY bound to: zynquplus - type: string 
+	Parameter C_DATA_WIDTH bound to: 24 - type: integer 
+	Parameter C_REG_CONFIG bound to: 0 - type: integer 
+	Parameter C_NUM_SLR_CROSSINGS bound to: 0 - type: integer 
+	Parameter C_PIPELINES_MASTER bound to: 0 - type: integer 
+	Parameter C_PIPELINES_SLAVE bound to: 0 - type: integer 
+	Parameter C_PIPELINES_MIDDLE bound to: 0 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'axis_register_slice_v1_1_20_axisc_register_slice' (3#1) [c:/xilinxdesigns/sdraproject/ultra96v2_0-master/ultra96v2_0.srcs/sources_1/bd/ultra96v2_bd/ipshared/00d6/hdl/axis_register_slice_v1_1_vl_rfs.v:1942]
+INFO: [Synth 8-6157] synthesizing module 'axis_infrastructure_v1_1_0_util_vector2axis' [c:/xilinxdesigns/sdraproject/ultra96v2_0-master/ultra96v2_0.srcs/sources_1/bd/ultra96v2_bd/ipshared/8713/hdl/axis_infrastructure_v1_1_vl_rfs.v:992]
+	Parameter C_TDATA_WIDTH bound to: 24 - type: integer 
+	Parameter C_TID_WIDTH bound to: 1 - type: integer 
+	Parameter C_TDEST_WIDTH bound to: 1 - type: integer 
+	Parameter C_TUSER_WIDTH bound to: 3 - type: integer 
+	Parameter C_TPAYLOAD_WIDTH bound to: 24 - type: integer 
+	Parameter C_SIGNAL_SET bound to: 32'b00000000000000000000000000000011 
+	Parameter G_INDX_SS_TREADY bound to: 0 - type: integer 
+	Parameter G_INDX_SS_TDATA bound to: 1 - type: integer 
+	Parameter G_INDX_SS_TSTRB bound to: 2 - type: integer 
+	Parameter G_INDX_SS_TKEEP bound to: 3 - type: integer 
+	Parameter G_INDX_SS_TLAST bound to: 4 - type: integer 
+	Parameter G_INDX_SS_TID bound to: 5 - type: integer 
+	Parameter G_INDX_SS_TDEST bound to: 6 - type: integer 
+	Parameter G_INDX_SS_TUSER bound to: 7 - type: integer 
+	Parameter G_MASK_SS_TREADY bound to: 1 - type: integer 
+	Parameter G_MASK_SS_TDATA bound to: 2 - type: integer 
+	Parameter G_MASK_SS_TSTRB bound to: 4 - type: integer 
+	Parameter G_MASK_SS_TKEEP bound to: 8 - type: integer 
+	Parameter G_MASK_SS_TLAST bound to: 16 - type: integer 
+	Parameter G_MASK_SS_TID bound to: 32 - type: integer 
+	Parameter G_MASK_SS_TDEST bound to: 64 - type: integer 
+	Parameter G_MASK_SS_TUSER bound to: 128 - type: integer 
+	Parameter G_TASK_SEVERITY_ERR bound to: 2 - type: integer 
+	Parameter G_TASK_SEVERITY_WARNING bound to: 1 - type: integer 
+	Parameter G_TASK_SEVERITY_INFO bound to: 0 - type: integer 
+	Parameter P_TDATA_INDX bound to: 0 - type: integer 
+	Parameter P_TSTRB_INDX bound to: 24 - type: integer 
+	Parameter P_TKEEP_INDX bound to: 24 - type: integer 
+	Parameter P_TLAST_INDX bound to: 24 - type: integer 
+	Parameter P_TID_INDX bound to: 24 - type: integer 
+	Parameter P_TDEST_INDX bound to: 24 - type: integer 
+	Parameter P_TUSER_INDX bound to: 24 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'axis_infrastructure_v1_1_0_util_vector2axis' (4#1) [c:/xilinxdesigns/sdraproject/ultra96v2_0-master/ultra96v2_0.srcs/sources_1/bd/ultra96v2_bd/ipshared/8713/hdl/axis_infrastructure_v1_1_vl_rfs.v:992]
+INFO: [Synth 8-6155] done synthesizing module 'axis_register_slice_v1_1_20_axis_register_slice' (5#1) [c:/xilinxdesigns/sdraproject/ultra96v2_0-master/ultra96v2_0.srcs/sources_1/bd/ultra96v2_bd/ipshared/00d6/hdl/axis_register_slice_v1_1_vl_rfs.v:2844]
+INFO: [Synth 8-6157] synthesizing module 'axis_register_slice_v1_1_20_axis_register_slice__parameterized0' [c:/xilinxdesigns/sdraproject/ultra96v2_0-master/ultra96v2_0.srcs/sources_1/bd/ultra96v2_bd/ipshared/00d6/hdl/axis_register_slice_v1_1_vl_rfs.v:2844]
+	Parameter C_FAMILY bound to: zynquplus - type: string 
+	Parameter C_AXIS_TDATA_WIDTH bound to: 48 - type: integer 
+	Parameter C_AXIS_TID_WIDTH bound to: 1 - type: integer 
+	Parameter C_AXIS_TDEST_WIDTH bound to: 1 - type: integer 
+	Parameter C_AXIS_TUSER_WIDTH bound to: 6 - type: integer 
+	Parameter C_AXIS_SIGNAL_SET bound to: 32'b00000000000000000000000000000011 
+	Parameter C_REG_CONFIG bound to: 0 - type: integer 
+	Parameter C_NUM_SLR_CROSSINGS bound to: 0 - type: integer 
+	Parameter C_PIPELINES_MASTER bound to: 0 - type: integer 
+	Parameter C_PIPELINES_SLAVE bound to: 0 - type: integer 
+	Parameter C_PIPELINES_MIDDLE bound to: 0 - type: integer 
+	Parameter G_INDX_SS_TREADY bound to: 0 - type: integer 
+	Parameter G_INDX_SS_TDATA bound to: 1 - type: integer 
+	Parameter G_INDX_SS_TSTRB bound to: 2 - type: integer 
+	Parameter G_INDX_SS_TKEEP bound to: 3 - type: integer 
+	Parameter G_INDX_SS_TLAST bound to: 4 - type: integer 
+	Parameter G_INDX_SS_TID bound to: 5 - type: integer 
+	Parameter G_INDX_SS_TDEST bound to: 6 - type: integer 
+	Parameter G_INDX_SS_TUSER bound to: 7 - type: integer 
+	Parameter G_MASK_SS_TREADY bound to: 1 - type: integer 
+	Parameter G_MASK_SS_TDATA bound to: 2 - type: integer 
+	Parameter G_MASK_SS_TSTRB bound to: 4 - type: integer 
+	Parameter G_MASK_SS_TKEEP bound to: 8 - type: integer 
+	Parameter G_MASK_SS_TLAST bound to: 16 - type: integer 
+	Parameter G_MASK_SS_TID bound to: 32 - type: integer 
+	Parameter G_MASK_SS_TDEST bound to: 64 - type: integer 
+	Parameter G_MASK_SS_TUSER bound to: 128 - type: integer 
+	Parameter G_TASK_SEVERITY_ERR bound to: 2 - type: integer 
+	Parameter G_TASK_SEVERITY_WARNING bound to: 1 - type: integer 
+	Parameter G_TASK_SEVERITY_INFO bound to: 0 - type: integer 
+	Parameter P_TPAYLOAD_WIDTH bound to: 48 - type: integer 
+INFO: [Synth 8-6157] synthesizing module 'axis_infrastructure_v1_1_0_util_axis2vector__parameterized0' [c:/xilinxdesigns/sdraproject/ultra96v2_0-master/ultra96v2_0.srcs/sources_1/bd/ultra96v2_bd/ipshared/8713/hdl/axis_infrastructure_v1_1_vl_rfs.v:810]
+	Parameter C_TDATA_WIDTH bound to: 48 - type: integer 
+	Parameter C_TID_WIDTH bound to: 1 - type: integer 
+	Parameter C_TDEST_WIDTH bound to: 1 - type: integer 
+	Parameter C_TUSER_WIDTH bound to: 6 - type: integer 
+	Parameter C_TPAYLOAD_WIDTH bound to: 48 - type: integer 
+	Parameter C_SIGNAL_SET bound to: 32'b00000000000000000000000000000011 
+	Parameter G_INDX_SS_TREADY bound to: 0 - type: integer 
+	Parameter G_INDX_SS_TDATA bound to: 1 - type: integer 
+	Parameter G_INDX_SS_TSTRB bound to: 2 - type: integer 
+	Parameter G_INDX_SS_TKEEP bound to: 3 - type: integer 
+	Parameter G_INDX_SS_TLAST bound to: 4 - type: integer 
+	Parameter G_INDX_SS_TID bound to: 5 - type: integer 
+	Parameter G_INDX_SS_TDEST bound to: 6 - type: integer 
+	Parameter G_INDX_SS_TUSER bound to: 7 - type: integer 
+	Parameter G_MASK_SS_TREADY bound to: 1 - type: integer 
+	Parameter G_MASK_SS_TDATA bound to: 2 - type: integer 
+	Parameter G_MASK_SS_TSTRB bound to: 4 - type: integer 
+	Parameter G_MASK_SS_TKEEP bound to: 8 - type: integer 
+	Parameter G_MASK_SS_TLAST bound to: 16 - type: integer 
+	Parameter G_MASK_SS_TID bound to: 32 - type: integer 
+	Parameter G_MASK_SS_TDEST bound to: 64 - type: integer 
+	Parameter G_MASK_SS_TUSER bound to: 128 - type: integer 
+	Parameter G_TASK_SEVERITY_ERR bound to: 2 - type: integer 
+	Parameter G_TASK_SEVERITY_WARNING bound to: 1 - type: integer 
+	Parameter G_TASK_SEVERITY_INFO bound to: 0 - type: integer 
+	Parameter P_TDATA_INDX bound to: 0 - type: integer 
+	Parameter P_TSTRB_INDX bound to: 48 - type: integer 
+	Parameter P_TKEEP_INDX bound to: 48 - type: integer 
+	Parameter P_TLAST_INDX bound to: 48 - type: integer 
+	Parameter P_TID_INDX bound to: 48 - type: integer 
+	Parameter P_TDEST_INDX bound to: 48 - type: integer 
+	Parameter P_TUSER_INDX bound to: 48 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'axis_infrastructure_v1_1_0_util_axis2vector__parameterized0' (5#1) [c:/xilinxdesigns/sdraproject/ultra96v2_0-master/ultra96v2_0.srcs/sources_1/bd/ultra96v2_bd/ipshared/8713/hdl/axis_infrastructure_v1_1_vl_rfs.v:810]
+INFO: [Synth 8-6157] synthesizing module 'axis_register_slice_v1_1_20_axisc_register_slice__parameterized0' [c:/xilinxdesigns/sdraproject/ultra96v2_0-master/ultra96v2_0.srcs/sources_1/bd/ultra96v2_bd/ipshared/00d6/hdl/axis_register_slice_v1_1_vl_rfs.v:1942]
+	Parameter C_FAMILY bound to: zynquplus - type: string 
+	Parameter C_DATA_WIDTH bound to: 48 - type: integer 
+	Parameter C_REG_CONFIG bound to: 0 - type: integer 
+	Parameter C_NUM_SLR_CROSSINGS bound to: 0 - type: integer 
+	Parameter C_PIPELINES_MASTER bound to: 0 - type: integer 
+	Parameter C_PIPELINES_SLAVE bound to: 0 - type: integer 
+	Parameter C_PIPELINES_MIDDLE bound to: 0 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'axis_register_slice_v1_1_20_axisc_register_slice__parameterized0' (5#1) [c:/xilinxdesigns/sdraproject/ultra96v2_0-master/ultra96v2_0.srcs/sources_1/bd/ultra96v2_bd/ipshared/00d6/hdl/axis_register_slice_v1_1_vl_rfs.v:1942]
+INFO: [Synth 8-6157] synthesizing module 'axis_infrastructure_v1_1_0_util_vector2axis__parameterized0' [c:/xilinxdesigns/sdraproject/ultra96v2_0-master/ultra96v2_0.srcs/sources_1/bd/ultra96v2_bd/ipshared/8713/hdl/axis_infrastructure_v1_1_vl_rfs.v:992]
+	Parameter C_TDATA_WIDTH bound to: 48 - type: integer 
+	Parameter C_TID_WIDTH bound to: 1 - type: integer 
+	Parameter C_TDEST_WIDTH bound to: 1 - type: integer 
+	Parameter C_TUSER_WIDTH bound to: 6 - type: integer 
+	Parameter C_TPAYLOAD_WIDTH bound to: 48 - type: integer 
+	Parameter C_SIGNAL_SET bound to: 32'b00000000000000000000000000000011 
+	Parameter G_INDX_SS_TREADY bound to: 0 - type: integer 
+	Parameter G_INDX_SS_TDATA bound to: 1 - type: integer 
+	Parameter G_INDX_SS_TSTRB bound to: 2 - type: integer 
+	Parameter G_INDX_SS_TKEEP bound to: 3 - type: integer 
+	Parameter G_INDX_SS_TLAST bound to: 4 - type: integer 
+	Parameter G_INDX_SS_TID bound to: 5 - type: integer 
+	Parameter G_INDX_SS_TDEST bound to: 6 - type: integer 
+	Parameter G_INDX_SS_TUSER bound to: 7 - type: integer 
+	Parameter G_MASK_SS_TREADY bound to: 1 - type: integer 
+	Parameter G_MASK_SS_TDATA bound to: 2 - type: integer 
+	Parameter G_MASK_SS_TSTRB bound to: 4 - type: integer 
+	Parameter G_MASK_SS_TKEEP bound to: 8 - type: integer 
+	Parameter G_MASK_SS_TLAST bound to: 16 - type: integer 
+	Parameter G_MASK_SS_TID bound to: 32 - type: integer 
+	Parameter G_MASK_SS_TDEST bound to: 64 - type: integer 
+	Parameter G_MASK_SS_TUSER bound to: 128 - type: integer 
+	Parameter G_TASK_SEVERITY_ERR bound to: 2 - type: integer 
+	Parameter G_TASK_SEVERITY_WARNING bound to: 1 - type: integer 
+	Parameter G_TASK_SEVERITY_INFO bound to: 0 - type: integer 
+	Parameter P_TDATA_INDX bound to: 0 - type: integer 
+	Parameter P_TSTRB_INDX bound to: 48 - type: integer 
+	Parameter P_TKEEP_INDX bound to: 48 - type: integer 
+	Parameter P_TLAST_INDX bound to: 48 - type: integer 
+	Parameter P_TID_INDX bound to: 48 - type: integer 
+	Parameter P_TDEST_INDX bound to: 48 - type: integer 
+	Parameter P_TUSER_INDX bound to: 48 - type: integer 
+INFO: [Synth 8-6155] done synthesizing module 'axis_infrastructure_v1_1_0_util_vector2axis__parameterized0' (5#1) [c:/xilinxdesigns/sdraproject/ultra96v2_0-master/ultra96v2_0.srcs/sources_1/bd/ultra96v2_bd/ipshared/8713/hdl/axis_infrastructure_v1_1_vl_rfs.v:992]
+INFO: [Synth 8-6155] done synthesizing module 'axis_register_slice_v1_1_20_axis_register_slice__parameterized0' (5#1) [c:/xilinxdesigns/sdraproject/ultra96v2_0-master/ultra96v2_0.srcs/sources_1/bd/ultra96v2_bd/ipshared/00d6/hdl/axis_register_slice_v1_1_vl_rfs.v:2844]
+INFO: [Synth 8-6155] done synthesizing module 'axis_dwidth_converter_v1_1_19_axis_dwidth_converter' (6#1) [c:/xilinxdesigns/sdraproject/ultra96v2_0-master/ultra96v2_0.srcs/sources_1/bd/ultra96v2_bd/ipshared/f22d/hdl/axis_dwidth_converter_v1_1_vl_rfs.v:810]
+INFO: [Synth 8-6155] done synthesizing module 'ultra96v2_bd_axis_dwidth_converter_1_0' (7#1) [c:/xilinxdesigns/sdraproject/ultra96v2_0-master/ultra96v2_0.srcs/sources_1/bd/ultra96v2_bd/ip/ultra96v2_bd_axis_dwidth_converter_1_0/synth/ultra96v2_bd_axis_dwidth_converter_1_0.v:57]
+WARNING: [Synth 8-3331] design axis_register_slice_v1_1_20_axisc_register_slice__parameterized0 has unconnected port ACLK
+WARNING: [Synth 8-3331] design axis_register_slice_v1_1_20_axisc_register_slice__parameterized0 has unconnected port ACLK2X
+WARNING: [Synth 8-3331] design axis_register_slice_v1_1_20_axisc_register_slice__parameterized0 has unconnected port ARESET
+WARNING: [Synth 8-3331] design axis_register_slice_v1_1_20_axisc_register_slice__parameterized0 has unconnected port ACLKEN
+WARNING: [Synth 8-3331] design axis_infrastructure_v1_1_0_util_axis2vector__parameterized0 has unconnected port TSTRB[5]
+WARNING: [Synth 8-3331] design axis_infrastructure_v1_1_0_util_axis2vector__parameterized0 has unconnected port TSTRB[4]
+WARNING: [Synth 8-3331] design axis_infrastructure_v1_1_0_util_axis2vector__parameterized0 has unconnected port TSTRB[3]
+WARNING: [Synth 8-3331] design axis_infrastructure_v1_1_0_util_axis2vector__parameterized0 has unconnected port TSTRB[2]
+WARNING: [Synth 8-3331] design axis_infrastructure_v1_1_0_util_axis2vector__parameterized0 has unconnected port TSTRB[1]
+WARNING: [Synth 8-3331] design axis_infrastructure_v1_1_0_util_axis2vector__parameterized0 has unconnected port TSTRB[0]
+WARNING: [Synth 8-3331] design axis_infrastructure_v1_1_0_util_axis2vector__parameterized0 has unconnected port TKEEP[5]
+WARNING: [Synth 8-3331] design axis_infrastructure_v1_1_0_util_axis2vector__parameterized0 has unconnected port TKEEP[4]
+WARNING: [Synth 8-3331] design axis_infrastructure_v1_1_0_util_axis2vector__parameterized0 has unconnected port TKEEP[3]
+WARNING: [Synth 8-3331] design axis_infrastructure_v1_1_0_util_axis2vector__parameterized0 has unconnected port TKEEP[2]
+WARNING: [Synth 8-3331] design axis_infrastructure_v1_1_0_util_axis2vector__parameterized0 has unconnected port TKEEP[1]
+WARNING: [Synth 8-3331] design axis_infrastructure_v1_1_0_util_axis2vector__parameterized0 has unconnected port TKEEP[0]
+WARNING: [Synth 8-3331] design axis_infrastructure_v1_1_0_util_axis2vector__parameterized0 has unconnected port TLAST
+WARNING: [Synth 8-3331] design axis_infrastructure_v1_1_0_util_axis2vector__parameterized0 has unconnected port TID[0]
+WARNING: [Synth 8-3331] design axis_infrastructure_v1_1_0_util_axis2vector__parameterized0 has unconnected port TDEST[0]
+WARNING: [Synth 8-3331] design axis_infrastructure_v1_1_0_util_axis2vector__parameterized0 has unconnected port TUSER[5]
+WARNING: [Synth 8-3331] design axis_infrastructure_v1_1_0_util_axis2vector__parameterized0 has unconnected port TUSER[4]
+WARNING: [Synth 8-3331] design axis_infrastructure_v1_1_0_util_axis2vector__parameterized0 has unconnected port TUSER[3]
+WARNING: [Synth 8-3331] design axis_infrastructure_v1_1_0_util_axis2vector__parameterized0 has unconnected port TUSER[2]
+WARNING: [Synth 8-3331] design axis_infrastructure_v1_1_0_util_axis2vector__parameterized0 has unconnected port TUSER[1]
+WARNING: [Synth 8-3331] design axis_infrastructure_v1_1_0_util_axis2vector__parameterized0 has unconnected port TUSER[0]
+WARNING: [Synth 8-3331] design axis_register_slice_v1_1_20_axisc_register_slice has unconnected port ACLK
+WARNING: [Synth 8-3331] design axis_register_slice_v1_1_20_axisc_register_slice has unconnected port ACLK2X
+WARNING: [Synth 8-3331] design axis_register_slice_v1_1_20_axisc_register_slice has unconnected port ARESET
+WARNING: [Synth 8-3331] design axis_register_slice_v1_1_20_axisc_register_slice has unconnected port ACLKEN
+WARNING: [Synth 8-3331] design axis_infrastructure_v1_1_0_util_axis2vector has unconnected port TSTRB[2]
+WARNING: [Synth 8-3331] design axis_infrastructure_v1_1_0_util_axis2vector has unconnected port TSTRB[1]
+WARNING: [Synth 8-3331] design axis_infrastructure_v1_1_0_util_axis2vector has unconnected port TSTRB[0]
+WARNING: [Synth 8-3331] design axis_infrastructure_v1_1_0_util_axis2vector has unconnected port TKEEP[2]
+WARNING: [Synth 8-3331] design axis_infrastructure_v1_1_0_util_axis2vector has unconnected port TKEEP[1]
+WARNING: [Synth 8-3331] design axis_infrastructure_v1_1_0_util_axis2vector has unconnected port TKEEP[0]
+WARNING: [Synth 8-3331] design axis_infrastructure_v1_1_0_util_axis2vector has unconnected port TLAST
+WARNING: [Synth 8-3331] design axis_infrastructure_v1_1_0_util_axis2vector has unconnected port TID[0]
+WARNING: [Synth 8-3331] design axis_infrastructure_v1_1_0_util_axis2vector has unconnected port TDEST[0]
+WARNING: [Synth 8-3331] design axis_infrastructure_v1_1_0_util_axis2vector has unconnected port TUSER[2]
+WARNING: [Synth 8-3331] design axis_infrastructure_v1_1_0_util_axis2vector has unconnected port TUSER[1]
+WARNING: [Synth 8-3331] design axis_infrastructure_v1_1_0_util_axis2vector has unconnected port TUSER[0]
+WARNING: [Synth 8-3331] design axis_dwidth_converter_v1_1_19_axis_dwidth_converter has unconnected port s_axis_tkeep[2]
+WARNING: [Synth 8-3331] design axis_dwidth_converter_v1_1_19_axis_dwidth_converter has unconnected port s_axis_tkeep[1]
+WARNING: [Synth 8-3331] design axis_dwidth_converter_v1_1_19_axis_dwidth_converter has unconnected port s_axis_tkeep[0]
+WARNING: [Synth 8-3331] design axis_dwidth_converter_v1_1_19_axis_dwidth_converter has unconnected port s_axis_tuser[0]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 1513.113 ; gain = 133.570
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 1519.250 ; gain = 139.707
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 1519.250 ; gain = 139.707
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.033 . Memory (MB): peak = 1519.250 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [c:/xilinxdesigns/sdraproject/ultra96v2_0-master/ultra96v2_0.srcs/sources_1/bd/ultra96v2_bd/ip/ultra96v2_bd_axis_dwidth_converter_1_0/ultra96v2_bd_axis_dwidth_converter_1_0_ooc.xdc] for cell 'inst'
+create_clock: Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 1631.805 ; gain = 0.008
+Finished Parsing XDC File [c:/xilinxdesigns/sdraproject/ultra96v2_0-master/ultra96v2_0.srcs/sources_1/bd/ultra96v2_bd/ip/ultra96v2_bd_axis_dwidth_converter_1_0/ultra96v2_bd_axis_dwidth_converter_1_0_ooc.xdc] for cell 'inst'
+Parsing XDC File [C:/xilinxdesigns/sdraproject/ultra96v2_0-master/ultra96v2_0.runs/ultra96v2_bd_axis_dwidth_converter_1_0_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [C:/xilinxdesigns/sdraproject/ultra96v2_0-master/ultra96v2_0.runs/ultra96v2_bd_axis_dwidth_converter_1_0_synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1631.805 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.051 . Memory (MB): peak = 1631.805 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:30 ; elapsed = 00:00:32 . Memory (MB): peak = 1631.805 ; gain = 252.262
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xczu3eg-sbva484-1-e
+INFO: [Synth 8-6742] Reading net delay rules and data
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:30 ; elapsed = 00:00:32 . Memory (MB): peak = 1631.805 ; gain = 252.262
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property DONT_TOUCH = true for inst. (constraint file  C:/xilinxdesigns/sdraproject/ultra96v2_0-master/ultra96v2_0.runs/ultra96v2_bd_axis_dwidth_converter_1_0_synth_1/dont_touch.xdc, line 9).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:30 ; elapsed = 00:00:32 . Memory (MB): peak = 1631.805 ; gain = 252.262
+---------------------------------------------------------------------------------
+INFO: [Synth 8-4490] FSM extraction disabled for register 'state_reg' through user attribute
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:31 ; elapsed = 00:00:33 . Memory (MB): peak = 1631.805 ; gain = 252.262
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Registers : 
+	               24 Bit    Registers := 3     
+	                3 Bit    Registers := 10    
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 9     
++---Muxes : 
+	   3 Input      3 Bit        Muxes := 2     
+	   2 Input      3 Bit        Muxes := 3     
+	   2 Input      2 Bit        Muxes := 5     
+	   2 Input      1 Bit        Muxes := 3     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module axis_dwidth_converter_v1_1_19_axisc_upsizer 
+Detailed RTL Component Info : 
++---Registers : 
+	               24 Bit    Registers := 3     
+	                3 Bit    Registers := 10    
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 6     
++---Muxes : 
+	   3 Input      3 Bit        Muxes := 2     
+	   2 Input      3 Bit        Muxes := 3     
+	   2 Input      2 Bit        Muxes := 5     
+	   2 Input      1 Bit        Muxes := 3     
+Module axis_register_slice_v1_1_20_axis_register_slice 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module axis_register_slice_v1_1_20_axis_register_slice__parameterized0 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module axis_dwidth_converter_v1_1_19_axis_dwidth_converter 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 360 (col length:72)
+BRAMs: 432 (col length: RAMB18 72 RAMB36 36)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+INFO: [Synth 8-4471] merging register 'gen_upsizer_conversion.axisc_upsizer_0/r0_dest_reg[0:0]' into 'gen_upsizer_conversion.axisc_upsizer_0/r0_id_reg[0:0]' [c:/xilinxdesigns/sdraproject/ultra96v2_0-master/ultra96v2_0.srcs/sources_1/bd/ultra96v2_bd/ipshared/f22d/hdl/axis_dwidth_converter_v1_1_vl_rfs.v:707]
+INFO: [Synth 8-4471] merging register 'gen_upsizer_conversion.axisc_upsizer_0/r0_user_reg[2:0]' into 'gen_upsizer_conversion.axisc_upsizer_0/r0_strb_reg[2:0]' [c:/xilinxdesigns/sdraproject/ultra96v2_0-master/ultra96v2_0.srcs/sources_1/bd/ultra96v2_bd/ipshared/f22d/hdl/axis_dwidth_converter_v1_1_vl_rfs.v:708]
+WARNING: [Synth 8-3331] design axis_dwidth_converter_v1_1_19_axis_dwidth_converter has unconnected port s_axis_tstrb[2]
+WARNING: [Synth 8-3331] design axis_dwidth_converter_v1_1_19_axis_dwidth_converter has unconnected port s_axis_tstrb[1]
+WARNING: [Synth 8-3331] design axis_dwidth_converter_v1_1_19_axis_dwidth_converter has unconnected port s_axis_tstrb[0]
+WARNING: [Synth 8-3331] design axis_dwidth_converter_v1_1_19_axis_dwidth_converter has unconnected port s_axis_tkeep[2]
+WARNING: [Synth 8-3331] design axis_dwidth_converter_v1_1_19_axis_dwidth_converter has unconnected port s_axis_tkeep[1]
+WARNING: [Synth 8-3331] design axis_dwidth_converter_v1_1_19_axis_dwidth_converter has unconnected port s_axis_tkeep[0]
+WARNING: [Synth 8-3331] design axis_dwidth_converter_v1_1_19_axis_dwidth_converter has unconnected port s_axis_tlast
+WARNING: [Synth 8-3331] design axis_dwidth_converter_v1_1_19_axis_dwidth_converter has unconnected port s_axis_tid[0]
+WARNING: [Synth 8-3331] design axis_dwidth_converter_v1_1_19_axis_dwidth_converter has unconnected port s_axis_tdest[0]
+WARNING: [Synth 8-3331] design axis_dwidth_converter_v1_1_19_axis_dwidth_converter has unconnected port s_axis_tuser[0]
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\gen_upsizer_conversion.axisc_upsizer_0/r0_last_reg )
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:34 ; elapsed = 00:00:36 . Memory (MB): peak = 1631.805 ; gain = 252.262
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:52 ; elapsed = 00:00:57 . Memory (MB): peak = 2214.172 ; gain = 834.629
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:52 ; elapsed = 00:00:57 . Memory (MB): peak = 2233.445 ; gain = 853.902
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:52 ; elapsed = 00:00:57 . Memory (MB): peak = 2234.211 ; gain = 854.668
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:01:00 ; elapsed = 00:01:06 . Memory (MB): peak = 2239.008 ; gain = 859.465
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:00 ; elapsed = 00:01:06 . Memory (MB): peak = 2239.008 ; gain = 859.465
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:00 ; elapsed = 00:01:06 . Memory (MB): peak = 2239.008 ; gain = 859.465
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:00 ; elapsed = 00:01:06 . Memory (MB): peak = 2239.008 ; gain = 859.465
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:00 ; elapsed = 00:01:06 . Memory (MB): peak = 2239.008 ; gain = 859.465
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:00 ; elapsed = 00:01:06 . Memory (MB): peak = 2239.008 ; gain = 859.465
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-----+------+
+|      |Cell |Count |
++------+-----+------+
+|1     |LUT1 |     1|
+|2     |LUT2 |     1|
+|3     |LUT3 |     2|
+|4     |LUT4 |     1|
+|5     |LUT5 |     3|
+|6     |LUT6 |     3|
+|7     |FDRE |    77|
+|8     |FDSE |     1|
++------+-----+------+
+
+Report Instance Areas: 
++------+---------------------------------------------+----------------------------------------------------+------+
+|      |Instance                                     |Module                                              |Cells |
++------+---------------------------------------------+----------------------------------------------------+------+
+|1     |top                                          |                                                    |    89|
+|2     |  inst                                       |axis_dwidth_converter_v1_1_19_axis_dwidth_converter |    89|
+|3     |    \gen_upsizer_conversion.axisc_upsizer_0  |axis_dwidth_converter_v1_1_19_axisc_upsizer         |    87|
++------+---------------------------------------------+----------------------------------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:00 ; elapsed = 00:01:06 . Memory (MB): peak = 2239.008 ; gain = 859.465
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 10 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:37 ; elapsed = 00:00:53 . Memory (MB): peak = 2239.008 ; gain = 746.910
+Synthesis Optimization Complete : Time (s): cpu = 00:01:01 ; elapsed = 00:01:06 . Memory (MB): peak = 2239.008 ; gain = 859.465
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.007 . Memory (MB): peak = 2252.059 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 2271.027 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+37 Infos, 55 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:01:18 ; elapsed = 00:01:27 . Memory (MB): peak = 2271.027 ; gain = 1792.418
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2271.027 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'C:/xilinxdesigns/sdraproject/ultra96v2_0-master/ultra96v2_0.runs/ultra96v2_bd_axis_dwidth_converter_1_0_synth_1/ultra96v2_bd_axis_dwidth_converter_1_0.dcp' has been generated.
+WARNING: [Common 17-576] 'use_project_ipc' is deprecated. This option is deprecated and no longer used.
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP ultra96v2_bd_axis_dwidth_converter_1_0, cache-ID = ccca6757b431e62d
+INFO: [Coretcl 2-1174] Renamed 2 cell refs.
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 2271.027 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'C:/xilinxdesigns/sdraproject/ultra96v2_0-master/ultra96v2_0.runs/ultra96v2_bd_axis_dwidth_converter_1_0_synth_1/ultra96v2_bd_axis_dwidth_converter_1_0.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file ultra96v2_bd_axis_dwidth_converter_1_0_utilization_synth.rpt -pb ultra96v2_bd_axis_dwidth_converter_1_0_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Sun May 17 19:14:48 2020...

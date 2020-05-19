@@ -1,0 +1,57 @@
+<?xml version="1.0"?>
+<Runs Version="1" Minor="0">
+	<Run Id="ultra96v2_bd_clk_wiz_0_0_synth_1" LaunchDir="C:/xilinxdesigns/sdraproject/ultra96v2_0-master/ultra96v2_0.runs/ultra96v2_bd_clk_wiz_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="ultra96v2_bd_axis_dwidth_converter_0_0_synth_1" LaunchDir="C:/xilinxdesigns/sdraproject/ultra96v2_0-master/ultra96v2_0.runs/ultra96v2_bd_axis_dwidth_converter_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="ultra96v2_bd_axis_combiner_0_0_synth_1" LaunchDir="C:/xilinxdesigns/sdraproject/ultra96v2_0-master/ultra96v2_0.runs/ultra96v2_bd_axis_combiner_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="ultra96v2_bd_cmpy_0_0_synth_1" LaunchDir="C:/xilinxdesigns/sdraproject/ultra96v2_0-master/ultra96v2_0.runs/ultra96v2_bd_cmpy_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="ultra96v2_bd_axis_dwidth_converter_1_0_synth_1" LaunchDir="C:/xilinxdesigns/sdraproject/ultra96v2_0-master/ultra96v2_0.runs/ultra96v2_bd_axis_dwidth_converter_1_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="ultra96v2_bd_cic_compiler_0_0_synth_1" LaunchDir="C:/xilinxdesigns/sdraproject/ultra96v2_0-master/ultra96v2_0.runs/ultra96v2_bd_cic_compiler_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="ultra96v2_bd_bus_to_axis_0_0_synth_1" LaunchDir="C:/xilinxdesigns/sdraproject/ultra96v2_0-master/ultra96v2_0.runs/ultra96v2_bd_bus_to_axis_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="ultra96v2_bd_dds_compiler_0_0_synth_1" LaunchDir="C:/xilinxdesigns/sdraproject/ultra96v2_0-master/ultra96v2_0.runs/ultra96v2_bd_dds_compiler_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="ultra96v2_bd_axis_broadcaster_0_0_synth_1" LaunchDir="C:/xilinxdesigns/sdraproject/ultra96v2_0-master/ultra96v2_0.runs/ultra96v2_bd_axis_broadcaster_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="ultra96v2_bd_cic_compiler_0_1_synth_1" LaunchDir="C:/xilinxdesigns/sdraproject/ultra96v2_0-master/ultra96v2_0.runs/ultra96v2_bd_cic_compiler_0_1_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado" IsOrderedIPRun="true">
+		<Parent Id="ultra96v2_bd_cic_compiler_0_0_synth_1"/>
+	</Run>
+	<Run Id="ultra96v2_bd_proc_sys_reset_0_0_synth_1" LaunchDir="C:/xilinxdesigns/sdraproject/ultra96v2_0-master/ultra96v2_0.runs/ultra96v2_bd_proc_sys_reset_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="ultra96v2_bd_fir_compiler_0_0_synth_1" LaunchDir="C:/xilinxdesigns/sdraproject/ultra96v2_0-master/ultra96v2_0.runs/ultra96v2_bd_fir_compiler_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="ultra96v2_bd_dds_compiler_1_0_synth_1" LaunchDir="C:/xilinxdesigns/sdraproject/ultra96v2_0-master/ultra96v2_0.runs/ultra96v2_bd_dds_compiler_1_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="ultra96v2_bd_cvt_offset_binary_0_0_synth_1" LaunchDir="C:/xilinxdesigns/sdraproject/ultra96v2_0-master/ultra96v2_0.runs/ultra96v2_bd_cvt_offset_binary_0_0_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
+	<Run Id="synth_1" LaunchDir="C:/xilinxdesigns/sdraproject/ultra96v2_0-master/ultra96v2_0.runs/synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado">
+		<Parent Id="ultra96v2_bd_clk_wiz_0_0_synth_1"/>
+		<Parent Id="ultra96v2_bd_axis_dwidth_converter_0_0_synth_1"/>
+		<Parent Id="ultra96v2_bd_axis_combiner_0_0_synth_1"/>
+		<Parent Id="ultra96v2_bd_cmpy_0_0_synth_1"/>
+		<Parent Id="ultra96v2_bd_axis_dwidth_converter_1_0_synth_1"/>
+		<Parent Id="ultra96v2_bd_cic_compiler_0_0_synth_1"/>
+		<Parent Id="ultra96v2_bd_bus_to_axis_0_0_synth_1"/>
+		<Parent Id="ultra96v2_bd_dds_compiler_0_0_synth_1"/>
+		<Parent Id="ultra96v2_bd_axis_broadcaster_0_0_synth_1"/>
+		<Parent Id="ultra96v2_bd_cic_compiler_0_1_synth_1"/>
+		<Parent Id="ultra96v2_bd_proc_sys_reset_0_0_synth_1"/>
+		<Parent Id="ultra96v2_bd_fir_compiler_0_0_synth_1"/>
+		<Parent Id="ultra96v2_bd_dds_compiler_1_0_synth_1"/>
+		<Parent Id="ultra96v2_bd_cvt_offset_binary_0_0_synth_1"/>
+	</Run>
+	<Run Id="impl_1" LaunchDir="C:/xilinxdesigns/sdraproject/ultra96v2_0-master/ultra96v2_0.runs/impl_1" FlowId="Vivado_Implementation" FromStepId="init_design" ToStepId="write_bitstream">
+		<Parent Id="synth_1"/>
+		<Parent Id="ultra96v2_bd_clk_wiz_0_0_synth_1"/>
+		<Parent Id="ultra96v2_bd_axis_dwidth_converter_0_0_synth_1"/>
+		<Parent Id="ultra96v2_bd_axis_combiner_0_0_synth_1"/>
+		<Parent Id="ultra96v2_bd_cmpy_0_0_synth_1"/>
+		<Parent Id="ultra96v2_bd_axis_dwidth_converter_1_0_synth_1"/>
+		<Parent Id="ultra96v2_bd_cic_compiler_0_0_synth_1"/>
+		<Parent Id="ultra96v2_bd_bus_to_axis_0_0_synth_1"/>
+		<Parent Id="ultra96v2_bd_dds_compiler_0_0_synth_1"/>
+		<Parent Id="ultra96v2_bd_axis_broadcaster_0_0_synth_1"/>
+		<Parent Id="ultra96v2_bd_cic_compiler_0_1_synth_1"/>
+		<Parent Id="ultra96v2_bd_proc_sys_reset_0_0_synth_1"/>
+		<Parent Id="ultra96v2_bd_fir_compiler_0_0_synth_1"/>
+		<Parent Id="ultra96v2_bd_dds_compiler_1_0_synth_1"/>
+		<Parent Id="ultra96v2_bd_cvt_offset_binary_0_0_synth_1"/>
+	</Run>
+	<Parameters>
+		<Parameter Name="runs.monitorLSFJobs" Val="true" Type="bool"/>
+		<Parameter Name="runs.enableClusterConf" Val="true" Type="bool"/>
+	</Parameters>
+</Runs>
+

@@ -1,0 +1,12 @@
+/* /tmp/bootgen_hello_ultra96v2_system16060963498016583227/sd_card_temp/boot.bif */
+/* Command to create bitstream .bin file:       */
+/*   bootgen -image <bif_file> -split bin -w    */
+/* Command to create BOOT.BIN file:             */
+/*   bootgen -arch zynqmp -image <bif_file> -w -o i BOOT.BIN */
+/*ultra96v2_0*/
+the_ROM_image:
+{
+ [bootloader, destination_cpu=a53-0] /home/parallels/ultra96v2_0/vitis_workspace/ultra96v2_0/export/ultra96v2_0/sw/ultra96v2_0/boot/fsbl.elf
+ [destination_device=pl] /home/parallels/ultra96v2_0/vitis_workspace/hello_ultra96v2/_ide/bitstream/ultra96v2_top.bit
+ [destination_cpu=a53-0, exception_level=el-3] /home/parallels/ultra96v2_0/vitis_workspace/hello_ultra96v2/Debug/hello_ultra96v2.elf
+}
